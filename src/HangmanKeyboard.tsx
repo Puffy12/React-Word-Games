@@ -11,7 +11,7 @@ export default function HangmanKeyboard() {
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
             gap: ".5rem", 
-    }}>
+        }}>
         {KEYS.map(key => (
         <button key={key} className={`${styles.btn}`}>
             {key}

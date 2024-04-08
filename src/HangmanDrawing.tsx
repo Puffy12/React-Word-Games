@@ -93,7 +93,7 @@ const LEFT_LEG = (
   export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
     return (
       <div className="relative">
-        {BODY_PARTS.slice(0, 6)}
+        {BODY_PARTS.slice(0, numberOfGuesses)}
         <div
             style={{
             height: "50px",
