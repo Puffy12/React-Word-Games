@@ -4,9 +4,11 @@ import React from 'react'
 type HangmanWordProps = {
     guessedLetters: string[]
     wordToGuess: string
+    reveal?: boolean
 }
 
-export default function HangmanWord({ guessedLetters, wordToGuess}: HangmanWordProps) {
+export default function HangmanWord({ guessedLetters, wordToGuess,reveal = false,
+}: HangmanWordProps) {
 
     return (
     <div className="flex text-6xl uppercase font-mono"
@@ -20,11 +22,11 @@ export default function HangmanWord({ guessedLetters, wordToGuess}: HangmanWordP
                 <span
                     style={{
                     visibility:
-                        guessedLetters.includes(letter) 
+                        guessedLetters.includes(letter) || reveal
                         ? "visible"
                         : "hidden",
                     color:
-                        !guessedLetters.includes(letter) ? "red" : "black",
+                        !guessedLetters.includes(letter) && reveal ? "red" : "black",
                     }}
                 >
                     {letter}
