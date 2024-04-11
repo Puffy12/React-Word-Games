@@ -6,7 +6,7 @@ import Hangman from "./components/Hangman/Hangman";
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
+      <Routes>
         <Route index element={ <HomeMenu/> } />
         <Route path="/hangman" Component={Hangman} />
       </Routes>

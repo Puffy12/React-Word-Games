@@ -5,6 +5,7 @@ import "../../index.css";
 import { HangmanDrawing } from "./HangmanDrawing";
 import HangmanWord from "./HangmanWord";
 import { Keyboard }from "./HangmanKeyboard";
+import Sidebar from "../SideBar/sidebar";
 
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
@@ -68,8 +69,10 @@ function Hangman() {
   }, [])
 
   return (
-    <div className="max-w-800 flex flex-col gap-8 mx-auto items-center">
-      {wordToGuess}
+    <><Sidebar />
+    <div className="max-w-800 flex flex-col gap-8 mx-auto items-center bg-gray-700">
+      <h1>{wordToGuess}</h1>
+      
       <div className="text-2xl text-center">
         {isWinner && "Winner! - Refresh to try again"}
         {isLoser && "Nice Try - Refresh to try again"}
@@ -77,16 +80,14 @@ function Hangman() {
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
       <div className="self-stretch px-10 ">
-        <Keyboard 
+        <Keyboard
           disabled={isWinner || isLoser}
-          activeLetters={guessedLetters.filter(letter =>
-            wordToGuess.includes(letter)
+          activeLetters={guessedLetters.filter(letter => wordToGuess.includes(letter)
           )}
           inactiveLetters={incorrectLetters}
-          addGuessedLetter={addGuessedLetter}
-          />
+          addGuessedLetter={addGuessedLetter} />
       </div>
-    </div>
+    </div></>
   );
 }
 

@@ -1,0 +1,25 @@
+.nav-bar {
+  background: #181818;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between; /* Align icons horizontally */
+  align-items: center; /* Align icons vertically */
+  padding: 0 20px; /* Add padding to space out the icons */
+}
+
+nav, ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a, ul a {
+  margin-right: 20px; /* Adjust spacing between icons */
+}
+
+.anchor-icon {
+  font-size: 20px; /* Adjust icon size */
+}
