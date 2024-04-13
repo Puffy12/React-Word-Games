@@ -15,7 +15,6 @@ export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 function wordle() {
     const [board, setBoard] = useState(boardDefault); //boardDefault
- 
 
   return (
     <>

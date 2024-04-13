@@ -21,11 +21,9 @@ function Sidebar() {
         <div className="nav-bar">
         <nav>
             <NavLink to={'/'}>
-            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faHome} color="#4d4d4e" className='text-3xl' />
             </NavLink>
-            <NavLink to={'/contact'}>
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-            </NavLink>
+          
         </nav>
         <ul>
             <li>
