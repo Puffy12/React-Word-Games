@@ -5,16 +5,28 @@ import Keyboard from './keyboard';
 import { boardDefault, generateWordSet } from "./words";
 import React, { useState, createContext, useEffect } from "react";
 
+
+interface Attempt {
+  attempt: number;
+  letterPos: number;
+}
+
 interface AppContextType {
-    board: string[][]; // Adjust the type according to your actual board type
-    setBoard: React.Dispatch<React.SetStateAction<string[][]>>;
+  board: string[][];
+  setBoard: React.Dispatch<React.SetStateAction<string[][]>>;
+  currAttempt: Attempt;
+  setcurrAttempt: React.Dispatch<React.SetStateAction<Attempt>>;
+}
 
-  }
-
-export const AppContext = createContext<AppContextType>({} as AppContextType);
-
+export const AppContext = createContext<AppContextType>({
+  board: boardDefault,
+  setBoard: () => {},
+  currAttempt: { attempt: 0, letterPos: 0 },
+  setcurrAttempt: () => {},
+});
 function wordle() {
-    const [board, setBoard] = useState(boardDefault); //boardDefault
+  const [board, setBoard] = useState(boardDefault); //boardDefault
+  const [currAttempt, setcurrAttempt ] = useState({attempt: 0, letterPos: 0});
 
   return (
     <>
@@ -26,9 +38,11 @@ function wordle() {
                 </h1>
                 
             </nav>
-          <AppContext.Provider value={{ board, setBoard }}>
-            <Board />
-            <Keyboard />
+          <AppContext.Provider value={{ board, setBoard , currAttempt, setcurrAttempt}}>
+            <div className="game">
+              <Board />
+              <Keyboard />
+            </div>
           </AppContext.Provider>
           
             

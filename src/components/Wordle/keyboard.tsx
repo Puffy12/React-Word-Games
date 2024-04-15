@@ -10,25 +10,26 @@ function Keyboard() {
 
 
   return (
-    <div className="keyboard" >
+    <div className="keyboard">
       <div className="line1">
-        {keys1.map((key) => {
-          return <Key keyVal={key} bigKey={false}/>;
-        })}
+        {keys1.map((key) => (
+          <Key key={key} keyVal={key} bigKey={false} />
+        ))}
       </div>
       <div className="line2">
-        {keys2.map((key) => {
-          return <Key keyVal={key} bigKey={false}/>;
-        })}
+        {keys2.map((key) => (
+          <Key key={key} keyVal={key} bigKey={false} />
+        ))}
       </div>
       <div className="line3">
-        <Key keyVal={"ENTER"} bigKey />
-        {keys3.map((key) => {
-          return <Key keyVal={key} bigKey={false} />;
-        })}
-        <Key keyVal={"DELETE"} bigKey/>
+        <Key key="ENTER" keyVal={"ENTER"} bigKey />
+        {keys3.map((key) => (
+          <Key key={key} keyVal={key} bigKey={false} />
+        ))}
+        <Key key="DELETE" keyVal={"DELETE"} bigKey />
       </div>
-    </div>  )
+    </div>
+    );
 }
 
 export default Keyboard
