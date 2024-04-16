@@ -16,17 +16,52 @@ interface AppContextType {
   setBoard: React.Dispatch<React.SetStateAction<string[][]>>;
   currAttempt: Attempt;
   setcurrAttempt: React.Dispatch<React.SetStateAction<Attempt>>;
+  onEnter: () => void;
+  onDelete: () => void;
+  onSelectLetter: (keyVal: string) => void;
+  correctWord: string;
+  setCorrectWord: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const AppContext = createContext<AppContextType>({
-  board: boardDefault,
+  board: [],
   setBoard: () => {},
   currAttempt: { attempt: 0, letterPos: 0 },
   setcurrAttempt: () => {},
+  onEnter: () => {},
+  onDelete: () => {},
+  onSelectLetter: () => {},
+  correctWord: "",
+  setCorrectWord: () => {},
 });
+
 function wordle() {
   const [board, setBoard] = useState(boardDefault); //boardDefault
   const [currAttempt, setcurrAttempt ] = useState({attempt: 0, letterPos: 0});
+
+  const [correctWord, setCorrectWord] = useState("words"); //word of the day
+
+  const onEnter = () => {
+    if(currAttempt.letterPos !== 5) return; 
+    setcurrAttempt({attempt: currAttempt.attempt + 1, letterPos: 0});
+  }
+
+  const onDelete = () => {
+    if(currAttempt.letterPos === 0) return;
+    const newBoard = [...board];
+    newBoard[currAttempt.attempt][currAttempt.letterPos - 1] = "";
+    setBoard(newBoard);
+    setcurrAttempt({...currAttempt, letterPos: currAttempt.letterPos - 1});
+  }
+  
+  const onSelectLetter = (keyVal: string) => {
+    if(currAttempt.letterPos > 4) return; //cant add more than 5 letters
+    const newBoard = [...board];
+    newBoard[currAttempt.attempt][currAttempt.letterPos] = keyVal;
+    setBoard(newBoard);
+    setcurrAttempt({ ...currAttempt, letterPos: currAttempt.letterPos + 1 });
+  
+  }
 
   return (
     <>
@@ -38,7 +73,19 @@ function wordle() {
                 </h1>
                 
             </nav>
-          <AppContext.Provider value={{ board, setBoard , currAttempt, setcurrAttempt}}>
+            <AppContext.Provider
+              value={{
+                board,
+                setBoard,
+                currAttempt,
+                setcurrAttempt,
+                onEnter,
+                onDelete,
+                onSelectLetter,
+                correctWord,
+                setCorrectWord,
+              }}
+            >            
             <div className="game">
               <Board />
               <Keyboard />

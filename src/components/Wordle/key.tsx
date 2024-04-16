@@ -8,14 +8,17 @@ interface KeyProps {
 }
 
 const Key: React.FC<KeyProps> = ({ keyVal, bigKey }) => {
-  const { board, setBoard, currAttempt, setcurrAttempt } = useContext(AppContext); 
+  const {onSelectLetter, onEnter, onDelete} = useContext(AppContext); 
 
   const selectLetter = () => {
-    if(currAttempt.letterPos > 4) return; //cant add more than 5 letters
-    const newBoard = [...board];
-    newBoard[currAttempt.attempt][currAttempt.letterPos] = keyVal;
-    setBoard(newBoard);
-    setcurrAttempt({ ...currAttempt, letterPos: currAttempt.letterPos + 1 });
+    if(keyVal === "ENTER"){
+      onEnter();
+    }else if(keyVal === "DELETE"){
+      onDelete();
+
+    }else{
+      onSelectLetter(keyVal);
+    }
   }
 
   return (

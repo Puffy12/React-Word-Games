@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useEffect, useContext } from "react";
 import { AppContext } from "./wordle";
 import Key from './key';
 
@@ -8,6 +8,44 @@ function Keyboard() {
   const keys2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
+  const {currAttempt, onSelectLetter, onEnter, onDelete} = useContext(AppContext); 
+
+  const handleKeyboard = useCallback((event: { key: string; }) => {
+      //if (gameOver.gameOver) return;
+      if (event.key === "Enter") {
+        onEnter();
+      } else if (event.key === "Backspace") {
+        onDelete();
+      } else {
+        keys1.forEach((key) => {
+          if (event.key.toLowerCase() === key.toLowerCase()) {
+            onSelectLetter(key);
+          }
+        });
+        keys2.forEach((key) => {
+          if (event.key.toLowerCase() === key.toLowerCase()) {
+            onSelectLetter(key);
+          }
+        });
+        keys3.forEach((key) => {
+          if (event.key.toLowerCase() === key.toLowerCase()) {
+            onSelectLetter(key);
+          }
+        });
+      }
+    },
+    [currAttempt]
+  );
+
+
+
+  useEffect(() => {
+    document.addEventListener("keydown",handleKeyboard);
+
+    return () => {
+      document.removeEventListener("keydown",handleKeyboard);
+    }
+  }, [handleKeyboard])
 
   return (
     <div className="keyboard">
@@ -32,4 +70,4 @@ function Keyboard() {
     );
 }
 
-export default Keyboard
+export default Keyboard;
