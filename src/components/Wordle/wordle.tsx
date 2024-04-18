@@ -4,6 +4,7 @@ import Board from './board';
 import Keyboard from './keyboard';
 import { boardDefault, generateWordSet } from "./words";
 import React, { useState, createContext, useEffect } from "react";
+import GameOver from "./GameOver";
 
 
 interface Attempt {
@@ -23,6 +24,10 @@ interface AppContextType {
   setCorrectWord: React.Dispatch<React.SetStateAction<string>>;
   disabledLetters: string[];
   setDisabledLetters: React.Dispatch<React.SetStateAction<string[]>>;
+  gameOver: { gameOver: boolean; guessedWord: boolean };
+  setGameOver: React.Dispatch<
+    React.SetStateAction<{ gameOver: boolean; guessedWord: boolean }>
+  >;
 }
 
 export const AppContext = createContext<AppContextType>({
@@ -37,6 +42,8 @@ export const AppContext = createContext<AppContextType>({
   setCorrectWord: () => {},
   disabledLetters: [],
   setDisabledLetters: () => {},
+  gameOver: { gameOver: false, guessedWord: false },
+  setGameOver: () => {},
 });
 
 function wordle() {
@@ -47,6 +54,11 @@ function wordle() {
   const [wordSet, setWordSet] = useState<Set<string>>(new Set());
 
   const [disabledLetters, setDisabledLetters] = useState<string[]>([]);
+
+  const [gameOver, setGameOver] = useState({
+    gameOver: false,
+    guessedWord: false,
+  });
 
 
 useEffect(() => {
@@ -71,12 +83,19 @@ useEffect(() => {
       return 
     }
     
-    if (currWord === correctWord) {
-      //setGameOver({ gameOver: true, guessedWord: true });
+    console.log(currWord + " : " + correctWord);
+    if (currWord.toLowerCase() === correctWord) {
+      setGameOver({ gameOver: true, guessedWord: true });
+      //alert("won")
+      return;
+    }
+
+    if (currAttempt.attempt === 5) {
+      setGameOver({ gameOver: true, guessedWord: false });
       return;
     }
     //setcurrAttempt({attempt: currAttempt.attempt + 1, letterPos: 0});
-  }
+};
 
   const onDelete = () => {
     if(currAttempt.letterPos === 0) return;
@@ -84,7 +103,7 @@ useEffect(() => {
     newBoard[currAttempt.attempt][currAttempt.letterPos - 1] = "";
     setBoard(newBoard);
     setcurrAttempt({...currAttempt, letterPos: currAttempt.letterPos - 1});
-  }
+  };
   
   const onSelectLetter = (keyVal: string) => {
     if(currAttempt.letterPos > 4) return; //cant add more than 5 letters
@@ -93,7 +112,7 @@ useEffect(() => {
     setBoard(newBoard);
     setcurrAttempt({ ...currAttempt, letterPos: currAttempt.letterPos + 1 });
   
-  }
+  };
 
   return (
     <>
@@ -118,11 +137,14 @@ useEffect(() => {
                 setCorrectWord,
                 disabledLetters,
                 setDisabledLetters,
+                gameOver,
+                setGameOver,
               }}
             >            
             <div className="game">
+              <div> {correctWord}</div>
               <Board />
-              <Keyboard />
+              {gameOver.gameOver ? <GameOver /> : <Keyboard />}
             </div>
           </AppContext.Provider>
           
