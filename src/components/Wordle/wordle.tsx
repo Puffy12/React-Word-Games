@@ -145,11 +145,10 @@ useEffect(() => {
             <div className="game">
               <div> {correctWord}</div>
               <Board />
-              {gameOver.gameOver ? <GameOver /> : <Keyboard />}
+              {gameOver.gameOver ? <GameOver /> : <Keyboard/>}
             </div>
           </AppContext.Provider>
           
-
         </div>
       </>
   )

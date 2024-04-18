@@ -69,7 +69,7 @@ function Keyboard() {
         <Key key={`line3-delete`} keyVal={"DELETE"} bigKey disabled={false} />
       </div>
     </div>
-    <Footer/>
+
     </>
     );
 }
