@@ -21,6 +21,8 @@ interface AppContextType {
   onSelectLetter: (keyVal: string) => void;
   correctWord: string;
   setCorrectWord: React.Dispatch<React.SetStateAction<string>>;
+  disabledLetters: string[];
+  setDisabledLetters: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
 export const AppContext = createContext<AppContextType>({
@@ -33,6 +35,8 @@ export const AppContext = createContext<AppContextType>({
   onSelectLetter: () => {},
   correctWord: "",
   setCorrectWord: () => {},
+  disabledLetters: [],
+  setDisabledLetters: () => {},
 });
 
 function wordle() {
@@ -40,10 +44,38 @@ function wordle() {
   const [currAttempt, setcurrAttempt ] = useState({attempt: 0, letterPos: 0});
 
   const [correctWord, setCorrectWord] = useState("words"); //word of the day
+  const [wordSet, setWordSet] = useState<Set<string>>(new Set());
+
+  const [disabledLetters, setDisabledLetters] = useState<string[]>([]);
+
+
+useEffect(() => {
+  generateWordSet().then((words) => {
+    setWordSet(words.wordSet as Set<string>);
+    setCorrectWord(words.todaysWord || "");
+  });
+}, []);
 
   const onEnter = () => {
     if(currAttempt.letterPos !== 5) return; 
-    setcurrAttempt({attempt: currAttempt.attempt + 1, letterPos: 0});
+
+    let currWord = "";
+    for (let i = 0; i < 5; i++) {
+      currWord += board[currAttempt.attempt][i];
+    }
+
+    if (wordSet.has(currWord.toLowerCase())) {
+      setcurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
+    } else {
+      alert("Word not found");
+      return 
+    }
+    
+    if (currWord === correctWord) {
+      //setGameOver({ gameOver: true, guessedWord: true });
+      return;
+    }
+    //setcurrAttempt({attempt: currAttempt.attempt + 1, letterPos: 0});
   }
 
   const onDelete = () => {
@@ -84,6 +116,8 @@ function wordle() {
                 onSelectLetter,
                 correctWord,
                 setCorrectWord,
+                disabledLetters,
+                setDisabledLetters,
               }}
             >            
             <div className="game">

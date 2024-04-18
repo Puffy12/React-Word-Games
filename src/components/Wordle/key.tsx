@@ -5,9 +5,10 @@ import { AppContext } from "./wordle";
 interface KeyProps {
     keyVal: string;
     bigKey: boolean;
+    disabled: boolean;
 }
 
-const Key: React.FC<KeyProps> = ({ keyVal, bigKey }) => {
+const Key: React.FC<KeyProps> = ({ keyVal, bigKey, disabled }) => {
   const {onSelectLetter, onEnter, onDelete} = useContext(AppContext); 
 
   const selectLetter = () => {
@@ -23,7 +24,7 @@ const Key: React.FC<KeyProps> = ({ keyVal, bigKey }) => {
 
   return (
     <div className="key" 
-        id={bigKey ? "big" : undefined} // Only set id when bigKey is true
+    id={bigKey ? "big" : (disabled ? "disabled" : "")}
         onClick={selectLetter}
     >
     {keyVal}

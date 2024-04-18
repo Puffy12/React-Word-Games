@@ -8,7 +8,7 @@ function Keyboard() {
   const keys2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
-  const {currAttempt, onSelectLetter, onEnter, onDelete} = useContext(AppContext); 
+  const {currAttempt, onSelectLetter, onEnter, onDelete, disabledLetters} = useContext(AppContext); 
 
   const handleKeyboard = useCallback((event: { key: string; }) => {
       //if (gameOver.gameOver) return;
@@ -48,23 +48,23 @@ function Keyboard() {
   }, [handleKeyboard])
 
   return (
-    <div className="keyboard">
+    <div className="keyboard" onKeyDown={handleKeyboard}>
       <div className="line1">
-        {keys1.map((key) => (
-          <Key key={key} keyVal={key} bigKey={false} />
-        ))}
+        {keys1.map((key) => {
+          return <Key keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} />;
+        })}
       </div>
       <div className="line2">
-        {keys2.map((key) => (
-          <Key key={key} keyVal={key} bigKey={false} />
-        ))}
+        {keys2.map((key) => {
+          return <Key keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} />;
+        })}
       </div>
       <div className="line3">
-        <Key key="ENTER" keyVal={"ENTER"} bigKey />
-        {keys3.map((key) => (
-          <Key key={key} keyVal={key} bigKey={false} />
-        ))}
-        <Key key="DELETE" keyVal={"DELETE"} bigKey />
+        <Key keyVal={"ENTER"} bigKey disabled={true} />
+        {keys3.map((key) => {
+          return <Key keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} />;
+        })}
+        <Key keyVal={"DELETE"} bigKey disabled={true} />
       </div>
     </div>
     );
