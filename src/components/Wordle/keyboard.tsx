@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useContext } from "react";
 import { AppContext } from "./wordle";
 import Key from './key';
+import Footer from "../SideBar/footer";
 
 
 function Keyboard() {
@@ -48,6 +49,7 @@ function Keyboard() {
   }, [handleKeyboard])
 
   return (
+    <>
     <div className="keyboard" onKeyDown={handleKeyboard}>
       <div className="line1">
         {keys1.map((key) => {
@@ -67,6 +69,8 @@ function Keyboard() {
         <Key key={`line3-delete`} keyVal={"DELETE"} bigKey disabled={false} />
       </div>
     </div>
+    <Footer/>
+    </>
     );
 }
 

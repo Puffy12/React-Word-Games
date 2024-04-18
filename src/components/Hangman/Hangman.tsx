@@ -6,6 +6,7 @@ import { HangmanDrawing } from "./HangmanDrawing";
 import HangmanWord from "./HangmanWord";
 import { Keyboard }from "./HangmanKeyboard";
 import Sidebar from "../SideBar/sidebar";
+import Footer from "../SideBar/footer";
 
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
@@ -87,7 +88,9 @@ function Hangman() {
           inactiveLetters={incorrectLetters}
           addGuessedLetter={addGuessedLetter} />
       </div>
-    </div></>
+    </div>
+    <Footer/>
+    </>
   );
 }
 

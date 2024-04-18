@@ -4,6 +4,7 @@ import { faBoxOpen, faW, faFingerprint, faMagnifyingGlass, faMemory, faTerminal,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Sidebar from '../SideBar/sidebar';
 import "./Home.css"; // Import your CSS file
+import Footer from "../SideBar/footer";
 
 const HomeMenu = () => {
   return (
@@ -37,6 +38,7 @@ const HomeMenu = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

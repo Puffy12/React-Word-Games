@@ -19,10 +19,10 @@ import "./index.css";
 function Sidebar() {
   return (
         <div className="nav-bar">
-        <nav>
-            <NavLink to={'/'}>
-            <FontAwesomeIcon icon={faHome} color="#4d4d4e" className='text-3xl' />
-            </NavLink>
+        <nav className="different">
+            <a href={'/'} className="">
+              <FontAwesomeIcon icon={faHome} color="#4d4d4e" className='text-3xl' />
+            </a>
           
         </nav>
         <ul>

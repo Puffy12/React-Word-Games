@@ -6,6 +6,12 @@
   justify-content: space-between; /* Align icons horizontally */
   align-items: center; /* Align icons vertically */
   padding: 0 20px; /* Add padding to space out the icons */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.different {
+  display: flex;
+  justify-content: start; /* Align items to the start (left) */
 }
 
 nav, ul {
@@ -16,8 +22,8 @@ nav, ul {
   padding: 0;
 }
 
-nav a, ul a {
-  margin-right: 20px; /* Adjust spacing between icons */
+ul a {
+  margin-right: 40px; /* Adjust spacing between icons */
 }
 
 .anchor-icon {
