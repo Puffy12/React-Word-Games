@@ -4,14 +4,7 @@ import {
   faGithub,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
-import {
-  faHome,
-  faUser,
-  faEnvelope,
-  faSuitcase,
-  faBars,
-  faClose,
-} from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 import "./index.css";
 
 function Sidebar() {
