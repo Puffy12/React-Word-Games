@@ -143,7 +143,7 @@ useEffect(() => {
               }}
             >            
             <div className="game">
-              <div> {correctWord}</div>
+              <div className="hidden"> {correctWord}</div>
               <Board />
               {gameOver.gameOver ? <GameOver /> : <Keyboard/>}
             </div>
