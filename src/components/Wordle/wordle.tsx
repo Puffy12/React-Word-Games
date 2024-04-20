@@ -77,14 +77,15 @@ useEffect(() => {
       currWord += board[currAttempt.attempt][i];
     }
 
+    console.log(currWord.toLowerCase() + " : " + correctWord + " " + wordSet.has(currWord.toLowerCase()) );
+
     if (wordSet.has(currWord.toLowerCase())) {
       setcurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
     } else {
       alert("Word not found");
       return 
     }
-    
-    console.log(currWord + " : " + correctWord);
+
     if (currWord.toLowerCase() === correctWord) {
       setGameOver({ gameOver: true, guessedWord: true });
       //alert("won")
