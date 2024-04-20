@@ -2,9 +2,9 @@ import { useCallback, useEffect, useState } from "react"
 //import { useSignal, useComputed, useSignalEffect, computed } from "@preact/signals-react";
 import words from "./wordList.json";
 import "../../index.css";
-import { HangmanDrawing } from "./HangmanDrawing";
-import HangmanWord from "./HangmanWord";
-import { Keyboard }from "./HangmanKeyboard";
+import { HangmanDrawing } from "./components/HangmanDrawing";
+import HangmanWord from "./components/HangmanWord";
+import { Keyboard }from "./components/HangmanKeyboard";
 import Sidebar from "../SideBar/sidebar";
 
 function getWord() {
@@ -74,8 +74,8 @@ function Hangman() {
       <h1 className="hidden">{wordToGuess}</h1>
       
       <div className="text-2xl text-center">
-        {isWinner && "Winner! - Refresh to try again"}
-        {isLoser && "Nice Try - Refresh to try again"}
+        {isWinner && "Winner! - Refresh to try again or Press Enter ⭐"}
+        {isLoser && "Nice Try - Refresh to try again or Press Enter ⭐"}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
