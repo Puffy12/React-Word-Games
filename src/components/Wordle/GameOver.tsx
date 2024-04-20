@@ -1,16 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { AppContext } from "./wordle";
-import { NavLink } from "react-router-dom";
 
 function GameOver() {
   const {
-    board,
-    setBoard,
     currAttempt,
     gameOver,
-    onSelectLetter,
     correctWord,
-    onDelete,
   } = useContext(AppContext);
   return (
     <div className="gameOver">

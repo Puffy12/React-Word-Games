@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "./wordle";
 
 import "./App.css"
@@ -9,7 +9,7 @@ interface Props {
 }
 
 function Letter({ letterPos, attemptVal }: Props) {
-  const { board, setBoard, currAttempt, correctWord, setDisabledLetters } = useContext(AppContext);
+  const { board, currAttempt, correctWord, setDisabledLetters } = useContext(AppContext);
   const letter = board[attemptVal][letterPos];
 
   const correct = correctWord.toUpperCase()[letterPos] === letter;

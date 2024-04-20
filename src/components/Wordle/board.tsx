@@ -1,6 +1,3 @@
-
-import React, { useContext } from "react";
-import { AppContext } from "./wordle";
 import Letter from "./Letter";
 
 function Board() {

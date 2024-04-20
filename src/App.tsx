@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import HomeMenu from "./components/Home/Home";
 import Hangman from "./components/Hangman/Hangman";

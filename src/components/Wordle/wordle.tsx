@@ -5,7 +5,6 @@ import Keyboard from './keyboard';
 import { boardDefault, generateWordSet } from "./words";
 import React, { useState, createContext, useEffect } from "react";
 import GameOver from "./GameOver";
-import Footer from "../SideBar/footer";
 
 
 interface Attempt {

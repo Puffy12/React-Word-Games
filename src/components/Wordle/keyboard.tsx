@@ -1,7 +1,6 @@
-import React, { useCallback, useEffect, useContext } from "react";
+import { useCallback, useEffect, useContext } from "react";
 import { AppContext } from "./wordle";
 import Key from './key';
-import Footer from "../SideBar/footer";
 
 
 function Keyboard() {

@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { faBoxOpen, faW, faFingerprint, faMagnifyingGlass, faMemory, faTerminal, faHouse, faQuestionCircle, faS, faH } from '@fortawesome/free-solid-svg-icons';
+import { faW, faHouse, faQuestionCircle, faS, faH } from '@fortawesome/free-solid-svg-icons'; //faMagnifyingGlass, faMemory, faTerminal, faBoxOpen, faW, faFingerprint,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Sidebar from '../SideBar/sidebar';
 import "./Home.css"; // Import your CSS file

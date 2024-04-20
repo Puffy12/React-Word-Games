@@ -1,12 +1,11 @@
 import { useCallback, useEffect, useState } from "react"
-import { useSignal, useComputed, useSignalEffect, computed } from "@preact/signals-react";
+//import { useSignal, useComputed, useSignalEffect, computed } from "@preact/signals-react";
 import words from "./wordList.json";
 import "../../index.css";
 import { HangmanDrawing } from "./HangmanDrawing";
 import HangmanWord from "./HangmanWord";
 import { Keyboard }from "./HangmanKeyboard";
 import Sidebar from "../SideBar/sidebar";
-import Footer from "../SideBar/footer";
 
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
