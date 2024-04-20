@@ -116,7 +116,7 @@ useEffect(() => {
   };
 
   return (
-    <>
+    <div>
     <Sidebar />
         <div className='App'>
             <nav>
@@ -150,7 +150,7 @@ useEffect(() => {
           </AppContext.Provider>
           
         </div>
-      </>
+      </div>
   )
 }
 

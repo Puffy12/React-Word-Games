@@ -89,7 +89,7 @@ function Hangman() {
           addGuessedLetter={addGuessedLetter} />
       </div>
     </div>
-    <Footer/>
+
     </>
   );
 }
