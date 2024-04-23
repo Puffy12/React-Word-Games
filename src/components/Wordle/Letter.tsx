@@ -22,21 +22,18 @@ function Letter({ letterPos, attemptVal }: Props) {
     
   useEffect(() => {
     if (letter !== "" && !correct && !almost) {
-      console.log(letter);
       setDisabledLetters((prev) => [...prev, letter]);
     }
   }, [currAttempt.attempt]);
 
   useEffect(() => {
     if (letter !== "" && almost) {
-      console.log(letter);
       setAlmostLetters((prev) => [...prev, letter]);
     }
   }, [letter, correct, almost, setAlmostLetters]);
 
   useEffect(() => {
     if (letter !== "" && correct) {
-      console.log(letter);
       setCorrectLetters((prev) => [...prev, letter]);
       // Remove the letter from the almost letters
       if (almost) {
