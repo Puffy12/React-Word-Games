@@ -9,7 +9,7 @@ interface Props {
 }
 
 function Letter({ letterPos, attemptVal }: Props) {
-  const { board, currAttempt, correctWord, setDisabledLetters } = useContext(AppContext);
+  const { board, currAttempt, correctWord, setDisabledLetters, setAlmostLetters, setCorrectLetters } = useContext(AppContext);
   const letter = board[attemptVal][letterPos];
 
   const correct = correctWord.toUpperCase()[letterPos] === letter;
@@ -26,6 +26,24 @@ function Letter({ letterPos, attemptVal }: Props) {
       setDisabledLetters((prev) => [...prev, letter]);
     }
   }, [currAttempt.attempt]);
+
+  useEffect(() => {
+    if (letter !== "" && almost) {
+      console.log(letter);
+      setAlmostLetters((prev) => [...prev, letter]);
+    }
+  }, [letter, correct, almost, setAlmostLetters]);
+
+  useEffect(() => {
+    if (letter !== "" && correct) {
+      console.log(letter);
+      setCorrectLetters((prev) => [...prev, letter]);
+      // Remove the letter from the almost letters
+      if (almost) {
+        setAlmostLetters((prev) => prev.filter(almostLetter => almostLetter !== letter));
+      }
+    }
+  }, [letter, correct, almost, setCorrectLetters, setAlmostLetters]);
 
   return (
     <div className="letter" id={`${letterState}`}>

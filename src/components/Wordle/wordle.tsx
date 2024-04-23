@@ -28,6 +28,10 @@ interface AppContextType {
   setGameOver: React.Dispatch<
     React.SetStateAction<{ gameOver: boolean; guessedWord: boolean }>
   >;
+  almostLetters: string[];
+  setAlmostLetters: React.Dispatch<React.SetStateAction<string[]>>;
+  correctLetters: string[];
+  setCorrectLetters: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
 export const AppContext = createContext<AppContextType>({
@@ -44,6 +48,10 @@ export const AppContext = createContext<AppContextType>({
   setDisabledLetters: () => {},
   gameOver: { gameOver: false, guessedWord: false },
   setGameOver: () => {},
+  almostLetters: [],
+  setAlmostLetters: () => {},
+  correctLetters: [],
+  setCorrectLetters: () => {},
 });
 
 function wordle() {
@@ -54,6 +62,9 @@ function wordle() {
   const [wordSet, setWordSet] = useState<Set<string>>(new Set());
 
   const [disabledLetters, setDisabledLetters] = useState<string[]>([]);
+  const [almostLetters, setAlmostLetters] = useState<string[]>([]);
+  const [correctLetters, setCorrectLetters] = useState<string[]>([]);
+
 
   const [gameOver, setGameOver] = useState({
     gameOver: false,
@@ -140,6 +151,10 @@ useEffect(() => {
                 setDisabledLetters,
                 gameOver,
                 setGameOver,
+                almostLetters,
+                setAlmostLetters,
+                correctLetters,
+                setCorrectLetters,
               }}
             >            
             <div className="game">

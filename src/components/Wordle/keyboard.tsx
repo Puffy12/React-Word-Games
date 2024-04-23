@@ -8,7 +8,7 @@ function Keyboard() {
   const keys2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
-  const {currAttempt, onSelectLetter, onEnter, onDelete, disabledLetters} = useContext(AppContext); 
+  const {currAttempt, onSelectLetter, onEnter, onDelete, disabledLetters, almostLetters, correctLetters} = useContext(AppContext); 
 
   const handleKeyboard = useCallback((event: { key: string; }) => {
       //if (gameOver.gameOver) return;
@@ -52,20 +52,20 @@ function Keyboard() {
     <div className="keyboard" onKeyDown={handleKeyboard}>
       <div className="line1">
         {keys1.map((key) => {
-          return <Key key={`line1-${key}`} keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} />;
+          return <Key key={`line1-${key}`} keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} almost={almostLetters.includes(key)} correct={correctLetters.includes(key)}  />;
         })}
       </div>
       <div className="line2">
         {keys2.map((key) => {
-          return <Key key={`line2-${key}`} keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} />;
+          return <Key key={`line2-${key}`} keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} almost={almostLetters.includes(key)} correct={correctLetters.includes(key)}  />;
         })}
       </div>
       <div className="line3">
-        <Key key={`line3-enter`} keyVal={"ENTER"} bigKey disabled={true} />
+        <Key key={`line3-enter`} keyVal={"ENTER"} bigKey disabled={true} almost={false} correct={false}/>
         {keys3.map((key) => {
-          return <Key key={`line3-${key}`} keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} />;
+          return <Key key={`line3-${key}`} keyVal={key} disabled={disabledLetters.includes(key)} bigKey={false} almost={almostLetters.includes(key)} correct={correctLetters.includes(key)}  />;
         })}
-        <Key key={`line3-delete`} keyVal={"DELETE"} bigKey disabled={false} />
+        <Key key={`line3-delete`} keyVal={"DELETE"} bigKey disabled={false} almost={false} correct={false}/>
       </div>
     </div>
 
