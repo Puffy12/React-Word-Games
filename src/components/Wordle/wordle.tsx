@@ -5,7 +5,7 @@ import Keyboard from './keyboard';
 import { boardDefault, generateWordSet } from "./words";
 import React, { useState, createContext, useEffect } from "react";
 import GameOver from "./GameOver";
-
+import toast, { Toaster } from "react-hot-toast";
 
 interface Attempt {
   attempt: number;
@@ -92,13 +92,13 @@ useEffect(() => {
     if (wordSet.has(currWord.toLowerCase())) {
       setcurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
     } else {
-      alert("Word not found");
+      toast.error("Word Not Found");
       return 
     }
 
     if (currWord.toLowerCase() === correctWord) {
       setGameOver({ gameOver: true, guessedWord: true });
-      //alert("won")
+      toast.success("You Won");
       return;
     }
 
@@ -136,6 +136,7 @@ useEffect(() => {
                 </h1>
                 
             </nav>
+            <Toaster/>
             <AppContext.Provider
               value={{
                 board,

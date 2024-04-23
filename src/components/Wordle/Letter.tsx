@@ -30,7 +30,7 @@ function Letter({ letterPos, attemptVal }: Props) {
     if (letter !== "" && almost) {
       setAlmostLetters((prev) => [...prev, letter]);
     }
-  }, [letter, correct, almost, setAlmostLetters]);
+  }, [currAttempt.attempt]);
 
   useEffect(() => {
     if (letter !== "" && correct) {
@@ -40,7 +40,7 @@ function Letter({ letterPos, attemptVal }: Props) {
         setAlmostLetters((prev) => prev.filter(almostLetter => almostLetter !== letter));
       }
     }
-  }, [letter, correct, almost, setCorrectLetters, setAlmostLetters]);
+  }, [currAttempt.attempt]);
 
   return (
     <div className="letter" id={`${letterState}`}>
