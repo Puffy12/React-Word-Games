@@ -4,11 +4,9 @@ import Crossword, {
   CrosswordGrid,
   CrosswordProps,
   CrosswordProvider,
-  CrosswordProviderImperative,
-  CrosswordProviderProps,
   DirectionClues,
   useIpuz,
-} from '@jaredreisinger/react-crossword';
+} from '@jaredreisinger/react-crossword'; //  CrosswordProviderImperative,CrosswordProviderProps,
 import styled from 'styled-components';
 import Sidebar from '../SideBar/sidebar';
 
@@ -313,7 +311,7 @@ const IpuzWrapper = styled(CrosswordProviderWrapper)`
     width: 25em;
   }
 `;
-
+/*
 const Messages = styled.pre`
   flex: auto;
   background-color: rgb(230, 230, 230);
@@ -321,6 +319,7 @@ const Messages = styled.pre`
   padding: 1em;
   overflow: auto;
 `;
+*/
 
 // in order to make this a more-comprehensive example, and to vet Crossword's
 // features, we actually implement a fair amount...
@@ -328,19 +327,19 @@ const Messages = styled.pre`
 function crossword() {
   const crossword = useRef<CrosswordImperative>(null);
 
-  const focus = useCallback<React.MouseEventHandler>((event) => {
+  const focus = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.focus();
   }, []);
 
-  const fillOneCell = useCallback<React.MouseEventHandler>((event) => {
+  const fillOneCell = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.setGuess(0, 2, 'O');
   }, []);
 
-  const fillAllAnswers = useCallback<React.MouseEventHandler>((event) => {
+  const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
   }, []);
 
-  const reset = useCallback<React.MouseEventHandler>((event) => {
+  const reset = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.reset();
   }, []);
 
@@ -350,7 +349,7 @@ function crossword() {
   const messagesRef = useRef<HTMLPreElement>(null);
   const [messages, setMessages] = useState<string[]>([]);
 
-  const clearMessages = useCallback<React.MouseEventHandler>((event) => {
+  const clearMessages = useCallback<React.MouseEventHandler>(() => {
     setMessages([]);
   }, []);
 
@@ -411,44 +410,14 @@ function crossword() {
     [addMessage]
   );
 
-  // all the same functionality, but for the decomposed CrosswordProvider
-  const crosswordProvider = useRef<CrosswordProviderImperative>(null);
 
-  const focusProvider = useCallback<React.MouseEventHandler>((event) => {
-    crosswordProvider.current?.focus();
-  }, []);
-
-  const fillOneCellProvider = useCallback<React.MouseEventHandler>((event) => {
-    crosswordProvider.current?.setGuess(0, 2, 'O');
-  }, []);
-
-  const fillAllAnswersProvider = useCallback<React.MouseEventHandler>(
-    (event) => {
-      crosswordProvider.current?.fillAllAnswers();
-    },
-    []
-  );
-
-  const resetProvider = useCallback<React.MouseEventHandler>((event) => {
-    crosswordProvider.current?.reset();
-  }, []);
 
   // We don't really *do* anything with callbacks from the Crossword component,
   // but we can at least show that they are happening.  You would want to do
   // something more interesting than simply collecting them as messages.
   const messagesProviderRef = useRef<HTMLPreElement>(null);
-  const [messagesProvider, setMessagesProvider] = useState<string[]>([]);
+  const [messagesProvider ] = useState<string[]>([]); //setMessagesProvider
 
-  const clearMessagesProvider = useCallback<React.MouseEventHandler>(
-    (event) => {
-      setMessagesProvider([]);
-    },
-    []
-  );
-
-  const addMessageProvider = useCallback((message: string) => {
-    setMessagesProvider((m) => m.concat(`${message}\n`));
-  }, []);
 
   useEffect(() => {
     if (!messagesProviderRef.current) {
@@ -458,54 +427,6 @@ function crossword() {
     messagesProviderRef.current.scrollTo(0, scrollHeight);
   }, [messagesProvider]);
 
-  // onCorrect is called with the direction, number, and the correct answer.
-  const onCorrectProvider = useCallback<
-    Required<CrosswordProviderProps>['onCorrect']
-  >(
-    (direction, number, answer) => {
-      addMessageProvider(`onCorrect: "${direction}", "${number}", "${answer}"`);
-    },
-    [addMessageProvider]
-  );
-
-  // onLoadedCorrect is called with an array of the already-correct answers,
-  // each element itself is an array with the same values as in onCorrect: the
-  // direction, number, and the correct answer.
-  const onLoadedCorrectProvider = useCallback<
-    Required<CrosswordProviderProps>['onLoadedCorrect']
-  >(
-    (answers) => {
-      addMessageProvider(
-        `onLoadedCorrect:\n${answers
-          .map(
-            ([direction, number, answer]) =>
-              `    - "${direction}", "${number}", "${answer}"`
-          )
-          .join('\n')}`
-      );
-    },
-    [addMessageProvider]
-  );
-
-  // onCrosswordCorrect is called with a truthy/falsy value.
-  const onCrosswordCorrectProvider = useCallback<
-    Required<CrosswordProviderProps>['onCrosswordCorrect']
-  >(
-    (isCorrect) => {
-      addMessageProvider(`onCrosswordCorrect: ${JSON.stringify(isCorrect)}`);
-    },
-    [addMessageProvider]
-  );
-
-  // onCellChange is called with the row, column, and character.
-  const onCellChangeProvider = useCallback<
-    Required<CrosswordProviderProps>['onCellChange']
-  >(
-    (row, col, char) => {
-      addMessageProvider(`onCellChange: "${row}", "${col}", "${char}"`);
-    },
-    [addMessageProvider]
-  );
 
   const fromIpuz = useIpuz(ipuzData);
 
@@ -582,3 +503,89 @@ function crossword() {
 }
 
 export default crossword;
+
+/*
+
+  // all the same functionality, but for the decomposed CrosswordProvider
+  const crosswordProvider = useRef<CrosswordProviderImperative>(null);
+
+  const focusProvider = useCallback<React.MouseEventHandler>((event) => {
+    crosswordProvider.current?.focus();
+  }, []);
+
+  const fillOneCellProvider = useCallback<React.MouseEventHandler>((event) => {
+    crosswordProvider.current?.setGuess(0, 2, 'O');
+  }, []);
+
+  const fillAllAnswersProvider = useCallback<React.MouseEventHandler>(
+    (event) => {
+      crosswordProvider.current?.fillAllAnswers();
+    },
+    []
+  );
+
+  const resetProvider = useCallback<React.MouseEventHandler>((event) => {
+    crosswordProvider.current?.reset();
+  }, []);
+
+  const clearMessagesProvider = useCallback<React.MouseEventHandler>(
+    (event) => {
+      setMessagesProvider([]);
+    },
+    []
+  );
+
+  const addMessageProvider = useCallback((message: string) => {
+    setMessagesProvider((m) => m.concat(`${message}\n`));
+  }, []);
+
+
+  // onCorrect is called with the direction, number, and the correct answer.
+  const onCorrectProvider = useCallback<
+    Required<CrosswordProviderProps>['onCorrect']
+  >(
+    (direction, number, answer) => {
+      addMessageProvider(`onCorrect: "${direction}", "${number}", "${answer}"`);
+    },
+    [addMessageProvider]
+  );
+
+  // onLoadedCorrect is called with an array of the already-correct answers,
+  // each element itself is an array with the same values as in onCorrect: the
+  // direction, number, and the correct answer.
+  const onLoadedCorrectProvider = useCallback<
+    Required<CrosswordProviderProps>['onLoadedCorrect']
+  >(
+    (answers) => {
+      addMessageProvider(
+        `onLoadedCorrect:\n${answers
+          .map(
+            ([direction, number, answer]) =>
+              `    - "${direction}", "${number}", "${answer}"`
+          )
+          .join('\n')}`
+      );
+    },
+    [addMessageProvider]
+  );
+
+  // onCrosswordCorrect is called with a truthy/falsy value.
+  const onCrosswordCorrectProvider = useCallback<
+    Required<CrosswordProviderProps>['onCrosswordCorrect']
+  >(
+    (isCorrect) => {
+      addMessageProvider(`onCrosswordCorrect: ${JSON.stringify(isCorrect)}`);
+    },
+    [addMessageProvider]
+  );
+
+  // onCellChange is called with the row, column, and character.
+  const onCellChangeProvider = useCallback<
+    Required<CrosswordProviderProps>['onCellChange']
+  >(
+    (row, col, char) => {
+      addMessageProvider(`onCellChange: "${row}", "${col}", "${char}"`);
+    },
+    [addMessageProvider]
+  );
+*/
