@@ -1,10 +1,18 @@
 import Footer from '../SideBar/footer'
 import Sidebar from '../SideBar/sidebar'
 import { BsArrowRight } from "react-icons/bs";
-
+import portfolio from "@/public/portfolio.png"
+import { FaArrowCircleDown } from 'react-icons/fa';
 
 function about() {
-  
+  function scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+    
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
 <div className='flex flex-col min-h-screen bg-gray-600 text-gray-300'>
   <Sidebar />
@@ -45,9 +53,10 @@ function about() {
       </p>
 
     </section>
-    <div className="bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block dark:bg-opacity-20"></div>
-
-    <div className="min-h-screen flex flex-col lg:flex-row items-center p-8 sm:p-16 md:p-24 justify-center">
+    <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mb-10" onClick={() => scrollToElement("event")}>
+      <FaArrowCircleDown />
+    </div>
+    <div className="min-h-screen flex flex-col lg:flex-row items-center p-8 sm:p-16 md:p-24 justify-center" id='event'>
       {/* Event Showcase  */}
       <div data-theme="teal" className="mx-auto max-w-6xl">
         <h2 className="sr-only">Featured case study</h2>
@@ -61,7 +70,15 @@ function about() {
                   <article className="h-full">
                     <div className="h-full">
                       <div className="relative cursor-pointer hover:brightness-110">
-                        
+                      <img
+                        src="/portfolio.png"
+                        alt="Description of the image"
+                        className="w-full rounded-lg h-1/2"
+                      />
+                      
+                      <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
+
+                      <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
                       </div>
                       
                     </div>
@@ -75,32 +92,31 @@ function about() {
               <div>
                 <div className="leading-relaxed">
                   <h2 className="leading-tight text-4xl font-bold">
-                    Portfolio
+                    My Personal Portfolio
                   </h2>
                   <p className="mt-4">
                     A new portfolio updated using the mostup to date and modern design standards and methods.
                   </p>
                   <p className="mt-4">
-                    It will cost $16 to be an official student member
-                    of IEEE. You can join by clicking the link&nbsp;
+                    Here I post all of my projects and and showcase my skills of full stack web Development, you can find even more at&nbsp;
                     <a
                       className="group inline-block px-3 py-1 bg-black text-yellow rounded-full border border-black hover:border-gray-950 hover:scale-110 transition duration-300"
-                      href="https://michael-mehrdadi-personal-portfolio.vercel.app/"
+                      href="https://github.com/Puffy12"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Here
+                      My GitHub
                     </a>
-                    . &nbsp; Once a member, be sure to visit our
-                    events page for more information on upcoming
-                    opportunities.
+                    . &nbsp; Feel free to check out the best of my work at my porfolio linked down below. 
                   </p>
                   <p>
                     <a
-                      href="/events"
+                      href="https://michael-mehrdadi-personal-portfolio.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mt-2 group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                     >
-                      Explore Events{" "}
+                      Personal Portfolio{" "}
                       <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                     </a>
                   </p>
