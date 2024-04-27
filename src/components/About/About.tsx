@@ -1,8 +1,10 @@
 import Footer from '../SideBar/footer'
 import Sidebar from '../SideBar/sidebar'
 import { BsArrowRight } from "react-icons/bs";
-import portfolio from "@/public/portfolio.png"
 import { FaArrowCircleDown } from 'react-icons/fa';
+import SubmitBtn from './submit-btn';
+//import toast from 'react-hot-toast';
+//import { sendEmail } from './sendEmail';
 
 function about() {
   function scrollToElement(elementId: string) {
@@ -127,14 +129,54 @@ function about() {
         </section>
       </div>
     </div>
-
-    <div className="bg-blue-600 my-24 h-1 w-1/2 rounded-full  sm:block "></div>
-
   </div>
 
+  <section className="max-w-[50rem] mb-20 sm:mb-32 w-[min(100%,38rem)] text-center mt-28 mx-auto">
+      <h2 className="text-3xl font-medium capitalize mb-8 text-center">
+        Contact me
+      </h2>
+
+      <p className="text-gray-700 -mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
+        Please contact me directly at{" "}
+        <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
+          michaelmehrdadi123@gmail.com
+        </a>{" "} <br></br>
+        or through this form.
+      </p>
+
+      <div
+        style={{ cursor: "pointer", display: "flex", justifyContent: "center"}}
+      >
+        <div className="mt-6 flex justify-center mb-6 w-14 h-14 text-3xl cursor-pointer z-10 text-black dark:text-white">
+          <FaArrowCircleDown />
+        </div>
+      </div>
+      <form
+        className="mt-10 flex flex-col dark:text-black"
+      >
+        <input
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          name="senderEmail"
+          type="email"
+          required
+          maxLength={500}
+          placeholder="Your email"
+        />
+        <textarea
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          name="message"
+          placeholder="Your message"
+          required
+          maxLength={5000}
+        />
+        <SubmitBtn />
+      </form>
+    </section>
+    <div className="bg-blue-600 my-24 h-1 w-1/2 rounded-full  sm:block "></div>
   <Footer />
 </div>
   )
 }
 
 export default about
+
