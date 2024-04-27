@@ -171,8 +171,9 @@ function about() {
         />
         <SubmitBtn />
       </form>
+      <div className="bg-blue-600 my-24 h-1  rounded-full  sm:block "></div>
+
     </section>
-    <div className="bg-blue-600 my-24 h-1 w-1/2 rounded-full  sm:block "></div>
   <Footer />
 </div>
   )
