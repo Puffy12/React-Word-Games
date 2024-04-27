@@ -70,7 +70,7 @@ function Hangman() {
 
   return (
     <><Sidebar />
-    <div className="max-w-800 flex flex-col gap-8 mx-auto items-center bg-gray-700">
+    <div className="max-w-800 flex flex-col gap-8 mx-auto items-center bg-gray-500">
       <h1 className="hidden">{wordToGuess}</h1>
       
       <div className="text-2xl text-center">
