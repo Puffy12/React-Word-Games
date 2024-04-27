@@ -1,10 +1,10 @@
 import "./App.css";
 import Sidebar from '../SideBar/sidebar';
-import Board from './board';
-import Keyboard from './keyboard';
-import { boardDefault, generateWordSet } from "./words";
+import Board from './components/board';
+import Keyboard from './components/keyboard';
+import { boardDefault, generateWordSet } from "./components/words";
 import React, { useState, createContext, useEffect } from "react";
-import GameOver from "./GameOver";
+import GameOver from "./components/GameOver";
 import toast, { Toaster } from "react-hot-toast";
 
 interface Attempt {

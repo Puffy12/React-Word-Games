@@ -11,9 +11,10 @@ const HomeMenu = () => {
       <Sidebar/>
       <div className="App">
         <div>
-          <div className="header-container">
-            <h1>Word Games</h1>
-          </div>
+        <div className="header-container text-center flex flex-col items-center">
+          <h1 className="font-bold text-4xl mb-2">Word Games</h1>
+          <h2 className="text-blue-300 mt-4">Wordle + Crossword + Hangman</h2>
+        </div>
           <div className="challenge-container challenge-grid">
             <div className="challenge-row top-row">
               <Link className="challenge-item " to={"/wordle"}>

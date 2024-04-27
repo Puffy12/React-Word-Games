@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { AppContext } from "./wordle";
+import { AppContext } from "../wordle";
 
 
 interface KeyProps {

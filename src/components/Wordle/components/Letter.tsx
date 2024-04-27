@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
-import { AppContext } from "./wordle";
+import { AppContext } from "../wordle";
 
-import "./App.css"
+import "../App.css"
 
 interface Props {
   letterPos: number;

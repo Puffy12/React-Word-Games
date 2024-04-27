@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useContext } from "react";
-import { AppContext } from "./wordle";
+import { AppContext } from "../wordle";
 import Key from './key';
 
 
