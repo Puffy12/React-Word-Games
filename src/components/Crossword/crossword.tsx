@@ -9,7 +9,8 @@ import Crossword, {
 } from '@jaredreisinger/react-crossword'; //  CrosswordProviderImperative,CrosswordProviderProps,
 import Sidebar from '../SideBar/sidebar';
 import { data, Page, Header, Commands, Command, CrosswordMessageBlock, CrosswordWrapper, ipuzData, IpuzWrapper} from './crossword-data';
-
+import "./app.css";
+import { FaArrowCircleDown } from 'react-icons/fa';
 
 
 // in order to make this a more-comprehensive example, and to vet Crossword's
@@ -101,6 +102,13 @@ function crossword() {
     [addMessage]
   );
 
+  function scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+    
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
 
   // We don't really *do* anything with callbacks from the Crossword component,
@@ -141,6 +149,10 @@ function crossword() {
           Home
         </button>
       </a>
+
+      <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mt-20" onClick={() => scrollToElement("crossword")}>
+        <FaArrowCircleDown />
+      </div>
     </div>
     <Page className='hidden md:hidden lg:block xl:block 2xl:block '>
       <div  className='text-center'>
@@ -151,7 +163,6 @@ function crossword() {
           component. It exercises most of the functionality, so that you can see
           how to do so.
         </p>
-
         <Commands>
           <Command onClick={focus}>Focus</Command>
           <Command onClick={fillOneCell}>Fill the first letter of 2-down</Command>
@@ -174,14 +185,15 @@ function crossword() {
           </CrosswordWrapper>
         </CrosswordMessageBlock>
 
+        <IpuzWrapper id='crossword'>
+          <CrosswordProvider data={fromIpuz!} storageKey="ipuz-example">
+            <DirectionClues direction="across" />
+            <CrosswordGrid />
+            <DirectionClues direction="down" />
+          </CrosswordProvider>
+        </IpuzWrapper>
       </div>
-      <IpuzWrapper >
-        <CrosswordProvider data={fromIpuz!} storageKey="ipuz-example">
-          <DirectionClues direction="across" />
-          <CrosswordGrid />
-          <DirectionClues direction="down" />
-        </CrosswordProvider>
-      </IpuzWrapper>
+
 
       {/* <CrosswordMessageBlock> */}
       {/* <CrosswordWrapper>

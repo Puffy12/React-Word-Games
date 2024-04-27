@@ -55,7 +55,7 @@ function about() {
       </p>
 
     </section>
-    <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mb-10" onClick={() => scrollToElement("event")}>
+    <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mb-10" onClick={() => scrollToElement("event")}>
       <FaArrowCircleDown />
     </div>
     <div className="min-h-screen flex flex-col lg:flex-row items-center p-8 sm:p-16 md:p-24 justify-center" id='event'>
