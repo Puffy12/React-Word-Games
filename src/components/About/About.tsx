@@ -3,10 +3,19 @@ import Sidebar from '../SideBar/sidebar'
 import { BsArrowRight } from "react-icons/bs";
 import { FaArrowCircleDown } from 'react-icons/fa';
 import SubmitBtn from './submit-btn';
-//import toast from 'react-hot-toast';
-//import { sendEmail } from './sendEmail';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 
 function about() {
+
+  const service_id = "service_04wp4zc"; //SERVICE_ID
+  const template_id = "template_d042nic"; //TEMPLATE_ID
+  const user_id = "9C0L-gHDybtgOIhxU" //USER_ID
+  const form = useRef<HTMLFormElement>(null);
+
+
+
   function scrollToElement(elementId: string) {
     const element = document.getElementById(elementId);
     
@@ -15,9 +24,29 @@ function about() {
     }
   }
 
+  const sendEmail = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+  
+    if (form.current) {
+      emailjs.sendForm(service_id, template_id, form.current, user_id).then(
+        result => {
+          console.log(result.text);
+          toast.success('Email sent successfully!');
+        },
+        error => {
+          toast.error(error);
+        }
+      );
+    } else {
+      console.error('Form reference is null');
+    }
+  };
+  
+
   return (
 <div className='flex flex-col min-h-screen bg-gray-600 text-gray-300'>
   <Sidebar />
+  <Toaster />
   <div className='flex flex-col items-center justify-center flex-grow'>
     <h1 className="capitalize font-bold mt-4 px-4 text-3xl sm:text-4xl leading-[1.5]">
       About Me
@@ -153,6 +182,7 @@ function about() {
       </div>
       <form
         className="mt-10 flex flex-col dark:text-black"
+        onSubmit={sendEmail} ref={form}
       >
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -162,6 +192,7 @@ function about() {
           maxLength={500}
           placeholder="Your email"
         />
+        
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
@@ -169,6 +200,7 @@ function about() {
           required
           maxLength={5000}
         />
+        
         <SubmitBtn />
       </form>
       <div className="bg-blue-600 my-24 h-1  rounded-full  sm:block "></div>
