@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome",
     "@jaredreisinger/react-crossword": "^5.2.0",
     "@preact/signals-react": "^2.0.1",
+    "dotenv": "^16.4.5",
     "install": "^0.13.0",
     "npm": "^10.6.0",
     "react": "^18.2.0",
@@ -25,6 +26,7 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.5",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
