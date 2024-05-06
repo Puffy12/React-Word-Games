@@ -3,10 +3,37 @@ import Sidebar from '../SideBar/sidebar'
 import { BsArrowRight } from "react-icons/bs";
 import { FaArrowCircleDown } from 'react-icons/fa';
 import SubmitBtn from './submit-btn';
-//import toast from 'react-hot-toast';
-//import { sendEmail } from './sendEmail';
+import toast, { Renderable, Toast, Toaster, ValueFunction } from 'react-hot-toast';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser'
+
 
 function about() {
+  const form = useRef<HTMLFormElement>(null); // Initialize the ref with null
+
+  const sendEmail = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+  
+    // Ensure service_id, template_id, and user_id are properly initialized
+    const service_id: string = process.env.SERVICE_ID || '';
+    const template_id: string = process.env.TEMPLATE_ID || ''; 
+    const user_id: string = process.env.USER_ID || ''; 
+  
+    // Ensure form is not null before calling sendForm
+    if (form.current) {
+      emailjs.sendForm(service_id, template_id, form.current, user_id).then(
+        (result: { text: any }) => {
+          console.log(result.text);
+          toast.success('Email sent successfully!');
+        },
+        (error: Renderable | ValueFunction<Renderable, Toast>) => {
+          toast.error(error);
+          return;
+        }
+      );
+    }
+  };
+
   function scrollToElement(elementId: string) {
     const element = document.getElementById(elementId);
     
@@ -18,6 +45,7 @@ function about() {
   return (
 <div className='flex flex-col min-h-screen bg-gray-600 text-gray-300'>
   <Sidebar />
+  <Toaster position="top-right" />
   <div className='flex flex-col items-center justify-center flex-grow'>
     <h1 className="capitalize font-bold mt-4 px-4 text-3xl sm:text-4xl leading-[1.5]">
       About Me
@@ -152,8 +180,9 @@ function about() {
         </div>
       </div>
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col dark:text-black" onSubmit={sendEmail} ref={form}
       >
+        <input type="hidden" name="from_name" value="React Word Games" />
         <input
           style={{
             cursor: "pointer",

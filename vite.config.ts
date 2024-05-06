@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
 // Extract environment variables
-const { RESEND_API_KEY } = process.env;
+const { SERVICE_ID, TEMPLATE_ID, USER_ID } = process.env;
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,7 +15,9 @@ export default defineConfig({
     replace({
       preventAssignment: true,
       values: {
-        'process.env.RESEND_API_KEY': JSON.stringify(RESEND_API_KEY),
+        'process.env.SERVICE_ID': JSON.stringify(SERVICE_ID),
+        'process.env.TEMPLATE_ID': JSON.stringify(TEMPLATE_ID),
+        'process.env.USER_ID': JSON.stringify(USER_ID),
       },
     }),
   ],
