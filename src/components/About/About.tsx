@@ -184,7 +184,8 @@ function about() {
         className="mt-10 flex flex-col dark:text-black"
         onSubmit={sendEmail} ref={form}
       >
-        <input type="hidden" name="from_name" value="React Word Games" />
+        <input type="hidden" name="from_name" value="React Word Games" /> 
+        <input type="hidden" name="to_name" value="React Word Games" />
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"

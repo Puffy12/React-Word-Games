@@ -4,6 +4,7 @@ import Hangman from "./components/Hangman/Hangman";
 import Wordle from "./components/Wordle/wordle"; 
 import About from "./components/About/About";
 import Crossword from "./components/Crossword/crossword"; 
+import MiniCrossword from "./components/MiniCrossword/minicrossword";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/wordle" element={<Wordle />} />
         <Route path="/about" element={<About />} />
         <Route path="/crossword" element={<Crossword />} />
+        <Route path="/minicrossword" element={<MiniCrossword />} />
+
       </Routes>
     </BrowserRouter>
   );
