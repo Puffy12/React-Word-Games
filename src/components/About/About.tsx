@@ -155,7 +155,20 @@ function about() {
         className="mt-10 flex flex-col dark:text-black"
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          style={{
+            cursor: "pointer",
+            display: "flex",
+            justifyContent: "center",
+            height: "3.5rem",
+            padding: "0.75rem",
+            borderRadius: "0.375rem",
+            borderWidth: "1px",
+            borderColor: "black",
+            backgroundColor: "white",
+            opacity: "0.8",
+            transition: "all",
+            outline: "none",
+          }}
           name="senderEmail"
           type="email"
           required
