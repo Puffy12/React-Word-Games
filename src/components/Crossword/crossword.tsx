@@ -138,7 +138,8 @@ function crossword() {
           Welcome to the Crossword Game
         </h1>
         <p className="text-lg sm:text-xl text-gray-300">
-          This game is currently in development. This game is only for Larger Screens.  
+          The developmenmt of this app is ongoing but enjoy the playable version below by clicking on the arrow. 
+          Keep in mind this game is only for Larger Screens.  
         </p>
         <p className="text-lg sm:text-xl text-gray-300">
           Michael Mehrdadi ❤️
