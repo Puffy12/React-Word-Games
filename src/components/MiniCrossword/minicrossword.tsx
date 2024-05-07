@@ -46,13 +46,17 @@ function MiniCrossword() {
           <FaArrowCircleDown />
         </div>
 
-        <div style={{ width: '30em', display: 'flex' }} >
-          <CrosswordProvider data={data} storageKey="ipuz-example">
-            <DirectionClues direction="across" />
-            <CrosswordGrid />
-            <DirectionClues direction="down" />
-          </CrosswordProvider>
-        </div>
+        <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <CrosswordProvider data={data} storageKey="ipuz-example">
+    <div style={{ marginBottom: '1em' }}>
+      <CrosswordGrid  />
+      <DirectionClues direction="across" />
+      <br/>
+      <DirectionClues direction="down" />
+    </div>
+  </CrosswordProvider>
+</div>
+
       </div>
     </div>
   );
