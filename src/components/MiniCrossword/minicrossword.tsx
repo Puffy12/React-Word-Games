@@ -1,24 +1,8 @@
 import { FaArrowCircleDown } from 'react-icons/fa'
 import Sidebar from '../SideBar/sidebar'
 import { CrosswordGrid, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
+import { data } from './miniData';
 
-
-const data = {
-  across: {
-    1: { clue: 'Part of an apple … or an Apple computer.   ', answer: 'XXXX', row: 0, col: 1 },
-    5: { clue: 'Path for a car   ', answer: 'XXXX', row: 1, col: 1 },
-    6: { clue: 'Shy and easily frightened  ', answer: 'XXXXX', row: 2, col: 0 },
-    7: { clue: 'Insinuate   ', answer: 'XXXXX', row: 3, col: 0 },
-    8: { clue: '"Its ... just OK"   ', answer: 'XXX', row: 4, col: 0 },
-  },
-  down: {
-    1: { clue: 'True ___ (podcast genre) ', answer: 'XXXXX', row: 0, col: 1 },
-    2: { clue: 'Extra energy   ', answer: 'XXXXX', row: 0, col: 2 },
-    3: { clue: 'Path for a train that aptly crosses 5-Across   ', answer: 'XXXX', row: 0, col: 3 },
-    4: { clue: 'Whirlpool of water   ', answer: 'XXXX', row: 0, col: 4 },
-    6: { clue: 'Tiny ___, little boy in "A Christmas Carol"   ', answer: 'XXXX', row: 0, col: 4 },
-  },
-} as const;
 
 function MiniCrossword() {
   return (
@@ -46,16 +30,17 @@ function MiniCrossword() {
           <FaArrowCircleDown />
         </div>
 
-        <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <CrosswordProvider data={data} storageKey="ipuz-example">
-    <div style={{ marginBottom: '1em' }}>
-      <CrosswordGrid  />
-      <DirectionClues direction="across" />
-      <br/>
-      <DirectionClues direction="down" />
-    </div>
-  </CrosswordProvider>
-</div>
+        <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
+          <CrosswordProvider data={data} storageKey="ipuz-example">
+            <div style={{ marginBottom: '1em' }}>
+              <CrosswordGrid  />
+              <br/>
+              <DirectionClues direction="across" />
+              <br/>
+              <DirectionClues direction="down" />
+            </div>
+          </CrosswordProvider>
+        </div>
 
       </div>
     </div>
