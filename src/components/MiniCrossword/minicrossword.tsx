@@ -3,6 +3,13 @@ import Sidebar from '../SideBar/sidebar'
 import { CrosswordGrid, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
 import { data } from './miniData';
 
+function scrollToElement(elementId: string) {
+  const element = document.getElementById(elementId);
+  
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 function MiniCrossword() {
   return (
@@ -26,13 +33,13 @@ function MiniCrossword() {
           </button>
         </a>
 
-        <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mt-20" >
+        <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mt-20" onClick={() => scrollToElement("minicrossword")}>
           <FaArrowCircleDown />
         </div>
 
         <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
           <CrosswordProvider data={data} storageKey="ipuz-example">
-            <div style={{ marginBottom: '1em' }}>
+            <div style={{ marginBottom: '1em' }} id='minicrossword'>
               <CrosswordGrid  />
               <br/>
               <DirectionClues direction="across" />
