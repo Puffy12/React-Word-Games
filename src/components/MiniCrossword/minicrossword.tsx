@@ -2,7 +2,7 @@ import { FaArrowCircleDown } from 'react-icons/fa'
 import Sidebar from '../SideBar/sidebar'
 import { CrosswordGrid, CrosswordImperative, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
 import { Command, Commands } from '../Crossword/crossword-data';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 //import { data } from './miniData';
 
 function scrollToElement(elementId: string) {
@@ -54,6 +54,14 @@ function MiniCrossword() {
   const clearMessages = useCallback<React.MouseEventHandler>(() => {
     setMessages([]);
   }, []);
+
+  useEffect(() => {
+    if (!messagesRef.current) {
+      return;
+    }
+    const { scrollHeight } = messagesRef.current;
+    messagesRef.current.scrollTo(0, scrollHeight);
+  }, [messages]);
   
   return (
     <div className='bg-stone-600 text-white'>
