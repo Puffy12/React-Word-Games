@@ -3,7 +3,7 @@ import Sidebar from '../SideBar/sidebar'
 import { CrosswordGrid, CrosswordImperative, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
 import { Command, Commands } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
-//import { data } from './miniData';
+import { data, data2 } from './miniData';
 
 function scrollToElement(elementId: string) {
   const element = document.getElementById(elementId);
@@ -13,22 +13,6 @@ function scrollToElement(elementId: string) {
   }
 }
 
-export const data = {
-  across: {
-    1: { clue: 'Hybrid striped animal whose dad is a 1-Down, and whose mom starts with "h"   ', answer: 'ZORSE', row: 0, col: 0 },
-    6: { clue: 'Put into law   ', answer: 'ENACT', row: 1, col: 0 },
-    7: { clue: 'Software releases that might still be buggy  ', answer: 'BETAS', row: 2, col: 0 },
-    8: { clue: '"Save it for a ___ day"   ', answer: 'RAINY', row: 3, col: 0 },
-    9: { clue: 'So much   ', answer: 'ALOT', row: 4, col: 0 },
-  },
-  down: {
-    1: { clue: 'Black-and-white safari animal ', answer: 'ZEBRA', row: 0, col: 0 },
-    2: { clue: 'Shaqs lastname   ', answer: 'ONEAL', row: 0, col: 1 },
-    3: { clue: 'Numerical relationship often written with a colon   ', answer: 'RATIO', row: 0, col: 2 },
-    4: { clue: 'Barely enough, quantity-wise  ', answer: 'SCANT', row: 0, col: 3 },
-    5: { clue: 'Online marketplace for crafters   ', answer: 'ETSY', row: 0, col: 4 },
-  },
-};
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
@@ -92,7 +76,7 @@ function MiniCrossword() {
         <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
 
         
-          <CrosswordProvider data={data} >
+          <CrosswordProvider data={data2} >
             <div style={{ marginBottom: '1em' }} id='minicrossword'>
               <Commands>
                 <Command onClick={focus}>Focus</Command>
