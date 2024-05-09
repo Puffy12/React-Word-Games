@@ -642,6 +642,7 @@ elbow
 elder
 elect
 elegy
+egypt
 elfin
 elide
 elite
@@ -1846,6 +1847,7 @@ sound
 south
 sower
 space
+spain
 spade
 spank
 spare
