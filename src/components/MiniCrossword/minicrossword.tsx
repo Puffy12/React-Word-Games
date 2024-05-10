@@ -3,7 +3,7 @@ import Sidebar from '../SideBar/sidebar'
 import { CrosswordGrid, CrosswordImperative, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
 import { Command, Commands } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { data, data2 } from './miniData';
+import { data2 } from './miniData';
 
 function scrollToElement(elementId: string) {
   const element = document.getElementById(elementId);
