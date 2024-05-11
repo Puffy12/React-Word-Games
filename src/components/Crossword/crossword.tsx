@@ -9,7 +9,6 @@ import Crossword, {
 } from '@jaredreisinger/react-crossword'; //  CrosswordProviderImperative,CrosswordProviderProps,
 import Sidebar from '../SideBar/sidebar';
 import { data, Page, Header, Commands, Command, CrosswordMessageBlock, CrosswordWrapper, ipuzData, IpuzWrapper} from './crossword-data';
-import "./app.css";
 import { FaArrowCircleDown } from 'react-icons/fa';
 
 

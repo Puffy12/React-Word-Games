@@ -3,7 +3,7 @@ import Sidebar from '../SideBar/sidebar'
 import { CrosswordGrid, CrosswordImperative, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
 import { Command, Commands } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { data2 } from './miniData';
+import { data3 } from './miniData';
 
 function scrollToElement(elementId: string) {
   const element = document.getElementById(elementId);
@@ -76,7 +76,7 @@ function MiniCrossword() {
         <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
 
         
-          <CrosswordProvider data={data2} >
+          <CrosswordProvider data={data3} useStorage={true} storageKey={"Mini1"} >
             <div style={{ marginBottom: '1em' }} id='minicrossword'>
               <Commands>
                 <Command onClick={focus}>Focus</Command>

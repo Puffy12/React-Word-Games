@@ -50,3 +50,28 @@ export const data2 = {
   },
 } as const;
 
+export const data3 = {
+  across: {
+    1: { clue: 'Uddered utterance  ', answer: 'MOO', row: 0, col: 2 },
+    4: { clue: 'Events with dunk tanks and game booths  ', answer: 'FAIRS', row: 1, col: 1 },
+    6: { clue: 'Facetiously big number  ', answer: 'JILLION', row: 2, col: 0 },
+    8: { clue: '"Finished!"   ', answer: 'ALLDONE', row: 3, col: 0 },
+    9: { clue: 'Parking area around the back   ', answer: 'REARLOT', row: 4, col: 0 },
+    10: { clue: 'Ts, on tests  ', answer: 'TRUES', row: 5, col: 1 },
+    11: { clue: 'Hits up on Instagram, casually   ', answer: 'DMS', row: 6, col: 2 },
+
+  }, 
+
+  down: {
+    1: { clue: 'Duck with a dark green head ', answer: 'MALLARD', row: 0, col: 2 },
+    2: { clue: 'Big fuel container  ', answer: 'OILDRUM', row: 0, col: 3 },
+    3: { clue: 'Baltimores baseball team   ', answer: 'ORIOLES', row: 0, col: 4 },
+    4: { clue: '___ mignon   ', answer: 'FILET', row: 1, col: 1 },
+    5: { clue: 'Wireless speaker brand with a palindromic name  ', answer: 'SONES', row: 1, col: 5 },
+    6: { clue: 'Peanut butter holder   ', answer: 'JAR', row: 2, col: 0 },
+    7: { clue: '___ neutrality, topic of importance to the F.C.C.   ', answer: 'NET', row: 2, col: 6 },
+
+  },
+} as const;
+
+// Code no work, causes too mnany errors, requires complete rework
