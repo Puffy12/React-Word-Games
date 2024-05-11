@@ -44,21 +44,19 @@ function about() {
   
 
   return (
-<div className='flex flex-col min-h-screen bg-gray-600 text-gray-300'>
+<div className='flex flex-col min-h-screen bg-gray-600 text-gray-100'>
   <Sidebar />
   <Toaster />
   <div className='flex flex-col items-center justify-center flex-grow'>
     <h1 className="capitalize font-bold mt-4 px-4 text-3xl sm:text-4xl leading-[1.5]">
       About Me
     </h1>
-    <div className='max-w-[35rem] text-center'>
+    <div className='max-w-[35rem] text-center mt-10'>
       <h2 className="mt-4 px-4 text-2xl font-medium sm:text-4xl leading-[1.5] ">
         <div>
         <span className="font-bold">Hello, I'm Michael Mehrdadi.</span> I'm am{" "}currently finishing up my
         <span className="font-bold"> Bachelors degrees at CSUS.</span> I have{" "} experience in{" "}
-        <span className="font-bold">Web Development</span>. I also enjoy building{" "}
-        <span className="italic">sites & apps</span>. Mainly using {" "}
-        <span className="underline text-blue-400">React</span>.
+        <span className="font-bold">Web Development</span>.
       </div>
       </h2>
       <a href={'/'} className='mb-10'>
@@ -160,12 +158,12 @@ function about() {
     </div>
   </div>
 
-  <section className="max-w-[50rem] mb-20 sm:mb-32 w-[min(100%,38rem)] text-center mt-28 mx-auto">
+  <section className="max-w-[50rem] mb-20 sm:mb-32 w-[min(100%,38rem)] text-center  mx-auto">
       <h2 className="text-3xl font-medium capitalize mb-8 text-center">
         Contact me
       </h2>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
+      <p className=" -mt-6 text-white" style={{ textAlign: "center" }}>
         Please contact me directly at{" "}
         <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
           michaelmehrdadi123@gmail.com
@@ -176,7 +174,7 @@ function about() {
       <div
         style={{ cursor: "pointer", display: "flex", justifyContent: "center"}}
       >
-        <div className="mt-6 flex justify-center mb-6 w-14 h-14 text-3xl cursor-pointer z-10 text-black dark:text-white">
+        <div className="mt-6 flex justify-center mb-6 w-14 h-14 text-3xl cursor-pointer z-10 text-white">
           <FaArrowCircleDown />
         </div>
       </div>
