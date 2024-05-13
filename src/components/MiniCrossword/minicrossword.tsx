@@ -1,23 +1,12 @@
 import { FaArrowCircleDown } from 'react-icons/fa'
 import Sidebar from '../SideBar/sidebar'
-import { CrosswordGrid, CrosswordImperative, CrosswordProvider, DirectionClues } from '@jaredreisinger/react-crossword';
-import { Command, Commands } from '../Crossword/crossword-data';
+import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/react-crossword';
+import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { data3 } from './miniData';
-
-function scrollToElement(elementId: string) {
-  const element = document.getElementById(elementId);
-  
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
+import { data4 } from './miniData';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const messagesRef = useRef<HTMLPreElement>(null);
-  const [messages, setMessages] = useState<string[]>([]);
 
   const focus = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.focus();
@@ -35,8 +24,18 @@ function MiniCrossword() {
     crossword.current?.reset();
   }, []);
 
+  // We don't really *do* anything with callbacks from the Crossword component,
+  // but we can at least show that they are happening.  You would want to do
+  // something more interesting than simply collecting them as messages.
+  const messagesRef = useRef<HTMLPreElement>(null);
+  const [messages, setMessages] = useState<string[]>([]);
+
   const clearMessages = useCallback<React.MouseEventHandler>(() => {
     setMessages([]);
+  }, []);
+
+  const addMessage = useCallback((message: string) => {
+    setMessages((m) => m.concat(`${message}\n`));
   }, []);
 
   useEffect(() => {
@@ -46,6 +45,76 @@ function MiniCrossword() {
     const { scrollHeight } = messagesRef.current;
     messagesRef.current.scrollTo(0, scrollHeight);
   }, [messages]);
+
+  // onCorrect is called with the direction, number, and the correct answer.
+  const onCorrect = useCallback<Required<CrosswordProps>['onCorrect']>(
+    (direction, number, answer) => {
+      addMessage(`onCorrect: "${direction}", "${number}", "${answer}"`);
+    },
+    [addMessage]
+  );
+
+  // onLoadedCorrect is called with an array of the already-correct answers,
+  // each element itself is an array with the same values as in onCorrect: the
+  // direction, number, and the correct answer.
+  const onLoadedCorrect = useCallback<
+    Required<CrosswordProps>['onLoadedCorrect']
+  >(
+    (answers) => {
+      addMessage(
+        `onLoadedCorrect:\n${answers
+          .map(
+            ([direction, number, answer]) =>
+              `    - "${direction}", "${number}", "${answer}"`
+          )
+          .join('\n')}`
+      );
+    },
+    [addMessage]
+  );
+
+  // onCrosswordCorrect is called with a truthy/falsy value.
+  const onCrosswordCorrect = useCallback<
+    Required<CrosswordProps>['onCrosswordCorrect']
+  >(
+    (isCorrect) => {
+      addMessage(`onCrosswordCorrect: ${JSON.stringify(isCorrect)}`);
+    },
+    [addMessage]
+  );
+
+  // onCellChange is called with the row, column, and character.
+  const onCellChange = useCallback<Required<CrosswordProps>['onCellChange']>(
+    (row, col, char) => {
+      addMessage(`onCellChange: "${row}", "${col}", "${char}"`);
+    },
+    [addMessage]
+  );
+
+  function scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+    
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+
+  // We don't really *do* anything with callbacks from the Crossword component,
+  // but we can at least show that they are happening.  You would want to do
+  // something more interesting than simply collecting them as messages.
+  const messagesProviderRef = useRef<HTMLPreElement>(null);
+  const [messagesProvider ] = useState<string[]>([]); //setMessagesProvider
+
+
+  useEffect(() => {
+    if (!messagesProviderRef.current) {
+      return;
+    }
+    const { scrollHeight } = messagesProviderRef.current;
+    messagesProviderRef.current.scrollTo(0, scrollHeight);
+  }, [messagesProvider]);
+  
   
   return (
     <div className='bg-stone-600 text-white'>
@@ -56,7 +125,10 @@ function MiniCrossword() {
             Welcome to the Mini Crossword Game
           </h1>
           <p className="text-lg sm:text-xl text-gray-300">
-            This game is currently in development.
+            This game is currently in development. 
+          </p>
+          <p className="text-lg sm:text-xl text-gray-300">
+            Does not work on smaller screens.
           </p>
           <p className="text-lg sm:text-xl text-gray-300">
             Michael Mehrdadi ❤️
@@ -72,12 +144,8 @@ function MiniCrossword() {
           <FaArrowCircleDown />
         </div>
 
-
-        <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
-
-        
-          <CrosswordProvider data={data3} useStorage={true} storageKey={"Mini1"} >
-            <div style={{ marginBottom: '1em' }} id='minicrossword'>
+        <div className="hidden sm:block ">
+          <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
               <Commands>
                 <Command onClick={focus}>Focus</Command>
                 <Command onClick={fillOneCell}>Fill the first letter of 2-down</Command>
@@ -85,16 +153,19 @@ function MiniCrossword() {
                 <Command onClick={reset}>Reset</Command>
                 <Command onClick={clearMessages}>Clear messages</Command>
               </Commands>
-            <br/>
-              <CrosswordGrid  />
-              <br/>
-              <DirectionClues direction="across" />
-              <br/>
-              <DirectionClues direction="down" />
-            </div>
-          </CrosswordProvider>
-        </div>
-
+              <CrosswordWrapper>
+                <Crossword
+                  ref={crossword}
+                  data={data4}
+                  storageKey="first-example"
+                  onCorrect={onCorrect}
+                  onLoadedCorrect={onLoadedCorrect}
+                  onCrosswordCorrect={onCrosswordCorrect}
+                  onCellChange={onCellChange}
+                />
+              </CrosswordWrapper>
+          </div>
+        </div>  
       </div>
       
     </div>

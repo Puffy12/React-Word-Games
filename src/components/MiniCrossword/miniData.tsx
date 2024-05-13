@@ -74,4 +74,19 @@ export const data3 = {
   },
 } as const;
 
-// Code no work, causes too mnany errors, requires complete rework
+export const data4 = {
+  across: {
+    1: { clue: 'Bit of threaded hardware   ', answer: 'SCREW', row: 0, col: 0 },
+    6: { clue: 'Cynthia ___, actress set to star as Elphaba in the upcoming "Wicked" adaptation   ', answer: 'ERIVO', row: 1, col: 0 },
+    7: { clue: '"To Kill a Mockingbird" or "Mockingjay"  ', answer: 'NOVEL', row: 2, col: 0 },
+    8: { clue: 'Gobble (down) ... or a winter accessory   ', answer: 'SCARF', row: 3, col: 0 },
+    9: { clue: 'Class for aspiring U.S. citizens: Abbr.   ', answer: 'ESL', row: 4, col: 0 },
+  },
+  down: {
+    1: { clue: 'Sight, smell or taste ', answer: 'SENSE', row: 0, col: 0 },
+    2: { clue: 'Squishy shoes with a strap that swivels  ', answer: 'CROCS', row: 0, col: 1 },
+    3: { clue: 'Adversary   ', answer: 'RIVAL', row: 0, col: 2 },
+    4: { clue: '"Never have I ___ ..."  ', answer: 'EVER', row: 0, col: 3 },
+    5: { clue: 'Gobble (down) ... or a wild animal   ', answer: 'WOLF', row: 0, col: 4 },
+  },
+} as const;
