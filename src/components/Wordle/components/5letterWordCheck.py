@@ -9,6 +9,6 @@ def filter_five_letter_words(input_file, output_file):
     with open(output_file, 'w') as f:
         f.write('\n'.join(five_letter_words))
 
-input_file = 'input.txt'  # Replace 'input.txt' with your input file name
+input_file = 'valid-wordle-words.txt'  # Replace 'input.txt' with your input file name
 output_file = 'wordle-bank2.txt'  # Replace 'output.txt' with your desired output file name
 filter_five_letter_words(input_file, output_file)

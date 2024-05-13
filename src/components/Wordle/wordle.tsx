@@ -86,8 +86,8 @@ useEffect(() => {
     for (let i = 0; i < 5; i++) {
       currWord += board[currAttempt.attempt][i];
     }
-    console.log(wordSet);
-    console.log(currWord.toLowerCase() + " : " + correctWord + " " + wordSet.has(currWord.toLowerCase()) );
+    //console.log(wordSet);
+    //console.log(currWord.toLowerCase() + " : " + correctWord + " " + wordSet.has(currWord.toLowerCase() + '/r') );
 
     if (wordSet.has(currWord.toLowerCase())) {
       setcurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
