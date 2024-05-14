@@ -90,3 +90,20 @@ export const data4 = {
     5: { clue: 'Gobble (down) ... or a wild animal   ', answer: 'WOLF', row: 0, col: 4 },
   },
 } as const;
+
+export const data5 = {
+  across: {
+    1: { clue: 'Kind of board for a séance   ', answer: 'OUIJA', row: 0, col: 0 },
+    6: { clue: 'Building add-on   ', answer: 'ANNEX', row: 1, col: 0 },
+    7: { clue: 'Info accompanying an artists name on a museum placard  ', answer: 'TITLE', row: 2, col: 0 },
+    8: { clue: 'Be a tattletale   ', answer: 'TELL', row: 3, col: 1 },
+    9: { clue: '___ as a fox   ', answer: 'SLY', row: 4, col: 1 },
+  },
+  down: {
+    1: { clue: 'Plant-based milk option  ', answer: 'OAT', row: 0, col: 0 },
+    2: { clue: 'Meters, miles, milliliters, etc.  ', answer: 'UNITS', row: 0, col: 1 },
+    3: { clue: 'What a file marked "Top Secret" may contain   ', answer: 'INTEL', row: 0, col: 2 },
+    4: { clue: 'Powdered donuts filling  ', answer: 'JELLY', row: 0, col: 3 },
+    5: { clue: 'Figure skaters leap   ', answer: 'AXEL', row: 0, col: 4 },
+  },
+} as const;

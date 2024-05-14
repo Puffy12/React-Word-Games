@@ -3,7 +3,7 @@ import Sidebar from '../SideBar/sidebar'
 import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/react-crossword';
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { data4 } from './miniData';
+import { data5 } from './miniData';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
@@ -156,7 +156,7 @@ function MiniCrossword() {
               <CrosswordWrapper>
                 <Crossword
                   ref={crossword}
-                  data={data4}
+                  data={data5}
                   storageKey="first-example"
                   onCorrect={onCorrect}
                   onLoadedCorrect={onLoadedCorrect}
