@@ -124,3 +124,20 @@ export const data6 = {
     6: { clue: 'Built-in feature of some tank tops  ', answer: 'BRA', row: 1, col: 4 },
   },
 } as const;
+
+export const data7 = {
+  across: {
+    1: { clue: 'Use a swizzle stick', answer: 'STIR', row: 0, col: 1 },
+    5: { clue: 'Vowel sound represented by an upside-down "e"', answer: 'SCHWA', row: 1, col: 0 },
+    6: { clue: 'Deck that contains a card called Wheel of Fortune', answer: 'EAGER', row: 2, col: 0 },
+    7: { clue: 'With nobody else around', answer: 'ALONE', row: 3, col: 0 },
+    9: { clue: 'Eye of ___ (witches brew ingredient in "Macbeth")', answer: 'NEWT', row: 4, col: 0 },
+  },
+  down: {
+    1: { clue: 'Do-re-mi-fa-sol-la-ti-do', answer: 'SCALE', row: 0, col: 1 },
+    2: { clue: 'The first "t" of #tbt', answer: 'THROW', row: 0, col: 2 },
+    3: { clue: '"You cant make me!"', answer: 'IWONT', row: 0, col: 3 },
+    4: { clue: '$100/night, e.g.', answer: 'RATE', row: 0, col: 4 },
+    5: { clue: 'Persian suffix in seven country names', answer: 'STAN', row: 1, col: 0 },
+  },
+} as const;
