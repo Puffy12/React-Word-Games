@@ -3,6 +3,7 @@ import Sidebar from '../SideBar/sidebar'
 import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/react-crossword';
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import toast, { Toaster } from "react-hot-toast";
 import { data6 } from './miniData';
 
 function MiniCrossword() {
@@ -50,6 +51,8 @@ function MiniCrossword() {
   const onCorrect = useCallback<Required<CrosswordProps>['onCorrect']>(
     (direction, number, answer) => {
       addMessage(`onCorrect: "${direction}", "${number}", "${answer}"`);
+      toast.success("Correct Word: " + answer);
+
     },
     [addMessage]
   );
@@ -78,6 +81,8 @@ function MiniCrossword() {
     Required<CrosswordProps>['onCrosswordCorrect']
   >(
     (isCorrect) => {
+      toast.success("You Won!");
+  
       addMessage(`onCrosswordCorrect: ${JSON.stringify(isCorrect)}`);
     },
     [addMessage]
@@ -118,7 +123,9 @@ function MiniCrossword() {
   
   return (
     <div className='bg-stone-600 text-white'>
-      <Sidebar/>
+      <Sidebar/> 
+      <Toaster/>
+
       <div className="flex flex-col items-center justify-center min-h-screen bg-stone-600">
         <div className="text-center">
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-200 mb-8">
