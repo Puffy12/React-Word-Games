@@ -107,3 +107,20 @@ export const data5 = {
     5: { clue: 'Figure skaters leap   ', answer: 'AXEL', row: 0, col: 4 },
   },
 } as const;
+
+export const data6 = {
+  across: {
+    1: { clue: 'Jazz concert highlight   ', answer: 'SOLO', row: 0, col: 0 },
+    5: { clue: 'Something a hitchhiker sticks out   ', answer: 'THUMB', row: 1, col: 0 },
+    7: { clue: 'Really itching to get started ', answer: 'EAGER', row: 2, col: 0 },
+    8: { clue: 'Big concert venue   ', answer: 'ARENA', row: 3, col: 0 },
+    9: { clue: 'Clutter   ', answer: 'MESS', row: 4, col: 0 },
+  },
+  down: {
+    1: { clue: 'What fogs up a bathroom mirror during a shower  ', answer: 'STEAM', row: 0, col: 0 },
+    2: { clue: 'Chicago airport  ', answer: 'OHARE', row: 0, col: 1 },
+    3: { clue: 'Racing vehicles in the Winter Olympics   ', answer: 'LUGES', row: 0, col: 2 },
+    4: { clue: 'Eerie signs of things to come  ', answer: 'OMENS', row: 0, col: 3 },
+    6: { clue: 'Built-in feature of some tank tops  ', answer: 'BRA', row: 1, col: 4 },
+  },
+} as const;
