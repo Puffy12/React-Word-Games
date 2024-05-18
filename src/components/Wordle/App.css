@@ -49,6 +49,25 @@ nav h1 {
   background-color: #121212; /* Set background color to black */
 }
 
+.small-screen-message {
+  display: none; 
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #121212; /* Match background color to .game */
+}
+
+@media (max-width: 603px) {
+  .game {
+    display: none;
+  }
+  
+  .small-screen-message {
+    display: block; 
+  }
+}
+
 .board {
   min-width: 450px;
   min-height: 550px;

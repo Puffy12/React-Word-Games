@@ -134,7 +134,10 @@ useEffect(() => {
                 <h1>
                     Wordle
                 </h1>
-                
+                <div className="small-screen-message">
+                  Game only available on larger screens. <br/>
+                  Michael Mehrdadi ❤️
+                </div>
             </nav>
             <Toaster/>
             <AppContext.Provider
@@ -157,12 +160,12 @@ useEffect(() => {
                 correctLetters,
                 setCorrectLetters,
               }}
-            >            
-            <div className="game">
-              <div className="hidden"> {correctWord}</div>
-              <Board />
-              {gameOver.gameOver ? <GameOver /> : <Keyboard/>}
-            </div>
+            >   
+              <div className="game">
+                <div className="hidden"> {correctWord}</div>
+                <Board />
+                {gameOver.gameOver ? <GameOver /> : <Keyboard/>}
+              </div>
           </AppContext.Provider>
           
         </div>
