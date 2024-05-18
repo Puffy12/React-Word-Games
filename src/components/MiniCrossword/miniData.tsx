@@ -141,3 +141,26 @@ export const data7 = {
     5: { clue: 'Persian suffix in seven country names', answer: 'STAN', row: 1, col: 0 },
   },
 } as const;
+
+export const data8 = {
+  across: {
+    1: { clue: 'Presidential "no"', answer: 'VETO', row: 0, col: 2 },
+    5: { clue: 'Members of Russias largest ethnic minority', answer: 'TATARS', row: 1, col: 1 },
+    7: { clue: 'Genre for a date night movie, perhaps', answer: 'ROMANCE', row: 2, col: 0 },
+    8: { clue: 'Mischief-maker', answer: 'IMP', row: 3, col: 0 },
+    10: { clue: 'Vacation spent on a mountain', answer: 'SKITRIP', row: 4, col: 0 },
+    12: { clue: 'Tiny headphone', answer: 'EARBUD', row: 5, col: 0 },
+    13: { clue: 'One of sixteen playing in the Sweet Sixteen', answer: 'TEAM', row: 6, col: 1 },
+  },
+  down: {
+    1: { clue: 'Someone who really sucks?', answer: 'VAMPIRE', row: 0, col: 2 },
+    2: { clue: 'Flight trackers prediction, for short', answer: 'ETA', row: 0, col: 3 },
+    3: { clue: 'Hissy fit', answer: 'TANTRUM', row: 0, col: 4 },
+    4: { clue: 'Flower that can mimic a female insect to attract males for pollination', answer: 'ORCHID', row: 0, col: 5 },
+    5: { clue: 'The onetime celebrity couple of Cruise and Holmes, in tabloids', answer: 'TOMKAT', row: 1, col: 1 },
+    6: { clue: 'Ooze', answer: 'SEEP', row: 1, col: 6 },
+    7: { clue: 'React to yeast', answer: 'RISE', row: 2, col: 0 },
+    11: { clue: '"Still undecided," on schedules: Abbr.', answer: 'TBA', row: 4, col: 3 },
+
+  },
+} as const;
