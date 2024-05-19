@@ -164,3 +164,20 @@ export const data8 = {
 
   },
 } as const;
+
+export const data9 = {
+  across: {
+    1: { clue: 'With 4-Down, popular mint brand ... and a hint to this puzzles "three-in-a-row"', answer: 'TIC', row: 0, col: 1 },
+    4: { clue: 'Scroll in a synagogue', answer: 'TORAH', row: 1, col: 0 },
+    6: { clue: 'Love to bits', answer: 'ADORE', row: 2, col: 0 },
+    7: { clue: '"Official," as a body of fiction', answer: 'CANON', row: 3, col: 0 },
+    9: { clue: 'French fashion monogram since 1962', answer: 'YSL', row: 4, col: 1 },
+  },
+  down: {
+    1: { clue: '"___ you are you! That is truer than true! There is no one alive who is you-er than you!": Dr. Seuss', answer: 'TODAY', row: 0, col: 1 },
+    2: { clue: 'De-wrinkling appliances', answer: 'IRONS', row: 0, col: 2 },
+    3: { clue: 'Song sung in December', answer: 'CAROL', row: 0, col: 3 },
+    4: { clue: 'See 1-Across', answer: 'TAC', row: 1, col: 0 },
+    5: { clue: 'Female bird', answer: 'HEN', row: 1, col: 4 },
+  },
+} as const;

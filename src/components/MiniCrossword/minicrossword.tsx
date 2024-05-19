@@ -4,7 +4,7 @@ import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
-import { data8 } from './miniData';
+import { data9 } from './miniData';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
@@ -134,7 +134,7 @@ function MiniCrossword() {
           <p className="text-lg sm:text-xl text-gray-300">
             This game is currently in development. 
           </p>
-          <p className="text-lg sm:text-xl text-gray-300">
+          <p className="text-lg text-gray-300 block sm:hidden">
             Does not work on smaller screens.
           </p>
           <p className="text-lg sm:text-xl text-gray-300">
@@ -163,7 +163,7 @@ function MiniCrossword() {
               <CrosswordWrapper>
                 <Crossword
                   ref={crossword}
-                  data={data8}
+                  data={data9}
                   storageKey="first-example"
                   onCorrect={onCorrect}
                   onLoadedCorrect={onLoadedCorrect}
