@@ -4,10 +4,12 @@ import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
-import { data9 } from './miniData';
+import { getCrosswordDataByIndex } from './miniData';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
+  const data = getCrosswordDataByIndex(10); 
+
 
   const focus = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.focus();
@@ -163,7 +165,7 @@ function MiniCrossword() {
               <CrosswordWrapper>
                 <Crossword
                   ref={crossword}
-                  data={data9}
+                  data={data}
                   storageKey="first-example"
                   onCorrect={onCorrect}
                   onLoadedCorrect={onLoadedCorrect}

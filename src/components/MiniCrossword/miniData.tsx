@@ -17,8 +17,8 @@ export const data = {
 
 export const data1 = {
   across: {
-    1: { clue: 'Part of an apple … or an Apple computer.   ', answer: 'CORE', row: 0, col: 0 },
-    5: { clue: 'Path for a car   ', answer: 'ROAD', row: 1, col: 0 },
+    1: { clue: 'Part of an apple … or an Apple computer.   ', answer: 'CORE', row: 0, col: 1 },
+    5: { clue: 'Path for a car   ', answer: 'ROAD', row: 1, col: 1 },
     6: { clue: 'Shy and easily frightened  ', answer: 'TIMID', row: 2, col: 0 },
     7: { clue: 'Insinuate   ', answer: 'IMPLY', row: 3, col: 0 },
     8: { clue: '"Its ... just OK"   ', answer: 'MEH', row: 4, col: 0 },
@@ -28,11 +28,11 @@ export const data1 = {
     2: { clue: 'Extra energy   ', answer: 'OOMPH', row: 0, col: 2 },
     3: { clue: 'Path for a train that aptly crosses 5-Across   ', answer: 'RAIL', row: 0, col: 3 },
     4: { clue: 'Whirlpool of water   ', answer: 'EDDY', row: 0, col: 4 },
-    6: { clue: 'Tiny ___, little boy in "A Christmas Carol"   ', answer: 'TIM', row: 0, col: 4 },
+    5: { clue: 'Tiny ___, little boy in "A Christmas Carol"   ', answer: 'TIM', row: 2, col: 0 },
   },
 } as const;
 
-
+//6: { clue: 'Tiny ___, little boy in "A Christmas Carol"   ', answer: 'TIM', row: 1, col: 4 },
 export const data2 = {
   across: {
     1: { clue: 'Ask for, as a ride or cigarette   ', answer: 'BUM', row: 0, col: 1 },
@@ -129,7 +129,7 @@ export const data7 = {
   across: {
     1: { clue: 'Use a swizzle stick', answer: 'STIR', row: 0, col: 1 },
     5: { clue: 'Vowel sound represented by an upside-down "e"', answer: 'SCHWA', row: 1, col: 0 },
-    6: { clue: 'Deck that contains a card called Wheel of Fortune', answer: 'EAGER', row: 2, col: 0 },
+    6: { clue: 'Deck that contains a card called Wheel of Fortune', answer: 'TAROT', row: 2, col: 0 },
     7: { clue: 'With nobody else around', answer: 'ALONE', row: 3, col: 0 },
     9: { clue: 'Eye of ___ (witches brew ingredient in "Macbeth")', answer: 'NEWT', row: 4, col: 0 },
   },
@@ -181,3 +181,34 @@ export const data9 = {
     5: { clue: 'Female bird', answer: 'HEN', row: 1, col: 4 },
   },
 } as const;
+
+export const data10 = {
+  across: {
+    1: { clue: 'Rockin tunes, informally', answer: 'JAMS', row: 0, col: 0 },
+    5: { clue: 'Hello or goodbye, island-style', answer: 'ALOHA', row: 1, col: 0 },
+    7: { clue: 'Pretty good grade', answer: 'BPLUS', row: 2, col: 0 },
+    8: { clue: '"Love ___," B-52s song thats a hit at karaoke night', answer: 'SHACK', row: 3, col: 0 },
+    9: { clue: 'French fashion monogram since 1962', answer: 'ARK', row: 4, col: 1 },
+  },
+  down: {
+    1: { clue: 'Quick punches', answer: 'JABS', row: 0, col: 0 },
+    2: { clue: 'Omega&amp;s opposite', answer: 'ALPHA', row: 0, col: 1 },
+    3: { clue: 'Any of your wisdom teeth, e.g.', answer: 'MOLAR', row: 0, col: 2 },
+    4: { clue: 'Prepare, as oysters or corn on the cob', answer: 'SHUCK', row: 0, col: 3 },
+    5: { clue: 'Put in a request', answer: 'ASK', row: 1, col: 4 },
+  },
+} as const;
+
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10];
+
+export const getRandomCrosswordData = () => {
+  const randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
+  return crosswordDataArray[randomIndex];
+};
+
+export const getCrosswordDataByIndex = (index: number) => {
+  if (index < 0 || index >= crosswordDataArray.length) {
+    throw new Error("Index out of bounds");
+  }
+  return crosswordDataArray[index];
+};
