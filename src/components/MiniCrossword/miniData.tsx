@@ -202,12 +202,12 @@ export const data10 = {
 export const data11 = {
   across: {
     1: { clue: 'Dessert that might have lattice', answer: 'PIE', row: 0, col: 2 },
-    4: { clue: 'Detective&amp;s assignment', answer: 'CASE', row: 1, col: 1 },
+    4: { clue: 'Detectives assignment', answer: 'CASE', row: 1, col: 1 },
     5: { clue: 'with [the circled letter], Maya Angelou poem that begins "You may write me down in history / With your bitter, twisted lies"', answer: 'STILL', row: 2, col: 0 },
     6: { clue: 'Strong inclination', answer: 'URGE', row: 3, col: 0 },
     7: { clue: 'Suffix with percent or project', answer: 'ILE', row: 4, col: 0 },
   },
-  down: { //&amp;
+  down: { 
     1: { clue: 'Good name for an avid reader?', answer: 'PAIGE', row: 0, col: 2 },
     2: { clue: 'Tropical Getaway locale', answer: 'ISLE', row: 0, col: 3 },
     3: { clue: 'Snakelike fish', answer: 'EEL', row: 0, col: 4 },
@@ -216,10 +216,30 @@ export const data11 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
+export const data12 = {
+  across: {
+    1: { clue: 'Like the anagram "moon starer" for "astronomer"', answer: 'APT', row: 0, col: 0 },
+    4: { clue: 'Tournament rankings', answer: 'SEEDS', row: 1, col: 0 },
+    7: { clue: 'With 5-Down, instrument that goes "rat-a-tat-tat!"', answer: 'SNARE', row: 2, col: 0 },
+    8: { clue: 'Happen next', answer: 'ENSUE', row: 3, col: 0 },
+    9: { clue: 'Overflows (with)', answer: 'TEEMS', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Big plus', answer: 'ASSET', row: 0, col: 0 },
+    2: { clue: 'Popular pasta with vodka sauce', answer: 'PENNE', row: 0, col: 1 },
+    3: { clue: 'Poke fun at', answer: 'TEASE', row: 0, col: 2 },
+    4: { clue: 'See 7-Across', answer: 'DRUM', row: 1, col: 3 },
+    5: { clue: '"One eye ___, the other feels": Paul Klee', answer: 'SEES', row: 1, col: 4 },
+  },
+} as const;
 
-export const getRandomCrosswordData = () => {
-  const randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+
+export const getRandomCrosswordData = (index: number) => {
+  let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
+  while(randomIndex === index){
+    randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
+  }
   return crosswordDataArray[randomIndex];
 };
 
