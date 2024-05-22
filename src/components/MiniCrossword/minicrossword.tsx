@@ -8,16 +8,7 @@ import { getCrosswordDataByIndex } from './miniData';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const data = getCrosswordDataByIndex(10); 
-
-
-  const focus = useCallback<React.MouseEventHandler>(() => {
-    crossword.current?.focus();
-  }, []);
-
-  const fillOneCell = useCallback<React.MouseEventHandler>(() => {
-    crossword.current?.setGuess(0, 2, 'O');
-  }, []);
+  const data = getCrosswordDataByIndex(11); 
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
@@ -33,9 +24,6 @@ function MiniCrossword() {
   const messagesRef = useRef<HTMLPreElement>(null);
   const [messages, setMessages] = useState<string[]>([]);
 
-  const clearMessages = useCallback<React.MouseEventHandler>(() => {
-    setMessages([]);
-  }, []);
 
   const addMessage = useCallback((message: string) => {
     setMessages((m) => m.concat(`${message}\n`));
@@ -156,11 +144,8 @@ function MiniCrossword() {
         <div className="hidden sm:block ">
           <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
               <Commands>
-                <Command onClick={focus}>Focus</Command>
-                <Command onClick={fillOneCell}>Fill the first letter of 2-down</Command>
                 <Command onClick={fillAllAnswers}>Fill all answers</Command>
                 <Command onClick={reset}>Reset</Command>
-                <Command onClick={clearMessages}>Clear messages</Command>
               </Commands>
               <CrosswordWrapper>
                 <Crossword

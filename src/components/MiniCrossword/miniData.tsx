@@ -199,7 +199,24 @@ export const data10 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10];
+export const data11 = {
+  across: {
+    1: { clue: 'Dessert that might have lattice', answer: 'PIE', row: 0, col: 2 },
+    4: { clue: 'Detective&amp;s assignment', answer: 'CASE', row: 1, col: 1 },
+    5: { clue: 'with [the circled letter], Maya Angelou poem that begins "You may write me down in history / With your bitter, twisted lies"', answer: 'STILL', row: 2, col: 0 },
+    6: { clue: 'Strong inclination', answer: 'URGE', row: 3, col: 0 },
+    7: { clue: 'Suffix with percent or project', answer: 'ILE', row: 4, col: 0 },
+  },
+  down: { //&amp;
+    1: { clue: 'Good name for an avid reader?', answer: 'PAIGE', row: 0, col: 2 },
+    2: { clue: 'Tropical Getaway locale', answer: 'ISLE', row: 0, col: 3 },
+    3: { clue: 'Snakelike fish', answer: 'EEL', row: 0, col: 4 },
+    4: { clue: 'PC shortcut key', answer: 'CTRL', row: 1, col: 1 },
+    5: { clue: '__ generis (unique)', answer: 'SUI', row: 2, col: 0 },
+  },
+} as const;
+
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData = () => {
   const randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
