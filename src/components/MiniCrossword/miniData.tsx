@@ -233,7 +233,24 @@ export const data12 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+export const data13 = {
+  across: {
+    1: { clue: 'Twinkler in Orions belt', answer: 'STAR', row: 0, col: 0 },
+    5: { clue: '"Thats a bummer …"', answer: 'OHMAN', row: 1, col: 0 },
+    7: { clue: 'Someone saying yes on TVs "Say Yes to the Dress"', answer: 'BRIDE', row: 2, col: 0 },
+    8: { clue: 'Submarines tracker', answer: 'SONAR', row: 3, col: 0 },
+    9: { clue: 'With 6-Down, language lover', answer: 'WORD', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Cries uncontrollably', answer: 'SOBS', row: 0, col: 0 },
+    2: { clue: 'Toss', answer: 'THROW', row: 0, col: 1 },
+    3: { clue: '___ acid (biological building block)', answer: 'AMINO', row: 0, col: 2 },
+    4: { clue: 'Spaceships tracker', answer: 'RADAR', row: 0, col: 3 },
+    6: { clue: 'See 9-Across', answer: 'NERD', row: 1, col: 4 },
+  },
+} as const;
+
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
