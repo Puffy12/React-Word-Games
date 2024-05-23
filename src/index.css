@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+div.bHTMhE {
+    cursor: pointer; 
+    background-color: rgb(225, 129, 80) !important; /* Replace with your desired color */
+}
