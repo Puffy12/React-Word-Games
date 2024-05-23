@@ -155,7 +155,7 @@ function crossword() {
       </div>
     </div>
     <Page className='hidden md:hidden lg:block xl:block 2xl:block '>
-      <div  className='text-center'>
+      <div id='mainCross' className='text-center'>
         <Header>Cross Word</Header>
 
         <p>

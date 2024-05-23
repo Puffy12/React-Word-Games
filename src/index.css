@@ -6,3 +6,7 @@ div.bHTMhE {
     cursor: pointer; 
     background-color: rgb(225, 129, 80) !important; /* Replace with your desired color */
 }
+
+#mainCross input[aria-label="crossword-input"] {
+    display: none;
+}
