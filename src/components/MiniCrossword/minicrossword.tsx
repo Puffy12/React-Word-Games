@@ -144,8 +144,14 @@ function MiniCrossword() {
         <div className="hidden sm:block ">
           <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
               <Commands>
-                <Command onClick={fillAllAnswers}>Fill all answers</Command>
-                <Command onClick={reset}>Reset</Command>
+                <div className="flex space-x-4 mb-6">
+                  <button className="bg-black text-white text-center py-2 px-2 rounded-full focus:scale-110 hover:scale-110 transition cursor-pointer">
+                    <Command onClick={fillAllAnswers}>Fill all answers</Command>
+                  </button>
+                  <button className="bg-black text-white text-center py-2 px-2 rounded-full focus:scale-110 hover:scale-110 transition cursor-pointer">
+                    <Command onClick={reset}>Reset</Command>
+                  </button>
+                </div>
               </Commands>
               <CrosswordWrapper>
                 <Crossword
