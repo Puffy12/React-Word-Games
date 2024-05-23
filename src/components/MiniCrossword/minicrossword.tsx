@@ -145,12 +145,16 @@ function MiniCrossword() {
           <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
               <Commands>
                 <div className="flex space-x-4 mb-6">
-                  <button className="bg-black text-white text-center py-2 px-2 rounded-full focus:scale-110 hover:scale-110 transition cursor-pointer">
-                    <Command onClick={fillAllAnswers}>Fill all answers</Command>
-                  </button>
-                  <button className="bg-black text-white text-center py-2 px-2 rounded-full focus:scale-110 hover:scale-110 transition cursor-pointer">
-                    <Command onClick={reset}>Reset</Command>
-                  </button>
+                    <Command onClick={fillAllAnswers}>                  
+                      <button className="bg-black text-white text-center py-2 px-4 rounded-full hover:bg-blue-400 focus:scale-110 hover:scale-110 transition cursor-pointer">
+                        Fill all answers                  
+                      </button>
+                    </Command>
+                    <Command onClick={reset}>
+                      <button className="bg-black text-white text-center py-2 px-4 rounded-full hover:bg-blue-400 focus:scale-110 hover:scale-110 transition cursor-pointer">
+                        Reset
+                      </button>
+                    </Command>
                 </div>
               </Commands>
               <CrosswordWrapper>
