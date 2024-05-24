@@ -8,7 +8,7 @@ import { getCrosswordDataByIndex } from './miniData';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const data = getCrosswordDataByIndex(13); 
+  const data = getCrosswordDataByIndex(14); 
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
