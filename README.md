@@ -1,3 +1,7 @@
+# React Word Games
+
+Experience an engaging collection of word games and puzzles with our web app built using React, Vite, and TypeScript. Navigate seamlessly through Hangman, Wordle, and Crossword puzzles, or learn more about the app in the About section. Get ready to challenge your mind and have fun with words!
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
