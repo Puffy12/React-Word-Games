@@ -267,7 +267,24 @@ export const data14 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
+export const data15 = {
+  across: {
+    1: { clue: 'Noodles, e.g.', answer: 'PASTA', row: 0, col: 0 },
+    6: { clue: 'Has a lingering soreness', answer: 'ACHES', row: 1, col: 0 },
+    7: { clue: 'Use your noodle', answer: 'THINK', row: 2, col: 0 },
+    8: { clue: 'Tight cluster of trees', answer: 'COPSE', row: 3, col: 0 },
+    9: { clue: 'Sprayed (down)', answer: 'HOSED', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Cover for threadbare clothing', answer: 'PATCH', row: 0, col: 0 },
+    2: { clue: 'Near rhyme (and reason) for "a tissue"', answer: 'ACHOO', row: 0, col: 1 },
+    3: { clue: 'Greenpeace vessels', answer: 'SHIPS', row: 0, col: 2 },
+    4: { clue: 'Like the atmosphere after a squabble', answer: 'TENSE', row: 0, col: 3 },
+    6: { clue: '"All right, you ___ for it!"', answer: 'ASKED', row: 0, col: 4 },
+  },
+} as const;
+
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
