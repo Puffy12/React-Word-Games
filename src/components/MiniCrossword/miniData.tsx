@@ -292,24 +292,18 @@ export const data15 = {
 
 export const data16 = {
   across: {
-    1: { clue: 'Crack of the ___ (sweet sound for a baseball lover)', answer: 'BAT', row: 0, col: 2 },
-    4: { clue: 'Did some roadwork', answer: 'PAVED', row: 1, col: 1 },
-    6: { clue: 'What tonic water was originally used to treat', answer: 'MALARIA', row: 2, col: 0 },
-    8: { clue: 'And so forth, for short', answer: 'ETC', row: 3, col: 0 },
-    9: { clue: 'Tyrannosaurus ___', answer: 'REX', row: 3, col: 4 },
-    10: { clue: '"Sorry, you just missed it"', answer: 'TOOLATE', row: 4, col: 0 },
-    12: { clue: 'Served cool, as a summer beverage', answer: 'ONICE', row: 5, col: 1 },
-    13: { clue: 'Like documents in Microsoft Word', answer: 'TYPED', row: 6, col: 1 },
+    1: { clue: 'Talk a big game', answer: 'BRAG', row: 0, col: 0 },
+    4: { clue: 'What glasses do as a result of condensation', answer: 'FOGUP', row: 1, col: 0 },
+    7: { clue: 'Museum photography no-no', answer: 'FLASH', row: 2, col: 0 },
+    8: { clue: 'Miller ___ (beer)', answer: 'LITE', row: 3, col: 1 },
+    9: { clue: 'Mount Rainier once received a record 93+ feet of it in a single year', answer: 'SNOW', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: 'Outdoor space for a high-rise apartment', answer: 'BALCONY', row: 0, col: 2 },
-    2: { clue: '"Selma" director DuVernay', answer: 'AVA', row: 0, col: 3 },
-    3: { clue: 'Outdoor space for a high-rise apartment', answer: 'TERRACE', row: 0, col: 4 },
-    4: { clue: 'Tushie', answer: 'PATOOT', row: 1, col: 1 },
-    5: { clue: 'Followed a Paleo regimen, say', answer: 'DIETED', row: 1, col: 5 },
-    6: { clue: 'Convened', answer: 'MET', row: 2, col: 0 },
-    7: { clue: 'Tool for a "lumberjill"', answer: 'AXE', row: 2, col: 6 },
-    11: { clue: 'Pouters prominent feature', answer: 'LIP', row: 4, col: 3 },
+    1: { clue: 'Inseparable pal, for short', answer: 'BFF', row: 0, col: 0 },
+    2: { clue: 'Starts of Catan turns', answer: 'ROLLS', row: 0, col: 1 },
+    3: { clue: 'Not for the first time', answer: 'AGAIN', row: 0, col: 2 },
+    4: { clue: 'Oomph', answer: 'GUSTO', row: 0, col: 3 },
+    6: { clue: '"Thank god that didnt happen!"', answer: 'PHEW', row: 1, col: 4 },
   },
 } as const;
 
