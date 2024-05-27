@@ -290,7 +290,30 @@ export const data15 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
+export const data16 = {
+  across: {
+    1: { clue: 'Crack of the ___ (sweet sound for a baseball lover)', answer: 'BAT', row: 0, col: 2 },
+    4: { clue: 'Did some roadwork', answer: 'PAVED', row: 1, col: 1 },
+    6: { clue: 'What tonic water was originally used to treat', answer: 'MALARIA', row: 2, col: 0 },
+    8: { clue: 'And so forth, for short', answer: 'ETC', row: 3, col: 0 },
+    9: { clue: 'Tyrannosaurus ___', answer: 'REX', row: 3, col: 4 },
+    10: { clue: '"Sorry, you just missed it"', answer: 'TOOLATE', row: 4, col: 0 },
+    12: { clue: 'Served cool, as a summer beverage', answer: 'ONICE', row: 5, col: 1 },
+    13: { clue: 'Like documents in Microsoft Word', answer: 'TYPED', row: 6, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Outdoor space for a high-rise apartment', answer: 'BALCONY', row: 0, col: 2 },
+    2: { clue: '"Selma" director DuVernay', answer: 'AVA', row: 0, col: 3 },
+    3: { clue: 'Outdoor space for a high-rise apartment', answer: 'TERRACE', row: 0, col: 4 },
+    4: { clue: 'Tushie', answer: 'PATOOT', row: 1, col: 1 },
+    5: { clue: 'Followed a Paleo regimen, say', answer: 'DIETED', row: 1, col: 5 },
+    6: { clue: 'Convened', answer: 'MET', row: 2, col: 0 },
+    7: { clue: 'Tool for a "lumberjill"', answer: 'AXE', row: 2, col: 6 },
+    11: { clue: 'Pouters prominent feature', answer: 'LIP', row: 4, col: 3 },
+  },
+} as const;
+
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
 
 export const getRandomCrosswordData = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
