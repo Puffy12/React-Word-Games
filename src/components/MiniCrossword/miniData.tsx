@@ -329,22 +329,18 @@ export const data17 = {
 
 export const data18 = {
   across: {
-    1: { clue: 'Declare invalid, as a marriage', answer: 'ANNUL', row: 0, col: 0 },
-    6: { clue: 'In need of a screwdriver', answer: 'LOOSE', row: 1, col: 0 },
-    7: { clue: 'When doubled, "Not gonna happen!"', answer: 'U', row: 2, col: 0 },
-    8: { clue: 'When doubled, LOL', answer: 'HA', row: 2, col: 3 },
-    9: { clue: 'Money hoarder', answer: 'MISER', row: 3, col: 0 },
-    11: { clue: 'Kids request at bedtime', answer: 'STORY', row: 4, col: 0 },
-
+    1: { clue: 'Business whose hires usually work out', answer: 'GYM', row: 0, col: 1 },
+    4: { clue: 'Social influence', answer: 'CLOUT', row: 1, col: 0 },
+    6: { clue: 'Difficult item for a mover', answer: 'COUCH', row: 2, col: 0 },
+    7: { clue: 'Defeat soundly, in slang', answer: 'SMOKE', row: 3, col: 0 },
+    8: { clue: 'View from an airplane window', answer: 'SKY', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: 'College reunion attendees', answer: 'ALUMS', row: 0, col: 0 },
-    2: { clue: 'Kind of game that a pitcher dreams of', answer: 'NOHIT', row: 0, col: 1 },
-    3: { clue: 'When doubled, taboo', answer: 'NO', row: 0, col: 2 },
-    4: { clue: '"Confessions" R&B star', answer: 'USHER', row: 0, col: 3 },
-    5: { clue: 'Timothy ___, early advocate of psychedelic drugs', answer: 'LEARY', row: 0, col: 4 },
-    10: { clue: 'When doubled, neither good nor bad', answer: 'SO', row: 3, col: 2 },
-  },
+    1: { clue: 'Latches (onto)', answer: 'GLOMS', row: 0, col: 1 },
+    2: { clue: '"Everything good?"', answer: 'YOUOK', row: 0, col: 2 },
+    3: { clue: 'Full of mud and gunk', answer: 'MUCKY', row: 0, col: 3 },
+    4: { clue: 'Includes on an email, for short', answer: 'CCS', row: 1, col: 0 },
+    5: { clue: '"___ nerve!"', answer: 'THE', row: 1, col: 4 },  },
 } as const;
 
 const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
