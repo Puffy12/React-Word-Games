@@ -309,18 +309,21 @@ export const data16 = {
 
 export const data17 = {
   across: {
-    1: { clue: 'Talk a big game', answer: 'BRAG', row: 0, col: 0 },
-    4: { clue: 'What glasses do as a result of condensation', answer: 'FOGUP', row: 1, col: 0 },
-    7: { clue: 'Museum photography no-no', answer: 'FLASH', row: 2, col: 0 },
-    8: { clue: 'Miller ___ (beer)', answer: 'LITE', row: 3, col: 1 },
-    9: { clue: 'Mount Rainier once received a record 93+ feet of it in a single year', answer: 'SNOW', row: 4, col: 1 },
+    1: { clue: 'Declare invalid, as a marriage', answer: 'ANNUL', row: 0, col: 0 },
+    6: { clue: 'In need of a screwdriver', answer: 'LOOSE', row: 1, col: 0 },
+    7: { clue: 'When doubled, "Not gonna happen!"', answer: 'U', row: 2, col: 0 },
+    8: { clue: 'When doubled, LOL', answer: 'HA', row: 2, col: 3 },
+    9: { clue: 'Money hoarder', answer: 'MISER', row: 3, col: 0 },
+    11: { clue: 'Kids request at bedtime', answer: 'STORY', row: 4, col: 0 },
+
   },
   down: { 
-    1: { clue: 'Inseparable pal, for short', answer: 'BFF', row: 0, col: 0 },
-    2: { clue: 'Starts of Catan turns', answer: 'ROLLS', row: 0, col: 1 },
-    3: { clue: 'Not for the first time', answer: 'AGAIN', row: 0, col: 2 },
-    4: { clue: 'Oomph', answer: 'GUSTO', row: 0, col: 3 },
-    6: { clue: '"Thank god that didnt happen!"', answer: 'PHEW', row: 1, col: 4 },
+    1: { clue: 'College reunion attendees', answer: 'ALUMS', row: 0, col: 0 },
+    2: { clue: 'Kind of game that a pitcher dreams of', answer: 'NOHIT', row: 0, col: 1 },
+    3: { clue: 'When doubled, taboo', answer: 'NO', row: 0, col: 2 },
+    4: { clue: '"Confessions" R&B star', answer: 'USHER', row: 0, col: 3 },
+    5: { clue: 'Timothy ___, early advocate of psychedelic drugs', answer: 'LEARY', row: 0, col: 4 },
+    10: { clue: 'When doubled, neither good nor bad', answer: 'SO', row: 3, col: 2 },
   },
 } as const;
 
