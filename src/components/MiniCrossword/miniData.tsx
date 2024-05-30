@@ -343,7 +343,23 @@ export const data18 = {
     5: { clue: '"___ nerve!"', answer: 'THE', row: 1, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
+export const data19 = {
+  across: {
+    1: { clue: 'Business whose hires usually work out', answer: 'GYM', row: 0, col: 1 },
+    4: { clue: 'Social influence', answer: 'CLOUT', row: 1, col: 0 },
+    6: { clue: 'Difficult item for a mover', answer: 'COUCH', row: 2, col: 0 },
+    7: { clue: 'Defeat soundly, in slang', answer: 'SMOKE', row: 3, col: 0 },
+    8: { clue: 'View from an airplane window', answer: 'SKY', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Latches (onto)', answer: 'GLOMS', row: 0, col: 1 },
+    2: { clue: '"Everything good?"', answer: 'YOUOK', row: 0, col: 2 },
+    3: { clue: 'Full of mud and gunk', answer: 'MUCKY', row: 0, col: 3 },
+    4: { clue: 'Includes on an email, for short', answer: 'CCS', row: 1, col: 0 },
+    5: { clue: '"___ nerve!"', answer: 'THE', row: 1, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
 
 export const getRandomCrosswordData = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
