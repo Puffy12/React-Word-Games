@@ -359,6 +359,22 @@ export const data19 = {
     5: { clue: '"___ nerve!"', answer: 'THE', row: 1, col: 4 },  },
 } as const;
 
+export const example2 = {
+  across: {
+    1: { clue: 'Bird at the beach', answer: '', row: 0, col: 1 },
+    5: { clue: 'Muppet who shares the basement unit of 123 Sesame Street', answer: '', row: 1, col: 0 },
+    6: { clue: 'Is totally awesome', answer: '', row: 2, col: 0 },
+    7: { clue: 'Is totally awesome', answer: '', row: 3, col: 0 },
+    8: { clue: 'Went 85 in a 65, say', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Word before "therapy" or "text"', answer: '', row: 0, col: 1 },
+    2: { clue: 'Scrooge McDucks relation to Donald Duck', answer: '', row: 0, col: 2 },
+    3: { clue: 'Was a fan of', answer: '', row: 0, col: 3 },
+    4: { clue: '"I couldnt care ___!"', answer: '', row: 0, col: 4 },
+    5: { clue: 'Makes a mistake', answer: '', row: 1, col: 0 },  },
+} as const;
+
 const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
 
 export const getRandomCrosswordData = (index: number) => {
