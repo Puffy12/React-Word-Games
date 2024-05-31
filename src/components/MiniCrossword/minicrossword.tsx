@@ -5,6 +5,8 @@ import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data
 import { useCallback, useEffect, useRef, useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
 import { getCrosswordDataByIndex } from './miniData';
+//import { getCrosswordDataByIndex2 } from './miniData2';
+
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
