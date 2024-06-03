@@ -41,7 +41,24 @@ export const data2 = {
     5: { clue: 'Hearty leafy green', answer: '', row: 1, col: 0 },  },
 } as const;
 
-const crosswordDataArray = [data, data2];
+export const data3 = {
+  across: {
+    1: { clue: 'Fixture in a skate park', answer: 'RAMP', row: 0, col: 1 },
+    5: { clue: 'Evergreen tree with aromatic wood', answer: 'CEDAR', row: 1, col: 0 },
+    6: { clue: 'Inadvisable way to tackle an entire large pizza', answer: 'ALONE', row: 2, col: 0 },
+    7: { clue: 'Host of the 2024 Summer Olympics', answer: 'PARIS', row: 3, col: 0 },
+    8: { clue: 'Corporate boss, for short', answer: 'EXEC', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: '"Chill!"', answer: 'RELAX', row: 0, col: 1 },
+    2: { clue: 'Absolute love', answer: 'ADORE', row: 0, col: 2 },
+    3: { clue: '___ pixie dream girl (movie trope)', answer: 'MANIC', row: 0, col: 3 },
+    4: { clue: 'White House title: Abbr.', answer: 'PRES', row: 0, col: 4 },
+    5: { clue: 'Superhero garment', answer: 'CAPE', row: 1, col: 0 },  
+  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
