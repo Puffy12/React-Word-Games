@@ -4,13 +4,13 @@ import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
-import { getCrosswordDataByIndex } from './miniData';
-//import { getCrosswordDataByIndex2 } from './miniData2';
+//import { getCrosswordDataByIndex } from './miniData';
+import { getCrosswordDataByIndex2 } from './miniData2';
 
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const data = getCrosswordDataByIndex(20); 
+  const data = getCrosswordDataByIndex2(0); 
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
