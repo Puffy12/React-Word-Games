@@ -26,18 +26,18 @@ export const data = {
 
 export const data2 = {
   across: {
-    1: { clue: 'Fezes and fedoras', answer: '', row: 0, col: 1 },
-    5: { clue: 'Trixie and ___, drag queen comedy duo', answer: '', row: 1, col: 0 },
-    6: { clue: 'Take in, as a cat', answer: '', row: 2, col: 0 },
-    7: { clue: 'Vehicle for prom night', answer: '', row: 3, col: 0 },
-    8: { clue: 'Aliens, for short', answer: '', row: 4, col: 0 },
+    1: { clue: 'Fezes and fedoras', answer: 'HATS', row: 0, col: 1 },
+    5: { clue: 'Trixie and ___, drag queen comedy duo', answer: 'KATYA', row: 1, col: 0 },
+    6: { clue: 'Take in, as a cat', answer: 'ADOPT', row: 2, col: 0 },
+    7: { clue: 'Vehicle for prom night', answer: 'LIMO', row: 3, col: 0 },
+    8: { clue: 'Aliens, for short', answer: 'ETS', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: '"Ive ___ up to here!"', answer: '', row: 0, col: 1 },
-    2: { clue: 'Tiny building blocks', answer: '', row: 0, col: 2 },
-    3: { clue: 'What you might pass off a misspelling as', answer: '', row: 0, col: 3 },
-    4: { clue: 'Took a chair', answer: '', row: 0, col: 4 },
-    5: { clue: 'Hearty leafy green', answer: '', row: 1, col: 0 },  },
+    1: { clue: '"Ive ___ up to here!"', answer: 'HADIT', row: 0, col: 1 },
+    2: { clue: 'Tiny building blocks', answer: 'ATOMS', row: 0, col: 2 },
+    3: { clue: 'What you might pass off a misspelling as', answer: 'TYPO', row: 0, col: 3 },
+    4: { clue: 'Took a chair', answer: 'SAT', row: 0, col: 4 },
+    5: { clue: 'Hearty leafy green', answer: 'KALE', row: 1, col: 0 },  },
 } as const;
 
 export const data3 = {
