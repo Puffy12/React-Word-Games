@@ -21,8 +21,7 @@ export const data = {
     11: { clue: 'Diarist Frank', answer: 'ANNE', row: 4, col: 1 },
     13: { clue: 'Size above small: Abbr.', answer: 'MED', row: 5, col: 4 },
     14: { clue: 'Suffix with Japan or Vietnam', answer: 'ESE', row: 5, col: 5 },
-  },
-
+  }
 } as const;
 
 export const data2 = {
