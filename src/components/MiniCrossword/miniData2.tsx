@@ -57,7 +57,23 @@ export const data3 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data2, data3];
+export const data4 = {
+  across: {
+    1: { clue: '"You said it!"', answer: 'XXXX', row: 0, col: 1 },
+    5: { clue: 'Nathan who said "The reason I was in most of the movies Ive done is that they paid for me to be in the theater"', answer: 'XXXX', row: 1, col: 1 },
+    6: { clue: 'Wards (off)', answer: 'XXXXX', row: 2, col: 0 },
+    7: { clue: 'Be in the world', answer: 'XXXXX', row: 3, col: 0 },
+    8: { clue: 'Ewe said it!', answer: 'XXX', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Amazons version of Siri', answer: 'XXXXX', row: 0, col: 1 },
+    2: { clue: 'Suffix with Beatle or Wrestle', answer: 'XXXXX', row: 0, col: 2 },
+    3: { clue: 'Make ___ meet', answer: 'XXXX', row: 0, col: 3 },
+    4: { clue: 'Robins residence', answer: 'XXXX', row: 0, col: 4 },
+    6: { clue: 'Black History Month: Abbr.', answer: 'XXX', row: 2, col: 0 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
