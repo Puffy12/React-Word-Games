@@ -73,7 +73,23 @@ export const data4 = {
     6: { clue: 'Black History Month: Abbr.', answer: 'FEB', row: 2, col: 0 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4];
+export const data5 = {
+  across: {
+    1: { clue: 'Good way to get in shape.. in more than one way', answer: 'YOGA', row: 0, col: 1 },
+    5: { clue: 'British nobility title', answer: 'BARON', row: 1, col: 0 },
+    6: { clue: '"Heaven help us!"', answer: 'ONGOD', row: 2, col: 0 },
+    7: { clue: 'What a cat resembles when it sits with its legs tucked under its body', answer: 'LOAF', row: 3, col: 0 },
+    8: { clue: '"___ Quixotes" (Cervante epic)', answer: 'DON', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Google alternative', answer: 'YAHOO', row: 0, col: 1 },
+    2: { clue: 'Instrument at a basilica or a baseball stadium', answer: 'ORGAN', row: 0, col: 2 },
+    3: { clue: 'Silly mistake', answer: 'GOOF', row: 0, col: 3 },
+    4: { clue: '"Your point is ...?"', answer: 'AND', row: 0, col: 4 },
+    5: { clue: 'TYPE OF TEXT LIKE THIS', answer: 'BOLD', row: 1, col: 0 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
