@@ -136,13 +136,13 @@ export const data8 = {
 
   },
   down: { 
-    1: { clue: '', answer: '', row: 0, col: 2 },
-    2: { clue: '', answer: '', row: 0, col: 3 },
-    3: { clue: '', answer: '', row: 0, col: 4 },
-    4: { clue: '', answer: '', row: 1, col: 1 },
-    5: { clue: '', answer: '', row: 1, col: 5 },  
-    6: { clue: '', answer: '', row: 2, col: 0 },
-    7: { clue: '', answer: '', row: 2, col: 6 },  
+    1: { clue: 'Prickly part of a toothbrush', answer: '', row: 0, col: 2 },
+    2: { clue: 'Pre-Easter period', answer: '', row: 0, col: 3 },
+    3: { clue: 'Hot sauce in a Bloody Mary', answer: '', row: 0, col: 4 },
+    4: { clue: 'Radcliffe of Hollywood and Broadway', answer: '', row: 1, col: 1 },
+    5: { clue: 'Give to charity, be kind to others, etc.', answer: '', row: 1, col: 5 },  
+    6: { clue: 'Famous character whos told "Tis but thy name that is my enemy"', answer: '', row: 2, col: 0 },
+    7: { clue: 'Shape of a doorstop', answer: '', row: 2, col: 6 },  
   },
 } as const;
 
