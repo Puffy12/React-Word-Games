@@ -89,7 +89,23 @@ export const data5 = {
     5: { clue: 'TYPE OF TEXT LIKE THIS', answer: 'BOLD', row: 1, col: 0 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5];
+export const data6 = {
+  across: {
+    1: { clue: 'Where a masseuse might work', answer: 'SPA', row: 0, col: 0 },
+    4: { clue: 'Drops the ball', answer: 'ERRS', row: 1, col: 0 },
+    6: { clue: 'Antianxiety drug whose name is a palindrome', answer: 'XANAX', row: 2, col: 0 },
+    8: { clue: 'Harvards rival', answer: 'YALE', row: 3, col: 1 },
+    9: { clue: 'Last letter, in London', answer: 'ZED', row: 4, col: 2 },
+  },
+  down: { 
+    1: { clue: '"The birds and the bees" topic', answer: 'SEX', row: 0, col: 0 },
+    2: { clue: 'Speak with folded hands', answer: 'PRAY', row: 0, col: 1 },
+    3: { clue: 'Desi __, "I love Lucy" co-star', answer: 'ARNAZ', row: 0, col: 2 },
+    5: { clue: 'All-items-must-go event', answer: 'SALE', row: 1, col: 3 },
+    7: { clue: 'Crossed (Out)', answer: 'XED', row: 2, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
