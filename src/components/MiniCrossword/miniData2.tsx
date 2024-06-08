@@ -105,7 +105,24 @@ export const data6 = {
     7: { clue: 'Crossed (Out)', answer: 'XED', row: 2, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6];
+export const data7 = {
+  across: {
+    1: { clue: 'This clues number', answer: 'ONE', row: 0, col: 0 },
+    4: { clue: 'Lines on a map', answer: 'ROADS', row: 1, col: 0 },
+    6: { clue: 'Word before "pie" or "patootie"', answer: 'CUTIE', row: 2, col: 0 },
+    7: { clue: 'Japanese cartoon genre', answer: 'ANIME', row: 3, col: 0 },
+    8: { clue: 'This clues number plus 1-Across', answer: 'TEN', row: 4, col: 2 },
+  },
+  down: { 
+    1: { clue: 'Apex predator of the ocean', answer: 'ORCA', row: 0, col: 0 },
+    2: { clue: 'Salt, fat, acid or eg, e.g', answer: 'NOUN', row: 0, col: 1 },
+    3: { clue: '"Try some of this!"', answer: 'EATIT', row: 0, col: 2 },
+    4: { clue: 'Only U.S coin that doesnt mention "dollar" or "cents(s)" on it', answer: 'DIME', row: 1, col: 3 },
+    5: { clue: 'In the public eye', answer: 'SEEN', row: 1, col: 4 },  },
+} as const;
+
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
