@@ -121,8 +121,32 @@ export const data7 = {
     5: { clue: 'In the public eye', answer: 'SEEN', row: 1, col: 4 },  },
 } as const;
 
+export const data8 = {
+  across: {
+    1: { clue: 'Sandwich whose name is the initials of its ingredients', answer: '', row: 0, col: 2 },
+    4: { clue: 'Anticipate with apprehension', answer: '', row: 1, col: 1 },
+    6: { clue: 'L.G.B.T.Q.+ pride symbol', answer: '', row: 2, col: 0 },
+    8: { clue: 'Performing in a play, say', answer: '', row: 3, col: 0 },
+    9: { clue: 'School featured in "Good Will Hunting"', answer: '', row: 4, col: 0 },
+    10: { clue: 'Rolled-up grass', answer: '', row: 4, col: 4 },
+    11: { clue: 'Serpentine swimmer', answer: '', row: 5, col: 0 },
+    12: { clue: '___ in the machine (lowly worker)', answer: '', row: 5, col: 4 },
+    13: { clue: 'Cheer at a soccer stadium', answer: '', row: 6, col: 0 },
+    14: { clue: 'Poem of praise', answer: '', row: 6, col: 4 },
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
+  },
+  down: { 
+    1: { clue: '', answer: '', row: 0, col: 2 },
+    2: { clue: '', answer: '', row: 0, col: 3 },
+    3: { clue: '', answer: '', row: 0, col: 4 },
+    4: { clue: '', answer: '', row: 1, col: 1 },
+    5: { clue: '', answer: '', row: 1, col: 5 },  
+    6: { clue: '', answer: '', row: 2, col: 0 },
+    7: { clue: '', answer: '', row: 2, col: 6 },  
+  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
