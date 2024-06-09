@@ -148,18 +148,18 @@ export const data8 = {
 
 export const data9 = {
   across: {
-    1: { clue: 'Terrier in "The Wizard of Oz"', answer: '', row: 0, col: 1 },
-    4: { clue: 'TV alternative to "live"', answer: '', row: 1, col: 0 },
-    6: { clue: 'Turn topsy-turvy', answer: '', row: 2, col: 0 },
-    7: { clue: 'Tangy', answer: '', row: 3, col: 0 },
-    8: { clue: 'Team ___ (Olympians in red, white and blue)', answer: '', row: 4, col: 0 },
+    1: { clue: 'Terrier in "The Wizard of Oz"', answer: 'TOTO', row: 0, col: 1 },
+    4: { clue: 'TV alternative to "live"', answer: 'TAPED', row: 1, col: 0 },
+    6: { clue: 'Turn topsy-turvy', answer: 'UPEND', row: 2, col: 0 },
+    7: { clue: 'Tangy', answer: 'TART', row: 3, col: 0 },
+    8: { clue: 'Team ___ (Olympians in red, white and blue)', answer: 'USA', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: 'Tiny appetizers at a Spanish bar', answer: '', row: 0, col: 1 },
-    2: { clue: '"Tosca" or "La Traviata"', answer: '', row: 0, col: 2 },
-    3: { clue: 'Thing you might have a stake in?', answer: '', row: 0, col: 3 },
-    4: { clue: 'Totally strange', answer: '', row: 0, col: 4 },
-    5: { clue: 'Type of skirt for a ballerina', answer: '', row: 1, col: 0 },  },
+    1: { clue: 'Tiny appetizers at a Spanish bar', answer: 'TAPAS', row: 0, col: 1 },
+    2: { clue: '"Tosca" or "La Traviata"', answer: 'OPERA', row: 0, col: 2 },
+    3: { clue: 'Thing you might have a stake in?', answer: 'TENT', row: 0, col: 3 },
+    4: { clue: 'Totally strange', answer: 'ODD', row: 0, col: 4 },
+    5: { clue: 'Type of skirt for a ballerina', answer: 'TUTU', row: 1, col: 0 },  },
 } as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
