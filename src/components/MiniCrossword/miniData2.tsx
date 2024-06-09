@@ -123,26 +123,26 @@ export const data7 = {
 
 export const data8 = {
   across: {
-    1: { clue: 'Sandwich whose name is the initials of its ingredients', answer: '', row: 0, col: 2 },
-    4: { clue: 'Anticipate with apprehension', answer: '', row: 1, col: 1 },
-    6: { clue: 'L.G.B.T.Q.+ pride symbol', answer: '', row: 2, col: 0 },
-    8: { clue: 'Performing in a play, say', answer: '', row: 3, col: 0 },
-    9: { clue: 'School featured in "Good Will Hunting"', answer: '', row: 4, col: 0 },
-    10: { clue: 'Rolled-up grass', answer: '', row: 4, col: 4 },
-    11: { clue: 'Serpentine swimmer', answer: '', row: 5, col: 0 },
-    12: { clue: '___ in the machine (lowly worker)', answer: '', row: 5, col: 4 },
-    13: { clue: 'Cheer at a soccer stadium', answer: '', row: 6, col: 0 },
-    14: { clue: 'Poem of praise', answer: '', row: 6, col: 4 },
+    1: { clue: 'Sandwich whose name is the initials of its ingredients', answer: 'BLT', row: 0, col: 2 },
+    4: { clue: 'Anticipate with apprehension', answer: 'DREAD', row: 1, col: 1 },
+    6: { clue: 'L.G.B.T.Q.+ pride symbol', answer: 'RAINBOW', row: 2, col: 0 },
+    8: { clue: 'Performing in a play, say', answer: 'ONSTAGE', row: 3, col: 0 },
+    9: { clue: 'School featured in "Good Will Hunting"', answer: 'MIT', row: 4, col: 0 },
+    10: { clue: 'Rolled-up grass', answer: 'SOD', row: 4, col: 4 },
+    11: { clue: 'Serpentine swimmer', answer: 'EEL', row: 5, col: 0 },
+    12: { clue: '___ in the machine (lowly worker)', answer: 'COG', row: 5, col: 4 },
+    13: { clue: 'Cheer at a soccer stadium', answer: 'OLE', row: 6, col: 0 },
+    14: { clue: 'Poem of praise', answer: 'ODE', row: 6, col: 4 },
 
   },
   down: { 
-    1: { clue: 'Prickly part of a toothbrush', answer: '', row: 0, col: 2 },
-    2: { clue: 'Pre-Easter period', answer: '', row: 0, col: 3 },
-    3: { clue: 'Hot sauce in a Bloody Mary', answer: '', row: 0, col: 4 },
-    4: { clue: 'Radcliffe of Hollywood and Broadway', answer: '', row: 1, col: 1 },
-    5: { clue: 'Give to charity, be kind to others, etc.', answer: '', row: 1, col: 5 },  
-    6: { clue: 'Famous character whos told "Tis but thy name that is my enemy"', answer: '', row: 2, col: 0 },
-    7: { clue: 'Shape of a doorstop', answer: '', row: 2, col: 6 },  
+    1: { clue: 'Prickly part of a toothbrush', answer: 'BRISTLE', row: 0, col: 2 },
+    2: { clue: 'Pre-Easter period', answer: 'LENT', row: 0, col: 3 },
+    3: { clue: 'Hot sauce in a Bloody Mary', answer: 'TABASCO', row: 0, col: 4 },
+    4: { clue: 'Radcliffe of Hollywood and Broadway', answer: 'DANIEL', row: 1, col: 1 },
+    5: { clue: 'Give to charity, be kind to others, etc.', answer: 'DOGOOD', row: 1, col: 5 },  
+    6: { clue: 'Famous character whos told "Tis but thy name that is my enemy"', answer: 'ROMEO', row: 2, col: 0 },
+    7: { clue: 'Shape of a doorstop', answer: 'WEDGE', row: 2, col: 6 },  
   },
 } as const;
 
