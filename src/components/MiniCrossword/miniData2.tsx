@@ -162,6 +162,22 @@ export const data9 = {
     5: { clue: 'Type of skirt for a ballerina', answer: 'TUTU', row: 1, col: 0 },  },
 } as const;
 
+export const data10 = {
+  across: {
+    1: { clue: 'Curse word', answer: '', row: 0, col: 0 },
+    4: { clue: '"Bear" thats not actually a bear', answer: '', row: 1, col: 0 },
+    6: { clue: 'Alphabetically first gas on the periodic table', answer: '', row: 2, col: 0 },
+    7: { clue: 'Email button', answer: '', row: 3, col: 1 },
+    8: { clue: 'Three-pointer, in hoops slang', answer: '', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Genre that influenced reggae and rocksteady', answer: '', row: 0, col: 0 },
+    2: { clue: 'Bottom-of-the-barrel', answer: '', row: 0, col: 1 },
+    3: { clue: 'Champing at the bit', answer: '', row: 0, col: 2 },
+    4: { clue: 'How solitaire is played', answer: '', row: 0, col: 3 },
+    5: { clue: '___ Jackson, former judge on "American Idol"', answer: '', row: 0, col: 4 },  },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData2 = (index: number) => {
