@@ -10,6 +10,8 @@ Experience an engaging collection of word games and puzzles with our web app bui
   - [Expanding the ESLint Configuration](#expanding-the-eslint-configuration)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Games](#games)
+- [MiniCrosswordGame](#minicrosswordgame)
 
 ## Introduction
 
@@ -66,6 +68,20 @@ We welcome contributions to the React Word Games project! Here’s how you can c
 4. Push your changes to your fork
 5. Open a pull request to the main repository
 
-Please make sure your code follows the project's coding standards and passes all tests before submitting your pull request.
+Please make sure your code follows the projects coding standards and passes all tests before submitting your pull request.
 
 Thank you for contributing!
+
+## Games 
+
+## MiniCrosswordGame
+
+This is a Mini Crossword game built using React. It features interactive crossword puzzles that can be filled out directly in the browser. The game includes functionalities to check answers, reset the puzzle, and provides visual feedback for correct answers. The crossword data is updated daily to ensure a fresh experience each time you play.
+
+## Features
+
+- **Interactive Crossword**: Users can fill out the crossword directly on the webpage.
+- **Daily Updates**: The crossword data is updated every day.
+- **Answer Feedback**: Visual feedback is provided for correct answers.
+- **Reset Functionality**: Users can reset the crossword to start over.
+- **Mobile-Friendly**: While the game is designed to work on various screen sizes, it is best experienced on larger screens.
