@@ -194,6 +194,23 @@ export const data11 = {
     5: { clue: 'Spanish verb meaning "to be"', answer: 'SER', row: 1, col: 4 },  },
 } as const;
 
+export const data12 = {
+  across: {
+    1: { clue: 'Sharply turns one way...', answer: 'ZIGS', row: 0, col: 0 },
+    5: { clue: 'Wing it on stage', answer: 'ADLIB', row: 1, col: 0 },
+    7: { clue: 'Cloth for covering cuts', answer: 'GAUZE', row: 2, col: 0 },
+    8: { clue: 'One of 500 in a ream of paper', answer: 'SHEET', row: 3, col: 0 },
+    9: { clue: 'Things calculated at casinos', answer: 'ODDS', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: '...then turns the other way', answer: 'ZAGS', row: 0, col: 0 },
+    2: { clue: 'State ID?', answer: 'IDAHO', row: 0, col: 1 },
+    3: { clue: 'Like those who cant pull their eyes away from the TV', answer: 'GLUED', row: 0, col: 2 },
+    4: { clue: 'Evaluated with "up"', answer: 'SIZED', row: 0, col: 3 },
+    6: { clue: 'Things placed at casinos', answer: 'BETS', row: 1, col: 4 },  },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData2 = (index: number) => {
