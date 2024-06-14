@@ -226,7 +226,23 @@ export const data13 = {
     6: { clue: '"Stillmatic" rapper', answer: 'NAS', row: 1, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
+export const data14 = {
+  across: {
+    1: { clue: 'Someone who might have a special line to the entrance', answer: '', row: 0, col: 1 },
+    4: { clue: 'Dial-up device', answer: '', row: 1, col: 0 },
+    6: { clue: 'The "U" in UV', answer: '', row: 2, col: 0 },
+    7: { clue: 'Feature of a well-used apron, maybe', answer: '', row: 3, col: 0 },
+    8: { clue: 'Bird on the dollar bill', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Physicist for whom an electrical measurement is named', answer: '', row: 0, col: 1 },
+    2: { clue: 'Dog collar attachment, for short', answer: '', row: 0, col: 2 },
+    3: { clue: 'Danger', answer: '', row: 0, col: 3 },
+    4: { clue: 'Artists creative inspiration', answer: '', row: 1, col: 0 },
+    5: { clue: 'Quite a head of hair', answer: '', row: 1, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
