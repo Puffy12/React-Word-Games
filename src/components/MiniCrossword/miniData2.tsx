@@ -210,8 +210,23 @@ export const data12 = {
     6: { clue: 'Things placed at casinos', answer: 'BETS', row: 1, col: 4 },  },
 } as const;
 
+export const data13 = {
+  across: {
+    1: { clue: 'Powdery mineral', answer: 'TALC', row: 0, col: 0 },
+    5: { clue: 'This might bring you to tears', answer: 'ONION', row: 1, col: 0 },
+    7: { clue: 'Candymaker responsible for Lickable Wallpaper and Hair Toffee', answer: 'WONKA', row: 2, col: 0 },
+    8: { clue: 'Good puzzle piece to start with', answer: 'EDGES', row: 3, col: 0 },
+    9: { clue: 'Writer Tolstoy', answer: 'LEO', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Item in a beach bag', answer: 'TOWEL', row: 0, col: 0 },
+    2: { clue: 'One end of a battery', answer: 'ANODE', row: 0, col: 1 },
+    3: { clue: 'Specialized "-speak"', answer: 'LINGO', row: 0, col: 2 },
+    4: { clue: 'Jack and __(mixed drinks)', answer: 'COKE', row: 0, col: 3 },
+    6: { clue: '"Stillmatic" rapper', answer: 'NAS', row: 1, col: 4 },  },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
