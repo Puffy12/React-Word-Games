@@ -244,25 +244,25 @@ export const data14 = {
 
 export const data15 = {
   across: {
-    1: { clue: '"Jack ___ could eat no fat …"', answer: '', row: 0, col: 0 },
-    6: { clue: 'Attached with string', answer: '', row: 1, col: 0 },
-    8: { clue: 'One whos wise beyond their years', answer: '', row: 2, col: 0 },
-    10: { clue: 'Sports org. with an "octagon"', answer: '', row: 3, col: 0 },
-    11: { clue: '___-Magnon (early human)', answer: '', row: 3, col: 4 },
-    12: { clue: 'Olympic powerhouse in womens gymnastics', answer: '', row: 4, col: 0 },
-    14: { clue: 'For mature audiences, movie-wise', answer: '', row: 5, col: 1 },
-    15: { clue: 'Put clothes on', answer: '', row: 6, col: 2 },
+    1: { clue: '"Jack ___ could eat no fat …"', answer: 'SPRAT', row: 0, col: 0 },
+    6: { clue: 'Attached with string', answer: 'TIEDON', row: 1, col: 0 },
+    8: { clue: 'One whos wise beyond their years', answer: 'OLDSOUL', row: 2, col: 0 },
+    10: { clue: 'Sports org. with an "octagon"', answer: 'UFC', row: 3, col: 0 },
+    11: { clue: '___-Magnon (early human)', answer: 'CRO', row: 3, col: 4 },
+    12: { clue: 'Olympic powerhouse in womens gymnastics', answer: 'TEAMUSA', row: 4, col: 0 },
+    14: { clue: 'For mature audiences, movie-wise', answer: 'RRATED', row: 5, col: 1 },
+    15: { clue: 'Put clothes on', answer: 'DRESS', row: 6, col: 2 },
 
   },
   down: { 
-    1: { clue: 'Dark beer choice', answer: '', row: 0, col: 0 },
-    2: { clue: 'Steal', answer: '', row: 0, col: 1 },
-    3: { clue: 'Soccer penalty awarded for coughing at another player(!) during the pandemic', answer: '', row: 0, col: 2 },
-    4: { clue: 'Streaming interruptions', answer: '', row: 0, col: 3 },
-    5: { clue: '"OMG, look at this baby hedgehog!"', answer: '', row: 0, col: 4 },  
-    7: { clue: 'Hospital staffers', answer: '', row: 1, col: 5 },  
-    9: { clue: 'Units of laundry', answer: '', row: 2, col: 6 },  
-    13: { clue: 'Month when International Womens Day is celebrated: Abbr.', answer: '', row: 4, col: 3 },  
+    1: { clue: 'Dark beer choice', answer: 'STOUT', row: 0, col: 0 },
+    2: { clue: 'Steal', answer: 'PILFER', row: 0, col: 1 },
+    3: { clue: 'Soccer penalty awarded for coughing at another player(!) during the pandemic', answer: 'REDCARD', row: 0, col: 2 },
+    4: { clue: 'Streaming interruptions', answer: 'ADS', row: 0, col: 3 },
+    5: { clue: '"OMG, look at this baby hedgehog!"', answer: 'TOOCUTE', row: 0, col: 4 },  
+    7: { clue: 'Hospital staffers', answer: 'NURSES', row: 1, col: 5 },  
+    9: { clue: 'Units of laundry', answer: 'LOADS', row: 2, col: 6 },  
+    13: { clue: 'Month when International Womens Day is celebrated: Abbr.', answer: 'MAR', row: 4, col: 3 },  
 
   },
 } as const;
