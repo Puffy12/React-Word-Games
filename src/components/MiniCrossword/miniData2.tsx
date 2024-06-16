@@ -269,18 +269,18 @@ export const data15 = {
 
 export const data16 = {
   across: {
-    1: { clue: 'Pencil material thats actually made of graphite and clay', answer: '', row: 0, col: 1 },
-    5: { clue: 'Uninspired first message on a dating app', answer: '', row: 1, col: 0 },
-    6: { clue: '"One more time!"', answer: '', row: 2, col: 0 },
-    7: { clue: 'Fried Hanukkah treat', answer: '', row: 3, col: 0 },
-    8: { clue: 'Get out of Dodge', answer: '', row: 4, col: 0 },
+    1: { clue: 'Pencil material thats actually made of graphite and clay', answer: 'LEAD', row: 0, col: 1 },
+    5: { clue: 'Uninspired first message on a dating app', answer: 'HELLO', row: 1, col: 0 },
+    6: { clue: '"One more time!"', answer: 'AGAIN', row: 2, col: 0 },
+    7: { clue: 'Fried Hanukkah treat', answer: 'LATKE', row: 3, col: 0 },
+    8: { clue: 'Get out of Dodge', answer: 'FLEE', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: 'Long paper size', answer: '', row: 0, col: 1 },
-    2: { clue: 'Fill with joy', answer: '', row: 0, col: 2 },
-    3: { clue: 'How besties might dress', answer: '', row: 0, col: 3 },
-    4: { clue: '"Finished!"', answer: '', row: 0, col: 4 },
-    5: { clue: '50%', answer: '', row: 1, col: 0 },  },
+    1: { clue: 'Long paper size', answer: 'LEGAL', row: 0, col: 1 },
+    2: { clue: 'Fill with joy', answer: 'ELATE', row: 0, col: 2 },
+    3: { clue: 'How besties might dress', answer: 'ALIKE', row: 0, col: 3 },
+    4: { clue: '"Finished!"', answer: 'DONE', row: 0, col: 4 },
+    5: { clue: '50%', answer: 'HALF', row: 1, col: 0 },  },
 } as const;
 
 
