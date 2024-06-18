@@ -299,7 +299,23 @@ export const data17 = {
     5: { clue: 'Give it a go', answer: 'TRY', row: 0, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
+export const data18 = {
+  across: {
+    1: { clue: 'Fitting', answer: 'APT', row: 0, col: 1 },
+    4: { clue: 'Fake identity', answer: 'ALIAS', row: 1, col: 0 },
+    6: { clue: 'Was really bad at something', answer: 'STANK', row: 2, col: 0 },
+    7: { clue: 'Marsupial friend of Winnie-the-Pooh', answer: 'KANGA', row: 3, col: 0 },
+    8: { clue: 'Marsupial friend of Winnie-the-Pooh', answer: 'ROO', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Spot for wedding vows', answer: 'ALTAR', row: 0, col: 1 },
+    2: { clue: 'Instrument that contains strings but isnt a string instrument', answer: 'PIANO', row: 0, col: 2 },
+    3: { clue: 'Dance it takes two to do', answer: 'TANGO', row: 0, col: 3 },
+    4: { clue: '"___ me anything"', answer: 'ASK', row: 1, col: 0 },
+    5: { clue: 'Music genre thats an anagram of 4-Down', answer: 'SKA', row: 1, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
 export const getRandomCrosswordData2 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
