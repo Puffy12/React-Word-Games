@@ -285,18 +285,18 @@ export const data16 = {
 
 export const data17 = {
   across: {
-    1: { clue: 'Entice', answer: '', row: 0, col: 0 },
-    6: { clue: 'Piece of asparagus', answer: '', row: 1, col: 0 },
-    7: { clue: 'With 8-Across, laser pointer chaser', answer: '', row: 2, col: 0 },
-    8: { clue: 'See 7-Across', answer: '', row: 3, col: 1 },
-    9: { clue: 'Like a wink that suggests "This is our little secret"', answer: '', row: 4, col: 1 },
+    1: { clue: 'Entice', answer: 'TEMPT', row: 0, col: 0 },
+    6: { clue: 'Piece of asparagus', answer: 'SPEAR', row: 1, col: 0 },
+    7: { clue: 'With 8-Across, laser pointer chaser', answer: 'KITTY', row: 2, col: 0 },
+    8: { clue: 'See 7-Across', answer: 'CAT', row: 3, col: 1 },
+    9: { clue: 'Like a wink that suggests "This is our little secret"', answer: 'SLY', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: 'Disapproving cluck', answer: '', row: 0, col: 0 },
-    2: { clue: 'Grand film productions', answer: '', row: 0, col: 1 },
-    3: { clue: 'Iron, for example', answer: '', row: 0, col: 2 },
-    4: { clue: 'Shape of a York peppermint treat', answer: '', row: 0, col: 3 },
-    5: { clue: 'Give it a go', answer: '', row: 0, col: 4 },  },
+    1: { clue: 'Disapproving cluck', answer: 'TSK', row: 0, col: 0 },
+    2: { clue: 'Grand film productions', answer: 'EPICS', row: 0, col: 1 },
+    3: { clue: 'Iron, for example', answer: 'METAL', row: 0, col: 2 },
+    4: { clue: 'Shape of a York peppermint treat', answer: 'PATTY', row: 0, col: 3 },
+    5: { clue: 'Give it a go', answer: 'TRY', row: 0, col: 4 },  },
 } as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
