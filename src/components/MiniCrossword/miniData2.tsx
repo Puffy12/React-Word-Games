@@ -317,18 +317,18 @@ export const data18 = {
 
 export const data19 = {
   across: {
-    1: { clue: 'Wilbur or Babe, in literature', answer: '', row: 0, col: 1 },
-    4: { clue: 'Language that gives us "alma mater" and "alter ego"', answer: '', row: 1, col: 0 },
-    6: { clue: 'Writing assignment in English class', answer: '', row: 2, col: 0 },
-    7: { clue: 'Something skipped across a calm lake', answer: '', row: 3, col: 0 },
-    8: { clue: 'Crumb carrier', answer: '', row: 4, col: 1 },
+    1: { clue: 'Wilbur or Babe, in literature', answer: 'PIG', row: 0, col: 1 },
+    4: { clue: 'Language that gives us "alma mater" and "alter ego"', answer: 'LATIN', row: 1, col: 0 },
+    6: { clue: 'Writing assignment in English class', answer: 'ESSAY', row: 2, col: 0 },
+    7: { clue: 'Something skipped across a calm lake', answer: 'STONE', row: 3, col: 0 },
+    8: { clue: 'Crumb carrier', answer: 'ANT', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: 'Gemelli, cavatelli or vermicelli', answer: '', row: 0, col: 1 },
-    2: { clue: 'Fighting words?', answer: '', row: 0, col: 2 },
-    3: { clue: '"Fee-fi-fo-fum" speaker', answer: '', row: 0, col: 3 },
-    4: { clue: '"___ Misérables"', answer: '', row: 1, col: 0 },
-    5: { clue: 'Bill known as "the Science Guy"', answer: '', row: 1, col: 4 },  },
+    1: { clue: 'Gemelli, cavatelli or vermicelli', answer: 'PASTA', row: 0, col: 1 },
+    2: { clue: 'Fighting words?', answer: 'ITSON', row: 0, col: 2 },
+    3: { clue: '"Fee-fi-fo-fum" speaker', answer: 'GIANT', row: 0, col: 3 },
+    4: { clue: '"___ Misérables"', answer: 'LES', row: 1, col: 0 },
+    5: { clue: 'Bill known as "the Science Guy"', answer: 'NYE', row: 1, col: 4 },  },
 } as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
