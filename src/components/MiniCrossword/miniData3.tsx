@@ -1,17 +1,17 @@
 export const data = {
     across: {
-      1: { clue: 'Sizzlingly popular', answer: '', row: 0, col: 1 },
-      4: { clue: 'Centerpieces at wedding receptions', answer: '', row: 1, col: 0 },
-      6: { clue: 'Bird-related', answer: '', row: 2, col: 0 },
-      7: { clue: 'Modern payment app', answer: '', row: 3, col: 0 },
-      8: { clue: 'Feeling you might have while pacing the floor', answer: '', row: 4, col: 0 },
+      1: { clue: 'Sizzlingly popular', answer: 'HOT', row: 0, col: 1 },
+      4: { clue: 'Centerpieces at wedding receptions', answer: 'CAKES', row: 1, col: 0 },
+      6: { clue: 'Bird-related', answer: 'AVIAN', row: 2, col: 0 },
+      7: { clue: 'Modern payment app', answer: 'VENMO', row: 3, col: 0 },
+      8: { clue: 'Feeling you might have while pacing the floor', answer: 'ANGST', row: 4, col: 0 },
     },
     down: { 
-      1: { clue: 'Sanctuary', answer: '', row: 0, col: 1 },
-      2: { clue: 'Giving the green light to, for short', answer: '', row: 0, col: 2 },
-      3: { clue: 'The Lions and the Tigers, for Detroit', answer: '', row: 0, col: 3 },
-      4: { clue: 'Vena ___ (blood vessel to the heart)', answer: '', row: 1, col: 0 },
-      5: { clue: 'Sassy little brat', answer: '', row: 1, col: 4 },  },
+      1: { clue: 'Sanctuary', answer: 'HAVEN', row: 0, col: 1 },
+      2: { clue: 'Giving the green light to, for short', answer: 'OKING', row: 0, col: 2 },
+      3: { clue: 'The Lions and the Tigers, for Detroit', answer: 'TEAMS', row: 0, col: 3 },
+      4: { clue: 'Vena ___ (blood vessel to the heart)', answer: 'CAVA', row: 1, col: 0 },
+      5: { clue: 'Sassy little brat', answer: 'SNOT', row: 1, col: 4 },  },
   } as const;
 
 const crosswordDataArray = [data];
