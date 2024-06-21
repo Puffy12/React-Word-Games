@@ -16,18 +16,18 @@ export const data = {
 
 export const data2 = {
   across: {
-    1: { clue: 'What drivers in New Jersey cant legally get on their own', answer: '', row: 0, col: 1 },
-    4: { clue: 'World revolution?', answer: '', row: 1, col: 0 },
-    6: { clue: 'Shreks beloved', answer: '', row: 2, col: 0 },
-    7: { clue: 'Cabin ___ (cooped-up restlessness)', answer: '', row: 3, col: 0 },
-    8: { clue: 'Hardly any', answer: '', row: 4, col: 1 },
+    1: { clue: 'What drivers in New Jersey cant legally get on their own', answer: 'GAS', row: 0, col: 1 },
+    4: { clue: 'World revolution?', answer: 'ORBIT', row: 1, col: 0 },
+    6: { clue: 'Shreks beloved', answer: 'FIONA', row: 2, col: 0 },
+    7: { clue: 'Cabin ___ (cooped-up restlessness)', answer: 'FEVER', row: 3, col: 0 },
+    8: { clue: 'Hardly any', answer: 'FEW', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: '"Good ___!" (Charlie Brown catchphrase)', answer: '', row: 0, col: 1 },
-    2: { clue: 'Superior to', answer: '', row: 0, col: 2 },
-    3: { clue: 'Band of tissue connecting muscle and bone', answer: '', row: 0, col: 3 },
-    4: { clue: 'A little bit "not quite right"', answer: '', row: 1, col: 0 },
-    5: { clue: 'Paving substance', answer: '', row: 1, col: 4 },  },
+    1: { clue: '"Good ___!" (Charlie Brown catchphrase)', answer: 'GREIF', row: 0, col: 1 },
+    2: { clue: 'Superior to', answer: 'ABOVE', row: 0, col: 2 },
+    3: { clue: 'Band of tissue connecting muscle and bone', answer: 'SINEW', row: 0, col: 3 },
+    4: { clue: 'A little bit "not quite right"', answer: 'OFF', row: 1, col: 0 },
+    5: { clue: 'Paving substance', answer: 'TAR', row: 1, col: 4 },  },
 } as const;
 
 const crosswordDataArray = [data, data2];
