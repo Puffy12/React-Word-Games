@@ -376,36 +376,3 @@ export const data20 = {
 } as const;
 
 
-
-const crosswordDataArray = [data, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19, data20];
-
-export const getRandomCrosswordData = (index: number) => {
-  let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
-  while(randomIndex === index){
-    randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
-  }
-  return crosswordDataArray[randomIndex];
-};
-
-export const getCrosswordDataByIndex = (index: number) => {
-  if (index < 0 || index >= crosswordDataArray.length) {
-    throw new Error("Index out of bounds");
-  }
-  return crosswordDataArray[index];
-};
-
-export const example = {
-  across: {
-    1: { clue: '', answer: '', row: 0, col: 0 },
-    4: { clue: '', answer: '', row: 1, col: 0 },
-    6: { clue: '', answer: '', row: 2, col: 0 },
-    7: { clue: '', answer: '', row: 3, col: 0 },
-    8: { clue: '', answer: '', row: 4, col: 0 },
-  },
-  down: { 
-    1: { clue: '', answer: '', row: 0, col: 0 },
-    2: { clue: '', answer: '', row: 0, col: 1 },
-    3: { clue: '', answer: '', row: 0, col: 2 },
-    4: { clue: '', answer: '', row: 0, col: 3 },
-    5: { clue: '', answer: '', row: 0, col: 4 },  },
-} as const;

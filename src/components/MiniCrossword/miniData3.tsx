@@ -16,7 +16,7 @@ export const data = {
 
 const crosswordDataArray = [data];
 
-export const getRandomCrosswordData = (index: number) => {
+export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
   while(randomIndex === index){
     randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
@@ -24,7 +24,7 @@ export const getRandomCrosswordData = (index: number) => {
   return crosswordDataArray[randomIndex];
 };
 
-export const getCrosswordDataByIndex = (index: number) => {
+export const getCrosswordDataByIndex3 = (index: number) => {
   if (index < 0 || index >= crosswordDataArray.length) {
     throw new Error("Index out of bounds");
   }
