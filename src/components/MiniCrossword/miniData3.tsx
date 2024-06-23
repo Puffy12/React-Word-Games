@@ -30,7 +30,23 @@ export const data2 = {
     5: { clue: 'Paving substance', answer: 'TAR', row: 1, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2];
+export const data3 = {
+  across: {
+    1: { clue: '"10 ___ or less" (supermarket line)', answer: '', row: 0, col: 0 },
+    6: { clue: 'Gutsy boldness', answer: '', row: 1, col: 0 },
+    7: { clue: 'June celebration', answer: '', row: 2, col: 0 },
+    8: { clue: 'One of 51 written by Alexander Hamilton for the Federalist Papers', answer: '', row: 3, col: 0 },
+    9: { clue: '"___ luck!" ("Go get em!")', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Urge forcefully', answer: '', row: 0, col: 0 },
+    2: { clue: 'Upper body, to a sculptor', answer: '', row: 0, col: 1 },
+    3: { clue: 'Have life', answer: '', row: 0, col: 2 },
+    4: { clue: 'King with a golden touch', answer: '', row: 0, col: 3 },
+    5: { clue: '"Later, alligator!"', answer: '', row: 0, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
