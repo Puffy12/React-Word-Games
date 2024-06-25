@@ -46,7 +46,23 @@ export const data3 = {
     5: { clue: '"Later, alligator!"', answer: 'SEEYA', row: 0, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3];
+export const data4 = {
+  across: {
+    1: { clue: 'What a fold-out-couch can become', answer: 'BED', row: 0, col: 1 },
+    4: { clue: 'Cars ordered from ones phone', answer: 'UBERS', row: 1, col: 0 },
+    6: { clue: 'Comedian Sherman of "Saturday Night Live"', answer: 'SARAH', row: 2, col: 0 },
+    7: { clue: 'Similar', answer: 'ALIKE', row: 3, col: 0 },
+    8: { clue: 'Harper ___, author to "To Kill a Mockingbird"', answer: 'LEE', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Knicks knack?', answer: 'BBALL', row: 0, col: 1 },
+    2: { clue: 'Spooky', answer: 'EERIE', row: 0, col: 2 },
+    3: { clue: 'Rapper in a high-profile feud with Kendrick Lamar', answer: 'DRAKE', row: 0, col: 3 },
+    4: { clue: 'Country with the most Olympic medals: Abbr.', answer: 'USA', row: 1, col: 0 },
+    5: { clue: '"___sells seashells"', answer: 'SHE', row: 1, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
