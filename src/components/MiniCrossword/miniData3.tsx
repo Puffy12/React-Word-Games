@@ -62,7 +62,23 @@ export const data4 = {
     5: { clue: '"___sells seashells"', answer: 'SHE', row: 1, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4];
+export const data5 = {
+  across: {
+    1: { clue: '"___ your other question ..."', answer: 'ASTRO', row: 0, col: 0 },
+    5: { clue: 'Bit of bird chatter', answer: 'CHIRP', row: 1, col: 0 },
+    7: { clue: 'Apartment building with individually owned units', answer: 'CONDO', row: 2, col: 0 },
+    8: { clue: 'Bit of bird chatter', answer: 'TWEET', row: 3, col: 0 },
+    9: { clue: 'Many varsity sports captains: Abbr.', answer: 'SRS', row: 4, col: 2 },
+  },
+  down: { 
+    1: { clue: 'Bank holding: Abbr.', answer: 'ACCT', row: 0, col: 0 },
+    2: { clue: '"Euphoria" or "Glee"', answer: 'SHOW', row: 0, col: 1 },
+    3: { clue: 'Fork points', answer: 'TINES', row: 0, col: 2 },
+    4: { clue: 'Purchase online, perhaps', answer: 'ORDER', row: 0, col: 3 },
+    6: { clue: 'Vessels for cooking pasta', answer: 'POTS', row: 1, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
