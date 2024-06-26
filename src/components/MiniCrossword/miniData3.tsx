@@ -78,7 +78,23 @@ export const data5 = {
     6: { clue: 'Vessels for cooking pasta', answer: 'POTS', row: 1, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5];
+export const data6 = {
+  across: {
+    1: { clue: 'It "puts you there where things are hollow," in a David Bowie hit', answer: '', row: 0, col: 0 },
+    5: { clue: 'What QR codes at restaurants lead to', answer: '', row: 1, col: 0 },
+    6: { clue: 'Top of the top', answer: '', row: 2, col: 0 },
+    7: { clue: 'Subject of a marathoners P.R.', answer: '', row: 3, col: 0 },
+    8: { clue: 'Log chopper', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: '___ Felicis, potion in the Harry Potter books known as "Liquid Luck"', answer: '', row: 0, col: 0 },
+    2: { clue: 'Japanese cartoon genre', answer: '', row: 0, col: 1 },
+    3: { clue: 'Zoom call button', answer: '', row: 0, col: 2 },
+    4: { clue: 'Suffix with Senegal or Sudan', answer: '', row: 0, col: 3 },
+    5: { clue: 'Parent company of Facebook', answer: '', row: 0, col: 4 },  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
