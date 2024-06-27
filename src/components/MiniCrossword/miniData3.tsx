@@ -94,6 +94,22 @@ export const data6 = {
     5: { clue: 'Parent company of Facebook', answer: 'META', row: 1, col: 0 },  },
 } as const;
 
+export const data7 = {
+  across: {
+    1: { clue: 'Not at work today', answer: '', row: 0, col: 0 },
+    4: { clue: 'Sushi order', answer: '', row: 1, col: 0 },
+    6: { clue: 'With 8-Across, what might have your family hanging by a thread?', answer: '', row: 2, col: 0 },
+    8: { clue: 'See 6-Across', answer: '', row: 3, col: 0 },
+    9: { clue: 'Maritime setting', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'The "O" of NATO: Abbr.', answer: '', row: 0, col: 0 },
+    2: { clue: '___ Worth, Tex.', answer: '', row: 0, col: 1 },
+    3: { clue: 'Drifting sheets of ice', answer: '', row: 0, col: 2 },
+    4: { clue: 'Expensive and high-quality', answer: '', row: 0, col: 3 },
+    5: { clue: 'School grp. for moms and dads', answer: '', row: 0, col: 4 },  },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData3 = (index: number) => {
