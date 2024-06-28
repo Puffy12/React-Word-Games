@@ -110,6 +110,24 @@ export const data7 = {
     5: { clue: 'School grp. for moms and dad1', answer: 'PTA', row: 2, col: 4 },  },
 } as const;
 
+export const data8 = {
+  across: {
+    1: { clue: '"Largemouth" lake animal', answer: '', row: 0, col: 1 },
+    5: { clue: 'Arousing suspicion', answer: '', row: 1, col: 0 },
+    6: { clue: '"Citizen Kane" director Welles', answer: '', row: 2, col: 0 },
+    7: { clue: 'Point after deuce, in tennis', answer: '', row: 3, col: 0 },
+    8: { clue: 'Joyous laughter', answer: '', row: 4, col: 0 },
+    9: { clue: 'Slowly sinks, as the sun', answer: '', row: 5, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Score of 3 on a par 4, e.g.', answer: '', row: 0, col: 1 },
+    2: { clue: 'Classify into separate groups', answer: '', row: 0, col: 2 },
+    3: { clue: 'SPEAKS LIKE THIS', answer: '', row: 0, col: 3 },
+    4: { clue: 'Instrument in electronic dance music, for short', answer: '', row: 0, col: 4 },
+    5: { clue: 'Becomes bubbly, as beer', answer: '', row: 1, col: 0 },  },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
 
 export const getRandomCrosswordData3 = (index: number) => {
