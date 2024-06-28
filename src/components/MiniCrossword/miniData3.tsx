@@ -96,21 +96,21 @@ export const data6 = {
 
 export const data7 = {
   across: {
-    1: { clue: 'Not at work today', answer: '', row: 0, col: 0 },
-    4: { clue: 'Sushi order', answer: '', row: 1, col: 0 },
-    6: { clue: 'With 8-Across, what might have your family hanging by a thread?', answer: '', row: 2, col: 0 },
-    8: { clue: 'See 6-Across', answer: '', row: 3, col: 0 },
-    9: { clue: 'Maritime setting', answer: '', row: 4, col: 0 },
+    1: { clue: 'Not at work today', answer: 'OFF', row: 0, col: 0 },
+    4: { clue: 'Sushi order', answer: 'ROLL', row: 1, col: 0 },
+    6: { clue: 'With 8-Across, what might have your family hanging by a thread?', answer: 'GROUP', row: 2, col: 0 },
+    8: { clue: 'See 6-Across', answer: 'TEXT', row: 3, col: 1 },
+    9: { clue: 'Maritime setting', answer: 'SEA', row: 4, col:2 },
   },
   down: { 
-    1: { clue: 'The "O" of NATO: Abbr.', answer: '', row: 0, col: 0 },
-    2: { clue: '___ Worth, Tex.', answer: '', row: 0, col: 1 },
-    3: { clue: 'Drifting sheets of ice', answer: '', row: 0, col: 2 },
-    4: { clue: 'Expensive and high-quality', answer: '', row: 0, col: 3 },
-    5: { clue: 'School grp. for moms and dads', answer: '', row: 0, col: 4 },  },
+    1: { clue: 'The "O" of NATO: Abbr.', answer: 'ORG', row: 0, col: 0 },
+    2: { clue: '___ Worth, Tex.', answer: 'FORT', row: 0, col: 1 },
+    3: { clue: 'Drifting sheets of ice', answer: 'FLOES', row: 0, col: 2 },
+    4: { clue: 'Expensive and high-quality', answer: 'LUXE', row: 1, col: 3 },
+    5: { clue: 'School grp. for moms and dad1', answer: 'PTA', row: 2, col: 4 },  },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
