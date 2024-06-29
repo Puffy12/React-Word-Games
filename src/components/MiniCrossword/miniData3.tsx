@@ -128,8 +128,30 @@ export const data8 = {
    },
 } as const;
 
+export const data9 = {
+  across: {
+    1: { clue: 'Thermometer reading, for short', answer: '', row: 0, col: 1 },
+    5: { clue: 'What the letters of ROY G. BIV stand for', answer: '', row: 1, col: 0 },
+    7: { clue: 'Totally rad', answer: '', row: 2, col: 0 },
+    9: { clue: 'Equivalent of 165 bottles of beer', answer: '', row: 3, col: 0 },
+    10: { clue: 'Spanish for "aunt"', answer: '', row: 3, col: 4 },
+    11: { clue: 'Pink Pearls are classic ones', answer: '', row: 4, col: 0 },
+    13: { clue: 'Devious', answer: '', row: 5, col: 1 },
+    14: { clue: 'Male cats or turkeys', answer: '', row: 6, col: 2 }
+  },
+  down: { 
+    1: { clue: '"The Two ___," second volume of the "Lord of the Rings" trilogy', answer: '', row: 0, col: 1 },
+    2: { clue: 'Gracefully stylish', answer: '', row: 0, col: 2 },
+    3: { clue: 'Jun., Jul., Aug., etc.', answer: '', row: 0, col: 3 },
+    4: { clue: 'The 76ers or the 49ers', answer: '', row: 0, col: 4 },
+    5: { clue: 'Serving at a birthday party', answer: '', row: 1, col: 0 },  
+    6: { clue: 'Self-satisfied smiles', answer: '', row: 5, col: 1 },
+    8: { clue: '"Piece of 5-Down!"', answer: '', row: 6, col: 2 },
+    12: { clue: 'Improvement of a web pages visibility, for short', answer: '', row: 4, col: 3 },
+  },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
@@ -159,5 +181,6 @@ export const example = {
     2: { clue: '', answer: '', row: 0, col: 1 },
     3: { clue: '', answer: '', row: 0, col: 2 },
     4: { clue: '', answer: '', row: 0, col: 3 },
-    5: { clue: '', answer: '', row: 0, col: 4 },  },
+    5: { clue: '', answer: '', row: 0, col: 4 },  
+  },
 } as const;
