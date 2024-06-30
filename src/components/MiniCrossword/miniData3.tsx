@@ -151,7 +151,25 @@ export const data9 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
+export const data10 = {
+  across: {
+    1: { clue: 'Purchase at the pump', answer: '', row: 0, col: 0 },
+    4: { clue: '"Not gonna happen"', answer: '', row: 1, col: 0 },
+    5: { clue: 'Big name in watches', answer: '', row: 2, col: 0 },
+    6: { clue: 'Former "Jeopardy!" host Trebek', answer: '', row: 3, col: 0 },
+    7: { clue: 'Candy that comes in collectible dispensers', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Pop star Selena', answer: '', row: 0, col: 0 },
+    2: { clue: 'Highest point', answer: '', row: 0, col: 1 },
+    3: { clue: 'Uncomfortable topic in middle school health class', answer: '', row: 0, col: 2 },
+    4: { clue: 'River past the Pyramids', answer: '', row: 0, col: 3 },
+    5: { clue: 'Alternative to sparkling, for water', answer: '', row: 0, col: 4 },  
+  },
+} as const;
+
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
