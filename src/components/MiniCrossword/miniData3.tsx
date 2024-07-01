@@ -170,18 +170,18 @@ export const data10 = {
 
 export const data11 = {
   across: {
-    1: { clue: '[How disappointing]', answer: '', row: 0, col: 1 },
-    4: { clue: 'Larger relative of a kayak', answer: '', row: 1, col: 0 },
-    6: { clue: 'Fire-starting crime', answer: '', row: 2, col: 0 },
-    7: { clue: 'Dust ___ (tiny pests)', answer: '', row: 3, col: 0 },
-    8: { clue: '"Golly!" ... or 1-Across, in pig Latin', answer: '', row: 4, col: 0 },
+    1: { clue: '[How disappointing]', answer: 'SIGN', row: 0, col: 1 },
+    5: { clue: 'Larger relative of a kayak', answer: 'CANOE', row: 1, col: 0 },
+    6: { clue: 'Fire-starting crime', answer: 'ARSON', row: 2, col: 0 },
+    7: { clue: 'Dust ___ (tiny pests)', answer: 'MITES', row: 3, col: 0 },
+    8: { clue: '"Golly!" ... or 1-Across, in pig Latin', answer: 'ISAY', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: 'Wrapped Indian garments', answer: '', row: 0, col: 1 },
-    2: { clue: 'App with a camera in its logo, informally', answer: '', row: 0, col: 2 },
-    3: { clue: 'Like the texture of a roasted marshmallow', answer: '', row: 0, col: 3 },
-    4: { clue: 'Theyre often laying around a farm', answer: '', row: 0, col: 4 },
-    5: { clue: 'Top worn for layering, for short', answer: '', row: 1, col: 0 },  
+    1: { clue: 'Wrapped Indian garments', answer: 'SARIS', row: 0, col: 1 },
+    2: { clue: 'App with a camera in its logo, informally', answer: 'INSTA', row: 0, col: 2 },
+    3: { clue: 'Like the texture of a roasted marshmallow', answer: 'GOOEY', row: 0, col: 3 },
+    4: { clue: 'Theyre often laying around a farm', answer: 'HENS', row: 0, col: 4 },
+    5: { clue: 'Top worn for layering, for short', answer: 'CAMI', row: 1, col: 0 },  
   },
 } as const;
 
