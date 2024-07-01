@@ -168,8 +168,24 @@ export const data10 = {
   },
 } as const;
 
+export const data11 = {
+  across: {
+    1: { clue: '[How disappointing]', answer: '', row: 0, col: 1 },
+    4: { clue: 'Larger relative of a kayak', answer: '', row: 1, col: 0 },
+    6: { clue: 'Fire-starting crime', answer: '', row: 2, col: 0 },
+    7: { clue: 'Dust ___ (tiny pests)', answer: '', row: 3, col: 0 },
+    8: { clue: '"Golly!" ... or 1-Across, in pig Latin', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'Wrapped Indian garments', answer: '', row: 0, col: 1 },
+    2: { clue: 'App with a camera in its logo, informally', answer: '', row: 0, col: 2 },
+    3: { clue: 'Like the texture of a roasted marshmallow', answer: '', row: 0, col: 3 },
+    4: { clue: 'Theyre often laying around a farm', answer: '', row: 0, col: 4 },
+    5: { clue: 'Top worn for layering, for short', answer: '', row: 1, col: 0 },  
+  },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
