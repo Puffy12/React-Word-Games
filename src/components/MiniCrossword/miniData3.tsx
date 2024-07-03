@@ -187,18 +187,18 @@ export const data11 = {
 
 export const data12 = {
   across: {
-    1: { clue: '"Yes, ___!" (chorus from a group of line cooks)', answer: '', row: 0, col: 0 },
-    5: { clue: 'Lover of the club music scene', answer: '', row: 1, col: 0 },
-    7: { clue: '"Humble" home', answer: '', row: 2, col: 0 },
-    8: { clue: 'They cant stand up by themselves because theyre "two-tired," in an old groaner', answer: '', row: 3, col: 0 },
-    9: { clue: 'It is written', answer: '', row: 4, col: 0 },
+    1: { clue: '"Yes, ___!" (chorus from a group of line cooks)', answer: 'CHEF', row: 0, col: 0 },
+    5: { clue: 'Lover of the club music scene', answer: 'RAVER', row: 1, col: 0 },
+    7: { clue: '"Humble" home', answer: 'ABODE', row: 2, col: 0 },
+    8: { clue: 'They cant stand up by themselves because theyre "two-tired," in an old groaner', answer: 'BIKES', row: 3, col: 0 },
+    9: { clue: 'It is written', answer: 'TEXT', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: 'What the "spider" actually is in a spider roll', answer: '', row: 0, col: 0 },
-    2: { clue: 'Nuns outfit', answer: '', row: 0, col: 1 },
-    3: { clue: 'Bring to mind', answer: '', row: 0, col: 2 },
-    4: { clue: 'UPS competitor', answer: '', row: 0, col: 3 },
-    6: { clue: 'Take a breather', answer: '', row: 0, col: 4 },  
+    1: { clue: 'What the "spider" actually is in a spider roll', answer: 'CRAB', row: 0, col: 0 },
+    2: { clue: 'Nuns outfit', answer: 'HABIT', row: 0, col: 1 },
+    3: { clue: 'Bring to mind', answer: 'EVOKE', row: 0, col: 2 },
+    4: { clue: 'UPS competitor', answer: 'FEDEX', row: 0, col: 3 },
+    6: { clue: 'Take a breather', answer: 'REST', row: 1, col: 4 },  
   },
 } as const;
 
