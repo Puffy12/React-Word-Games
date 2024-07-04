@@ -204,18 +204,18 @@ export const data12 = {
 
 export const data13 = {
   across: {
-    1: { clue: 'Defrosts', answer: '', row: 0, col: 0 },
-    6: { clue: 'Event with barrel racing and bull riding', answer: '', row: 1, col: 0 },
-    7: { clue: '"Gosh darn it!"', answer: '', row: 2, col: 0 },
-    8: { clue: 'Rocker who plays himself, as a murder suspect, on "Only Murders in the Building"', answer: '', row: 3, col: 0 },
-    9: { clue: 'Have the ___ for (be attracted to)', answer: '', row: 4, col: 0 },
+    1: { clue: 'Defrosts', answer: 'THAWS', row: 0, col: 0 },
+    6: { clue: 'Event with barrel racing and bull riding', answer: 'RODEO', row: 1, col: 0 },
+    7: { clue: '"Gosh darn it!"', answer: 'AWMAN', row: 2, col: 0 },
+    8: { clue: 'Rocker who plays himself, as a murder suspect, on "Only Murders in the Building"', answer: 'STING', row: 3, col: 0 },
+    9: { clue: 'Have the ___ for (be attracted to)', answer: 'HOTS', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: 'Totally awful, in slang', answer: '', row: 0, col: 0 },
-    2: { clue: 'Words on many self-help books', answer: '', row: 0, col: 1 },
-    3: { clue: 'Confess', answer: '', row: 0, col: 2 },
-    4: { clue: 'Gradually introduces to solid food', answer: '', row: 0, col: 3 },
-    5: { clue: 'Best Original ___ (Oscars category)', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Totally awful, in slang', answer: 'TRASH', row: 0, col: 0 },
+    2: { clue: 'Words on many self-help books', answer: 'HOWTO', row: 0, col: 1 },
+    3: { clue: 'Confess', answer: 'ADMIT', row: 0, col: 2 },
+    4: { clue: 'Gradually introduces to solid food', answer: 'WEANS', row: 0, col: 3 },
+    5: { clue: 'Best Original ___ (Oscars category)', answer: 'SONG', row: 0, col: 4 },  
   },
 } as const;
 
