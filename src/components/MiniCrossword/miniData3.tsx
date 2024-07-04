@@ -219,7 +219,24 @@ export const data13 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
+export const data14 = {
+  across: {
+    1: { clue: 'Fireworks show exclamations', answer: 'OOHS', row: 0, col: 1 },
+    5: { clue: 'Italys shape', answer: 'BOOT', row: 1, col: 1 },
+    6: { clue: 'Polynesian island nation', answer: 'SAMOA', row: 2, col: 0 },
+    7: { clue: 'Like a proverbial "nest" once the kids go to college', answer: 'EMPTY', row: 3, col: 0 },
+    8: { clue: 'Fireworks show exclamations', answer: 'AAHS', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: 'President who wrote the memoir "A Promised Land"', answer: 'OBAMA', row: 0, col: 1 },
+    2: { clue: 'That little extra something', answer: 'OOMPH', row: 0, col: 2 },
+    3: { clue: 'Sounds from an owl', answer: 'HOOTS', row: 0, col: 3 },
+    4: { clue: '"Dont go!"', answer: 'STAY', row: 0, col: 4 },
+    6: { clue: '"From ___ to shining ___"', answer: 'SEA', row: 2, col: 0 },  
+  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
