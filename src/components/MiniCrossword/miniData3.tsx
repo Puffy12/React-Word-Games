@@ -238,18 +238,18 @@ export const data14 = {
 
 export const data15 = {
   across: {
-    1: { clue: 'Black-tie affairs', answer: '', row: 0, col: 0 },
-    6: { clue: 'Friend of Flounder, in a Disney movie', answer: '', row: 1, col: 0 },
-    7: { clue: 'Middle of a hamburger', answer: '', row: 2, col: 0 },
-    8: { clue: 'Top (and bottom) of a hamburger', answer: '', row: 3, col: 1 },
-    9: { clue: 'Establishment that might have a "water circuit"', answer: '', row: 4, col: 1 },
+    1: { clue: 'Black-tie affairs', answer: 'GALAS', row: 0, col: 0 },
+    6: { clue: 'Friend of Flounder, in a Disney movie', answer: 'ARIEL', row: 1, col: 0 },
+    7: { clue: 'Middle of a hamburger', answer: 'PATTY', row: 2, col: 0 },
+    8: { clue: 'Top (and bottom) of a hamburger', answer: 'BUN', row: 3, col: 1 },
+    9: { clue: 'Establishment that might have a "water circuit"', answer: 'SPA', row: 4, col: 1 },
   },
   down: { 
-    1: { clue: 'Space between a train and the platform', answer: '', row: 0, col: 0 },
-    2: { clue: 'Most Yemenis and Saudis', answer: '', row: 0, col: 1 },
-    3: { clue: 'Became visibly happy', answer: '', row: 0, col: 2 },
-    4: { clue: 'Health insurance giant', answer: '', row: 0, col: 3 },
-    5: { clue: 'Sneaky, like a fox', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Space between a train and the platform', answer: 'GAP', row: 0, col: 0 },
+    2: { clue: 'Most Yemenis and Saudis', answer: 'ARABS', row: 0, col: 1 },
+    3: { clue: 'Became visibly happy', answer: 'LITUP', row: 0, col: 2 },
+    4: { clue: 'Health insurance giant', answer: 'AETNA', row: 0, col: 3 },
+    5: { clue: 'Sneaky, like a fox', answer: 'SLY', row: 0, col: 4 },  
   },
 } as const;
 
