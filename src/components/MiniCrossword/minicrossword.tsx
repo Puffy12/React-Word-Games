@@ -11,7 +11,7 @@ import { getCrosswordDataByIndex3 } from './miniData3';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const data = getCrosswordDataByIndex3(12); 
+  const data = getCrosswordDataByIndex3(13); 
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
@@ -125,7 +125,7 @@ function MiniCrossword() {
             Welcome to the Mini Crossword Game
           </h1>
           <p className="text-lg sm:text-xl text-gray-300">
-            This game is currently in development. 
+            Happy 4th of July!!!
           </p>
           <p className="text-lg text-gray-300 block sm:hidden">
             Does not work on smaller screens.
