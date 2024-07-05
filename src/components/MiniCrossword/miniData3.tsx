@@ -236,7 +236,25 @@ export const data14 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
+export const data15 = {
+  across: {
+    1: { clue: 'Black-tie affairs', answer: '', row: 0, col: 0 },
+    6: { clue: 'Friend of Flounder, in a Disney movie', answer: '', row: 1, col: 0 },
+    7: { clue: 'Middle of a hamburger', answer: '', row: 2, col: 0 },
+    8: { clue: 'Top (and bottom) of a hamburger', answer: '', row: 3, col: 1 },
+    9: { clue: 'Establishment that might have a "water circuit"', answer: '', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'Space between a train and the platform', answer: '', row: 0, col: 0 },
+    2: { clue: 'Most Yemenis and Saudis', answer: '', row: 0, col: 1 },
+    3: { clue: 'Became visibly happy', answer: '', row: 0, col: 2 },
+    4: { clue: 'Health insurance giant', answer: '', row: 0, col: 3 },
+    5: { clue: 'Sneaky, like a fox', answer: '', row: 0, col: 4 },  
+  },
+} as const;
+
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
