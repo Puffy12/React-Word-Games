@@ -280,18 +280,18 @@ export const data16 = {
 
 export const data17 = {
   across: {
-    1: { clue: '', answer: '', row: 0, col: 0 },
-    4: { clue: '', answer: '', row: 1, col: 0 },
-    6: { clue: '', answer: '', row: 2, col: 0 },
-    7: { clue: '', answer: '', row: 3, col: 0 },
-    8: { clue: '', answer: '', row: 4, col: 0 },
+    1: { clue: 'Weigh (down)', answer: '', row: 0, col: 2 },
+    4: { clue: 'Monks hood', answer: '', row: 1, col: 1 },
+    5: { clue: 'Country where the word for "lobster" translates literally to "dragon shrimp"', answer: '', row: 2, col: 0 },
+    6: { clue: 'Fertile areas in a desert', answer: '', row: 3, col: 0 },
+    7: { clue: 'Walks on water?', answer: '', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: '', answer: '', row: 0, col: 0 },
-    2: { clue: '', answer: '', row: 0, col: 1 },
-    3: { clue: '', answer: '', row: 0, col: 2 },
-    4: { clue: '', answer: '', row: 0, col: 3 },
-    5: { clue: '', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Idahos capital', answer: '', row: 0, col: 2 },
+    2: { clue: 'For whom a car manual is written', answer: '', row: 0, col: 3 },
+    3: { clue: 'Risky material to pack in a stuffed suitcase', answer: '', row: 0, col: 4 },
+    4: { clue: 'Spiced tea', answer: '', row: 1, col: 1 },
+    5: { clue: 'Character on "NYPD Blue" or "Brooklyn Nine-Nine"', answer: '', row: 2, col: 0 },  
   },
 } as const;
 
