@@ -253,8 +253,49 @@ export const data15 = {
   },
 } as const;
 
+export const data16 = {
+  across: {
+    1: { clue: '"___ imagining things?"', answer: 'AMI', row: 0, col: 2 },
+    4: { clue: 'Medical center for outpatients', answer: 'CLINIC', row: 1, col: 1 },
+    7: { clue: 'Picture on a greeting card that says "I lava you very much"', answer: 'VOLCANO', row: 2, col: 0 },
+    8: { clue: 'Abbr. after some business names', answer: 'INC', row: 3, col: 0 },
+    9: { clue: '"Holy moley!"', answer: 'WOW', row: 3, col: 4 },
+    10: { clue: 'Pepper with pepper, say', answer: 'SEASONS', row: 4, col: 0 },
+    12: { clue: 'Reach for the sky', answer: 'ASPIRE', row: 5, col: 0 },
+    13: { clue: 'Feeling blue', answer: 'SAD', row: 6, col: 2 },
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
+  },
+  down: { 
+    1: { clue: 'WHAT THIS CLUE IS IN', answer: 'ALLCAPS', row: 0, col: 2 },
+    2: { clue: 'The thing in "Is this thing on?"', answer: 'MIC', row: 0, col: 3 },
+    3: { clue: '"To briefly summarize..."', answer: 'INAWORD', row: 0, col: 3 },
+    4: { clue: 'Supply at an ice cream parlor', answer: 'CONES', row: 1, col: 1 },
+    5: { clue: '"___ ear, out the other"', answer: 'INONE', row: 1, col: 4 },  
+    6: { clue: 'Nearly 15% of them in the U.S live in Texas', answer: 'COWS', row: 1, col: 5 },  
+    7: { clue: 'Mastercard alternative', answer: 'VISA', row: 0, col: 2 },  
+    11: { clue: 'Singer known for performing', answer: 'SIA', row: 4, col: 3 },  
+
+  },
+} as const;
+
+export const data17 = {
+  across: {
+    1: { clue: '', answer: '', row: 0, col: 0 },
+    4: { clue: '', answer: '', row: 1, col: 0 },
+    6: { clue: '', answer: '', row: 2, col: 0 },
+    7: { clue: '', answer: '', row: 3, col: 0 },
+    8: { clue: '', answer: '', row: 4, col: 0 },
+  },
+  down: { 
+    1: { clue: '', answer: '', row: 0, col: 0 },
+    2: { clue: '', answer: '', row: 0, col: 1 },
+    3: { clue: '', answer: '', row: 0, col: 2 },
+    4: { clue: '', answer: '', row: 0, col: 3 },
+    5: { clue: '', answer: '', row: 0, col: 4 },  
+  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
