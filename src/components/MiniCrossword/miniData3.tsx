@@ -295,7 +295,24 @@ export const data17 = {
   },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
+export const data18 = {
+  across: {
+    1: { clue: 'To whom Freddie Mercury sings "Didnt mean to make you cry …," in "Bohemian Rhapsody"', answer: 'MAMA', row: 0, col: 1 },
+    5: { clue: 'Place for a blowout', answer: 'SALON', row: 1, col: 0 },
+    6: { clue: 'Formal decree', answer: 'EDICT', row: 2, col: 0 },
+    7: { clue: 'Chip topped with queso and jalapeños', answer: 'NACHO', row: 3, col: 0 },
+    8: { clue: 'Nasty', answer: 'MEAN', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: '"Dear sir or ___ …"', answer: 'MADAM', row: 0, col: 1 },
+    2: { clue: 'Pulitzer-winning novelist Walker', answer: 'ALICE', row: 0, col: 2 },
+    3: { clue: 'Chocolaty coffee drink', answer: 'MOCHA', row: 0, col: 3 },
+    4: { clue: 'Playwright Chekhov', answer: 'ANTON', row: 0, col: 4 },
+    5: { clue: 'One of 100 in Congress: Abbr.', answer: 'SEN', row: 1, col: 0 },  
+  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
