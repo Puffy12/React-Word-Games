@@ -268,11 +268,11 @@ export const data16 = {
   down: { 
     1: { clue: 'WHAT THIS CLUE IS IN', answer: 'ALLCAPS', row: 0, col: 2 },
     2: { clue: 'The thing in "Is this thing on?"', answer: 'MIC', row: 0, col: 3 },
-    3: { clue: '"To briefly summarize..."', answer: 'INAWORD', row: 0, col: 3 },
+    3: { clue: '"To briefly summarize..."', answer: 'INAWORD', row: 0, col: 4 },
     4: { clue: 'Supply at an ice cream parlor', answer: 'CONES', row: 1, col: 1 },
-    5: { clue: '"___ ear, out the other"', answer: 'INONE', row: 1, col: 4 },  
-    6: { clue: 'Nearly 15% of them in the U.S live in Texas', answer: 'COWS', row: 1, col: 5 },  
-    7: { clue: 'Mastercard alternative', answer: 'VISA', row: 0, col: 2 },  
+    5: { clue: '"___ ear, out the other"', answer: 'INONE', row: 1, col: 5 },  
+    6: { clue: 'Nearly 15% of them in the U.S live in Texas', answer: 'COWS', row: 1, col: 6 },  
+    7: { clue: 'Mastercard alternative', answer: 'VISA', row: 2, col: 0 },  
     11: { clue: 'Singer known for performing', answer: 'SIA', row: 4, col: 3 },  
 
   },
