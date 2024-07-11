@@ -314,22 +314,39 @@ export const data18 = {
 
 export const data19 = {
   across: {
-    1: { clue: 'Substance used by violin players', answer: '', row: 0, col: 0 },
-    6: { clue: 'One of the worlds largest land animals, familiarly', answer: '', row: 1, col: 0 },
-    7: { clue: 'Trojan War epic', answer: '', row: 2, col: 0 },
-    8: { clue: 'N.B.A. team that recently agreed to its first trade with the Knicks in over 40 years', answer: '', row: 3, col: 0 },
-    9: { clue: 'Lyric poems', answer: '', row: 4, col: 0 },
+    1: { clue: 'Substance used by violin players', answer: 'ROSIN', row: 0, col: 0 },
+    6: { clue: 'One of the worlds largest land animals, familiarly', answer: 'HIPPO', row: 1, col: 0 },
+    7: { clue: 'Trojan War epic', answer: 'ILIAD', row: 2, col: 0 },
+    8: { clue: 'N.B.A. team that recently agreed to its first trade with the Knicks in over 40 years', answer: 'NETS', row: 3, col: 0 },
+    9: { clue: 'Lyric poems', answer: 'ODES', row: 4, col: 0 },
   },
   down: { 
-    1: { clue: 'One of the worlds largest land animals, familiarly', answer: '', row: 0, col: 0 },
-    2: { clue: 'Well-___ machine', answer: '', row: 0, col: 1 },
-    3: { clue: 'Petty ill will', answer: '', row: 0, col: 2 },
-    4: { clue: '"Skip me," in a game', answer: '', row: 0, col: 3 },
-    5: { clue: 'Nonverbal agreement', answer: '', row: 0, col: 4 },  
+    1: { clue: 'One of the worlds largest land animals, familiarly', answer: 'RHINO', row: 0, col: 0 },
+    2: { clue: 'Well-___ machine', answer: 'OILED', row: 0, col: 1 },
+    3: { clue: 'Petty ill will', answer: 'SPITE', row: 0, col: 2 },
+    4: { clue: '"Skip me," in a game', answer: 'IPASS', row: 0, col: 3 },
+    5: { clue: 'Nonverbal agreement', answer: 'NOD', row: 0, col: 4 },  
   },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
+export const data20 = {
+  across: {
+    1: { clue: 'Website born from its C.E.Os "personal film diary"', answer: 'IMDB', row: 0, col: 1 },
+    5: { clue: 'Service symbolized by an evelope', answer: 'EMAIL', row: 1, col: 0 },
+    6: { clue: 'Japanese writing system based on Chinese characters', answer: 'KANJI', row: 2, col: 0 },
+    7: { clue: 'Some frozen waffles', answer: 'EGGOS', row: 3, col: 0 },
+    8: { clue: 'Ages and ages', answer: 'EONS', row: 4, col: 1 },
+  },
+  down: { 
+    1: { clue: 'P.R. concern', answer: 'IMAGE', row: 0, col: 1 },
+    2: { clue: 'Fruit that may be served with sticky rice', answer: 'MANGO', row: 0, col: 2 },
+    3: { clue: 'Spicy mustard', answer: 'DIJON', row: 0, col: 3 },
+    4: { clue: 'Pure joy', answer: 'BLISS', row: 0, col: 4 },
+    5: { clue: '__ out a living (barely get by)', answer: 'EKE', row: 1, col: 0 },  
+  },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19, data20];
 
 export const getRandomCrosswordData3 = (index: number) => {
   let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
