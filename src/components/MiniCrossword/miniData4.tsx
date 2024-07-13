@@ -15,7 +15,25 @@ down: {
 },
 } as const;
 
-const crosswordDataArray = [data];
+
+export const data2 = {
+    across: {
+    1: { clue: 'Bad thing to drop while riding a chairlift', answer: '', row: 0, col: 0 },
+    4: { clue: 'Batmans archenemy', answer: '', row: 1, col: 0 },
+    6: { clue: 'What a cartoon character might grab onto if theyre swallowed whole', answer: '', row: 2, col: 0 },
+    7: { clue: 'Big name in PCs', answer: '', row: 3, col: 0 },
+    8: { clue: '"For Your Eyes ___" (1981 Bond film)', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: 'Prop for Hamlet when he says "Alas, poor Yorick!"', answer: '', row: 0, col: 0 },
+    2: { clue: 'Grace who starred in three Hitchcock films', answer: '', row: 0, col: 1 },
+    3: { clue: 'Savings plan option, for short', answer: '', row: 0, col: 2 },
+    4: { clue: 'Olympic sport from Japan', answer: '', row: 0, col: 3 },
+    5: { clue: 'Place for roasting', answer: '', row: 0, col: 4 },  
+    },
+    } as const;
+
+const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
