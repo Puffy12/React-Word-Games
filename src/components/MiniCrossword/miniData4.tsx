@@ -36,18 +36,18 @@ down: {
     
 export const data3 = {
     across: {
-    1: { clue: 'TV character who says "Weaseling out of things is important to learn. Its what separates us from the animals ... except the weasel"', answer: '', row: 0, col: 0 },
-    6: { clue: 'Windy City airport', answer: '', row: 1, col: 0 },
-    7: { clue: 'The only one in the song "Tequila" is "tequila"', answer: '', row: 2, col: 0 },
-    8: { clue: 'Crypto lead-in to coin', answer: '', row: 3, col: 0 },
-    9: { clue: 'Take to court', answer: '', row: 4, col: 0 },
+    1: { clue: 'TV character who says "Weaseling out of things is important to learn. Its what separates us from the animals ... except the weasel"', answer: 'HOMER', row: 0, col: 0 },
+    6: { clue: 'Windy City airport', answer: 'OHARE', row: 1, col: 0 },
+    7: { clue: 'The only one in the song "Tequila" is "tequila"', answer: 'LYRIC', row: 2, col: 0 },
+    8: { clue: 'Crypto lead-in to coin', answer: 'DOGE', row: 3, col: 0 },
+    9: { clue: 'Take to court', answer: 'SUE', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: 'Waits for a customer service representative, say', answer: '', row: 0, col: 0 },
-    2: { clue: '"Dont make me blush!"', answer: '', row: 0, col: 1 },
-    3: { clue: 'TV character who says "I forgot to clean the lint basket in the dryer. If someone broke into the house and did laundry, it could start a fire"', answer: '', row: 0, col: 2 },
-    4: { clue: 'Shallowest of the Great Lakes', answer: '', row: 0, col: 3 },
-    5: { clue: 'Video camera button', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Waits for a customer service representative, say', answer: 'HOLDS', row: 0, col: 0 },
+    2: { clue: '"Dont make me blush!"', answer: 'OHYOU', row: 0, col: 1 },
+    3: { clue: 'TV character who says "I forgot to clean the lint basket in the dryer. If someone broke into the house and did laundry, it could start a fire"', answer: 'MARGE', row: 0, col: 2 },
+    4: { clue: 'Shallowest of the Great Lakes', answer: 'ERIE', row: 0, col: 3 },
+    5: { clue: 'Video camera button', answer: 'REC', row: 0, col: 4 },  
     },
 } as const;
 
