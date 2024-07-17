@@ -87,18 +87,18 @@ export const data5 = {
 
 export const data6 = {
     across: {
-    1: { clue: 'Petty coat?', answer: '', row: 0, col: 0 },
-    4: { clue: 'Do penance', answer: '', row: 1, col: 0 },
-    7: { clue: 'Gave in under pressure', answer: '', row: 2, col: 0 },
-    8: { clue: 'Song played during the opening credits', answer: '', row: 3, col: 0 },
-    9: { clue: '___ Swanson, Nick Offermans role on "Parks and Recreation"', answer: '', row: 4, col: 2 },
+    1: { clue: 'Petty coat?', answer: 'FUR', row: 0, col: 0 },
+    4: { clue: 'Do penance', answer: 'ATONE', row: 1, col: 0 },
+    7: { clue: 'Gave in under pressure', answer: 'CAVED', row: 2, col: 0 },
+    8: { clue: 'Song played during the opening credits', answer: 'THEME', row: 3, col: 0 },
+    9: { clue: '___ Swanson, Nick Offermans role on "Parks and Recreation"', answer: 'RON', row: 4, col: 2 },
     },
     down: { 
-    1: { clue: 'As a matter of ___ …"', answer: '', row: 0, col: 0 },
-    2: { clue: 'Home of Brigham Young University', answer: '', row: 0, col: 1 },
-    3: { clue: 'Apt name for a dog who loves to run free', answer: '', row: 0, col: 2 },
-    5: { clue: 'Pixars title clownfish', answer: '', row: 1, col: 3 },
-    6: { clue: 'Biblical garden', answer: '', row: 1, col: 4 },  
+    1: { clue: 'As a matter of ___ …"', answer: 'FACT', row: 0, col: 0 },
+    2: { clue: 'Home of Brigham Young University', answer: 'UTAH', row: 0, col: 1 },
+    3: { clue: 'Apt name for a dog who loves to run free', answer: 'ROVER', row: 0, col: 2 },
+    5: { clue: 'Pixars title clownfish', answer: 'NEMO', row: 1, col: 3 },
+    6: { clue: 'Biblical garden', answer: 'EDEN', row: 1, col: 4 },  
     },
 } as const;
 
