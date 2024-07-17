@@ -70,18 +70,18 @@ export const data4 = {
 
 export const data5 = {
     across: {
-    1: { clue: '', answer: '', row: 0, col: 0 },
-    4: { clue: '', answer: '', row: 1, col: 0 },
-    6: { clue: '', answer: '', row: 2, col: 0 },
-    7: { clue: '', answer: '', row: 3, col: 0 },
-    8: { clue: '', answer: '', row: 4, col: 0 },
+    1: { clue: 'Loud sound of a cymbal', answer: 'CLASH', row: 0, col: 0 },
+    6: { clue: 'Thin and graceful', answer: 'LYTHE', row: 1, col: 0 },
+    7: { clue: 'Decorate (with)', answer: 'ADORN', row: 2, col: 0 },
+    8: { clue: 'Country in the Arab League', answer: 'YEMEN', row: 3, col: 0 },
+    9: { clue: 'Shade of blue for a nurserys ceiling. maybe', answer: 'SKY', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: '', answer: '', row: 0, col: 0 },
-    2: { clue: '', answer: '', row: 0, col: 1 },
-    3: { clue: '', answer: '', row: 0, col: 2 },
-    4: { clue: '', answer: '', row: 0, col: 3 },
-    5: { clue: '', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Potters material', answer: 'CLAY', row: 0, col: 0 },
+    2: { clue: '__ cymbal (drum kit part)', answer: 'LYDE', row: 0, col: 1 },
+    3: { clue: 'Whats the matter with them?', answer: 'ATOMS', row: 0, col: 2 },
+    4: { clue: 'Ogre who asks "What are you doing in my swamp?!"', answer: 'SHREK', row: 0, col: 3 },
+    5: { clue: '__ Penny, rhyming childrens story character', answer: 'HENNY', row: 0, col: 4 },  
     },
 } as const;
 
