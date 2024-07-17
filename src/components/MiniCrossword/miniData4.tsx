@@ -68,7 +68,41 @@ export const data4 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4];
+export const data5 = {
+    across: {
+    1: { clue: '', answer: '', row: 0, col: 0 },
+    4: { clue: '', answer: '', row: 1, col: 0 },
+    6: { clue: '', answer: '', row: 2, col: 0 },
+    7: { clue: '', answer: '', row: 3, col: 0 },
+    8: { clue: '', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: '', answer: '', row: 0, col: 0 },
+    2: { clue: '', answer: '', row: 0, col: 1 },
+    3: { clue: '', answer: '', row: 0, col: 2 },
+    4: { clue: '', answer: '', row: 0, col: 3 },
+    5: { clue: '', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+export const data6 = {
+    across: {
+    1: { clue: 'Petty coat?', answer: '', row: 0, col: 0 },
+    4: { clue: 'Do penance', answer: '', row: 1, col: 0 },
+    7: { clue: 'Gave in under pressure', answer: '', row: 2, col: 0 },
+    8: { clue: 'Song played during the opening credits', answer: '', row: 3, col: 0 },
+    9: { clue: '___ Swanson, Nick Offermans role on "Parks and Recreation"', answer: '', row: 4, col: 2 },
+    },
+    down: { 
+    1: { clue: 'As a matter of ___ …"', answer: '', row: 0, col: 0 },
+    2: { clue: 'Home of Brigham Young University', answer: '', row: 0, col: 1 },
+    3: { clue: 'Apt name for a dog who loves to run free', answer: '', row: 0, col: 2 },
+    5: { clue: 'Pixars title clownfish', answer: '', row: 1, col: 3 },
+    6: { clue: 'Biblical garden', answer: '', row: 1, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
