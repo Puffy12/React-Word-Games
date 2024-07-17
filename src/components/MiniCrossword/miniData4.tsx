@@ -53,18 +53,18 @@ export const data3 = {
 
 export const data4 = {
     across: {
-    1: { clue: 'School org. for moms and dads', answer: '', row: 0, col: 2 },
-    4: { clue: 'Polymath extraordinaire Sir ___ Newton', answer: '', row: 1, col: 0 },
-    6: { clue: 'Symbol of the Olympics', answer: '', row: 2, col: 0 },
-    7: { clue: 'Stale and overused, as a saying', answer: '', row: 3, col: 0 },
-    8: { clue: '"Absolutely!"', answer: '', row: 4, col: 0 },
+    1: { clue: 'School org. for moms and dads', answer: 'PTA', row: 0, col: 2 },
+    4: { clue: 'Polymath extraordinaire Sir ___ Newton', answer: 'ISAAC', row: 1, col: 0 },
+    6: { clue: 'Symbol of the Olympics', answer: 'TORCH', row: 2, col: 0 },
+    7: { clue: 'Stale and overused, as a saying', answer: 'TRITE', row: 3, col: 0 },
+    8: { clue: '"Absolutely!"', answer: 'YES', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: 'Site of the 2024 Summer Olympics', answer: '', row: 0, col: 2 },
-    2: { clue: 'Good social skill', answer: '', row: 0, col: 3 },
-    3: { clue: 'Really feel a rigorous workout', answer: '', row: 0, col: 4 },
-    4: { clue: '___-bitty', answer: '', row: 1, col: 0 },
-    5: { clue: 'Really feeling a rigorous workout', answer: '', row: 1, col: 1 },  
+    1: { clue: 'Site of the 2024 Summer Olympics', answer: 'PARIS', row: 0, col: 2 },
+    2: { clue: 'Good social skill', answer: 'TACT', row: 0, col: 3 },
+    3: { clue: 'Really feel a rigorous workout', answer: 'ACHE', row: 0, col: 4 },
+    4: { clue: '___-bitty', answer: 'ITTY', row: 1, col: 0 },
+    5: { clue: 'Really feeling a rigorous workout', answer: 'SORE', row: 1, col: 1 },  
     },
 } as const;
 
