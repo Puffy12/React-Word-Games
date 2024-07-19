@@ -102,7 +102,24 @@ export const data6 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6];
+export const data7 = {
+    across: {
+    1: { clue: '"Blue Ribbon" brewery', answer: '', row: 0, col: 0 },
+    6: { clue: 'Put at ease, as fears', answer: '', row: 1, col: 0 },
+    7: { clue: 'Sound heard at a ramen restaurant', answer: '', row: 2, col: 0 },
+    8: { clue: 'Slight trace of color', answer: '', row: 3, col: 0 },
+    9: { clue: 'Starts a pot, in poker', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: 'Popular meal the night before a marathon', answer: '', row: 0, col: 0 },
+    2: { clue: '100% committed', answer: '', row: 0, col: 1 },
+    3: { clue: 'Untactful to a fault', answer: '', row: 0, col: 2 },
+    4: { clue: 'Boot camp boss, informally', answer: '', row: 0, col: 3 },
+    5: { clue: 'Goes tap-tap-tap in a texting app', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
