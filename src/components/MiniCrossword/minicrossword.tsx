@@ -126,7 +126,7 @@ function MiniCrossword() {
             Welcome to the Mini Crossword Game
           </h1>
           <p className="text-lg sm:text-xl text-gray-300">
-            Happy 4th of July!!!
+            Have a Nice Summer Break!!☀😎
           </p>
           <p className="text-lg text-gray-300 block sm:hidden">
             Does not work on smaller screens.
