@@ -104,18 +104,18 @@ export const data6 = {
 
 export const data7 = {
     across: {
-    1: { clue: '"Blue Ribbon" brewery', answer: '', row: 0, col: 0 },
-    6: { clue: 'Put at ease, as fears', answer: '', row: 1, col: 0 },
-    7: { clue: 'Sound heard at a ramen restaurant', answer: '', row: 2, col: 0 },
-    8: { clue: 'Slight trace of color', answer: '', row: 3, col: 0 },
-    9: { clue: 'Starts a pot, in poker', answer: '', row: 4, col: 0 },
+    1: { clue: '"Blue Ribbon" brewery', answer: 'PABST', row: 0, col: 0 },
+    6: { clue: 'Put at ease, as fears', answer: 'ALLAY', row: 1, col: 0 },
+    7: { clue: 'Sound heard at a ramen restaurant', answer: 'SLURP', row: 2, col: 0 },
+    8: { clue: 'Slight trace of color', answer: 'TINGE', row: 3, col: 0 },
+    9: { clue: 'Starts a pot, in poker', answer: 'ANTES', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: 'Popular meal the night before a marathon', answer: '', row: 0, col: 0 },
-    2: { clue: '100% committed', answer: '', row: 0, col: 1 },
-    3: { clue: 'Untactful to a fault', answer: '', row: 0, col: 2 },
-    4: { clue: 'Boot camp boss, informally', answer: '', row: 0, col: 3 },
-    5: { clue: 'Goes tap-tap-tap in a texting app', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Popular meal the night before a marathon', answer: 'PASTA', row: 0, col: 0 },
+    2: { clue: '100% committed', answer: 'ALLIN', row: 0, col: 1 },
+    3: { clue: 'Untactful to a fault', answer: 'BLUNT', row: 0, col: 2 },
+    4: { clue: 'Boot camp boss, informally', answer: 'SARGE', row: 0, col: 3 },
+    5: { clue: 'Goes tap-tap-tap in a texting app', answer: 'TYPES', row: 0, col: 4 },  
     },
 } as const;
 
