@@ -119,7 +119,31 @@ export const data7 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
+export const data8 = {
+    across: {
+    1: { clue: 'Reggae relative', answer: '', row: 0, col: 0 },
+    4: { clue: 'Repeat a mantra during meditation', answer: '', row: 1, col: 0 },
+    6: { clue: 'Perform better than', answer: '', row: 2, col: 0 },
+    7: { clue: 'Collaboration that yields more than the sum of its parts', answer: '', row: 3, col: 0 },
+    9: { clue: 'Exercise practiced in a steamy room', answer: '', row: 4, col: 0 },
+    10: { clue: 'Had a nosh', answer: '', row: 4, col: 0 },
+    11: { clue: 'Feeling poorly', answer: '', row: 4, col: 0 },
+    12: { clue: 'Pre-___ (undergrad track)', answer: '', row: 4, col: 0 },
+    13: { clue: 'Letter thats silent – and then not silent – in "Wednesday"', answer: '', row: 4, col: 0 },
+
+    },
+    down: { 
+    1: { clue: 'Pushed out of the way', answer: '', row: 0, col: 0 },
+    2: { clue: 'Actress Sagal', answer: '', row: 0, col: 1 },
+    3: { clue: 'iOS alternative', answer: '', row: 0, col: 2 },
+    4: { clue: 'Wile E., in the Looney Tunes cartoons', answer: '', row: 0, col: 3 },
+    5: { clue: 'Flip on or off, as a switch', answer: '', row: 0, col: 4 },  
+    7: { clue: 'Its totally fake', answer: '', row: 0, col: 4 },  
+    8: { clue: 'Ivy League school in Connecticut', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
