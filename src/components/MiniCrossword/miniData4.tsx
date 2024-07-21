@@ -121,25 +121,25 @@ export const data7 = {
 
 export const data8 = {
     across: {
-    1: { clue: 'Reggae relative', answer: '', row: 0, col: 0 },
-    4: { clue: 'Repeat a mantra during meditation', answer: '', row: 1, col: 0 },
-    6: { clue: 'Perform better than', answer: '', row: 2, col: 0 },
-    7: { clue: 'Collaboration that yields more than the sum of its parts', answer: '', row: 3, col: 0 },
-    9: { clue: 'Exercise practiced in a steamy room', answer: '', row: 4, col: 0 },
-    10: { clue: 'Had a nosh', answer: '', row: 4, col: 0 },
-    11: { clue: 'Feeling poorly', answer: '', row: 4, col: 0 },
-    12: { clue: 'Pre-___ (undergrad track)', answer: '', row: 4, col: 0 },
-    13: { clue: 'Letter thats silent – and then not silent – in "Wednesday"', answer: '', row: 4, col: 0 },
+    1: { clue: 'Reggae relative', answer: 'SKA', row: 0, col: 2 },
+    4: { clue: 'Repeat a mantra during meditation', answer: 'CHANT', row: 1, col: 1 },
+    6: { clue: 'Perform better than', answer: 'OUTDO', row: 2, col: 1 },
+    7: { clue: 'Collaboration that yields more than the sum of its parts', answer: 'SYNERGY', row: 3, col: 0 },
+    9: { clue: 'Exercise practiced in a steamy room', answer: 'HOTYOGA', row: 4, col: 0 },
+    10: { clue: 'Had a nosh', answer: 'ATE', row: 5, col: 0 },
+    11: { clue: 'Feeling poorly', answer: 'ILL', row: 5, col: 4 },
+    12: { clue: 'Pre-___ (undergrad track)', answer: 'MED', row: 6, col: 0 },
+    13: { clue: 'Letter thats silent – and then not silent – in "Wednesday"', answer: 'DEE', row: 6, col: 4 },
 
     },
     down: { 
-    1: { clue: 'Pushed out of the way', answer: '', row: 0, col: 0 },
-    2: { clue: 'Actress Sagal', answer: '', row: 0, col: 1 },
-    3: { clue: 'iOS alternative', answer: '', row: 0, col: 2 },
-    4: { clue: 'Wile E., in the Looney Tunes cartoons', answer: '', row: 0, col: 3 },
-    5: { clue: 'Flip on or off, as a switch', answer: '', row: 0, col: 4 },  
-    7: { clue: 'Its totally fake', answer: '', row: 0, col: 4 },  
-    8: { clue: 'Ivy League school in Connecticut', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Pushed out of the way', answer: 'SHUNTED', row: 0, col: 2 },
+    2: { clue: 'Actress Sagal', answer: 'KATEY', row: 0, col: 3 },
+    3: { clue: 'iOS alternative', answer: 'ANDROID', row: 0, col: 4 },
+    4: { clue: 'Wile E., in the Looney Tunes cartoons', answer: 'COYOTE', row: 1, col: 1 },
+    5: { clue: 'Flip on or off, as a switch', answer: 'TOGGLE', row: 1, col: 5 },  
+    7: { clue: 'Its totally fake', answer: 'SHAM', row: 3, col: 0 },  
+    8: { clue: 'Ivy League school in Connecticut', answer: 'YALE', row: 3, col: 6 },  
     },
 } as const;
 
