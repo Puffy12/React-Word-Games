@@ -143,7 +143,24 @@ export const data8 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
+export const data9 = {
+    across: {
+    1: { clue: 'Space between two teeth', answer: '', row: 0, col: 0 },
+    4: { clue: 'Rural waterway … which sounds like a haunted house noise?', answer: '', row: 1, col: 0 },
+    6: { clue: 'Wind-___ (carried by the wind)', answer: '', row: 2, col: 0 },
+    7: { clue: 'Golf lesson topic', answer: '', row: 3, col: 0 },
+    8: { clue: 'French word before a maiden name', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: 'Fully adult … which sounds like a haunted house noise?', answer: '', row: 0, col: 0 },
+    2: { clue: 'Lingerie and loungewear brand from American Eagle', answer: '', row: 0, col: 1 },
+    3: { clue: 'Slender pasta tubes', answer: '', row: 0, col: 2 },
+    4: { clue: 'Network with an eye logo', answer: '', row: 0, col: 3 },
+    5: { clue: 'The beer is here', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
