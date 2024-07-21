@@ -145,18 +145,18 @@ export const data8 = {
 
 export const data9 = {
     across: {
-    1: { clue: 'Space between two teeth', answer: '', row: 0, col: 0 },
-    4: { clue: 'Rural waterway … which sounds like a haunted house noise?', answer: '', row: 1, col: 0 },
-    6: { clue: 'Wind-___ (carried by the wind)', answer: '', row: 2, col: 0 },
-    7: { clue: 'Golf lesson topic', answer: '', row: 3, col: 0 },
-    8: { clue: 'French word before a maiden name', answer: '', row: 4, col: 0 },
+    1: { clue: 'Space between two teeth', answer: 'GAP', row: 0, col: 1 },
+    4: { clue: 'Rural waterway … which sounds like a haunted house noise?', answer: 'CREEK', row: 1, col: 0 },
+    6: { clue: 'Wind-___ (carried by the wind)', answer: 'BORNE', row: 2, col: 0 },
+    7: { clue: 'Golf lesson topic', answer: 'SWING', row: 3, col: 0 },
+    8: { clue: 'French word before a maiden name', answer: 'NEE', row: 4, col: 1 },
     },
     down: { 
-    1: { clue: 'Fully adult … which sounds like a haunted house noise?', answer: '', row: 0, col: 0 },
-    2: { clue: 'Lingerie and loungewear brand from American Eagle', answer: '', row: 0, col: 1 },
-    3: { clue: 'Slender pasta tubes', answer: '', row: 0, col: 2 },
-    4: { clue: 'Network with an eye logo', answer: '', row: 0, col: 3 },
-    5: { clue: 'The beer is here', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Fully adult … which sounds like a haunted house noise?', answer: 'GROWN', row: 0, col: 1 },
+    2: { clue: 'Lingerie and loungewear brand from American Eagle', answer: 'AERIE', row: 0, col: 2 },
+    3: { clue: 'Slender pasta tubes', answer: 'PENNE', row: 0, col: 3 },
+    4: { clue: 'Network with an eye logo', answer: 'CBS', row: 1, col: 0 },
+    5: { clue: 'The beer is here', answer: 'KEG', row: 1, col: 4 },  
     },
 } as const;
 
