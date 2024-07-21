@@ -65,9 +65,11 @@ function about() {
         </button>
       </a>
     </div>
+
     <div className="bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block dark:bg-opacity-20"></div>
+    
     <section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 mt-20"
     >
       <h2 className="text-3xl font-medium capitalize mb-8 text-center">About the App</h2>
       <p className="mb-3">
@@ -82,7 +84,8 @@ function about() {
       </p>
 
     </section>
-    <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mb-10" onClick={() => scrollToElement("event")}>
+
+    <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mb-10 hidden sm:block" onClick={() => scrollToElement("event")}>
       <FaArrowCircleDown />
     </div>
     <div className="min-h-screen flex flex-col lg:flex-row items-center p-8 sm:p-16 md:p-24 justify-center" id='event'>
@@ -165,7 +168,7 @@ function about() {
 
       <p className=" -mt-6 text-white" style={{ textAlign: "center" }}>
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
+        <a className="underline text-blue-600 font-bold" href="mailto:michaelmehrdadi123@gmail.com">
           michaelmehrdadi123@gmail.com
         </a>{" "} <br></br>
         or through this form.
