@@ -83,7 +83,7 @@ function about() {
         <span className="font-medium"> Join us as we continue to innovate and expand our collection of games, providing endless opportunities for wordplay and enjoyment. Get ready to dive in and let the games begin!</span>.
       </p>
 
-    </section>
+    </section> 
 
     <div className="text-blue-400 w-14 h-14 text-5xl cursor-pointer z-10 mb-10 hidden sm:block" onClick={() => scrollToElement("event")}>
       <FaArrowCircleDown />
