@@ -162,18 +162,18 @@ export const data9 = {
 
 export const data10 = {
     across: {
-    1: { clue: 'World capital with a museum dedicated entirely to pasta', answer: '', row: 0, col: 0 },
-    5: { clue: 'Console for the game Halo', answer: '', row: 1, col: 0 },
-    6: { clue: 'Number of degrees in each angle of an equilateral triangle', answer: '', row: 2, col: 0 },
-    8: { clue: 'Inflatable bike part', answer: '', row: 3, col: 1 },
-    9: { clue: 'Spot in Congress', answer: '', row: 4, col: 1 },
+    1: { clue: 'World capital with a museum dedicated entirely to pasta', answer: 'ROME', row: 0, col: 0 },
+    5: { clue: 'Console for the game Halo', answer: 'XBOX', row: 1, col: 0 },
+    6: { clue: 'Number of degrees in each angle of an equilateral triangle', answer: 'SIXTY', row: 2, col: 0 },
+    8: { clue: 'Inflatable bike part', answer: 'TIRE', row: 3, col: 1 },
+    9: { clue: 'Spot in Congress', answer: 'SEAT', row: 4, col: 1 },
     },
     down: { 
-    1: { clue: 'Prescriptions, for short', answer: '', row: 0, col: 0 },
-    2: { clue: '"In memoriam" pieces', answer: '', row: 0, col: 1 },
-    3: { clue: 'Spunk', answer: '', row: 0, col: 2 },
-    4: { clue: 'For an additional cost', answer: '', row: 0, col: 3 },
-    7: { clue: '"You aint seen nothing ___!"', answer: '', row: 2, col: 4 },  
+    1: { clue: 'Prescriptions, for short', answer: 'RXS', row: 0, col: 0 },
+    2: { clue: '"In memoriam" pieces', answer: 'OBITS', row: 0, col: 1 },
+    3: { clue: 'Spunk', answer: 'MOXIE', row: 0, col: 2 },
+    4: { clue: 'For an additional cost', answer: 'EXTRA', row: 0, col: 3 },
+    7: { clue: '"You aint seen nothing ___!"', answer: 'YET', row: 2, col: 4 },  
     },
 } as const;
 
