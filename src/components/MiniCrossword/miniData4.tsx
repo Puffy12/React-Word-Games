@@ -160,7 +160,24 @@ export const data9 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
+export const data10 = {
+    across: {
+    1: { clue: 'World capital with a museum dedicated entirely to pasta', answer: '', row: 0, col: 0 },
+    5: { clue: 'Console for the game Halo', answer: '', row: 1, col: 0 },
+    6: { clue: 'Number of degrees in each angle of an equilateral triangle', answer: '', row: 2, col: 0 },
+    8: { clue: 'Inflatable bike part', answer: '', row: 3, col: 1 },
+    9: { clue: 'Spot in Congress', answer: '', row: 4, col: 1 },
+    },
+    down: { 
+    1: { clue: 'Prescriptions, for short', answer: '', row: 0, col: 0 },
+    2: { clue: '"In memoriam" pieces', answer: '', row: 0, col: 1 },
+    3: { clue: 'Spunk', answer: '', row: 0, col: 2 },
+    4: { clue: 'For an additional cost', answer: '', row: 0, col: 3 },
+    7: { clue: '"You aint seen nothing ___!"', answer: '', row: 2, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
