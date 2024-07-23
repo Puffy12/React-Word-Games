@@ -179,18 +179,18 @@ export const data10 = {
 
 export const data11 = {
     across: {
-    1: { clue: 'Food that fills both blanks of "___ce of ___"', answer: '', row: 0, col: 2 },
-    4: { clue: 'Wide display', answer: '', row: 1, col: 0 },
-    6: { clue: 'Quintessentially boring color', answer: '', row: 2, col: 0 },
-    7: { clue: 'Founder of Amazon', answer: '', row: 3, col: 0 },
-    8: { clue: 'Type of beer', answer: '', row: 4, col: 0 },
+    1: { clue: 'Food that fills both blanks of "___ce of ___"', answer: 'PIE', row: 0, col: 2 },
+    4: { clue: 'Wide display', answer: 'ARRAY', row: 1, col: 0 },
+    6: { clue: 'Quintessentially boring color', answer: 'BEIGE', row: 2, col: 0 },
+    7: { clue: 'Founder of Amazon', answer: 'BEZOS', row: 3, col: 0 },
+    8: { clue: 'Type of beer', answer: 'ALE', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: 'Game show contestants hope', answer: '', row: 0, col: 2 },
-    2: { clue: '"Othello" villain', answer: '', row: 0, col: 3 },
-    3: { clue: 'Theyre never open 24/7', answer: '', row: 0, col: 4 },
-    4: { clue: '"Mamma Mia!" group', answer: '', row: 1, col: 0 },
-    5: { clue: 'Film spool', answer: '', row: 1, col: 1 },  
+    1: { clue: 'Game show contestants hope', answer: 'PRIZE', row: 0, col: 2 },
+    2: { clue: '"Othello" villain', answer: 'IAGO', row: 0, col: 3 },
+    3: { clue: 'Theyre never open 24/7', answer: 'EYES', row: 0, col: 4 },
+    4: { clue: '"Mamma Mia!" group', answer: 'ABBA', row: 1, col: 0 },
+    5: { clue: 'Film spool', answer: 'REEL', row: 1, col: 1 },  
     },
 } as const;
 
