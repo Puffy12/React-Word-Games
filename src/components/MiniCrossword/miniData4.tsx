@@ -177,6 +177,23 @@ export const data10 = {
     },
 } as const;
 
+export const data11 = {
+    across: {
+    1: { clue: 'Food that fills both blanks of "___ce of ___"', answer: '', row: 0, col: 2 },
+    4: { clue: 'Wide display', answer: '', row: 1, col: 0 },
+    6: { clue: 'Quintessentially boring color', answer: '', row: 2, col: 0 },
+    7: { clue: 'Founder of Amazon', answer: '', row: 3, col: 0 },
+    8: { clue: 'Type of beer', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: 'Game show contestants hope', answer: '', row: 0, col: 2 },
+    2: { clue: '"Othello" villain', answer: '', row: 0, col: 3 },
+    3: { clue: 'Theyre never open 24/7', answer: '', row: 0, col: 4 },
+    4: { clue: '"Mamma Mia!" group', answer: '', row: 1, col: 0 },
+    5: { clue: 'Film spool', answer: '', row: 1, col: 1 },  
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
 export const getRandomCrosswordData4 = (index: number) => {
