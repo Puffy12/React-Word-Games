@@ -194,7 +194,24 @@ export const data11 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
+export const data12 = {
+    across: {
+    1: { clue: 'Book character who wears a red-and-white-striped shirt', answer: '', row: 0, col: 0 },
+    6: { clue: 'With 7-Across, fried appetizer thats appropriate for the Olympics?', answer: '', row: 1, col: 0 },
+    7: { clue: 'See 6-Across', answer: '', row: 2, col: 0 },
+    8: { clue: 'Academic acronym', answer: '', row: 3, col: 0 },
+    9: { clue: '"And there you have it!"', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: 'Least favorable', answer: '', row: 0, col: 0 },
+    2: { clue: 'Shes like an older sister to Maria in "West Side Story"', answer: '', row: 0, col: 1 },
+    3: { clue: 'Like index cards, typically', answer: '', row: 0, col: 2 },
+    4: { clue: 'Belief thats not to be questioned', answer: '', row: 0, col: 3 },
+    5: { clue: 'Carry-___ (some luggage)', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
