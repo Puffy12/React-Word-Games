@@ -211,7 +211,24 @@ export const data12 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+export const data13 = {
+    across: {
+    1: { clue: '"Thats mind-blowing!"', answer: '', row: 0, col: 1 },
+    5: { clue: 'Apt anagram of RHINO – I', answer: '', row: 1, col: 1 },
+    6: { clue: 'Jelly Belly or Jolly Rancher', answer: '', row: 2, col: 0 },
+    7: { clue: 'Ye ___ Shoppe', answer: '', row: 3, col: 0 },
+    8: { clue: 'Show that recently received a record 23 Emmy nominations, with "The"', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: '___ watching (coastal activity)', answer: '', row: 0, col: 1 },
+    2: { clue: 'Civic automaker', answer: '', row: 0, col: 2 },
+    3: { clue: 'Waiters jotting', answer: '', row: 0, col: 3 },
+    4: { clue: '"Take your pick!"', answer: '', row: 0, col: 4 },
+    6: { clue: 'Corn core', answer: '', row: 2, col: 0 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
