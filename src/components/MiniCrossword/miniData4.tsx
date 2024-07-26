@@ -228,7 +228,24 @@ export const data13 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
+export const data14 = {
+    across: {
+    1: { clue: 'Highly praises', answer: '', row: 0, col: 0 },
+    6: { clue: 'Admit (to)', answer: '', row: 1, col: 0 },
+    7: { clue: '___ Lakshmi, longtime host of "Top Chef"', answer: '', row: 2, col: 0 },
+    8: { clue: 'Just barely make it through', answer: '', row: 3, col: 0 },
+    9: { clue: '"Goose eggs"', answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: 'Tabloid partner of Affleck', answer: '', row: 0, col: 0 },
+    2: { clue: 'Not sleeping', answer: '', row: 0, col: 1 },
+    3: { clue: '___ Armour (athletic brand)', answer: '', row: 0, col: 2 },
+    4: { clue: 'Disney elephant with oversized ears', answer: '', row: 0, col: 3 },
+    5: { clue: 'Neuters', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
