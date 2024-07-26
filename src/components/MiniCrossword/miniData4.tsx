@@ -230,18 +230,18 @@ export const data13 = {
 
 export const data14 = {
     across: {
-    1: { clue: 'Highly praises', answer: '', row: 0, col: 0 },
-    6: { clue: 'Admit (to)', answer: '', row: 1, col: 0 },
-    7: { clue: '___ Lakshmi, longtime host of "Top Chef"', answer: '', row: 2, col: 0 },
-    8: { clue: 'Just barely make it through', answer: '', row: 3, col: 0 },
-    9: { clue: '"Goose eggs"', answer: '', row: 4, col: 0 },
+    1: { clue: 'Highly praises', answer: 'LAUDS', row: 0, col: 0 },
+    6: { clue: 'Admit (to)', answer: 'OWNUP', row: 1, col: 0 },
+    7: { clue: '___ Lakshmi, longtime host of "Top Chef"', answer: 'PADMA', row: 2, col: 0 },
+    8: { clue: 'Just barely make it through', answer: 'EKEBY', row: 3, col: 0 },
+    9: { clue: '"Goose eggs"', answer: 'ZEROS', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: 'Tabloid partner of Affleck', answer: '', row: 0, col: 0 },
-    2: { clue: 'Not sleeping', answer: '', row: 0, col: 1 },
-    3: { clue: '___ Armour (athletic brand)', answer: '', row: 0, col: 2 },
-    4: { clue: 'Disney elephant with oversized ears', answer: '', row: 0, col: 3 },
-    5: { clue: 'Neuters', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Tabloid partner of Affleck', answer: 'LOPEZ', row: 0, col: 0 },
+    2: { clue: 'Not sleeping', answer: 'AWAKE', row: 0, col: 1 },
+    3: { clue: '___ Armour (athletic brand)', answer: 'UNDER', row: 0, col: 2 },
+    4: { clue: 'Disney elephant with oversized ears', answer: 'DUMBO', row: 0, col: 3 },
+    5: { clue: 'Neuters', answer: 'SPAYS', row: 0, col: 4 },  
     },
 } as const;
 
