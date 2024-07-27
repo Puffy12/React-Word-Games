@@ -247,25 +247,25 @@ export const data14 = {
 
 export const data15 = {
     across: {
-    1: { clue: 'Breed of sled dog', answer: '', row: 0, col: 0 },
-    6: { clue: 'Ante establishment?', answer: '', row: 1, col: 0 },
-    7: { clue: 'Golden-brown drizzle on an ice cream sundae', answer: '', row: 2, col: 0 },
-    8: { clue: 'Guitarists accessory', answer: '', row: 3, col: 0 },
-    9: { clue: 'Tree that makes acorns', answer: '', row: 4, col: 0 },
-    10: { clue: 'Shoot off again, as an email', answer: '', row: 4, col: 0 },
-    12: { clue: 'Unmanned aircraft', answer: '', row: 4, col: 0 },
-    13: { clue: 'Castle material thats not very sturdy', answer: '', row: 4, col: 0 },
+    1: { clue: 'Breed of sled dog', answer: 'HUSKY', row: 0, col: 2 },
+    6: { clue: 'Ante establishment?', answer: 'CASINO', row: 1, col: 1 },
+    7: { clue: 'Golden-brown drizzle on an ice cream sundae', answer: 'CARAMEL', row: 2, col: 0 },
+    8: { clue: 'Guitarists accessory', answer: 'AMP', row: 3, col: 0 },
+    9: { clue: 'Tree that makes acorns', answer: 'OAK', row: 3, col: 4 },
+    10: { clue: 'Shoot off again, as an email', answer: 'RESEND', row: 4, col: 0 },
+    12: { clue: 'Unmanned aircraft', answer: 'DRONE', row: 5, col: 0 },
+    13: { clue: 'Castle material thats not very sturdy', answer: 'SAND', row: 6, col: 0 },
 
     },
     down: { 
-    1: { clue: 'Talks persistently about', answer: '', row: 0, col: 0 },
-    2: { clue: 'Olympic womens gymnastics powerhouse', answer: '', row: 0, col: 1 },
-    3: { clue: 'Biles who represents 2-Down', answer: '', row: 0, col: 2 },
-    4: { clue: 'Work with the hands, as dough', answer: '', row: 0, col: 3 },
-    5: { clue: 'Eggs center', answer: '', row: 0, col: 4 }, 
-    6: { clue: 'Backup ___ (modern auto feature)', answer: '', row: 0, col: 4 },  
-    7: { clue: 'Birthday messages may be written on them', answer: '', row: 0, col: 4 },  
-    11: { clue: 'Fitting final Down answer', answer: '', row: 0, col: 4 },  
+    1: { clue: 'Talks persistently about', answer: 'HARPSON', row: 0, col: 2 },
+    2: { clue: 'Olympic womens gymnastics powerhouse', answer: 'USA', row: 0, col: 3 },
+    3: { clue: 'Biles who represents 2-Down', answer: 'SIMONE', row: 0, col: 4 },
+    4: { clue: 'Work with the hands, as dough', answer: 'KNEAD', row: 0, col: 5 },
+    5: { clue: 'Eggs center', answer: 'YOLK', row: 0, col: 6 }, 
+    6: { clue: 'Backup ___ (modern auto feature)', answer: 'CAMERA', row: 1, col: 1 },  
+    7: { clue: 'Birthday messages may be written on them', answer: 'CARDS', row: 2, col: 0 },  
+    11: { clue: 'Fitting final Down answer', answer: 'END', row: 4, col: 3 },  
 
     },
 } as const;
