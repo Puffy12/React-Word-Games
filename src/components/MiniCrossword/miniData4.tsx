@@ -245,7 +245,32 @@ export const data14 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
+export const data15 = {
+    across: {
+    1: { clue: 'Breed of sled dog', answer: '', row: 0, col: 0 },
+    6: { clue: 'Ante establishment?', answer: '', row: 1, col: 0 },
+    7: { clue: 'Golden-brown drizzle on an ice cream sundae', answer: '', row: 2, col: 0 },
+    8: { clue: 'Guitarists accessory', answer: '', row: 3, col: 0 },
+    9: { clue: 'Tree that makes acorns', answer: '', row: 4, col: 0 },
+    10: { clue: 'Shoot off again, as an email', answer: '', row: 4, col: 0 },
+    12: { clue: 'Unmanned aircraft', answer: '', row: 4, col: 0 },
+    13: { clue: 'Castle material thats not very sturdy', answer: '', row: 4, col: 0 },
+
+    },
+    down: { 
+    1: { clue: 'Talks persistently about', answer: '', row: 0, col: 0 },
+    2: { clue: 'Olympic womens gymnastics powerhouse', answer: '', row: 0, col: 1 },
+    3: { clue: 'Biles who represents 2-Down', answer: '', row: 0, col: 2 },
+    4: { clue: 'Work with the hands, as dough', answer: '', row: 0, col: 3 },
+    5: { clue: 'Eggs center', answer: '', row: 0, col: 4 }, 
+    6: { clue: 'Backup ___ (modern auto feature)', answer: '', row: 0, col: 4 },  
+    7: { clue: 'Birthday messages may be written on them', answer: '', row: 0, col: 4 },  
+    11: { clue: 'Fitting final Down answer', answer: '', row: 0, col: 4 },  
+
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
