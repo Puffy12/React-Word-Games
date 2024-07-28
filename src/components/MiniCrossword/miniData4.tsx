@@ -272,18 +272,18 @@ export const data15 = {
 
 export const data16 = {
     across: {
-    1: { clue: 'Sunscreen bottle abbr.', answer: '', row: 0, col: 0 },
-    4: { clue: 'With 5-Across, summer get-together at which bathing suits are worn', answer: '', row: 1, col: 0 },
-    5: { clue: 'See 4-Across', answer: '', row: 2, col: 0 },
-    6: { clue: 'Runs on television', answer: '', row: 3, col: 0 },
-    7: { clue: 'Towel (off)',   answer: '', row: 4, col: 0 },
+    1: { clue: 'Sunscreen bottle abbr.', answer: 'SPF', row: 0, col: 2 },
+    4: { clue: 'With 5-Across, summer get-together at which bathing suits are worn', answer: 'POOL', row: 1, col: 1 },
+    5: { clue: 'See 4-Across', answer: 'PARTY', row: 2, col: 0 },
+    6: { clue: 'Runs on television', answer: 'AIRS', row: 3, col: 0 },
+    7: { clue: 'Towel (off)',   answer: 'DRY', row: 4, col: 0 },
     },
     down: { 
-    1: { clue: '"My bad"', answer: '', row: 0, col: 0 },
-    2: { clue: 'Coffeemakers vessels', answer: '', row: 0, col: 1 },
-    3: { clue: 'Travel Southwest, say', answer: '', row: 0, col: 2 },
-    4: { clue: 'Flip-flops come in this', answer: '', row: 0, col: 3 },
-    5: { clue: 'Lengthen unnecessarily, as an essay', answer: '', row: 0, col: 4 },  
+    1: { clue: '"My bad"', answer: 'SORRY', row: 0, col: 2 },
+    2: { clue: 'Coffeemakers vessels', answer: 'POTS', row: 0, col: 3 },
+    3: { clue: 'Travel Southwest, say', answer: 'FLY', row: 0, col: 4 },
+    4: { clue: 'Flip-flops come in this', answer: 'PAIR', row: 1, col: 1 },
+    5: { clue: 'Lengthen unnecessarily, as an essay', answer: 'PAD', row: 2, col: 0 },  
     },
 } as const;
 
