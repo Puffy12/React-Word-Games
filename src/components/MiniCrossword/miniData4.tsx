@@ -270,7 +270,24 @@ export const data15 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
+export const data16 = {
+    across: {
+    1: { clue: 'Sunscreen bottle abbr.', answer: '', row: 0, col: 0 },
+    4: { clue: 'With 5-Across, summer get-together at which bathing suits are worn', answer: '', row: 1, col: 0 },
+    5: { clue: 'See 4-Across', answer: '', row: 2, col: 0 },
+    6: { clue: 'Runs on television', answer: '', row: 3, col: 0 },
+    7: { clue: 'Towel (off)',   answer: '', row: 4, col: 0 },
+    },
+    down: { 
+    1: { clue: '"My bad"', answer: '', row: 0, col: 0 },
+    2: { clue: 'Coffeemakers vessels', answer: '', row: 0, col: 1 },
+    3: { clue: 'Travel Southwest, say', answer: '', row: 0, col: 2 },
+    4: { clue: 'Flip-flops come in this', answer: '', row: 0, col: 3 },
+    5: { clue: 'Lengthen unnecessarily, as an essay', answer: '', row: 0, col: 4 },  
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
