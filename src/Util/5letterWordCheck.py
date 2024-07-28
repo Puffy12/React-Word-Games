@@ -1,3 +1,4 @@
+#Place in src/Wordle/components
 def filter_five_letter_words(input_file, output_file):
     with open(input_file, 'r') as f:
         text = f.read()
