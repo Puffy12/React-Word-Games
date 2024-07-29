@@ -145,7 +145,7 @@ function MiniCrossword() {
           <FaArrowCircleDown />
         </div>
 
-        <div className="hidden sm:block ">
+        <div className="hidden miniCrossword-sm:block ">
           <div style={{ width: '40em', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5em' }}>
               <Commands>
                 <div className="flex space-x-4 mb-6">

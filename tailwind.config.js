@@ -2,8 +2,11 @@
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'miniCrossword-sm': '669px', //Goal is 429px
+      },
+    },
   },
   plugins: [],
 }
-

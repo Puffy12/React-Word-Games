@@ -289,18 +289,18 @@ export const data16 = {
 
 export const data17 = {
     across: {
-        1: { clue: 'Gift of ___ (ability to speak eloquently)', answer: '', row: 0, col: 0 },
-        4: { clue: 'With 7-Across, total goofball', answer: '', row: 1, col: 0 },
-        6: { clue: 'Take in as one\'s own', answer: '', row: 2, col: 0 },
-        7: { clue: 'See 4-Across', answer: '', row: 3, col: 0 },
-        8: { clue: 'Street haunted by Freddy Krueger', answer: '', row: 4, col: 0 },
+        1: { clue: 'Gift of ___ (ability to speak eloquently)', answer: 'GAB', row: 0, col: 2 },
+        4: { clue: 'With 7-Across, total goofball', answer: 'SILLY', row: 1, col: 0 },
+        6: { clue: 'Take in as one\'s own', answer: 'ADOPT', row: 2, col: 0 },
+        7: { clue: 'See 4-Across', answer: 'GOOSE', row: 3, col: 0 },
+        8: { clue: 'Street haunted by Freddy Krueger', answer: 'ELM', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Rhyming partner of doom', answer: '', row: 0, col: 0 },
-        2: { clue: 'Where Mont Blanc and the Matterhorn are', answer: '', row: 0, col: 1 },
-        3: { clue: 'Tiny, tiny part of a gig', answer: '', row: 0, col: 2 },
-        4: { clue: 'Wise-sounding herb', answer: '', row: 0, col: 3 },
-        5: { clue: 'Hero', answer: '', row: 0, col: 4 },
+        1: { clue: 'Rhyming partner of doom', answer: 'GLOOM', row: 0, col: 2 },
+        2: { clue: 'Where Mont Blanc and the Matterhorn are', answer: 'ALPS', row: 0, col: 3 },
+        3: { clue: 'Tiny, tiny part of a gig', answer: 'BYTE', row: 0, col: 4 },
+        4: { clue: 'Wise-sounding herb', answer: 'SAGE', row: 1, col: 0 },
+        5: { clue: 'Hero', answer: 'IDOL', row: 1, col: 1 },
     },
 } as const;
 
