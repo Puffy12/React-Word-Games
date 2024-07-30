@@ -304,7 +304,24 @@ export const data17 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
+export const data18 = {
+    across: {
+        1: { clue: '"Style, charm or attractiveness," per a modern coinage', answer: '', row: 0, col: 0 },
+        5: { clue: 'Close bud', answer: '', row: 1, col: 0 },
+        6: { clue: 'Black cats and red moons, supposedly', answer: '', row: 2, col: 0 },
+        7: { clue: 'Make a face, say', answer: '', row: 3, col: 0 },
+        8: { clue: 'Prefix with fat or fiction', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Title Shakespeare role for a young DiCaprio', answer: '', row: 0, col: 0 },
+        2: { clue: '"That is to say …"', answer: '', row: 0, col: 1 },
+        3: { clue: 'Chemical element found in many immune-boosting supplements', answer: '', row: 0, col: 2 },
+        4: { clue: 'Finely grate, as a lemon peel', answer: '', row: 0, col: 3 },
+        5: { clue: 'Car\'s noisemaker', answer: '', row: 0, col: 4 },
+    },
+} as const;
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
 export const getRandomCrosswordData4 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
