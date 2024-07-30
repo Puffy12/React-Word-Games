@@ -306,18 +306,18 @@ export const data17 = {
 
 export const data18 = {
     across: {
-        1: { clue: '"Style, charm or attractiveness," per a modern coinage', answer: '', row: 0, col: 0 },
-        5: { clue: 'Close bud', answer: '', row: 1, col: 0 },
-        6: { clue: 'Black cats and red moons, supposedly', answer: '', row: 2, col: 0 },
-        7: { clue: 'Make a face, say', answer: '', row: 3, col: 0 },
-        8: { clue: 'Prefix with fat or fiction', answer: '', row: 4, col: 0 },
+        1: { clue: '"Style, charm or attractiveness," per a modern coinage', answer: 'RIZZ', row: 0, col: 1 },
+        5: { clue: 'Close bud', answer: 'HOMIE', row: 1, col: 0 },
+        6: { clue: 'Black cats and red moons, supposedly', answer: 'OMENS', row: 2, col: 0 },
+        7: { clue: 'Make a face, say', answer: 'REACT', row: 3, col: 0 },
+        8: { clue: 'Prefix with fat or fiction', answer: 'NON', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Title Shakespeare role for a young DiCaprio', answer: '', row: 0, col: 0 },
-        2: { clue: '"That is to say …"', answer: '', row: 0, col: 1 },
-        3: { clue: 'Chemical element found in many immune-boosting supplements', answer: '', row: 0, col: 2 },
-        4: { clue: 'Finely grate, as a lemon peel', answer: '', row: 0, col: 3 },
-        5: { clue: 'Car\'s noisemaker', answer: '', row: 0, col: 4 },
+        1: { clue: 'Title Shakespeare role for a young DiCaprio', answer: 'ROMEO', row: 0, col: 1 },
+        2: { clue: '"That is to say …"', answer: 'IMEAN', row: 0, col: 2 },
+        3: { clue: 'Chemical element found in many immune-boosting supplements', answer: 'ZINC', row: 0, col: 3 },
+        4: { clue: 'Finely grate, as a lemon peel', answer: 'ZEST', row: 0, col: 4 },
+        5: { clue: 'Car\'s noisemaker', answer: 'HORN', row: 1, col: 0 },
     },
 } as const;
 
