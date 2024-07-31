@@ -323,18 +323,18 @@ export const data18 = {
 
 export const data19 = {
     across: {
-        1: { clue: 'Keyboard key near the top left', answer: '', row: 0, col: 0 },
-        4: { clue: 'Hot couple, in a celebrity gossip column', answer: '', row: 1, col: 0 },
-        6: { clue: 'Wild, as an animal', answer: '', row: 2, col: 0 },
-        8: { clue: 'Like many four-legged friends', answer: '', row: 3, col: 0 },
-        9: { clue: 'Keyboard key on the bottom', answer: '', row: 4, col: 0 },
+        1: { clue: 'Keyboard key near the top left', answer: 'TAB', row: 0, col: 0 },
+        4: { clue: 'Hot couple, in a celebrity gossip column', answer: 'ITEM', row: 1, col: 0 },
+        6: { clue: 'Wild, as an animal', answer: 'FERAL', row: 2, col: 0 },
+        8: { clue: 'Like many four-legged friends', answer: 'FURRY', row: 3, col: 0 },
+        9: { clue: 'Keyboard key on the bottom', answer: 'SPACE', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Little spats', answer: '', row: 0, col: 0 },
-        2: { clue: 'Thoroughly devoured', answer: '', row: 0, col: 1 },
-        3: { clue: 'Yogi who said "Always go to other people\'s funerals, otherwise they won\'t come to yours"', answer: '', row: 0, col: 2 },
-        5: { clue: 'Comedian Maron', answer: '', row: 0, col: 3 },
-        7: { clue: 'Caustic chemical compound', answer: '', row: 0, col: 4 },
+        1: { clue: 'Little spats', answer: 'TIFFS', row: 0, col: 0 },
+        2: { clue: 'Thoroughly devoured', answer: 'ATEUP', row: 0, col: 1 },
+        3: { clue: 'Yogi who said "Always go to other people\'s funerals, otherwise they won\'t come to yours"', answer: 'BERRA', row: 0, col: 2 },
+        5: { clue: 'Comedian Maron', answer: 'MARC', row: 1, col: 3 },
+        7: { clue: 'Caustic chemical compound', answer: 'LYE', row: 2, col: 4 },
     },
 } as const;
 
