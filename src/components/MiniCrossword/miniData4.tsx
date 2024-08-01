@@ -340,18 +340,18 @@ export const data19 = {
 
 export const data20 = {
     across: {
-        1: { clue: 'Score 100% on', answer: '', row: 0, col: 0 },
-        4: { clue: 'Word that, in German, translates directly to "hand shoe"', answer: '', row: 1, col: 0 },
-        6: { clue: 'Its showers bring "May flowers"', answer: '', row: 2, col: 0 },
-        7: { clue: 'Hut', answer: '', row: 3, col: 0 },
-        8: { clue: 'Not mainstream, in genre names', answer: '', row: 4, col: 0 },
+        1: { clue: 'Score 100% on', answer: 'ACE', row: 0, col: 1 },
+        4: { clue: 'Word that, in German, translates directly to "hand shoe"', answer: 'GLOVE', row: 1, col: 0 },
+        6: { clue: 'Its showers bring "May flowers"', answer: 'APRIL', row: 2, col: 0 },
+        7: { clue: 'Hut', answer: 'SHACK', row: 3, col: 0 },
+        8: { clue: 'Not mainstream, in genre names', answer: 'ALT', row: 4, col: 1 },
     },
     down: {
-        1: { clue: 'First letter of the Greek alphabet', answer: '', row: 0, col: 0 },
-        2: { clue: 'Reef builder', answer: '', row: 0, col: 1 },
-        3: { clue: 'Kick out', answer: '', row: 0, col: 2 },
-        4: { clue: 'Bad thing to run out of in the middle of nowhere', answer: '', row: 0, col: 3 },
-        5: { clue: 'Antlered mammal in the Rockies', answer: '', row: 0, col: 4 },
+        1: { clue: 'First letter of the Greek alphabet', answer: 'ALPHA', row: 0, col: 1 },
+        2: { clue: 'Reef builder', answer: 'CORAL', row: 0, col: 2 },
+        3: { clue: 'Kick out', answer: 'EVICT', row: 0, col: 3 },
+        4: { clue: 'Bad thing to run out of in the middle of nowhere', answer: 'GAS', row: 1, col: 0 },
+        5: { clue: 'Antlered mammal in the Rockies', answer: 'ELK', row: 1, col: 4 },
     },
 } as const;
 
