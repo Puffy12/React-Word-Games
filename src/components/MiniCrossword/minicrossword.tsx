@@ -8,6 +8,7 @@ import toast, { Toaster } from "react-hot-toast";
 //import { getCrosswordDataByIndex2 } from './miniData2';
 //import { getCrosswordDataByIndex3 } from './miniData3';
 import { getCrosswordDataByIndex4 } from './miniData4';
+//import { getCrosswordDataByIndex5 } from './miniData5';
 
 
 function MiniCrossword() {
