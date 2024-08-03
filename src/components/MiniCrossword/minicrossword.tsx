@@ -23,13 +23,6 @@ function MiniCrossword() {
     getCrosswordDataByIndex5
   ];
 
-  const getRandomCrossword = () => {
-    const randomFunctionIndex = Math.floor(Math.random() * crosswordDataArrays.length);
-    const getCrosswordData = crosswordDataArrays[randomFunctionIndex];
-    const randomCrosswordIndex = Math.floor(Math.random() * 20);
-    return getCrosswordData(randomCrosswordIndex);
-  };
-
   const data = getCrosswordDataByIndex5(0);
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
@@ -38,7 +31,14 @@ function MiniCrossword() {
 
   const randomCrossword = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.reset();
+
+    const randomFunctionIndex = Math.floor(Math.random() * crosswordDataArrays.length);
+    const getCrosswordData = crosswordDataArrays[randomFunctionIndex];
+    const randomCrosswordIndex = Math.floor(Math.random() * 20);
+    console.log(getCrosswordData(randomCrosswordIndex));
+
     toast.error("Random Button Feature is still in development😅");
+
 
   }, []);
 
