@@ -36,6 +36,12 @@ function MiniCrossword() {
     crossword.current?.fillAllAnswers();
   }, []);
 
+  const randomCrossword = useCallback<React.MouseEventHandler>(() => {
+    crossword.current?.reset();
+    toast.error("Random Button Feature is still in development😅");
+
+  }, []);
+
   const reset = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.reset();
   }, []);
@@ -175,6 +181,11 @@ function MiniCrossword() {
                     <Command onClick={reset}>
                       <button className="bg-black text-white text-center py-2 px-4 rounded-full hover:bg-blue-400 focus:scale-110 hover:scale-110 transition cursor-pointer">
                         Reset
+                      </button>
+                    </Command>
+                    <Command onClick={randomCrossword}>                  
+                      <button className="bg-black text-white text-center py-2 px-4 rounded-full hover:bg-blue-400 focus:scale-110 hover:scale-110 transition cursor-pointer">
+                        Random                  
                       </button>
                     </Command>
                 </div>
