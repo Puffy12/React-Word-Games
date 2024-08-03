@@ -4,16 +4,33 @@ import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
-//import { getCrosswordDataByIndex } from './miniData';
-//import { getCrosswordDataByIndex2 } from './miniData2';
-//import { getCrosswordDataByIndex3 } from './miniData3';
-//import { getCrosswordDataByIndex4 } from './miniData4';
+import { getCrosswordDataByIndex } from './miniData';
+import { getCrosswordDataByIndex2 } from './miniData2';
+import { getCrosswordDataByIndex3 } from './miniData3';
+import { getCrosswordDataByIndex4 } from './miniData4';
 import { getCrosswordDataByIndex5 } from './miniData5';
 
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const data = getCrosswordDataByIndex5(0); 
+  
+
+  const crosswordDataArrays = [
+    getCrosswordDataByIndex,
+    getCrosswordDataByIndex2,
+    getCrosswordDataByIndex3,
+    getCrosswordDataByIndex4,
+    getCrosswordDataByIndex5
+  ];
+
+  const getRandomCrossword = () => {
+    const randomFunctionIndex = Math.floor(Math.random() * crosswordDataArrays.length);
+    const getCrosswordData = crosswordDataArrays[randomFunctionIndex];
+    const randomCrosswordIndex = Math.floor(Math.random() * 20);
+    return getCrosswordData(randomCrosswordIndex);
+  };
+
+  const data = getCrosswordDataByIndex5(0);
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
