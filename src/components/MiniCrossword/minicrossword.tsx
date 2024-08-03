@@ -7,13 +7,13 @@ import toast, { Toaster } from "react-hot-toast";
 //import { getCrosswordDataByIndex } from './miniData';
 //import { getCrosswordDataByIndex2 } from './miniData2';
 //import { getCrosswordDataByIndex3 } from './miniData3';
-import { getCrosswordDataByIndex4 } from './miniData4';
-//import { getCrosswordDataByIndex5 } from './miniData5';
+//import { getCrosswordDataByIndex4 } from './miniData4';
+import { getCrosswordDataByIndex5 } from './miniData5';
 
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  const data = getCrosswordDataByIndex4(19); 
+  const data = getCrosswordDataByIndex5(0); 
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();

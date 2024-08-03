@@ -8,15 +8,37 @@ export const data = {
     },
     down: {
         1: { clue: 'What\'s visible when wearing a crop top', answer: 'BELLY', row: 0, col: 1 },
-        2: { clue: 'Glorify', answer: 'EXALT', row: 0, colr: 2 },
+        2: { clue: 'Glorify', answer: 'EXALT', row: 0, col: 2 },
         3: { clue: 'Monocle\'s middle', answer: 'LENS', row: 0, col: 3 },
         4: { clue: '"Shame, shame!" clicking sound', answer: 'TSK', row: 0, col: 4 },
         5: { clue: 'Reach across', answer: 'SPAN', row: 1, col: 0 },
     },
 } as const;
 
+export const data2 = {
+    across: {
+        1: { clue: 'With 1-Down, 2024 album in which Beyoncé is "reinventing American music in her own image," per Rolling Stone', answer: '', row: 0, col: 1 },
+        7: { clue: 'Sewer entrance', answer: '', row: 1, col: 0 },
+        8: { clue: 'Brand that coined color names like Purple Pizzazz and Jazzberry Jam', answer: '', row: 2, col: 0 },
+        9: { clue: 'Lawyer: Abbr.', answer: '', row: 3, col: 0 },
+        10: { clue: 'Baby fox or skunk', answer: '', row: 3, col: 4 },
+        11: { clue: 'Dwellings made from animal hides', answer: '', row: 4, col: 0 },
+        13: { clue: 'Pours down', answer: '', row: 5, col: 1 },
+        14: { clue: 'Size between small and large: Abbr.', answer: '', row: 6, col: 2 },
+    },
+    down: {
+        1: { clue: 'See 1-Across', answer: '', row: 0, col: 1 },
+        2: { clue: 'Like gymnasts and relay racers, at the Olympics', answer: '', row: 0, col: 2 },
+        3: { clue: '"How come?"', answer: '', row: 0, col: 3 },
+        4: { clue: 'One of a pair on a shelf', answer: '', row: 0, col: 4 },
+        5: { clue: 'Simple skateboard tricks', answer: '', row: 0, col: 5 },
+        6: { clue: 'Poet William Butler ___', answer: '', row: 0, col: 6 },
+        7: { clue: 'Exam for a future doc', answer: '', row: 1, col: 0 },
+        12: { clue: 'Eight slices of pizza, typically', answer: '', row: 4, col: 3 },
+    },
+} as const;
 
-const crosswordDataArray = [data];
+const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
