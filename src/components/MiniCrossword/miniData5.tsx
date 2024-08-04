@@ -38,7 +38,25 @@ export const data2 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2];
+export const data3 = {
+    across: {
+        1: { clue: 'The first blank in this phrase: From ___ to ___', answer: '', row: 0, col: 1 },
+        5: { clue: '"The Hobbit" hobbit', answer: '', row: 1, col: 0 },
+        6: { clue: 'A 16 seed beating a 1 seed, e.g.', answer: '', row: 2, col: 0 },
+        7: { clue: 'Feeling of ill will', answer: '', row: 3, col: 0 },
+        8: { clue: 'The second blank in this phrase: From ___ to ___', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Creature able to hold its breath underwater for up to 30 minutes', answer: '', row: 0, col: 1 },
+        2: { clue: 'Name that sounds like the twelfth and third letters of the alphabet', answer: '', row: 0, col: 2 },
+        3: { clue: 'Help with a crime', answer: '', row: 0, col: 3 },
+        4: { clue: 'Pour love (on)', answer: '', row: 0, col: 4 },
+        5: { clue: 'Opposite of boom, on Wall Street', answer: '', row: 1, col: 0 },
+    },
+} as const;
+
+
+const crosswordDataArray = [data, data2, data3];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
