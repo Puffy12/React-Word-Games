@@ -23,7 +23,7 @@ function MiniCrossword() {
     getCrosswordDataByIndex5
   ];
 
-  const data = getCrosswordDataByIndex5(0);
+  const data = getCrosswordDataByIndex5(1);
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();

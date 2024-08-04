@@ -33,7 +33,7 @@ export const data2 = {
         4: { clue: 'One of a pair on a shelf', answer: 'BOOKEND', row: 0, col: 4 },
         5: { clue: 'Simple skateboard tricks', answer: 'OLLIES', row: 0, col: 5 },
         6: { clue: 'Poet William Butler ___', answer: 'YEATS', row: 0, col: 6 },
-        7: { clue: 'Exam for a future doc', answer: 'MACT', row: 1, col: 0 },
+        7: { clue: 'Exam for a future doc', answer: 'MCAT', row: 1, col: 0 },
         12: { clue: 'Eight slices of pizza, typically', answer: 'PIE', row: 4, col: 3 },
     },
 } as const;
