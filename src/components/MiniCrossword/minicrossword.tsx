@@ -4,26 +4,11 @@ import Crossword, { CrosswordImperative, CrosswordProps } from '@jaredreisinger/
 import { Command, Commands, CrosswordWrapper } from '../Crossword/crossword-data';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
-import { getCrosswordDataByIndex } from './miniData';
-import { getCrosswordDataByIndex2 } from './miniData2';
-import { getCrosswordDataByIndex3 } from './miniData3';
-import { getCrosswordDataByIndex4 } from './miniData4';
-import { getCrosswordDataByIndex5 } from './miniData5';
-
+import { handleMiniDataFetch } from './functions';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  
-
-  const crosswordDataArrays = [
-    getCrosswordDataByIndex,
-    getCrosswordDataByIndex2,
-    getCrosswordDataByIndex3,
-    getCrosswordDataByIndex4,
-    getCrosswordDataByIndex5
-  ];
-
-  const data = getCrosswordDataByIndex5(1);
+  let data = handleMiniDataFetch(0); //This gets the Mini Crossword Data
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
@@ -31,14 +16,8 @@ function MiniCrossword() {
 
   const randomCrossword = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.reset();
-
-    const randomFunctionIndex = Math.floor(Math.random() * crosswordDataArrays.length);
-    const getCrosswordData = crosswordDataArrays[randomFunctionIndex];
-    const randomCrosswordIndex = Math.floor(Math.random() * 20);
-    console.log(getCrosswordData(randomCrosswordIndex));
-
     toast.error("Random Button Feature is still in development😅");
-
+    //data = handleMiniDataFetch(2); change the crossword data
 
   }, []);
 
