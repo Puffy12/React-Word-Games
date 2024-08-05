@@ -16,7 +16,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/minicrossword" element={<MiniCrossword />} />
-
       </Routes>
     </BrowserRouter>
   );
