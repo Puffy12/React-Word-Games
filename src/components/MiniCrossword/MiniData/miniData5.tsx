@@ -55,8 +55,25 @@ export const data3 = {
     },
 } as const;
 
+export const data4 = {
+    across: {
+        1: { clue: 'Bit of romantic potential', answer: '', row: 0, col: 0 },
+        6: { clue: 'One able to pass a Captcha test (hopefully!)', answer: '', row: 1, col: 0 },
+        7: { clue: 'Protein-building acid type', answer: '', row: 2, col: 0 },
+        8: { clue: 'Card tricks, disappearing acts, etc.', answer: '', row: 3, col: 0 },
+        9: { clue: 'Failed to float', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Decorative pillow cover', answer: '', row: 0, col: 0 },
+        2: { clue: 'Mountain lions', answer: '', row: 0, col: 1 },
+        3: { clue: 'Female friend, in Spanish', answer: '', row: 0, col: 2 },
+        4: { clue: 'Rushed through the door', answer: '', row: 0, col: 3 },
+        5: { clue: 'When repeated, classic kind of joke', answer: '', row: 0, col: 4 },
+    },
+} as const;
 
-const crosswordDataArray = [data, data2, data3];
+
+const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
