@@ -74,18 +74,18 @@ export const data4 = {
 
 export const data5 = {
     across: {
-        1: { clue: 'Petty fight', answer: '', row: 0, col: 0 },
-        5: { clue: 'Funny little habit', answer: '', row: 1, col: 0 },
-        7: { clue: '"I can\'t ___ that!" (response to being told that Colonel Sanders\'s bow tie looks like a stick figure\'s body)', answer: '', row: 2, col: 0 },
-        8: { clue: 'Mother-of-pearl design on a guitar, e.g.', answer: '', row: 3, col: 0 },
-        9: { clue: 'Colored, as hair', answer: '', row: 4, col: 0 },
+        1: { clue: 'Petty fight', answer: 'SPAT', row: 0, col: 0 },
+        5: { clue: 'Funny little habit', answer: 'QUIRK', row: 1, col: 0 },
+        7: { clue: '"I can\'t ___ that!" (response to being told that Colonel Sanders\'s bow tie looks like a stick figure\'s body)', answer: 'UNSEE', row: 2, col: 0 },
+        8: { clue: 'Mother-of-pearl design on a guitar, e.g.', answer: 'INLAY', row: 3, col: 0 },
+        9: { clue: 'Colored, as hair', answer: 'DYED', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Source of edible ink', answer: '', row: 0, col: 0 },
-        2: { clue: 'Like the horror movie titles "Chopping Mall" and "Santa\'s Slay"', answer: '', row: 0, col: 1 },
-        3: { clue: 'Airplane seat choice', answer: '', row: 0, col: 2 },
-        4: { clue: 'Grippy part of a tire', answer: '', row: 0, col: 3 },
-        6: { clue: 'Paper with the answers on it', answer: '', row: 0, col: 4 },
+        1: { clue: 'Source of edible ink', answer: 'SQUID', row: 0, col: 0 },
+        2: { clue: 'Like the horror movie titles "Chopping Mall" and "Santa\'s Slay"', answer: 'PUNNY', row: 0, col: 1 },
+        3: { clue: 'Airplane seat choice', answer: 'AISLE', row: 0, col: 2 },
+        4: { clue: 'Grippy part of a tire', answer: 'TREAD', row: 0, col: 3 },
+        6: { clue: 'Paper with the answers on it', answer: 'KEY', row: 1, col: 4 },
     },
 } as const;
 
