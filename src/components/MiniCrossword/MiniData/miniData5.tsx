@@ -89,8 +89,25 @@ export const data5 = {
     },
 } as const;
 
+export const data6 = {
+    across: {
+        1: { clue: 'The tip of a sippy cup, essentially', answer: '', row: 0, col: 0 },
+        6: { clue: 'It\'s considered to be both a percussion and stringed instrument', answer: '', row: 1, col: 0 },
+        7: { clue: 'Knight\'s attire', answer: '', row: 2, col: 0 },
+        8: { clue: 'More than just wants', answer: '', row: 3, col: 0 },
+        9: { clue: 'Circus safety feature', answer: '', row: 4, col: 2 },
+    },
+    down: {
+        1: { clue: 'Length of a bridge', answer: '', row: 0, col: 0 },
+        2: { clue: '"Flat" or "spare" item', answer: '', row: 0, col: 1 },
+        3: { clue: 'Noodles eaten with chashu pork', answer: '', row: 0, col: 2 },
+        4: { clue: 'One end of a battery', answer: '', row: 0, col: 3 },
+        5: { clue: 'Superlative seen on a Razzie Award', answer: '', row: 0, col: 4 },
+    },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5];
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
