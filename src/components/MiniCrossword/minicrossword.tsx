@@ -8,7 +8,8 @@ import { handleMiniDataFetch } from './functions';
 
 function MiniCrossword() {
   const crossword = useRef<CrosswordImperative>(null);
-  let data = handleMiniDataFetch(0); //This gets the Mini Crossword Data
+  const miniCross = handleMiniDataFetch(0);
+  const data = miniCross; //This gets the Mini Crossword Data
 
   const fillAllAnswers = useCallback<React.MouseEventHandler>(() => {
     crossword.current?.fillAllAnswers();
@@ -80,7 +81,7 @@ function MiniCrossword() {
     (isCorrect) => {
       toast.success("You Won!");
   
-      addMessage(`onCrosswordCorrect: ${JSON.stringify(isCorrect)}`);
+      addMessage(`onCrosswordorrect: ${JSON.stringify(isCorrect)}`);
     },
     [addMessage]
   );

@@ -14,16 +14,16 @@ const crosswordDataArrays = [
 ];
 
 export const handleMiniDataFetch = (index: number) => {
-    let data;
     const todaysIndex = 4; //Changes based on the current days Mini Crossword
     if(index === 0){
-        data = getCrosswordDataByIndex5(todaysIndex);
+        const data = getCrosswordDataByIndex5(todaysIndex);
+        return data;
     }else{
         const randomFunctionIndex = Math.floor(Math.random() * crosswordDataArrays.length);
         const getCrosswordData = crosswordDataArrays[randomFunctionIndex];
         const randomCrosswordIndex = Math.floor(Math.random() * 20);
-        data = getCrosswordData(randomCrosswordIndex);
+        const data = getCrosswordData(randomCrosswordIndex);
+        return data;
+
     }
-    
-    return data;
 };
