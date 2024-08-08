@@ -108,18 +108,18 @@ export const data6 = {
 
 export const data7 = {
     across: {
-        1: { clue: 'Q-tip, for instance', answer: '', row: 0, col: 0 },
-        5: { clue: 'Bracelet dangler', answer: '', row: 1, col: 0 },
-        6: { clue: 'Pricey watchmaker with a crown logo', answer: '', row: 2, col: 0 },
-        7: { clue: 'Rubs the wrong way', answer: '', row: 3, col: 0 },
-        8: { clue: 'Spanish for "kiss"', answer: '', row: 4, col: 0 },
+        1: { clue: 'Q-tip, for instance', answer: 'SWAB', row: 0, col: 1 },
+        5: { clue: 'Bracelet dangler', answer: 'CHARM', row: 1, col: 0 },
+        6: { clue: 'Pricey watchmaker with a crown logo', answer: 'ROLEX', row: 2, col: 0 },
+        7: { clue: 'Rubs the wrong way', answer: 'IRKS', row: 3, col: 0 },
+        8: { clue: 'Spanish for "kiss"', answer: 'BESO', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Place to find seashells', answer: '', row: 0, col: 0 },
-        2: { clue: '"Enjoys long ___ on the beach" (classic phrase in a personal ad)', answer: '', row: 0, col: 1 },
-        3: { clue: 'Retort to "Am not!"', answer: '', row: 0, col: 2 },
-        4: { clue: 'Stunt rider\'s sport, for short', answer: '', row: 0, col: 3 },
-        5: { clue: 'Bed with a blankie', answer: '', row: 0, col: 4 },
+        1: { clue: 'Place to find seashells', answer: 'SHORE', row: 0, col: 1 },
+        2: { clue: '"Enjoys long ___ on the beach" (classic phrase in a personal ad)', answer: 'WALKS', row: 0, col: 21 },
+        3: { clue: 'Retort to "Am not!"', answer: 'ARESO', row: 0, col: 3 },
+        4: { clue: 'Stunt rider\'s sport, for short', answer: 'BMX', row: 0, col: 4 },
+        5: { clue: 'Bed with a blankie', answer: 'CRIB', row: 1, col: 0 },
     },
 } as const;
 
