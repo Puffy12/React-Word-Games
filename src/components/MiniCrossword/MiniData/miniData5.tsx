@@ -125,18 +125,18 @@ export const data7 = {
 
 export const data8 = {
     across: {
-        1: { clue: 'Move like a kangaroo', answer: '', row: 0, col: 2 },
-        4: { clue: 'Purple soda flavor', answer: '', row: 1, col: 0 },
-        6: { clue: 'Bird used for sending messages on "House of the Dragon"', answer: '', row: 2, col: 0 },
-        7: { clue: 'Oak tree-to-be', answer: '', row: 3, col: 0 },
-        8: { clue: 'What half-life measures, in nuclear physics', answer: '', row: 4, col: 0 },
+        1: { clue: 'Move like a kangaroo', answer: 'HOP', row: 0, col: 2 },
+        4: { clue: 'Purple soda flavor', answer: 'GRAPE', row: 1, col: 0 },
+        6: { clue: 'Bird used for sending messages on "House of the Dragon"', answer: 'RAVEN', row: 2, col: 0 },
+        7: { clue: 'Oak tree-to-be', answer: 'ACORN', row: 3, col: 0 },
+        8: { clue: 'What half-life measures, in nuclear physics', answer: 'DECAY', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Pandemonium', answer: '', row: 0, col: 2 },
-        2: { clue: 'Performance for a prima donna', answer: '', row: 0, col: 3 },
-        3: { clue: 'Take a ___, leave a ___', answer: '', row: 0, col: 4 },
-        4: { clue: 'Mortarboard wearer', answer: '', row: 1, col: 0 },
-        5: { clue: 'A dash is a short one', answer: '', row: 1, col: 1 },
+        1: { clue: 'Pandemonium', answer: 'HAVOC', row: 0, col: 2 },
+        2: { clue: 'Performance for a prima donna', answer: 'OPERA', row: 0, col: 3 },
+        3: { clue: 'Take a ___, leave a ___', answer: 'PENNY', row: 0, col: 4 },
+        4: { clue: 'Mortarboard wearer', answer: 'GRAD', row: 1, col: 0 },
+        5: { clue: 'A dash is a short one', answer: 'RACE', row: 1, col: 1 },
     },
 } as const;
 
