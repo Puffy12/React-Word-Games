@@ -123,9 +123,26 @@ export const data7 = {
     },
 } as const;
 
+export const data8 = {
+    across: {
+        1: { clue: 'Move like a kangaroo', answer: '', row: 0, col: 2 },
+        4: { clue: 'Purple soda flavor', answer: '', row: 1, col: 0 },
+        6: { clue: 'Bird used for sending messages on "House of the Dragon"', answer: '', row: 2, col: 0 },
+        7: { clue: 'Oak tree-to-be', answer: '', row: 3, col: 0 },
+        8: { clue: 'What half-life measures, in nuclear physics', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Pandemonium', answer: '', row: 0, col: 2 },
+        2: { clue: 'Performance for a prima donna', answer: '', row: 0, col: 3 },
+        3: { clue: 'Take a ___, leave a ___', answer: '', row: 0, col: 4 },
+        4: { clue: 'Mortarboard wearer', answer: '', row: 1, col: 0 },
+        5: { clue: 'A dash is a short one', answer: '', row: 1, col: 1 },
+    },
+} as const;
 
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6];
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
