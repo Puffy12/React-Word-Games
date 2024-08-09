@@ -116,7 +116,7 @@ export const data7 = {
     },
     down: {
         1: { clue: 'Place to find seashells', answer: 'SHORE', row: 0, col: 1 },
-        2: { clue: '"Enjoys long ___ on the beach" (classic phrase in a personal ad)', answer: 'WALKS', row: 0, col: 21 },
+        2: { clue: '"Enjoys long ___ on the beach" (classic phrase in a personal ad)', answer: 'WALKS', row: 0, col: 2 },
         3: { clue: 'Retort to "Am not!"', answer: 'ARESO', row: 0, col: 3 },
         4: { clue: 'Stunt rider\'s sport, for short', answer: 'BMX', row: 0, col: 4 },
         5: { clue: 'Bed with a blankie', answer: 'CRIB', row: 1, col: 0 },
