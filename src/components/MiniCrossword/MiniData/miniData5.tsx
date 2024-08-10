@@ -140,9 +140,32 @@ export const data8 = {
     },
 } as const;
 
+export const data9 = {
+    across: {
+        1: { clue: 'Berkeley school, for short', answer: '', row: 0, col: 0 },
+        4: { clue: 'Erin Brockovich has one in the movie "Erin Brockovich"', answer: '', row: 1, col: 0 },
+        6: { clue: '"Whoops, I forgot about that"', answer: '', row: 2, col: 0 },
+        8: { clue: 'Longtime comic strip with anthropomorphic animals, with "The"', answer: '', row: 3, col: 0 },
+        9: { clue: 'Disc for disc golf', answer: '', row: 4, col: 0 },
+        10: { clue: 'Narcissist\'s problem', answer: '', row: 5, col: 0 },
+        11: { clue: 'On the ___ (running away from capture)', answer: '', row: 6, col: 0 },
+        12: { clue: 'Stimpy\'s cartoon pal', answer: '', row: 7, col: 0 },
+        13: { clue: 'Stammering syllables', answer: '', row: 8, col: 0 },
+    },
+    down: {
+        1: { clue: 'Fare eaten by scavengers', answer: '', row: 0, col: 0 },
+        2: { clue: 'Not quite right', answer: '', row: 0, col: 1 },
+        3: { clue: 'Clear to read, as handwriting', answer: '', row: 0, col: 2 },
+        4: { clue: 'Listing on a credit card statement', answer: '', row: 0, col: 3 },
+        5: { clue: '"My goodness!"', answer: '', row: 0, col: 4 },
+        6: { clue: 'Hoped-for outcome of a job interview', answer: '', row: 0, col: 5 },
+        7: { clue: 'Abounds (with)', answer: '', row: 0, col: 6 },
+    },
+} as const;
 
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
