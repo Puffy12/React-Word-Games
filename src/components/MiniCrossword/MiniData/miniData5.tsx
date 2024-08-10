@@ -142,24 +142,24 @@ export const data8 = {
 
 export const data9 = {
     across: {
-        1: { clue: 'Berkeley school, for short', answer: '', row: 0, col: 0 },
-        4: { clue: 'Erin Brockovich has one in the movie "Erin Brockovich"', answer: '', row: 1, col: 0 },
+        1: { clue: 'Berkeley school, for short', answer: '', row: 0, col: 2 },
+        4: { clue: 'Erin Brockovich has one in the movie "Erin Brockovich"', answer: '', row: 1, col: 1 },
         6: { clue: '"Whoops, I forgot about that"', answer: '', row: 2, col: 0 },
         8: { clue: 'Longtime comic strip with anthropomorphic animals, with "The"', answer: '', row: 3, col: 0 },
         9: { clue: 'Disc for disc golf', answer: '', row: 4, col: 0 },
         10: { clue: 'Narcissist\'s problem', answer: '', row: 5, col: 0 },
-        11: { clue: 'On the ___ (running away from capture)', answer: '', row: 6, col: 0 },
-        12: { clue: 'Stimpy\'s cartoon pal', answer: '', row: 7, col: 0 },
-        13: { clue: 'Stammering syllables', answer: '', row: 8, col: 0 },
+        11: { clue: 'On the ___ (running away from capture)', answer: '', row: 5, col: 4 },
+        12: { clue: 'Stimpy\'s cartoon pal', answer: '', row: 6, col: 0 },
+        13: { clue: 'Stammering syllables', answer: '', row: 6, col: 4 },
     },
     down: {
-        1: { clue: 'Fare eaten by scavengers', answer: '', row: 0, col: 0 },
-        2: { clue: 'Not quite right', answer: '', row: 0, col: 1 },
-        3: { clue: 'Clear to read, as handwriting', answer: '', row: 0, col: 2 },
-        4: { clue: 'Listing on a credit card statement', answer: '', row: 0, col: 3 },
-        5: { clue: '"My goodness!"', answer: '', row: 0, col: 4 },
-        6: { clue: 'Hoped-for outcome of a job interview', answer: '', row: 0, col: 5 },
-        7: { clue: 'Abounds (with)', answer: '', row: 0, col: 6 },
+        1: { clue: 'Fare eaten by scavengers', answer: '', row: 0, col: 2 },
+        2: { clue: 'Not quite right', answer: '', row: 0, col: 3 },
+        3: { clue: 'Clear to read, as handwriting', answer: '', row: 0, col: 4 },
+        4: { clue: 'Listing on a credit card statement', answer: '', row: 1, col: 1 },
+        5: { clue: '"My goodness!"', answer: '', row: 1, col: 5 },
+        6: { clue: 'Hoped-for outcome of a job interview', answer: '', row: 2, col: 0 },
+        7: { clue: 'Abounds (with)', answer: '', row: 2, col: 6 },
     },
 } as const;
 
