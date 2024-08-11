@@ -163,9 +163,25 @@ export const data9 = {
     },
 } as const;
 
+export const data10 = {
+    across: {
+        1: { clue: 'Part of a Batman or Spider-Man costume', answer: '', row: 0, col: 0 },
+        5: { clue: '"What are you ___ today?"', answer: '', row: 1, col: 0 },
+        6: { clue: 'Soup eater\'s onomatopoeia', answer: '', row: 2, col: 0 },
+        8: { clue: 'The "dial" in "Don\'t touch that dial"', answer: '', row: 3, col: 0 },
+        9: { clue: '"Don\'t move, Fido!"', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Simply have to', answer: '', row: 0, col: 0 },
+        2: { clue: 'Best possible grade', answer: '', row: 0, col: 1 },
+        3: { clue: 'Backflip in an action movie, e.g.', answer: '', row: 0, col: 2 },
+        4: { clue: 'Its currency is the won', answer: '', row: 0, col: 3 },
+        7: { clue: 'Ask some personal questions', answer: '', row: 0, col: 4 },
+    },
+} as const;
 
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
