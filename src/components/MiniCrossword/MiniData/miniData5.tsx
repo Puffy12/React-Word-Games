@@ -169,14 +169,14 @@ export const data10 = {
         5: { clue: '"What are you ___ today?"', answer: '', row: 1, col: 0 },
         6: { clue: 'Soup eater\'s onomatopoeia', answer: '', row: 2, col: 0 },
         8: { clue: 'The "dial" in "Don\'t touch that dial"', answer: '', row: 3, col: 0 },
-        9: { clue: '"Don\'t move, Fido!"', answer: '', row: 4, col: 0 },
+        9: { clue: '"Don\'t move, Fido!"', answer: '', row: 4, col: 1 },
     },
     down: {
         1: { clue: 'Simply have to', answer: '', row: 0, col: 0 },
         2: { clue: 'Best possible grade', answer: '', row: 0, col: 1 },
         3: { clue: 'Backflip in an action movie, e.g.', answer: '', row: 0, col: 2 },
         4: { clue: 'Its currency is the won', answer: '', row: 0, col: 3 },
-        7: { clue: 'Ask some personal questions', answer: '', row: 0, col: 4 },
+        7: { clue: 'Ask some personal questions', answer: '', row: 2, col: 4 },
     },
 } as const;
 
