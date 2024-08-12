@@ -182,18 +182,18 @@ export const data10 = {
 
 export const data11 = {
     across: {
-        1: { clue: 'Throws in the mix', answer: '', row: 0, col: 1 },
-        5: { clue: 'Plant life', answer: '', row: 1, col: 0 },
-        6: { clue: 'Chef\'s garment', answer: '', row: 2, col: 0 },
-        7: { clue: 'Informal term for avid supporters of Kamala Harris', answer: '', row: 3, col: 0 },
-        8: { clue: 'Simplicity', answer: '', row: 4, col: 0 },
+        1: { clue: 'Throws in the mix', answer: 'ADDS', row: 0, col: 1 },
+        5: { clue: 'Plant life', answer: 'FLORA', row: 1, col: 0 },
+        6: { clue: 'Chef\'s garment', answer: 'APRON', row: 2, col: 0 },
+        7: { clue: 'Informal term for avid supporters of Kamala Harris', answer: 'KHIVE', row: 3, col: 0 },
+        8: { clue: 'Simplicity', answer: 'EASE', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Letter before beta and gamma', answer: '', row: 0, col: 1 },
-        2: { clue: 'Pulitzer-winning historian ___ Kearns Goodwin', answer: '', row: 0, col: 2 },
-        3: { clue: 'Did some chauffeuring', answer: '', row: 0, col: 3 },
-        4: { clue: 'All there, mentally', answer: '', row: 0, col: 4 },
-        5: { clue: 'Like a designer bag with the company name misspelled', answer: '', row: 1, col: 0 },
+        1: { clue: 'Letter before beta and gamma', answer: 'ALPHA', row: 0, col: 1 },
+        2: { clue: 'Pulitzer-winning historian ___ Kearns Goodwin', answer: 'DORIS', row: 0, col: 2 },
+        3: { clue: 'Did some chauffeuring', answer: 'DROVE', row: 0, col: 3 },
+        4: { clue: 'All there, mentally', answer: 'SANE', row: 0, col: 4 },
+        5: { clue: 'Like a designer bag with the company name misspelled', answer: 'FAKE', row: 1, col: 0 },
     },
 } as const;
 
