@@ -180,8 +180,24 @@ export const data10 = {
     },
 } as const;
 
+export const data11 = {
+    across: {
+        1: { clue: 'Throws in the mix', answer: '', row: 0, col: 1 },
+        5: { clue: 'Plant life', answer: '', row: 1, col: 0 },
+        6: { clue: 'Chef\'s garment', answer: '', row: 2, col: 0 },
+        7: { clue: 'Informal term for avid supporters of Kamala Harris', answer: '', row: 3, col: 0 },
+        8: { clue: 'Simplicity', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Letter before beta and gamma', answer: '', row: 0, col: 1 },
+        2: { clue: 'Pulitzer-winning historian ___ Kearns Goodwin', answer: '', row: 0, col: 2 },
+        3: { clue: 'Did some chauffeuring', answer: '', row: 0, col: 3 },
+        4: { clue: 'All there, mentally', answer: '', row: 0, col: 4 },
+        5: { clue: 'Like a designer bag with the company name misspelled', answer: '', row: 1, col: 0 },
+    },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
