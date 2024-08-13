@@ -197,7 +197,25 @@ export const data11 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
+export const data12 = {
+    across: {
+        1: { clue: 'Gymnastics surfaces', answer: '', row: 0, col: 0 },
+        5: { clue: 'They might be raised by something exciting', answer: '', row: 1, col: 0 },
+        6: { clue: 'More than enough', answer: '', row: 2, col: 0 },
+        7: { clue: 'Highway payment', answer: '', row: 3, col: 0 },
+        8: { clue: 'Food for farm animals', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Actor Jason of "Dune"', answer: '', row: 0, col: 0 },
+        2: { clue: 'Submit one\'s résumé', answer: '', row: 0, col: 1 },
+        3: { clue: 'Poker player\'s giveaway', answer: '', row: 0, col: 2 },
+        4: { clue: 'Direction that\'s down and a little to the right: Abbr.', answer: '', row: 0, col: 3 },
+        5: { clue: '"Hell ___ no fury like ..."', answer: '', row: 0, col: 4 },
+    },
+} as const;
+
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
