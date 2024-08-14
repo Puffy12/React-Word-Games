@@ -216,18 +216,18 @@ export const data12 = {
 
 export const data13 = {
     across: {
-        1: { clue: 'Get some shut-eye', answer: '', row: 0, col: 0 },
-        6: { clue: 'Like some difficult running paths', answer: '', row: 1, col: 0 },
-        7: { clue: 'Kind of chain you might wish to be off', answer: '', row: 2, col: 0 },
-        8: { clue: '"Same here!"', answer: '', row: 3, col: 0 },
-        9: { clue: 'Late riser, stereotypically', answer: '', row: 4, col: 0 },
+        1: { clue: 'Get some shut-eye', answer: 'SLEEP', row: 0, col: 0 },
+        6: { clue: 'Like some difficult running paths', answer: 'HILLY', row: 1, col: 0 },
+        7: { clue: 'Kind of chain you might wish to be off', answer: 'EMAIL', row: 2, col: 0 },
+        8: { clue: '"Same here!"', answer: 'DITTO', row: 3, col: 0 },
+        9: { clue: 'Late riser, stereotypically', answer: 'TEEN', row: 4, col: 1 },
     },
     down: {
-        1: { clue: 'Remove, as a layer of snakeskin', answer: '', row: 0, col: 0 },
-        2: { clue: 'Value that a function approaches, in math', answer: '', row: 0, col: 1 },
-        3: { clue: 'Make extremely happy', answer: '', row: 0, col: 2 },
-        4: { clue: 'In the top 1%', answer: '', row: 0, col: 3 },
-        5: { clue: 'End zone marker', answer: '', row: 0, col: 4 },
+        1: { clue: 'Remove, as a layer of snakeskin', answer: 'SHED', row: 0, col: 0 },
+        2: { clue: 'Value that a function approaches, in math', answer: 'LIMIT', row: 0, col: 1 },
+        3: { clue: 'Make extremely happy', answer: 'ELATE', row: 0, col: 2 },
+        4: { clue: 'In the top 1%', answer: 'ELITE', row: 0, col: 3 },
+        5: { clue: 'End zone marker', answer: 'PYLON', row: 0, col: 4 },
     },
 } as const;
 
