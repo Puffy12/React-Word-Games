@@ -201,7 +201,7 @@ export const data12 = {
     across: {
         1: { clue: 'Gymnastics surfaces', answer: 'MATS', row: 0, col: 1 },
         5: { clue: 'They might be raised by something exciting', answer: 'HOPES', row: 1, col: 0 },
-        6: { clue: 'More than enough', answer: 'AMPLES', row: 2, col: 0 },
+        6: { clue: 'More than enough', answer: 'AMPLE', row: 2, col: 0 },
         7: { clue: 'Highway payment', answer: 'TOLL', row: 3, col: 0 },
         8: { clue: 'Food for farm animals', answer: 'HAY', row: 4, col: 0 },
     },
@@ -214,8 +214,24 @@ export const data12 = {
     },
 } as const;
 
+export const data13 = {
+    across: {
+        1: { clue: 'Get some shut-eye', answer: '', row: 0, col: 0 },
+        6: { clue: 'Like some difficult running paths', answer: '', row: 1, col: 0 },
+        7: { clue: 'Kind of chain you might wish to be off', answer: '', row: 2, col: 0 },
+        8: { clue: '"Same here!"', answer: '', row: 3, col: 0 },
+        9: { clue: 'Late riser, stereotypically', answer: '', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Remove, as a layer of snakeskin', answer: '', row: 0, col: 0 },
+        2: { clue: 'Value that a function approaches, in math', answer: '', row: 0, col: 1 },
+        3: { clue: 'Make extremely happy', answer: '', row: 0, col: 2 },
+        4: { clue: 'In the top 1%', answer: '', row: 0, col: 3 },
+        5: { clue: 'End zone marker', answer: '', row: 0, col: 4 },
+    },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
