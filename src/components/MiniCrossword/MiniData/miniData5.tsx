@@ -233,18 +233,18 @@ export const data13 = {
 
 export const data14 = {
     across: {
-        1: { clue: 'With 6-Across, "Let me start by saying ..."', answer: '', row: 0, col: 0 },
-        6: { clue: 'See 1-Across', answer: '', row: 1, col: 0 },
-        7: { clue: 'Historical object', answer: '', row: 2, col: 0 },
-        8: { clue: 'Underwater plant that can grow over a foot a day', answer: '', row: 3, col: 0 },
-        9: { clue: 'Mischievous', answer: '', row: 4, col: 0 },
+        1: { clue: 'With 6-Across, "Let me start by saying ..."', answer: 'FIRST', row: 0, col: 0 },
+        6: { clue: 'See 1-Across', answer: 'OFALL', row: 1, col: 0 },
+        7: { clue: 'Historical object', answer: 'RELIC', row: 2, col: 0 },
+        8: { clue: 'Underwater plant that can grow over a foot a day', answer: 'KELP', row: 3, col: 0 },
+        9: { clue: 'Mischievous', answer: 'SLY', row: 4, col: 0 },
     },
     down: {
-        1: { clue: 'Section of a cutlery drawer', answer: '', row: 0, col: 0 },
-        2: { clue: '"It\'s my opinion that ..."', answer: '', row: 0, col: 1 },
-        3: { clue: 'Presidential candidate\'s event', answer: '', row: 0, col: 2 },
-        4: { clue: 'Lose one\'s footing', answer: '', row: 0, col: 3 },
-        5: { clue: '’90s girl group with the hit "No Scrubs"', answer: '', row: 0, col: 4 },
+        1: { clue: 'Section of a cutlery drawer', answer: 'FORKS', row: 0, col: 0 },
+        2: { clue: '"It\'s my opinion that ..."', answer: 'IFEEL', row: 0, col: 1 },
+        3: { clue: 'Presidential candidate\'s event', answer: 'RALLY', row: 0, col: 2 },
+        4: { clue: 'Lose one\'s footing', answer: 'SLIP', row: 0, col: 3 },
+        5: { clue: '’90s girl group with the hit "No Scrubs"', answer: 'TLC', row: 0, col: 4 },
     },
 } as const;
 
