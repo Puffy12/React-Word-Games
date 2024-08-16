@@ -248,8 +248,26 @@ export const data14 = {
     },
 } as const;
 
+export const data15 = {
+    across: {
+        1: { clue: 'Senegal\'s neighbor to the east', answer: 'MALI', row: 0, col: 1 },
+        5: { clue: '___ Allen White, star of TV\'s "The Bear"', answer: 'JEREMY', row: 1, col: 0 },
+        7: { clue: 'Make a getaway', answer: 'ESCAPE', row: 2, col: 0 },
+        8: { clue: 'What\'s longer in the morning and evening than it is at noon', answer: 'SHADOW', row: 3, col: 0 },
+        9: { clue: 'Voices below altos', answer: 'TENORS', row: 4, col: 0 },
+        10: { clue: 'No longer in the Drafts folder', answer: 'SENT', row: 5, col: 1 },
+    },
+    down: {
+        1: { clue: 'Interlocks (with)', answer: 'MESHES', row: 0, col: 1 },
+        2: { clue: 'Esoteric', answer: 'ARCANE', row: 0, col: 2 },
+        3: { clue: 'Give false hope to', answer: 'LEADON', row: 0, col: 3 },
+        4: { clue: 'Ship into the country', answer: 'IMPORT', row: 0, col: 4 },
+        5: { clue: '"Surely you ___!"', answer: 'JEST', row: 1, col: 0 },
+        6: { clue: 'Coniferous trees with red berries', answer: 'YEWS', row: 1, col: 5 },
+    },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
