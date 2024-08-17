@@ -269,29 +269,29 @@ export const data15 = {
 
 export const data16 = {
     across: {
-        1: { clue: 'Stuff chewed by a cow', answer: '', row: 0, col: 0 },
-        4: { clue: 'Bakery offerings', answer: '', row: 1, col: 0 },
-        6: { clue: 'Corporate makeover', answer: '', row: 2, col: 0 },
-        8: { clue: '100%', answer: '', row: 3, col: 0 },
-        9: { clue: '"___ De Jing" (philosophical text)', answer: '', row: 4, col: 0 },
-        10: { clue: 'Like restrictions you might mention to a waiter', answer: '', row: 5, col: 0 },
-        12: { clue: 'Difficult shape for a mini golf hole', answer: '', row: 6, col: 0 },
-        13: { clue: 'Ah, this takes me back!', answer: '', row: 7, col: 0 },
+        1: { clue: 'Stuff chewed by a cow', answer: 'CUD', row: 0, col: 2 },
+        4: { clue: 'Bakery offerings', answer: 'CAKES', row: 1, col: 1 },
+        6: { clue: 'Corporate makeover', answer: 'REBRAND', row: 2, col: 0 },
+        8: { clue: '100%', answer: 'ALL', row: 3, col: 0 },
+        9: { clue: '"___ De Jing" (philosophical text)', answer: 'DAO', row: 3, col: 4 },
+        10: { clue: 'Like restrictions you might mention to a waiter', answer: 'DIETARY', row: 4, col: 0 },
+        12: { clue: 'Difficult shape for a mini golf hole', answer: 'ANTHILL', row: 5, col: 0 },
+        13: { clue: 'Ah, this takes me back!', answer: 'REVERSE', row: 6, col: 0 },
     },
     down: {
-        1: { clue: 'What the Disney Channel and Golf Channel appear on', answer: '', row: 0, col: 0 },
-        2: { clue: 'Kyiv\'s land: Abbr.', answer: '', row: 0, col: 1 },
-        3: { clue: 'Awkward silence in a broadcast', answer: '', row: 0, col: 2 },
-        4: { clue: 'Dion who performed atop the Eiffel Tower at the 2024 Olympics', answer: '', row: 0, col: 3 },
-        5: { clue: 'Responds in an aggressive and threatening tone', answer: '', row: 0, col: 4 },
-        6: { clue: 'Weather-detecting technology', answer: '', row: 0, col: 5 },
-        7: { clue: 'Writer Arthur Conan ___', answer: '', row: 0, col: 6 },
-        11: { clue: 'The "t" of btw', answer: '', row: 0, col: 7 },
+        1: { clue: 'What the Disney Channel and Golf Channel appear on', answer: 'CABLETV', row: 0, col: 2 },
+        2: { clue: 'Kyiv\'s land: Abbr.', answer: 'UKR', row: 0, col: 3 },
+        3: { clue: 'Awkward silence in a broadcast', answer: 'DEADAIR', row: 0, col: 4 },
+        4: { clue: 'Dion who performed atop the Eiffel Tower at the 2024 Olympics', answer: 'CELINE', row: 1, col: 1 },
+        5: { clue: 'Responds in an aggressive and threatening tone', answer: 'SNARLS', row: 1, col: 5 },
+        6: { clue: 'Weather-detecting technology', answer: 'RADAR', row: 2, col: 0 },
+        7: { clue: 'Writer Arthur Conan ___', answer: 'DOYLE', row: 2, col: 6 },
+        11: { clue: 'The "t" of btw', answer: 'THE', row: 4, col: 3 },
     },
 } as const;
 
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16 ];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
