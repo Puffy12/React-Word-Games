@@ -290,8 +290,24 @@ export const data16 = {
     },
 } as const;
 
+export const data17 = {
+    across: {
+        1: { clue: '"Oh, and another thing ..."', answer: 'ALSO', row: 0, col: 0 },
+        5: { clue: 'Part of the plane that\'s last to get off, usually', answer: 'REAR', row: 1, col: 0 },
+        6: { clue: 'Fruit with orange flesh and a large pit', answer: 'MANGO', row: 2, col: 0 },
+        8: { clue: 'Celebrity', answer: 'STAR', row: 3, col: 1 },
+        9: { clue: 'Have a relaxed get-together', answer: 'HANG', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Where the funny bone is found', answer: 'ARM', row: 0, col: 0 },
+        2: { clue: 'What a dog may be let off at a dog park', answer: 'LEASH', row: 0, col: 1 },
+        3: { clue: '"Miracle on 34th Street" figure', answer: 'SANTA', row: 0, col: 2 },
+        4: { clue: 'Instrument with pipes', answer: 'ORGAN', row: 0, col: 3 },
+        7: { clue: 'Association: Abbr.', answer: 'ORG', row: 2, col: 4 },
+    },
+} as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16 ];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
