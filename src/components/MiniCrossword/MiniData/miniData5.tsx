@@ -307,7 +307,25 @@ export const data17 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
+export const data18 = {
+    across: {
+        1: { clue: 'Leaves a couple bucks on the bar counter', answer: 'TIPS', row: 0, col: 0 },
+        5: { clue: 'Opera solo', answer: 'ARIA', row: 1, col: 0 },
+        6: { clue: 'Package before sending', answer: 'BOXUP', row: 2, col: 0 },
+        8: { clue: 'Number of Olympic gold medals won by Katie Ledecky', answer: 'NINE', row: 3, col: 1 },
+        9: { clue: 'What four quarters can equal', answer: 'YEAR', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Browser subwindow', answer: 'TAB', row: 0, col: 0 },
+        2: { clue: 'A maintenance shop with a broken doorbell is an example of it', answer: 'IRONY', row: 0, col: 1 },
+        3: { clue: 'Kind of short haircut for women', answer: 'PIXIE', row: 0, col: 2 },
+        4: { clue: 'Spa room', answer: 'SAUNA', row: 0, col: 3 },
+        7: { clue: 'Pay-___-view', answer: 'PER', row: 2, col: 4 },
+    },
+} as const;
+
+
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
 export const getRandomCrosswordData5 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
