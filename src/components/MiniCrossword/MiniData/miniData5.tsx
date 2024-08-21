@@ -341,22 +341,6 @@ export const data19 = {
     },
 } as const;
 
-export const data20 = {
-    across: {
-        1: { clue: 'Top ten, e.g.', answer: 'LIST', row: 0, col: 1 },
-        5: { clue: 'Nintendo antagonist in a yellow hat and purple overalls', answer: 'WARIO', row: 1, col: 0 },
-        6: { clue: 'One end of a battery', answer: 'ANODE', row: 2, col: 0 },
-        7: { clue: 'Ten in an Olympic swimming pool', answer: 'LANES', row: 3, col: 0 },
-        8: { clue: 'What "X" can mean', answer: 'KISS', row: 4, col: 0 },
-    },
-    down: {
-        1: { clue: 'Hawaiian island seen from the west shore of Maui', answer: 'LANAI', row: 0, col: 1 },
-        2: { clue: 'Unwrinkles, as a dress shirt', answer: 'IRONS', row: 0, col: 2 },
-        3: { clue: 'A decagon has ten', answer: 'SIDES', row: 0, col: 3 },
-        4: { clue: 'Bottom ten?', answer: 'TOES', row: 0, col: 4 },
-        5: { clue: 'Go for a stroll', answer: 'WALK', row: 1, col: 0 },
-    },
-} as const;
 
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
