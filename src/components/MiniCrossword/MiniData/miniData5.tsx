@@ -341,6 +341,22 @@ export const data19 = {
     },
 } as const;
 
+export const data20 = {
+    across: {
+        1: { clue: 'Post made about "pommel horse guy" or "brat summer," say', answer: 'MEME', row: 0, col: 0 },
+        5: { clue: 'Late game show host Trebek', answer: 'ALEX', row: 1, col: 0 },
+        6: { clue: 'Apple product', answer: 'CIDER', row: 2, col: 0 },
+        8: { clue: 'Food filled with carnitas or carne asada', answer: 'TACO', row: 3, col: 1 },
+        9: { clue: '"Anybody ___?"', answer: 'ELSE', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Apple product', answer: 'MAC', row: 0, col: 0 },
+        2: { clue: 'Best of the best', answer: 'ELITE', row: 0, col: 1 },
+        3: { clue: 'Olympic prize', answer: 'MEDAL', row: 0, col: 2 },
+        4: { clue: 'C-suite figures', answer: 'EXECS', row: 0, col: 3 },
+        7: { clue: 'Caviar, e.g.', answer: 'ROE', row: 2, col: 4 },
+    },
+} as const;
 
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
