@@ -3,6 +3,8 @@ import { getCrosswordDataByIndex2 } from './MiniData/miniData2';
 import { getCrosswordDataByIndex3 } from './MiniData/miniData3';
 import { getCrosswordDataByIndex4 } from './MiniData/miniData4';
 import { getCrosswordDataByIndex5 } from './MiniData/miniData5';
+import { getCrosswordDataByIndex6 } from './MiniData/miniData6';
+
 
 
 const crosswordDataArrays = [
@@ -10,7 +12,8 @@ const crosswordDataArrays = [
     getCrosswordDataByIndex2,
     getCrosswordDataByIndex3,
     getCrosswordDataByIndex4,
-    getCrosswordDataByIndex5
+    getCrosswordDataByIndex5,
+    getCrosswordDataByIndex6
 ];
 
 export const handleMiniDataFetch = (index: number) => {
