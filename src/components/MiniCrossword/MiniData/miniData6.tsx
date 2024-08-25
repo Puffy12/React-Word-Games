@@ -36,6 +36,23 @@ export const data2 = {
     },
 } as const;
 
+export const data3 = {
+    across: {
+        1: { clue: 'Public transit option', answer: 'BUS', row: 0, col: 2 },
+        4: { clue: '___ Boss (fashion brand)', answer: 'HUGO', row: 1, col: 1 },
+        5: { clue: 'Oppressively humid', answer: 'MUGGY', row: 2, col: 0 },
+        6: { clue: 'Scrambled, they might look like this: SGEG', answer: 'EGGS', row: 3, col: 0 },
+        7: { clue: 'Casual greeting', answer: 'HEY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Like some software and swamps', answer: 'BUGGY', row: 0, col: 2 },
+        2: { clue: 'Fleece-lined boots', answer: 'UGGS', row: 0, col: 3 },
+        3: { clue: 'Basis of tofu and tempeh', answer: 'SOY', row: 0, col: 4 },
+        4: { clue: 'Massive', answer: 'HUGE', row: 1, col: 1 },
+        5: { clue: '"I\'m not impressed"', answer: 'MEH', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData6 = (index: number) => {
