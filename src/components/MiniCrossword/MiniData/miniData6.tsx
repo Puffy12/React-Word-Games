@@ -53,6 +53,23 @@ export const data3 = {
     },
 } as const;
 
+export const data4 = {
+    across: {
+        1: { clue: 'Soccer player\'s prominent muscle', answer: 'CALF', row: 0, col: 1 },
+        5: { clue: 'Member of an underwater colony', answer: 'CORAL', row: 1, col: 0 },
+        6: { clue: 'Mario\'s twin', answer: 'LUIGI', row: 2, col: 0 },
+        7: { clue: 'Fluster', answer: 'UPSET', row: 3, col: 0 },
+        8: { clue: 'Source of a buzz … with or without its last letter?', answer: 'BEER', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Two-door car', answer: 'COUPE', row: 0, col: 1 },
+        2: { clue: 'Get up or come up', answer: 'ARISE', row: 0, col: 2 },
+        3: { clue: 'Light-colored variety of 8-Across', answer: 'LAGER', row: 0, col: 3 },
+        4: { clue: 'Move swiftly, like a butterfly', answer: 'FLIT', row: 0, col: 4 },
+        5: { clue: '♣️', answer: 'CLUB', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3];
 
 export const getRandomCrosswordData6 = (index: number) => {
