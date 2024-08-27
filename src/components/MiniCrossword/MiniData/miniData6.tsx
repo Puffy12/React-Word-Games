@@ -70,6 +70,24 @@ export const data4 = {
     },
 } as const;
 
+export const data5 = {
+    across: {
+        1: { clue: 'Point of transition between two zodiac signs', answer: 'CUSP', row: 0, col: 0 },
+        5: { clue: 'Declare legally void', answer: 'ANNUL', row: 1, col: 0 },
+        7: { clue: 'Providence, ___ Island', answer: 'RHODE', row: 2, col: 0 },
+        8: { clue: 'August zodiac sign', answer: 'VIRGO', row: 3, col: 0 },
+        9: { clue: 'Olympic fencing sword', answer: 'EPEE', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Slice up, as a turkey', answer: 'CARVE', row: 0, col: 0 },
+        2: { clue: 'Not "with it"', answer: 'UNHIP', row: 0, col: 1 },
+        3: { clue: 'Be a noisy bedmate', answer: 'SNORE', row: 0, col: 2 },
+        4: { clue: 'Cutely pokeable bit of belly flab', answer: 'PUDGE', row: 0, col: 3 },
+        6: { clue: 'August zodiac sign', answer: 'LEO', row: 1, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData6 = (index: number) => {
