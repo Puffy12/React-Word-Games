@@ -87,6 +87,22 @@ export const data5 = {
     },
 } as const;
 
+export const data6 = {
+    across: {
+        1: { clue: 'Tool for swabbing the deck', answer: 'MOP', row: 0, col: 2 },
+        4: { clue: 'Doorbell\'s sound', answer: 'CHIME', row: 1, col: 0 },
+        6: { clue: 'Vertical lines on graphs, in math', answer: 'YAXES', row: 2, col: 0 },
+        7: { clue: 'Crept around in a weaselly way', answer: 'SLUNK', row: 3, col: 0 },
+        8: { clue: '___-turvy', answer: 'TOPSY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Bungled situation', answer: 'MIXUP', row: 0, col: 2 },
+        2: { clue: 'Signs of things to come', answer: 'OMENS', row: 0, col: 3 },
+        3: { clue: 'Bothersome', answer: 'PESKY', row: 0, col: 4 },
+        4: { clue: 'Skin bump', answer: 'CYST', row: 1, col: 0 },
+        5: { clue: 'Angel hair topper?', answer: 'HALO', row: 1, col: 1 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5];
 
