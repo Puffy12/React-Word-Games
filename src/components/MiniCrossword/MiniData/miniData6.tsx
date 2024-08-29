@@ -104,6 +104,24 @@ export const data6 = {
     },
 } as const;
 
+export const data7 = {
+    across: {
+        1: { clue: 'Throws, as a fishing line', answer: 'CASTS', row: 0, col: 0 },
+        6: { clue: 'Omega\'s opposite', answer: 'ALPHA', row: 1, col: 0 },
+        7: { clue: 'Hybrid fruit similar to an "aprium"', answer: 'PLUOT', row: 2, col: 0 },
+        8: { clue: 'Get the shampoo out', answer: 'RINSE', row: 3, col: 0 },
+        9: { clue: 'Signed, as a contract', answer: 'INKED', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Island that lends its name to a style of pants', answer: 'CAPRI', row: 0, col: 0 },
+        2: { clue: 'Betting every last poker chip', answer: 'ALLIN', row: 0, col: 1 },
+        3: { clue: 'Moxie', answer: 'SPUNK', row: 0, col: 2 },
+        4: { clue: '"It\'s just one of ___ days"', answer: 'THOSE', row: 0, col: 3 },
+        5: { clue: 'Happily full', answer: 'SATED', row: 0, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData6 = (index: number) => {
