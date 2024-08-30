@@ -121,6 +121,22 @@ export const data7 = {
     },
 } as const;
 
+export const data8 = {
+    across: {
+        1: { clue: 'Bicycle part that\'s also a past-tense verb', answer: 'SPOKE', row: 0, col: 0 },
+        6: { clue: 'At no time', answer: 'NEVER', row: 1, col: 0 },
+        7: { clue: '"It\'s just like riding a bike," for one', answer: 'ADAGE', row: 2, col: 0 },
+        8: { clue: 'They\'re typically 2 or 3 on mini golf courses', answer: 'PARS', row: 3, col: 0 },
+        9: { clue: 'Like a trickster', answer: 'SLY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Loses it', answer: 'SNAPS', row: 0, col: 0 },
+        2: { clue: 'Bicycle part that sounds like a flower part', answer: 'PEDAL', row: 0, col: 1 },
+        3: { clue: 'Egg-producing organ', answer: 'OVARY', row: 0, col: 2 },
+        4: { clue: 'What breweries might creatively repurpose as seats', answer: 'KEGS', row: 0, col: 3 },
+        5: { clue: 'Poetic "before"', answer: 'ERE', row: 0, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
 
