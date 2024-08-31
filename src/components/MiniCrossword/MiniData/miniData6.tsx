@@ -138,6 +138,30 @@ export const data8 = {
     },
 } as const;
 
+export const data9 = {
+    across: {
+        1: { clue: 'Gentle call from a dove', answer: 'COO', row: 0, col: 2 },
+        10: { clue: 'Filaments', answer: 'LEACH', row: 1, col: 1 },
+        12: { clue: 'Submarine sandwiches, Philly-style', answer: 'CANTEEN', row: 2, col: 0 },
+        13: { clue: '"How do you ___?" (judge\'s question)', answer: 'APT', row: 3, col: 0 },
+        4: { clue: 'Dissolve away, as minerals', answer: 'ARE', row: 3, col: 4 },
+        6: { clue: 'Hiker\'s water container', answer: 'STRANDS', row: 4, col: 0 },
+        8: { clue: 'Befitting', answer: 'HOAGIES', row: 5, col: 0 },
+        9: { clue: 'Word shortened to its middle letter in texts', answer: 'PLEAD', row: 6, col: 1 },
+    },
+    down: {
+        1: { clue: 'Alphabetically first time zone in the contiguous U.S.', answer: 'CENTRAL', row: 0, col: 2 },
+        11: { clue: 'Number of candles on a birthday cake, often', answer: 'OAT', row: 0, col: 3 },
+        2: { clue: 'Granola grain', answer: 'OCEANIA', row: 0, col: 4 },
+        3: { clue: 'It includes Australia and Polynesia', answer: 'LAPTOP', row: 1, col: 1 },
+        4: { clue: 'Telecommuter\'s accessory', answer: 'HERDED', row: 1, col: 5 },
+        5: { clue: 'Did a border collie\'s job', answer: 'CASH', row: 2, col: 0 },
+        6: { clue: 'Alternative to "card" or "Apple Pay"', answer: 'NESS', row: 2, col: 6 },
+        7: { clue: 'Loch ___ monster', answer: 'AGE', row: 4, col: 3 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
 
 export const getRandomCrosswordData6 = (index: number) => {
