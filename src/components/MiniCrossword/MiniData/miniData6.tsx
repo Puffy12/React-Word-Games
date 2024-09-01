@@ -161,6 +161,23 @@ export const data9 = {
     },
 } as const;
 
+export const data10 = {
+    across: {
+        1: { clue: 'What spiders craft', answer: 'WEBS', row: 0, col: 1 },
+        5: { clue: 'Total wower', answer: 'BEAUT', row: 1, col: 0 },
+        6: { clue: '"Pumpkin spice" order from Starbucks', answer: 'LATTE', row: 2, col: 0 },
+        7: { clue: 'Paperless party announcement', answer: 'EVITE', row: 3, col: 0 },
+        8: { clue: 'Discourage', answer: 'DETER', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Craft, spider-style', answer: 'WEAVE', row: 0, col: 1 },
+        2: { clue: 'Wipe out and face-plant, slangily', answer: 'EATIT', row: 0, col: 2 },
+        3: { clue: 'Flat-topped landform', answer: 'BUTTE', row: 0, col: 3 },
+        4: { clue: 'Take the helm', answer: 'STEER', row: 0, col: 4 },
+        5: { clue: 'Ran, as colors', answer: 'BLED', row: 1, col: 0 },
+    },
+} as const;
+
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
