@@ -178,6 +178,22 @@ export const data10 = {
     },
 } as const;
 
+export const data11 = {
+    across: {
+        1: { clue: 'Professional in a toque', answer: 'CHEF', row: 0, col: 0 },
+        5: { clue: '"I\'m not a ___" (online affirmation next to a checkbox)', answer: 'ROBOT', row: 1, col: 0 },
+        7: { clue: 'Love, in Italian', answer: 'AMORE', row: 2, col: 0 },
+        8: { clue: 'Wards (off)', answer: 'FENDS', row: 3, col: 0 },
+        9: { clue: 'Secret rendezvous', answer: 'TRYST', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Woodcarving or metalsmithing, e.g.', answer: 'CRAFT', row: 0, col: 0 },
+        2: { clue: 'It\'s going ... going ... gone!', answer: 'HOMER', row: 0, col: 1 },
+        3: { clue: 'Dark wood once used for drinking cups, as it was thought to neutralize poison', answer: 'EBONY', row: 0, col: 2 },
+        4: { clue: 'Focuses on the road?', answer: 'FORDS', row: 0, col: 3 },
+        6: { clue: 'One might be multiple-choice', answer: 'TEST', row: 1, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
