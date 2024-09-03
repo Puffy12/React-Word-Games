@@ -195,6 +195,24 @@ export const data11 = {
     },
 } as const;
 
+export const data12 = {
+    across: {
+        1: { clue: 'Concert tees, pins, posters, etc.', answer: 'MERCH', row: 0, col: 0 },
+        6: { clue: 'Quick on one\'s feet', answer: 'AGILE', row: 1, col: 0 },
+        7: { clue: 'Kind of orange with a "belly button"', answer: 'NAVEL', row: 2, col: 0 },
+        8: { clue: 'As good as it gets', answer: 'IDEAL', row: 3, col: 0 },
+        9: { clue: 'Study of the stars and planets, for short', answer: 'ASTRO', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Suffix for a huge fad', answer: 'MANIA', row: 0, col: 0 },
+        2: { clue: 'Old-style "Yikes!"', answer: 'EGADS', row: 0, col: 1 },
+        3: { clue: 'Patented metal fastener on Levi\'s jeans', answer: 'RIVET', row: 0, col: 2 },
+        4: { clue: 'Word shouted during a defibrillator scene in a hospital drama', answer: 'CLEAR', row: 0, col: 3 },
+        5: { clue: 'Name tag heading', answer: 'HELLO', row: 0, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData6 = (index: number) => {
