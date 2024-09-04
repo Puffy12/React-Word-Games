@@ -212,6 +212,22 @@ export const data12 = {
     },
 } as const;
 
+export const data13 = {
+    across: {
+        1: { clue: 'Unwanted emails', answer: 'SPAM', row: 0, col: 1 },
+        5: { clue: 'Glam rock?', answer: 'GEODE', row: 1, col: 0 },
+        6: { clue: 'Symbol on an "I\'m With Stupid" shirt', answer: 'ARROW', row: 2, col: 0 },
+        7: { clue: 'What a fitness tracker counts', answer: 'STEPS', row: 3, col: 0 },
+        8: { clue: 'Future\'s opposite', answer: 'PAST', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Big name in mattresses', answer: 'SERTA', row: 0, col: 1 },
+        2: { clue: 'Distinctive features of a sponge', answer: 'PORES', row: 0, col: 2 },
+        3: { clue: 'Take into one\'s family', answer: 'ADOPT', row: 0, col: 3 },
+        4: { clue: 'Cries from a kitten', answer: 'MEWS', row: 0, col: 4 },
+        5: { clue: '[I\'m shocked ... shocked!]', answer: 'GASP', row: 1, col: 0 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
