@@ -229,6 +229,24 @@ export const data13 = {
     },
 } as const;
 
+export const data14 = {
+    across: {
+        1: { clue: 'File type for downloadable forms', answer: 'PDF', row: 0, col: 2 },
+        4: { clue: 'Catherine of "Beetlejuice"', answer: 'OHARA', row: 1, col: 0 },
+        6: { clue: 'Pastry with a 5-Down', answer: 'DONUT', row: 2, col: 0 },
+        7: { clue: 'Nostalgic song', answer: 'OLDIE', row: 3, col: 0 },
+        8: { clue: 'Left on ___ (still awaiting a text message response)', answer: 'READ', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Animal known as a "giant cat bear" in Chinese due to its pupil shapes (vertical slits!)', answer: 'PANDA', row: 0, col: 2 },
+        2: { clue: 'Ancient Celtic priest', answer: 'DRUID', row: 0, col: 3 },
+        3: { clue: 'It\'s written in the stars', answer: 'FATE', row: 0, col: 4 },
+        4: { clue: 'Funk from a dirty sock', answer: 'ODOR', row: 1, col: 0 },
+        5: { clue: 'Feature in the middle of a 6-Across', answer: 'HOLE', row: 1, col: 1 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData6 = (index: number) => {
