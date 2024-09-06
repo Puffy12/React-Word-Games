@@ -246,6 +246,22 @@ export const data14 = {
     },
 } as const;
 
+export const data15 = {
+    across: {
+        1: { clue: 'Pioneering video game in which you slither around and eat apples', answer: 'SNAKE', row: 0, col: 0 },
+        6: { clue: 'Mailing alternative to a home address', answer: 'POBOX', row: 1, col: 0 },
+        7: { clue: 'Grammy winner Hayes', answer: 'ISAAC', row: 2, col: 0 },
+        8: { clue: 'Words on a book\'s spine', answer: 'TITLE', row: 3, col: 0 },
+        9: { clue: 'Bona fide', answer: 'REAL', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: '___ valve (drainage feature on a brass instrument)', answer: 'SPIT', row: 0, col: 0 },
+        2: { clue: 'Respectful denial', answer: 'NOSIR', row: 0, col: 1 },
+        3: { clue: 'Subside', answer: 'ABATE', row: 0, col: 2 },
+        4: { clue: 'Animal whose closest living relative is the wombat', answer: 'KOALA', row: 0, col: 3 },
+        5: { clue: 'Microsoft\'s alternative to Google Sheets ', answer: 'EXCEL', row: 0, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
 
