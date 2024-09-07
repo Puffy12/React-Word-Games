@@ -263,6 +263,34 @@ export const data15 = {
     },
 } as const;
 
+export const data16 = {
+    across: {
+        1: { clue: 'Gross thing to find stuck under a desk', answer: 'GUM', row: 0, col: 0 },
+        4: { clue: 'New ___ (browser button)', answer: 'IRA', row: 5, col: 0 },
+        7: { clue: 'Common lunch hour', answer: 'MAP', row: 5, col: 4 },
+        8: { clue: 'Ex-QB Manning', answer: 'END', row: 6, col: 0 },
+        9: { clue: 'The dad in the "That\'s my dad!" moment from the 2024 Democratic National Convention', answer: 'ERA', row: 6, col: 4 },
+        11: { clue: 'Nail polish layers', answer: 'TAB', row: 0, col: 4 },
+        12: { clue: 'Many top 10 Billboard songs', answer: 'ELI', row: 1, col: 4 },
+        14: { clue: '401(k) alternative, in brief', answer: 'TIMWALZ', row: 2, col: 0 },
+        15: { clue: 'One may read "You Are Here"', answer: 'TIMWALZ', row: 2, col: 0 },
+        16: { clue: 'Conclude', answer: 'COATS', row: 3, col: 1 },
+        17: { clue: 'What each of Taylor Swift\'s albums represents, to Swifties', answer: 'POPHITS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Acquired', answer: 'GOT', row: 0, col: 0 },
+        2: { clue: 'Mythical creature that\'s a national symbol of Scotland', answer: 'ALLSTAR', row: 0, col: 5 },
+        3: { clue: 'Accessory for notes and doodles', answer: 'BIZ', row: 0, col: 6 },
+        4: { clue: 'Afternoon break for a cuppa', answer: 'WAH', row: 2, col: 3 },
+        5: { clue: 'Top-flight athlete', answer: 'PIE', row: 4, col: 0 },
+        6: { clue: 'Slang for the entertainment industry, with "the"', answer: 'SPA', row: 4, col: 6 },
+        10: { clue: 'Baby\'s cry', answer: 'UNICORN', row: 0, col: 1 },
+        12: { clue: 'Circular kind of chart', answer: 'MEMOPAD', row: 0, col: 2 },
+        13: { clue: '"Me day" destination', answer: 'TEATIME', row: 0, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData6 = (index: number) => {
