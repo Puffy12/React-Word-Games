@@ -290,6 +290,22 @@ export const data16 = {
     },
 } as const;
 
+export const data17 = {
+    across: {
+        1: { clue: 'Accessory for Babar, king of the elephants', answer: 'CROWN', row: 0, col: 0 },
+        6: { clue: 'NATO alphabet letter that\'s eight past Juliet', answer: 'ROMEO', row: 1, col: 0 },
+        7: { clue: 'Shopping cart tally', answer: 'ITEMS', row: 2, col: 0 },
+        8: { clue: 'One over par', answer: 'BOGEY', row: 3, col: 0 },
+        9: { clue: 'Smallest animal in the Chinese zodiac', answer: 'RAT', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'A mobile might hang above one', answer: 'CRIB', row: 0, col: 0 },
+        2: { clue: 'Palindromic helicopter part', answer: 'ROTOR', row: 0, col: 1 },
+        3: { clue: '___-3 fatty acids', answer: 'OMEGA', row: 0, col: 2 },
+        4: { clue: '"No need to introduce us"', answer: 'WEMET', row: 0, col: 3 },
+        5: { clue: 'Like someone who\'s angling for all the juicy details', answer: 'NOSY', row: 0, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
 
