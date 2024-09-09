@@ -307,6 +307,24 @@ export const data17 = {
     },
 } as const;
 
+export const data18 = {
+    across: {
+        1: { clue: 'Alternatives to Macs', answer: 'PCS', row: 0, col: 0 },
+        4: { clue: 'Mountains on the Swiss Miss logo', answer: 'ALPS', row: 1, col: 0 },
+        6: { clue: 'They hit the books', answer: 'NERDS', row: 2, col: 0 },
+        8: { clue: 'They bit the hooks', answer: 'FISH', row: 3, col: 1 },
+        9: { clue: '"Don\'t be that ___!"', answer: 'GUY', row: 4, col: 2 },
+    },
+    down: {
+        1: { clue: 'Pot\'s flatter counterpart', answer: 'PAN', row: 0, col: 0 },
+        2: { clue: 'Symbol on a music staff', answer: 'CLEF', row: 0, col: 1 },
+        3: { clue: 'Thyme piece', answer: 'SPRIG', row: 0, col: 2 },
+        5: { clue: 'Sch. two hours south of U.C.L.A.', answer: 'SDSU', row: 1, col: 3 },
+        7: { clue: 'Unlikely to approach a stranger at a party', answer: 'SHY', row: 2, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
 
 export const getRandomCrosswordData6 = (index: number) => {
