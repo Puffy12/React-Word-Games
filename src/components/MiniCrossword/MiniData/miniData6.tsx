@@ -324,6 +324,22 @@ export const data18 = {
     },
 } as const;
 
+export const data19 = {
+    across: {
+        1: { clue: 'What a phisher might try to get you to click', answer: 'LINK', row: 0, col: 1 },
+        5: { clue: '"___ Copperhead," Barbara Kingsolver novel that won a 2023 Pulitzer', answer: 'DEMON', row: 1, col: 0 },
+        6: { clue: 'Act melodramatically', answer: 'EMOTE', row: 2, col: 0 },
+        7: { clue: 'One just squeaking by?', answer: 'MOUSE', row: 3, col: 0 },
+        8: { clue: 'Suspicious of', answer: 'ONTO', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Fruit used to treat scurvy', answer: 'LEMON', row: 0, col: 1 },
+        2: { clue: '"Catch ya later!"', answer: 'IMOUT', row: 0, col: 2 },
+        3: { clue: '"Quite the contrary!"', answer: 'NOTSO', row: 0, col: 3 },
+        4: { clue: 'Bending body part', answer: 'KNEE', row: 0, col: 4 },
+        5: { clue: 'Music submission to a recording studio', answer: 'DEMO', row: 1, col: 0 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
