@@ -341,6 +341,23 @@ export const data19 = {
     },
 } as const;
 
+export const data20 = {
+    across: {
+        1: { clue: '"You\'re slaying!," to a drag queen', answer: 'WERK', row: 0, col: 1 },
+        5: { clue: '"Same here"', answer: 'SODOI', row: 1, col: 0 },
+        6: { clue: '"Pipe" or "pump" instrument', answer: 'ORGAN', row: 2, col: 0 },
+        7: { clue: 'Ran away from the scene', answer: 'FLED', row: 3, col: 0 },
+        8: { clue: 'Things often skipped while listening to podcasts', answer: 'ADS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'New York ___, newspaper that published the first crossword puzzle (1913)', answer: 'WORLD', row: 0, col: 1 },
+        2: { clue: 'A cube has 12 of them', answer: 'EDGES', row: 0, col: 2 },
+        3: { clue: 'The Beatles sang about a long and winding one', answer: 'ROAD', row: 0, col: 3 },
+        4: { clue: 'Family members, collectively', answer: 'KIN', row: 0, col: 4 },
+        5: { clue: 'Place for a couch potato', answer: 'SOFA', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
 
 export const getRandomCrosswordData6 = (index: number) => {
