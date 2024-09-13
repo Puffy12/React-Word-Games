@@ -15,6 +15,22 @@ export const data = {
     },
 } as const;
 
+export const data2 = {
+    across: {
+        1: { clue: 'Clothed (in)', answer: 'CLAD', row: 0, col: 1 },
+        5: { clue: 'Ring of light', answer: 'HALO', row: 1, col: 1 },
+        6: { clue: 'Black ___ (dangerous spider)', answer: 'WIDOW', row: 2, col: 0 },
+        7: { clue: 'Longtime talk show host known for pulling pranks on her guests', answer: 'ELLEN', row: 3, col: 0 },
+        8: { clue: 'Worker with a comb, perhaps?', answer: 'BEE', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'South American country with a 4,000-mile coastline', answer: 'CHILE', row: 0, col: 1 },
+        2: { clue: 'Tool for a soup kitchen volunteer', answer: 'LADLE', row: 0, col: 2 },
+        3: { clue: 'Succulent in some health drinks', answer: 'ALOE', row: 0, col: 3 },
+        4: { clue: '"I\'m reading a book about antigravity. I can\'t put it ___!" (groaner)', answer: 'DOWN', row: 0, col: 4 },
+        6: { clue: 'One "w" in www', answer: 'WEB', row: 2, col: 0 },
+    },
+} as const;
 
 const crosswordDataArray = [data];
 
