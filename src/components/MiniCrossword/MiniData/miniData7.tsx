@@ -32,6 +32,29 @@ export const data2 = {
     },
 } as const;
 
+export const data3 = {
+    across: {
+        1: { clue: 'Shortens, as a skirt', answer: 'HEMS', row: 0, col: 3 },
+        10: { clue: 'Agrees to receive promotional emails, say', answer: 'PLANET', row: 1, col: 1 },
+        12: { clue: 'Feats for gymnasts or bowlers', answer: 'RIDDLE', row: 2, col: 1 },
+        13: { clue: 'What some teachers claim to have in the backs of their heads', answer: 'PET', row: 3, col: 0 },
+        5: { clue: 'What each word in "My Very Educated Mother Just Served Us Noodles" is a stand-in for', answer: 'SOW', row: 3, col: 4 },
+        7: { clue: 'Puzzling question', answer: 'OPTSIN', row: 4, col: 0 },
+        8: { clue: 'Nonhuman "child"', answer: 'SPLITS', row: 5, col: 0 },
+        9: { clue: '"You reap what you ___"', answer: 'EYES', row: 6, col: 0 },
+    },
+    down: {
+        1: { clue: '"I\'ve ___ it up to here with you!"', answer: 'HAD', row: 0, col: 3 },
+        11: { clue: 'Feminine family nickname', answer: 'ENDSIT', row: 0, col: 4 },
+        2: { clue: 'Calls off the relationship', answer: 'MELONS', row: 0, col: 5 },
+        3: { clue: 'Cantaloupes and the like', answer: 'STEW', row: 0, col: 6 },
+        4: { clue: 'Hearty soup', answer: 'PREPPY', row: 1, col: 1 },
+        5: { clue: 'Like polo shirts and varsity jackets', answer: 'LITTLE', row: 1, col: 2 },
+        6: { clue: 'Minuscule', answer: 'POSE', row: 3, col: 0 },
+        8: { clue: 'Cat or cow, in yoga', answer: 'SIS', row: 4, col: 3 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData7 = (index: number) => {
