@@ -55,6 +55,23 @@ export const data3 = {
     },
 } as const;
 
+export const data4 = {
+    across: {
+        1: { clue: 'Green herb on a margherita pizza', answer: 'BASIL', row: 0, col: 0 },
+        6: { clue: 'Like somebody once everybody else has 8-Across', answer: 'ALONE', row: 1, col: 0 },
+        7: { clue: 'Some Mad Libs words', answer: 'NOUNS', row: 2, col: 0 },
+        8: { clue: 'Sight rhyme (but not a real rhyme) of 6-Across', answer: 'GONE', row: 3, col: 0 },
+        9: { clue: 'Longest-serving U.S. president, familiarly', answer: 'FDR', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Loud sound', answer: 'BANG', row: 0, col: 0 },
+        2: { clue: 'Cool and distant', answer: 'ALOOF', row: 0, col: 1 },
+        3: { clue: 'Based on good reasoning, like an argument', answer: 'SOUND', row: 0, col: 2 },
+        4: { clue: 'Word before tube or turmoil', answer: 'INNER', row: 0, col: 3 },
+        5: { clue: 'Famed guitarist Paul', answer: 'LES', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3];
 
 export const getRandomCrosswordData7 = (index: number) => {
