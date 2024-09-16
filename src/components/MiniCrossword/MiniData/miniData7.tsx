@@ -72,6 +72,24 @@ export const data4 = {
     },
 } as const;
 
+export const data5 = {
+    across: {
+        1: { clue: 'This Across', answer: 'ONE', row: 0, col: 0 },
+        4: { clue: 'This Across', answer: 'FOUR', row: 1, col: 0 },
+        6: { clue: 'Subway costs', answer: 'FARES', row: 2, col: 0 },
+        8: { clue: 'Sound from a goose ... or a Ram?', answer: 'HONK', row: 3, col: 1 },
+        9: { clue: '___ sauce (condiment)', answer: 'SOY', row: 4, col: 2 },
+    },
+    down: {
+        1: { clue: 'How phones should be in a movie theater, ideally', answer: 'OFF', row: 0, col: 0 },
+        2: { clue: 'Olympic sprinter Lyles', answer: 'NOAH', row: 0, col: 1 },
+        3: { clue: 'Banknotes used in 20 countries', answer: 'EUROS', row: 0, col: 2 },
+        5: { clue: 'Nevada city near Lake Tahoe', answer: 'RENO', row: 1, col: 3 },
+        7: { clue: 'Rhyming place to fly', answer: 'SKY', row: 2, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData7 = (index: number) => {
