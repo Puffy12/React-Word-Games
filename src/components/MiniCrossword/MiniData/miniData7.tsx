@@ -89,6 +89,22 @@ export const data5 = {
     },
 } as const;
 
+export const data6 = {
+    across: {
+        1: { clue: 'Game of throwns?', answer: 'DARTS', row: 0, col: 0 },
+        6: { clue: 'Give a heads-up', answer: 'ALERT', row: 1, col: 0 },
+        7: { clue: 'Like some credit card accounts', answer: 'NOFEE', row: 2, col: 0 },
+        8: { clue: 'Not costing much', answer: 'CHEAP', row: 3, col: 0 },
+        9: { clue: 'It\'s celebrated every April 22', answer: 'EARTH', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Move to the music', answer: 'DANCE', row: 0, col: 0 },
+        2: { clue: 'Hawaiian "hi"', answer: 'ALOHA', row: 0, col: 1 },
+        3: { clue: 'Make an allusion (to)', answer: 'REFER', row: 0, col: 2 },
+        4: { clue: 'Reward for a well-behaved dog', answer: 'TREAT', row: 0, col: 3 },
+        5: { clue: 'U.S. men\'s basketball star with eight three-pointers in the gold medal game, familiarly', answer: 'STEPH', row: 0, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5];
 
