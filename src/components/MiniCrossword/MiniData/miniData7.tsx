@@ -106,6 +106,23 @@ export const data6 = {
     },
 } as const;
 
+export const data7 = {
+    across: {
+        1: { clue: 'Doc treating a dachshund', answer: 'VET', row: 0, col: 2 },
+        4: { clue: '"Nice going!"', answer: 'BRAVO', row: 1, col: 0 },
+        6: { clue: 'Tended to, as a squeaky wheel', answer: 'OILED', row: 2, col: 0 },
+        7: { clue: 'Drop a few bucks', answer: 'SPEND', row: 3, col: 0 },
+        8: { clue: 'Last word before the starting pistol goes off', answer: 'SET', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Parking pro', answer: 'VALET', row: 0, col: 2 },
+        2: { clue: 'Divisible by two', answer: 'EVEN', row: 0, col: 3 },
+        3: { clue: 'Mary ___ Lincoln, first lady of the 1860s', answer: 'TODD', row: 0, col: 4 },
+        4: { clue: 'Mr. Burns\'s relationship to Homer Simpson', answer: 'BOSS', row: 1, col: 0 },
+        5: { clue: 'Ready for picking', answer: 'RIPE', row: 1, col: 1 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData7 = (index: number) => {
