@@ -123,6 +123,23 @@ export const data7 = {
     },
 } as const;
 
+export const data8 = {
+    across: {
+        1: { clue: 'With 4- and 5-Across, opposite of fantasy land', answer: 'THE', row: 0, col: 2 },
+        4: { clue: 'See 1-Across', answer: 'REAL', row: 1, col: 1 },
+        5: { clue: 'See 1-Across', answer: 'WORLD', row: 2, col: 0 },
+        6: { clue: 'Bend in the road', answer: 'CURVE', row: 3, col: 0 },
+        7: { clue: 'Be in the driver\'s seat', answer: 'STEER', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'French for "earth"', answer: 'TERRE', row: 0, col: 2 },
+        2: { clue: 'Slice in two', answer: 'HALVE', row: 0, col: 3 },
+        3: { clue: '___ statesman', answer: 'ELDER', row: 0, col: 4 },
+        4: { clue: 'Overwhelming victory', answer: 'ROUT', row: 1, col: 1 },
+        5: { clue: 'Rooms with toilets, in European shorthand', answer: 'WCS', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7];
 
 export const getRandomCrosswordData7 = (index: number) => {
