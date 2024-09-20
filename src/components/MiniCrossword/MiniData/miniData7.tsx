@@ -140,6 +140,23 @@ export const data8 = {
     },
 } as const;
 
+export const data9 = {
+    across: {
+        1: { clue: 'See who can get there the fastest', answer: 'RACE', row: 0, col: 0 },
+        5: { clue: 'Comic actor Sandler', answer: 'ADAM', row: 1, col: 0 },
+        6: { clue: 'Acronym for a pro-housing movement', answer: 'YIMBY', row: 2, col: 0 },
+        8: { clue: 'Fencing sword', answer: 'EPEE', row: 3, col: 1 },
+        9: { clue: 'Org. that certifies foods as "Organic"', answer: 'USDA', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Beam of sunshine', answer: 'RAY', row: 0, col: 0 },
+        2: { clue: 'French goodbye', answer: 'ADIEU', row: 0, col: 1 },
+        3: { clue: 'Places where bug juice is served and color wars are waged', answer: 'CAMPS', row: 0, col: 2 },
+        4: { clue: 'Plant deep (within)', answer: 'EMBED', row: 0, col: 3 },
+        7: { clue: 'Opposite of nay', answer: 'YEA', row: 2, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
 
 export const getRandomCrosswordData7 = (index: number) => {
