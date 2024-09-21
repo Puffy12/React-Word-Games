@@ -157,6 +157,27 @@ export const data9 = {
     },
 } as const;
 
+export const data10 = {
+    across: {
+        1: { clue: 'Cover, as a birthday present', answer: 'WRAP', row: 0, col: 3 },
+        10: { clue: '"Bye-bye!"', answer: 'CHILL', row: 1, col: 2 },
+        5: { clue: 'Laid-back', answer: 'TRIVIA', row: 2, col: 1 },
+        6: { clue: '"Hawaii and Tennessee are the only two U.S. states whose names end in doubled letters," e.g.', answer: 'RESIGN', row: 3, col: 1 },
+        7: { clue: 'Quit one\'s job', answer: 'DICKENS', row: 4, col: 0 },
+        8: { clue: '"Oliver Twist" novelist', answer: 'OTHERS', row: 5, col: 0 },
+        9: { clue: '"Do unto ___ …" (start of the Golden Rule)', answer: 'SEEYA', row: 6, col: 0 },
+    },
+    down: {
+        1: { clue: 'What Maker\'s Mark made its mark in', answer: 'WHISKEY', row: 0, col: 3 },
+        2: { clue: 'Coastal region of southeast France and northwest Italy', answer: 'RIVIERA', row: 0, col: 4 },
+        3: { clue: 'Puts in a row', answer: 'ALIGNS', row: 0, col: 5 },
+        4: { clue: 'Social engagements', answer: 'PLANS', row: 0, col: 6 },
+        5: { clue: 'Nativity scene', answer: 'CRECHE', row: 1, col: 2 },
+        6: { clue: 'Lacking originality', answer: 'TRITE', row: 2, col: 1 },
+        8: { clue: 'Two, in Tijuana', answer: 'DOS', row: 4, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData7 = (index: number) => {
