@@ -178,6 +178,23 @@ export const data10 = {
     },
 } as const;
 
+export const data11 = {
+    across: {
+        1: { clue: 'Opposite of acidic', answer: 'BASIC', row: 0, col: 0 },
+        6: { clue: 'Where the hamstring is', answer: 'THIGH', row: 1, col: 0 },
+        7: { clue: 'Pixar film whose opening 35 minutes feature nearly no dialogue', answer: 'WALLE', row: 2, col: 0 },
+        8: { clue: 'Glacial', answer: 'SLOW', row: 3, col: 1 },
+        9: { clue: '"Yo ___" (Spanish for "I am")', answer: 'SOY', row: 4, col: 2 },
+    },
+    down: {
+        1: { clue: '"Oh, I meant to tell you ...," in texts', answer: 'BTW', row: 0, col: 0 },
+        2: { clue: 'Light bulb moments', answer: 'AHAS', row: 0, col: 1 },
+        3: { clue: 'Window ledges', answer: 'SILLS', row: 0, col: 2 },
+        4: { clue: 'Shelter made of snow blocks', answer: 'IGLOO', row: 0, col: 3 },
+        5: { clue: 'Like bagels and gummy bears', answer: 'CHEWY', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
 export const getRandomCrosswordData7 = (index: number) => {
