@@ -195,6 +195,23 @@ export const data11 = {
     },
 } as const;
 
+export const data12 = {
+    across: {
+        1: { clue: '2024 Charli XCX album with a lime green cover', answer: 'BRAT', row: 0, col: 1 },
+        5: { clue: 'All the ___ (super popular)', answer: 'RAGE', row: 1, col: 1 },
+        6: { clue: 'Like presents and first names', answer: 'GIVEN', row: 2, col: 0 },
+        7: { clue: 'Where fig leaves first came into fashion', answer: 'EDEN', row: 3, col: 0 },
+        8: { clue: 'Rain-friendly rental for an outdoor wedding', answer: 'TENT', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Someone walking in front of a train?', answer: 'BRIDE', row: 0, col: 1 },
+        2: { clue: 'Bird in a Poe poem', answer: 'RAVEN', row: 0, col: 2 },
+        3: { clue: 'Worker at an airport gate', answer: 'AGENT', row: 0, col: 3 },
+        4: { clue: 'Tweenager\'s age, maybe', answer: 'TEN', row: 0, col: 4 },
+        6: { clue: 'Understand', answer: 'GET', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData7 = (index: number) => {
