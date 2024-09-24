@@ -212,6 +212,23 @@ export const data12 = {
     },
 } as const;
 
+export const data13 = {
+    across: {
+        1: { clue: 'Who says "Whoo!"', answer: 'OWL', row: 0, col: 1 },
+        4: { clue: 'Fare for Little Miss Muffet', answer: 'WHEY', row: 1, col: 0 },
+        5: { clue: '"Let\'s put our differences ___"', answer: 'ASIDE', row: 2, col: 0 },
+        7: { clue: 'Instructors who might greet their classes with "Namaste"', answer: 'YOGIS', row: 3, col: 0 },
+        8: { clue: 'Part of a baseball uniform but not a soccer uniform', answer: 'HAT', row: 4, col: 2 },
+    },
+    down: {
+        1: { clue: 'Very, very', answer: 'OHSO', row: 0, col: 1 },
+        2: { clue: 'Put on the scale', answer: 'WEIGH', row: 0, col: 2 },
+        3: { clue: '___ Ko, 2024 Olympic gold medalist in women\'s golf', answer: 'LYDIA', row: 0, col: 3 },
+        4: { clue: 'Course', answer: 'WAY', row: 1, col: 0 },
+        6: { clue: 'Superlative suffix', answer: 'EST', row: 2, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
 export const getRandomCrosswordData7 = (index: number) => {
