@@ -229,6 +229,23 @@ export const data13 = {
     },
 } as const;
 
+export const data14 = {
+    across: {
+        1: { clue: 'Toot one\'s own horn', answer: 'BRAG', row: 0, col: 1 },
+        5: { clue: '"___ Is 1-Down," Netflix series whose contestants get engaged without ever seeing each other', answer: 'LOVE', row: 1, col: 1 },
+        6: { clue: 'Says who?', answer: 'SIMON', row: 2, col: 0 },
+        7: { clue: 'Didn\'t just suspect', answer: 'KNEW', row: 3, col: 0 },
+        8: { clue: 'Words exchanged at a wedding', answer: 'IDOS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'See 5-Across', answer: 'BLIND', row: 0, col: 1 },
+        2: { clue: 'Lover boy', answer: 'ROMEO', row: 0, col: 2 },
+        3: { clue: 'Openly confesses', answer: 'AVOWS', row: 0, col: 3 },
+        4: { clue: '___ Z (Zoomers, by another name)', answer: 'GEN', row: 0, col: 4 },
+        6: { clue: 'Compete in a Winter Olympics biathlon', answer: 'SKI', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData7 = (index: number) => {
