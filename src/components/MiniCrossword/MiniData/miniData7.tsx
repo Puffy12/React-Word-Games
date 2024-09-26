@@ -246,6 +246,23 @@ export const data14 = {
     },
 } as const;
 
+export const data15 = {
+    across: {
+        1: { clue: 'Lights on nightstands', answer: 'LAMPS', row: 0, col: 0 },
+        6: { clue: 'Historic performance at Milan\'s La Scala or Moscow\'s Bolshoi Theatre', answer: 'OPERA', row: 1, col: 0 },
+        7: { clue: 'It\'s just chugging along', answer: 'TRAIN', row: 2, col: 0 },
+        8: { clue: 'Visibly muscular', answer: 'TONED', row: 3, col: 0 },
+        9: { clue: 'Squirmy and fidgety', answer: 'ANTSY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: '"That takes a ___ nerve!"', answer: 'LOTTA', row: 0, col: 0 },
+        2: { clue: 'What might protect your shirt from a grease stain', answer: 'APRON', row: 0, col: 1 },
+        3: { clue: 'Intended', answer: 'MEANT', row: 0, col: 2 },
+        4: { clue: 'Asks nosy questions', answer: 'PRIES', row: 0, col: 3 },
+        5: { clue: 'Needing a shower after a beach day', answer: 'SANDY', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
 
 export const getRandomCrosswordData7 = (index: number) => {
