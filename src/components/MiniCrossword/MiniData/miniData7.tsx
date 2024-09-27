@@ -263,6 +263,23 @@ export const data15 = {
     },
 } as const;
 
+export const data16 = {
+    across: {
+        1: { clue: 'Aptly named brand of road and mountain bikes', answer: 'TREK', row: 0, col: 1 },
+        5: { clue: '"CD"', answer: 'SEEDY', row: 1, col: 0 },
+        6: { clue: '"XL"', answer: 'EXCEL', row: 2, col: 0 },
+        7: { clue: 'Make amends', answer: 'ATONE', row: 3, col: 0 },
+        8: { clue: 'Alternative to Yahoo! or AOL', answer: 'MSN', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Much political campaign outreach these days', answer: 'TEXTS', row: 0, col: 1 },
+        2: { clue: 'Mission for a scout, for short', answer: 'RECON', row: 0, col: 2 },
+        3: { clue: 'Garden with forbidden fruit', answer: 'EDEN', row: 0, col: 3 },
+        4: { clue: 'Friend of Kenny, Stan and Cartman on "South Park"', answer: 'KYLE', row: 0, col: 4 },
+        5: { clue: 'Feature that some undergarments claim not to have (but it\'s often just less noticeable)', answer: 'SEAM', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData7 = (index: number) => {
