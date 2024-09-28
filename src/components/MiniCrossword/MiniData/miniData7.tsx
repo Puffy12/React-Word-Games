@@ -280,6 +280,29 @@ export const data16 = {
     },
 } as const;
 
+export const data17 = {
+    across: {
+        1: { clue: 'Direction of the sunset', answer: 'WEST', row: 0, col: 2 },
+        10: { clue: 'Wearers of collars with their owner\'s number on them', answer: 'FESTER', row: 1, col: 1 },
+        12: { clue: '"Wednesday" character played by the hand of Victor Dorobantu, a professional magician', answer: 'PLATEAU', row: 2, col: 0 },
+        13: { clue: '"___-haw!"', answer: 'EEL', row: 3, col: 0 },
+        5: { clue: 'Uncle ___, Addams family member played by Fred Armisen on "Wednesday"', answer: 'PEG', row: 3, col: 4 },
+        7: { clue: 'Flatten out over time', answer: 'PETDOGS', row: 4, col: 0 },
+        8: { clue: 'Long, slithery fish', answer: 'THING', row: 5, col: 1 },
+        9: { clue: 'Piece on a coatrack', answer: 'YEE', row: 6, col: 2 },
+    },
+    down: {
+        1: { clue: 'Rolling in the dough, so to speak', answer: 'WEALTHY', row: 0, col: 2 },
+        11: { clue: 'Run out of battery', answer: 'EST', row: 0, col: 3 },
+        2: { clue: 'Jokey suffix with "best"', answer: 'STEPONE', row: 0, col: 4 },
+        3: { clue: 'The first instruction in a list of instructions', answer: 'TEAEGG', row: 0, col: 5 },
+        4: { clue: 'Savory Chinese snack with a cracked shell', answer: 'FLEET', row: 1, col: 1 },
+        5: { clue: 'Group of naval ships', answer: 'RUGS', row: 1, col: 6 },
+        6: { clue: 'Potentially tricky spots for vacuuming', answer: 'PEP', row: 2, col: 0 },
+        7: { clue: 'Spirited energy', answer: 'DIE', row: 4, col: 3 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
 
 export const getRandomCrosswordData7 = (index: number) => {
