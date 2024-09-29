@@ -303,6 +303,24 @@ export const data17 = {
     },
 } as const;
 
+export const data18 = {
+    across: {
+        1: { clue: 'Politician whose last name sounds like 1-Down (and not like a dance!)', answer: 'WALZ', row: 0, col: 1 },
+        5: { clue: '___ Hawkins dance', answer: 'SADIE', row: 1, col: 0 },
+        6: { clue: 'The person I used to be, self-descriptively', answer: 'OLDME', row: 2, col: 0 },
+        7: { clue: 'Botches', answer: 'FLUBS', row: 3, col: 0 },
+        8: { clue: 'Egyptian snakes', answer: 'ASPS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'See 1-Across', answer: 'WALLS', row: 0, col: 1 },
+        2: { clue: 'Make sense, so to speak', answer: 'ADDUP', row: 0, col: 2 },
+        3: { clue: 'Arms or legs … or branches', answer: 'LIMBS', row: 0, col: 3 },
+        4: { clue: 'Features of puzzles, blizzards and jazz', answer: 'ZEES', row: 0, col: 4 },
+        5: { clue: 'Spot to sleep when you\'re in the doghouse', answer: 'SOFA', row: 1, col: 0 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
 
 export const getRandomCrosswordData7 = (index: number) => {
