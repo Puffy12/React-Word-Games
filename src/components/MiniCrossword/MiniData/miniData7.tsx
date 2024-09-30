@@ -320,6 +320,22 @@ export const data18 = {
     },
 } as const;
 
+export const data19 = {
+    across: {
+        1: { clue: 'What Jacuzzis, airports and the N.F.L. all have in common', answer: 'JETS', row: 0, col: 0 },
+        5: { clue: 'Film franchise featuring Facehuggers', answer: 'ALIEN', row: 1, col: 0 },
+        7: { clue: 'Use a loom', answer: 'WEAVE', row: 2, col: 0 },
+        8: { clue: 'Threaded fastener', answer: 'SCREW', row: 3, col: 0 },
+        9: { clue: 'Gets kissed by the sun', answer: 'TANS', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Film that was the highest-grossing of all time before "Star Wars" was released', answer: 'JAWS', row: 0, col: 0 },
+        2: { clue: 'Vote into office', answer: 'ELECT', row: 0, col: 1 },
+        3: { clue: 'Headwear at a pageant', answer: 'TIARA', row: 0, col: 2 },
+        4: { clue: 'Number used to spell "L" on a calculator', answer: 'SEVEN', row: 0, col: 3 },
+        6: { clue: '"I want the ___, not the weather"', answer: 'NEWS', row: 1, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
