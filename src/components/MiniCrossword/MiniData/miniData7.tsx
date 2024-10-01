@@ -337,6 +337,23 @@ export const data19 = {
     },
 } as const;
 
+export const data20 = {
+    across: {
+        1: { clue: 'One is officially called an "Academy Award of Merit"', answer: 'OSCAR', row: 0, col: 0 },
+        6: { clue: 'Aquatic mammal whose closest terrestrial relative is the hippopotamus', answer: 'WHALE', row: 1, col: 0 },
+        7: { clue: 'Charlie Brown\'s friend with a blanket', answer: 'LINUS', row: 2, col: 0 },
+        8: { clue: 'City founded by twin brothers, according to legend', answer: 'ROME', row: 3, col: 1 },
+        9: { clue: 'Something to cram for', answer: 'TEST', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'The bird Duo in Duolingo\'s logo, e.g.', answer: 'OWL', row: 0, col: 0 },
+        2: { clue: 'Button-up or button-down', answer: 'SHIRT', row: 0, col: 1 },
+        3: { clue: 'Olympic racing vessel since 1936', answer: 'CANOE', row: 0, col: 2 },
+        4: { clue: 'Class reunion attendees', answer: 'ALUMS', row: 0, col: 3 },
+        5: { clue: 'Button you might need a paper clip to press on an electronic device', answer: 'RESET', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
 
 export const getRandomCrosswordData7 = (index: number) => {
