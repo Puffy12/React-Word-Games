@@ -16,6 +16,7 @@ export const data = {
     },
 } as const;
 
+
 const crosswordDataArray = [data];
 
 export const getRandomCrosswordData8 = (index: number) => {
