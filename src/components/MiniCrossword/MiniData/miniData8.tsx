@@ -16,6 +16,22 @@ export const data = {
     },
 } as const;
 
+export const data2 = {
+    across: {
+        1: { clue: 'What "very" stands for in the mnemonic "My Very Educated Mother ..."', answer: 'VENUS', row: 0, col: 0 },
+        6: { clue: 'Like some mobile game purchases', answer: 'INAPP', row: 1, col: 0 },
+        7: { clue: 'Come up, as a situation', answer: 'ARISE', row: 2, col: 0 },
+        8: { clue: 'More than just enjoyed', answer: 'LOVED', row: 3, col: 0 },
+        9: { clue: 'Hockey goal component', answer: 'NET', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Tube in a lab', answer: 'VIAL', row: 0, col: 0 },
+        2: { clue: 'Disgraced energy company with a 2001 bankruptcy', answer: 'ENRON', row: 0, col: 1 },
+        3: { clue: 'Overly trusting, perhaps', answer: 'NAIVE', row: 0, col: 2 },
+        4: { clue: 'Underdog\'s victory', answer: 'UPSET', row: 0, col: 3 },
+        5: { clue: 'Went really fast', answer: 'SPED', row: 0, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data];
 
