@@ -33,6 +33,23 @@ export const data2 = {
     },
 } as const;
 
+export const data3= {
+    across: {
+        1: { clue: 'What lanternfish can do, using organs called photophores', answer: 'GLOW', row: 0, col: 1 },
+        5: { clue: 'Channel with "Vanderpump Rules" and "Below Deck"', answer: 'BRAVO', row: 1, col: 0 },
+        6: { clue: 'Consumed', answer: 'EATEN', row: 2, col: 0 },
+        7: { clue: 'Really need a bath', answer: 'STINK', row: 3, col: 0 },
+        8: { clue: 'Change for a twenty', answer: 'TENS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Storm drain cover', answer: 'GRATE', row: 0, col: 1 },
+        2: { clue: '"Et tu, Brute?" language', answer: 'LATIN', row: 0, col: 2 },
+        3: { clue: 'Bakery fixtures', answer: 'OVENS', row: 0, col: 3 },
+        4: { clue: 'Stats or policy nerd', answer: 'WONK', row: 0, col: 4 },
+        5: { clue: 'Work email sign-off', answer: 'BEST', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData8 = (index: number) => {
