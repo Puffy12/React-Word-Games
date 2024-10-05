@@ -50,6 +50,29 @@ export const data3= {
     },
 } as const;
 
+export const data4 = {
+    across: {
+        1: { clue: 'Lego piece', answer: 'BRICK', row: 0, col: 2 },
+        10: { clue: 'Muscular dog with black and tan fur, familiarly', answer: 'GOOGLE', row: 1, col: 1 },
+        12: { clue: 'Precipitates freezing rain', answer: 'BOBMOOG', row: 2, col: 0 },
+        13: { clue: 'Warty hopper', answer: 'USA', row: 3, col: 0 },
+        6: { clue: 'Company whose name is spelled with up to 10 O\'s toward the bottom of its webpages', answer: 'TVS', row: 3, col: 4 },
+        7: { clue: 'Inventor of the first commercially available electronic instrument, a synthesizer', answer: 'ROTTIE', row: 4, col: 0 },
+        8: { clue: 'Largest country without an official language', answer: 'SLEETS', row: 5, col: 0 },
+        9: { clue: 'Some smart devices', answer: 'TOAD', row: 6, col: 0 },
+    },
+    down: {
+        1: { clue: 'Milky drink with "pearls"', answer: 'BOBATEA', row: 0, col: 2 },
+        11: { clue: 'Bill\'s time-traveling partner of film', answer: 'ROM', row: 0, col: 3 },
+        2: { clue: 'CD-___', answer: 'IGOTIT', row: 0, col: 4 },
+        3: { clue: '"Aha!"', answer: 'CLOVES', row: 0, col: 5 },
+        4: { clue: 'Pumpkin spice ingredients', answer: 'KEGS', row: 0, col: 6 },
+        5: { clue: 'Large beer containers', answer: 'GOSOLO', row: 1, col: 1 },
+        6: { clue: 'Break off from the rest of the band', answer: 'BURST', row: 2, col: 0 },
+        7: { clue: 'Go "pop"', answer: 'TED', row: 4, col: 3 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3];
 
 export const getRandomCrosswordData8 = (index: number) => {
