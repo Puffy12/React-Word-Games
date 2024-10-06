@@ -73,6 +73,24 @@ export const data4 = {
     },
 } as const;
 
+export const data5 = {
+    across: {
+        1: { clue: 'One of Franklin\'s certainties in life', answer: 'TAXES', row: 0, col: 0 },
+        6: { clue: 'Human voice at the end of a phone tree, say', answer: 'AGENT', row: 1, col: 0 },
+        7: { clue: 'One might be thrown in surprise', answer: 'PARTY', row: 2, col: 0 },
+        8: { clue: '"When the moon hits your eye like a big pizza pie, that\'s ___" ', answer: 'AMORE', row: 3, col: 0 },
+        9: { clue: 'Smokin\' hot', answer: 'SEXY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Appetizers like croquetas and patatas bravas', answer: 'TAPAS', row: 0, col: 0 },
+        2: { clue: 'One\'s best effort, so to speak', answer: 'AGAME', row: 0, col: 1 },
+        3: { clue: 'Search for : "google" :: make a copy of : "___"', answer: 'XEROX', row: 0, col: 2 },
+        4: { clue: 'Diary passage', answer: 'ENTRY', row: 0, col: 3 },
+        5: { clue: 'Eyelid irritation', answer: 'STYE', row: 0, col: 4 },
+    },
+} as const;
+
+
 const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData8 = (index: number) => {
