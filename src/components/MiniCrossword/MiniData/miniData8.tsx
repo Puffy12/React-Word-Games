@@ -90,6 +90,22 @@ export const data5 = {
     },
 } as const;
 
+export const data6 = {
+    across: {
+        1: { clue: 'Spill the beans', answer: 'BLAB', row: 0, col: 0 },
+        5: { clue: 'Bird that has been used by the Dutch police to take down illegal drones', answer: 'EAGLE', row: 1, col: 0 },
+        7: { clue: 'Online shopping', answer: 'ETAIL', row: 2, col: 0 },
+        8: { clue: 'With 3-Down, "Nope, try another guess!"', answer: 'THINK', row: 3, col: 0 },
+        9: { clue: 'Schedule ___ (modern email button)', answer: 'SEND', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Root veggies in borscht', answer: 'BEETS', row: 0, col: 0 },
+        2: { clue: 'Carpenter\'s shaping tool', answer: 'LATHE', row: 0, col: 1 },
+        3: { clue: 'See 8-Across', answer: 'AGAIN', row: 0, col: 2 },
+        4: { clue: 'Like three mice in a nursery rhyme', answer: 'BLIND', row: 0, col: 3 },
+        6: { clue: 'Big beast in Banff National Park', answer: 'ELK', row: 1, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5];
 
