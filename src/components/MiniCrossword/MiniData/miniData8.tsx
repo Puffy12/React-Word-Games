@@ -107,6 +107,23 @@ export const data6 = {
     },
 } as const;
 
+export const data7 = {
+    across: {
+        1: { clue: '___ apple', answer: 'ADAMS', row: 0, col: 0 },
+        6: { clue: 'Apple___', answer: 'SAUCE', row: 1, col: 0 },
+        7: { clue: 'Many a film at Sundance', answer: 'INDIE', row: 2, col: 0 },
+        8: { clue: 'Plants with leafy fronds', answer: 'FERNS', row: 3, col: 0 },
+        9: { clue: 'Droop', answer: 'SAG', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: '"You wish!"', answer: 'ASIF', row: 0, col: 0 },
+        2: { clue: '"Great" big dogs', answer: 'DANES', row: 0, col: 1 },
+        3: { clue: '___ McDonald, Broadway actress with Tony, Emmy and Grammy accolades', answer: 'AUDRA', row: 0, col: 2 },
+        4: { clue: 'Hosting an open mic, informally', answer: 'MCING', row: 0, col: 3 },
+        5: { clue: 'Understands', answer: 'SEES', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData8 = (index: number) => {
