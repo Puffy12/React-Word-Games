@@ -141,6 +141,23 @@ export const data8 = {
     },
 } as const;
 
+export const data9 = {
+    across: {
+        1: { clue: 'Flower awarded on "The Bachelorette"', answer: 'ROSE', row: 0, col: 1 },
+        5: { clue: 'Insurgent takeovers', answer: 'COUPS', row: 1, col: 0 },
+        6: { clue: 'Admit (to)', answer: 'OWNUP', row: 2, col: 0 },
+        7: { clue: 'Condemn publicly', answer: 'DECRY', row: 3, col: 0 },
+        8: { clue: 'The paradise referred to in "Paradise Lost"', answer: 'EDEN', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Took to the oars', answer: 'ROWED', row: 0, col: 1 },
+        2: { clue: '"An ___ of prevention is worth a pound of cure" (proverb)', answer: 'OUNCE', row: 0, col: 2 },
+        3: { clue: 'Reject, as a lover', answer: 'SPURN', row: 0, col: 3 },
+        4: { clue: 'Get a glimpse of', answer: 'ESPY', row: 0, col: 4 },
+        5: { clue: 'Something of concern to a building developer … or software developer', answer: 'CODE', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
 
 export const getRandomCrosswordData8 = (index: number) => {
