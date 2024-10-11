@@ -158,7 +158,7 @@ export const data9 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData8 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
