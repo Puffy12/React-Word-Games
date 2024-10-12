@@ -161,27 +161,27 @@ export const data9 = {
 export const data10 = {
     across: {
         1: { clue: 'Had sore muscles', answer: 'ACHED', row: 0, col: 1 },
+        6: { clue: 'Rolled pastry that\'s German for "whirlpool"', answer: 'ENDDATE', row: 4, col: 0 },
+        8: { clue: 'Setting for the 2014 film "Selma" ', answer: 'STAMMER', row: 5, col: 0 },
+        9: { clue: 'Jurisprudence', answer: 'ADZES', row: 6, col: 1 },
         10: { clue: 'Word, in French', answer: 'STRUDEL', row: 1, col: 0 },
         11: { clue: 'Last day for a scheduled session, say', answer: 'ALABAMA', row: 2, col: 0 },
         13: { clue: 'Speak with pauses', answer: 'LAW', row: 3, col: 0 },
         14: { clue: 'Woodcutting tools with arched blades', answer: 'MOT', row: 3, col: 4 },
-        6: { clue: 'Rolled pastry that\'s German for "whirlpool"', answer: 'ENDDATE', row: 4, col: 0 },
-        8: { clue: 'Setting for the 2014 film "Selma" ', answer: 'STAMMER', row: 5, col: 0 },
-        9: { clue: 'Jurisprudence', answer: 'ADZES', row: 6, col: 1 },
     },
     down: {
         1: { clue: 'Home of the Braves', answer: 'ATLANTA', row: 0, col: 1 },
-        12: { clue: 'Area between North and South Korea, for short', answer: 'CRAWDAD', row: 0, col: 2 },
         2: { clue: 'Crustacean in Cajun cuisine', answer: 'HUB', row: 0, col: 3 },
         3: { clue: 'What 1-Down is, for Delta Airlines', answer: 'EDAMAME', row: 0, col: 4 },
         4: { clue: 'Soybeans served in the pod', answer: 'DEMOTES', row: 0, col: 5 },
         5: { clue: 'Lowers in rank', answer: 'SALES', row: 1, col: 0 },
         6: { clue: 'Retail activity', answer: 'LATER', row: 1, col: 6 },
         7: { clue: '"Not now!"', answer: 'DMZ', row: 4, col: 3 },
+        12: { clue: 'Area between North and South Korea, for short', answer: 'CRAWDAD', row: 0, col: 2 },
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
 export const getRandomCrosswordData8 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
