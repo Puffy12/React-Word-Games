@@ -198,6 +198,23 @@ export const data11 = {
     },
 } as const;
 
+export const data12 = {
+    across: {
+        1: { clue: 'Ancient sailors used them to navigate', answer: 'STARS', row: 0, col: 0 },
+        6: { clue: 'One traveling at the speed of flight?', answer: 'PILOT', row: 1, col: 0 },
+        7: { clue: 'Basketball stadium, e.g.', answer: 'ARENA', row: 2, col: 0 },
+        8: { clue: 'Dallasite or Houstonian', answer: 'TEXAN', row: 3, col: 0 },
+        9: { clue: 'Grains you\'d rather not eat?', answer: 'SAND', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Little fight', answer: 'SPAT', row: 0, col: 0 },
+        2: { clue: 'Rubber rings', answer: 'TIRES', row: 0, col: 1 },
+        3: { clue: 'Amazon device voice', answer: 'ALEXA', row: 0, col: 2 },
+        4: { clue: 'Actress Saoirse of "Lady Bird" and "Little Women"', answer: 'RONAN', row: 0, col: 3 },
+        5: { clue: 'Spot for witness testimony', answer: 'STAND', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData8 = (index: number) => {
