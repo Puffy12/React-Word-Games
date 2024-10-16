@@ -215,6 +215,23 @@ export const data12 = {
     },
 } as const;
 
+export const data13 = {
+    across: {
+        1: { clue: 'wHaT cHaNgEs OfTeN iN tHiS cLuE', answer: 'CASE', row: 0, col: 1 },
+        5: { clue: 'Natural boundary between France and Italy', answer: 'ALPS', row: 1, col: 1 },
+        6: { clue: 'Total displayed on a running app', answer: 'MILES', row: 2, col: 0 },
+        7: { clue: 'Embattled mayor Adams', answer: 'ERIC', row: 3, col: 0 },
+        8: { clue: 'Knowledgeable person hidden backward in "knowledge"', answer: 'WONK', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Capital city on the Nile River', answer: 'CAIRO', row: 0, col: 1 },
+        2: { clue: 'Aggressive poker bet', answer: 'ALLIN', row: 0, col: 2 },
+        3: { clue: 'Tiny dot', answer: 'SPECK', row: 0, col: 3 },
+        4: { clue: 'Suffix with steward or host', answer: 'ESS', row: 0, col: 4 },
+        6: { clue: 'Kitten\'s cry', answer: 'MEW', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
 export const getRandomCrosswordData8 = (index: number) => {
