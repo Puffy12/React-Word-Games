@@ -232,6 +232,23 @@ export const data13 = {
     },
 } as const;
 
+export const data14 = {
+    across: {
+        1: { clue: 'Packers make picks in it, for short', answer: 'NFL', row: 0, col: 1 },
+        4: { clue: 'Slow ___ (South Asian primate)', answer: 'LORIS', row: 1, col: 0 },
+        6: { clue: 'The "S" of N.Y.S.E.', answer: 'STOCK', row: 2, col: 0 },
+        7: { clue: 'Like twilight', answer: 'DUSKY', row: 3, col: 0 },
+        8: { clue: 'Wilt Chamberlain once had 100 in a single N.B.A. game: Abbr.', answer: 'PTS', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Still sleeping', answer: 'NOTUP', row: 0, col: 1 },
+        2: { clue: '"Two roads diverged in a wood, and I — I took the one less traveled by" poet', answer: 'FROST', row: 0, col: 2 },
+        3: { clue: 'Dog kisses', answer: 'LICKS', row: 0, col: 3 },
+        4: { clue: 'Trippy drug', answer: 'LSD', row: 1, col: 0 },
+        5: { clue: 'The air up there', answer: 'SKY', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData8 = (index: number) => {
