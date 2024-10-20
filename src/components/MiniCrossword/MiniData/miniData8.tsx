@@ -254,7 +254,7 @@ export const data15 = {
         1: { clue: 'Luggage ID', answer: 'TAG', row: 0, col: 2 },
         4: { clue: '"___ Lisa"', answer: 'MONA', row: 1, col: 1 },
         5: { clue: 'Smallest of five digits', answer: 'PINKY', row: 2, col: 0 },
-        690: { clue: '° is the right one', answer: 'ANGLE', row: 3, col: 0 },
+        6: { clue: '90° is the right one', answer: 'ANGLE', row: 3, col: 0 },
         7: { clue: '"Early to bed and early to rise, makes a man healthy, wealthy and ___"', answer: 'WISE', row: 4, col: 0 },
     },
     down: {
@@ -266,7 +266,7 @@ export const data15 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData8 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
