@@ -266,6 +266,23 @@ export const data15 = {
     },
 } as const;
 
+export const data16 = {
+    across: {
+        1: { clue: 'Spice that tastes like licorice', answer: 'ANISE', row: 0, col: 0 },
+        6: { clue: 'Hot drink popular in the fall', answer: 'CIDER', row: 1, col: 0 },
+        7: { clue: 'Bendy body parts', answer: 'KNEES', row: 2, col: 0 },
+        8: { clue: 'Bird that, surprisingly, doesn\'t have any blue pigments in its feathers', answer: 'JAY', row: 3, col: 1 },
+        9: { clue: 'Apple pie ___ mode', answer: 'ALA', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Cutesy cry of frustration', answer: 'ACK', row: 0, col: 0 },
+        2: { clue: '"Teenage Mutant ___ Turtles"', answer: 'NINJA', row: 0, col: 1 },
+        3: { clue: 'Best possible', answer: 'IDEAL', row: 0, col: 2 },
+        4: { clue: '"Peace!"', answer: 'SEEYA', row: 0, col: 3 },
+        5: { clue: 'Hospital areas in medical dramas, for short', answer: 'ERS', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData8 = (index: number) => {
