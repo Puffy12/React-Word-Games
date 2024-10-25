@@ -283,6 +283,23 @@ export const data16 = {
     },
 } as const;
 
+export const data17 = {
+    across: {
+        1: { clue: 'Horse\'s foot', answer: 'HOOF', row: 0, col: 0 },
+        5: { clue: 'More than enough', answer: 'AMPLE', row: 1, col: 0 },
+        7: { clue: 'Like movies listed on Rotten Tomatoes', answer: 'RATED', row: 2, col: 0 },
+        8: { clue: 'Recoiled (from)', answer: 'SHIED', row: 3, col: 0 },
+        9: { clue: 'What you can make dance by putting a little boogie in it, in an old joke', answer: 'HANKY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Like some criticism and winter weather', answer: 'HARSH', row: 0, col: 0 },
+        2: { clue: 'Nebraska\'s largest city', answer: 'OMAHA', row: 0, col: 1 },
+        3: { clue: 'Agree to receive promotional emails, say', answer: 'OPTIN', row: 0, col: 2 },
+        4: { clue: 'On ___ (super stylish, in 2010s slang)', answer: 'FLEEK', row: 0, col: 3 },
+        6: { clue: 'Swirl, as water', answer: 'EDDY', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
 
 export const getRandomCrosswordData8 = (index: number) => {
