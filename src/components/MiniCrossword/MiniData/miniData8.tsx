@@ -300,6 +300,23 @@ export const data17 = {
     },
 } as const;
 
+export const data18 = {
+    across: {
+        1: { clue: 'Blurb on a Bumble profile', answer: 'BIO', row: 0, col: 2 },
+        4: { clue: 'Pattern that helps you blend in, informally', answer: 'CAMO', row: 1, col: 1 },
+        5: { clue: 'Japanese electronics brand', answer: 'CASIO', row: 2, col: 0 },
+        6: { clue: '___ acid (protein builder)', answer: 'AMINO', row: 3, col: 0 },
+        7: { clue: 'Cry when you see 3-Down on your card', answer: 'BINGO', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Sink fixture', answer: 'BASIN', row: 0, col: 2 },
+        2: { clue: 'Messaging, AOL-style', answer: 'IMING', row: 0, col: 3 },
+        3: { clue: 'Row of five that prompts you to shout "7-Across!"', answer: 'OOOOO', row: 0, col: 4 },
+        4: { clue: 'Sleeveless top for layering', answer: 'CAMI', row: 1, col: 1 },
+        5: { clue: 'Taxi', answer: 'CAB', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
 
 export const getRandomCrosswordData8 = (index: number) => {
