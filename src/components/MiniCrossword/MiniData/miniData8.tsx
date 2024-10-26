@@ -317,6 +317,29 @@ export const data18 = {
     },
 } as const;
 
+export const data19 = {
+    across: {
+        1: { clue: '"What ___?" (end of a riddle)', answer: 'AMI', row: 0, col: 2 },
+        4: { clue: 'Cheer for a diva', answer: 'TED', row: 3, col: 4 },
+        6: { clue: '2024 Chappell Roan hit spelled out in its chorus', answer: 'DEEPEND', row: 4, col: 0 },
+        8: { clue: 'Conjunction that "et" (French) or "y" (Spanish) translates to', answer: 'SCENT', row: 5, col: 1 },
+        9: { clue: 'Danson of "Cheers"', answer: 'ONO', row: 6, col: 2 },
+        10: { clue: 'Place to dive in a pool', answer: 'BRAVA', row: 1, col: 1 },
+        12: { clue: 'What a bloodhound tracks', answer: 'HOTTOGO', row: 2, col: 0 },
+        13: { clue: 'Activist Yoko', answer: 'AND', row: 3, col: 0 },
+    },
+    down: {
+        1: { clue: 'Architectural style of Manhattan\'s Chrysler Building', answer: 'ARTDECO', row: 0, col: 2 },
+        2: { clue: 'One might say "Welcome!" or "Beware of Dog"', answer: 'IVOTENO', row: 0, col: 4 },
+        3: { clue: '"Thumbs down from me"', answer: 'BONES', row: 1, col: 1 },
+        4: { clue: 'Skeleton\'s makeup', answer: 'AGENT', row: 1, col: 5 },
+        5: { clue: 'Word after ticket or talent', answer: 'HAD', row: 2, col: 0 },
+        6: { clue: '"I\'ve ___ it up to here with you!"', answer: 'ODD', row: 2, col: 6 },
+        7: { clue: 'Strange', answer: 'PEN', row: 4, col: 3 },
+        11: { clue: 'Item on a chain at a bank branch', answer: 'MAT', row: 0, col: 3 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18];
 
 export const getRandomCrosswordData8 = (index: number) => {
