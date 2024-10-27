@@ -340,6 +340,23 @@ export const data19 = {
     },
 } as const;
 
+export const data20 = {
+    across: {
+        1: { clue: 'What might protect a onesie from drool', answer: 'BIB', row: 0, col: 0 },
+        4: { clue: 'Miles, minutes and milliliters', answer: 'UNITS', row: 1, col: 0 },
+        7: { clue: 'In 1922, Warren G. Harding became the first U.S. president to be broadcast over this', answer: 'RADIO', row: 2, col: 0 },
+        8: { clue: 'Four wins out of four, e.g.', answer: 'SWEEP', row: 3, col: 0 },
+        9: { clue: 'Be in charge of, as a bar', answer: 'TEND', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: '"I hate to ___ your bubble, but …"', answer: 'BURST', row: 0, col: 0 },
+        2: { clue: 'Completely amazed', answer: 'INAWE', row: 0, col: 1 },
+        3: { clue: '#46 ', answer: 'BIDEN', row: 0, col: 2 },
+        5: { clue: 'Like a two-two series, e.g.', answer: 'TIED', row: 1, col: 3 },
+        6: { clue: 'Soak (up)', answer: 'SOP', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19];
 
 export const getRandomCrosswordData8 = (index: number) => {
