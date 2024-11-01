@@ -6,6 +6,8 @@ import { getCrosswordDataByIndex5 } from './MiniData/miniData5';
 import { getCrosswordDataByIndex6 } from './MiniData/miniData6';
 import { getCrosswordDataByIndex7 } from './MiniData/miniData7';
 import { getCrosswordDataByIndex8 } from './MiniData/miniData8';
+import { getCrosswordDataByIndex9 } from './MiniData/miniData9';
+
 
 
 
@@ -17,13 +19,14 @@ const crosswordDataArrays = [
     getCrosswordDataByIndex5,
     getCrosswordDataByIndex6,
     getCrosswordDataByIndex7,
-    getCrosswordDataByIndex8
+    getCrosswordDataByIndex8,
+    getCrosswordDataByIndex9
 ];
 
 export const handleMiniDataFetch = (index: number) => {
-    const todaysIndex = 19; //Changes based on the current days Mini Crossword
+    const todaysIndex = 0; //Changes based on the current days Mini Crossword
     if(index === 0){
-        const data = getCrosswordDataByIndex8(todaysIndex);
+        const data = getCrosswordDataByIndex9(todaysIndex);
         return data;
     }else{
         const randomFunctionIndex = Math.floor(Math.random() * crosswordDataArrays.length);
