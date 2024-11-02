@@ -15,6 +15,22 @@ export const data = {
     },
 } as const;
 
+export const data2 = {
+    across: {
+        1: { clue: 'The present', answer: 'TODAY', row: 0, col: 0 },
+        6: { clue: 'Its Speedmaster model, worn by Buzz Aldrin, was the first watch on the moon', answer: 'OMEGA', row: 1, col: 0 },
+        7: { clue: 'Squiggly Japanese noodles', answer: 'RAMEN', row: 2, col: 0 },
+        8: { clue: 'Strip on a flip-flop', answer: 'THONG', row: 3, col: 0 },
+        9: { clue: 'What "Eat" represents in the mnemonic "Never Eat Shredded Wheat"', answer: 'EAST', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Rich, dense cake', answer: 'TORTE', row: 0, col: 0 },
+        2: { clue: 'Midwest city where Berkshire Hathaway is headquartered', answer: 'OMAHA', row: 0, col: 1 },
+        3: { clue: 'Trial versions', answer: 'DEMOS', row: 0, col: 2 },
+        4: { clue: 'Literary representative', answer: 'AGENT', row: 0, col: 3 },
+        5: { clue: 'Bowen of "Saturday Night Live"', answer: 'YANG', row: 0, col: 4 },
+    },
+} as const;
 
 
 const crosswordDataArray = [data];
