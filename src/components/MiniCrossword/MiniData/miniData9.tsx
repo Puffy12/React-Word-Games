@@ -33,7 +33,7 @@ export const data2 = {
 } as const;
 
 
-const crosswordDataArray = [data];
+const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData9 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
