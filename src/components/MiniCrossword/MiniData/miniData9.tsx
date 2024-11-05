@@ -32,6 +32,22 @@ export const data2 = {
     },
 } as const;
 
+export const data3 = {
+    across: {
+        1: { clue: '"More ___ you\'ll ever know"', answer: 'THAN', row: 0, col: 1 },
+        5: { clue: 'Divine favor, in Christianity', answer: 'GRACE', row: 1, col: 0 },
+        6: { clue: 'Sisters who might be sitters', answer: 'AUNTS', row: 2, col: 0 },
+        7: { clue: 'Portly-sounding beer', answer: 'STOUT', row: 3, col: 0 },
+        8: { clue: 'Cool and stylish', answer: 'HIP', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: '"The ___ will set you free. But not until it is finished with you": David Foster Wallace', answer: 'TRUTH', row: 0, col: 1 },
+        2: { clue: 'Capital of Vietnam', answer: 'HANOI', row: 0, col: 2 },
+        3: { clue: 'Misbehave', answer: 'ACTUP', row: 0, col: 3 },
+        4: { clue: 'Prepare for a new baby, say', answer: 'NEST', row: 0, col: 4 },
+        5: { clue: 'Fuel for some stoves', answer: 'GAS', row: 1, col: 0 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2];
 
