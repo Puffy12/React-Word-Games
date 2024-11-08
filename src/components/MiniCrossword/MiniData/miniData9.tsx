@@ -66,22 +66,6 @@ export const data4 = {
     },
 } as const;
 
-export const data5 = {
-    across: {
-        1: { clue: 'Alternative to Saran wrap', answer: 'FOIL', row: 0, col: 0 },
-        5: { clue: 'Get on the nerves of', answer: 'ANNOY', row: 1, col: 0 },
-        7: { clue: 'Depart', answer: 'LEAVE', row: 2, col: 0 },
-        8: { clue: 'Highway divisions', answer: 'LANES', row: 3, col: 0 },
-        9: { clue: 'Winter holiday gift that\'s hard to wrap', answer: 'SLED', row: 4, col: 0 },
-    },
-    down: {
-        1: { clue: 'Niagara attraction … whose last letter can be moved to the end of 7-Across to spell two timely words', answer: 'FALLS', row: 0, col: 0 },
-        2: { clue: 'Basketball star who co-hosts the ABC game show "Lucky 13"', answer: 'ONEAL', row: 0, col: 1 },
-        3: { clue: 'Silly as all get-out', answer: 'INANE', row: 0, col: 2 },
-        4: { clue: 'Gave a ❤️ in a text thread', answer: 'LOVED', row: 0, col: 3 },
-        6: { clue: '"Of course!"', answer: 'YES', row: 1, col: 4 },
-    },
-} as const;
 
 const crosswordDataArray = [data, data2, data3, data4];
 
