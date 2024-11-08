@@ -66,6 +66,22 @@ export const data4 = {
     },
 } as const;
 
+export const data5 = {
+    across: {
+        1: { clue: 'Boringly dull', answer: 'BLAH', row: 0, col: 1 },
+        5: { clue: 'Take a moment to think', answer: 'PAUSE', row: 1, col: 0 },
+        6: { clue: 'Herb that gives flavor to black jellybeans', answer: 'ANISE', row: 2, col: 0 },
+        7: { clue: 'Conducted, as a campaign', answer: 'WAGED', row: 3, col: 0 },
+        8: { clue: 'Narrow shape of a cat\'s pupil', answer: 'SLIT', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Boringly dull', answer: 'BANAL', row: 0, col: 1 },
+        2: { clue: 'Video game character with an "L" on his hat', answer: 'LUIGI', row: 0, col: 2 },
+        3: { clue: 'Liability\'s opposite on a balance sheet', answer: 'ASSET', row: 0, col: 3 },
+        4: { clue: 'Obey, as advice', answer: 'HEED', row: 0, col: 4 },
+        5: { clue: 'Cat\'s feet', answer: 'PAWS', row: 1, col: 0 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4];
 
