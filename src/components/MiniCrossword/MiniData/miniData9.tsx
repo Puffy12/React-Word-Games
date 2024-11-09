@@ -106,7 +106,7 @@ export const data6 = {
     },
 } as const;
 
-const crosswordDataArray = [data, data2, data3, data4, data5];
+const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData9 = (index: number) => {
     let randomIndex = Math.floor(Math.random() * crosswordDataArray.length);
