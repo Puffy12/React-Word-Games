@@ -83,6 +83,29 @@ export const data5 = {
     },
 } as const;
 
+export const data6 = {
+    across: {
+        1: { clue: 'Car puller in San Francisco', answer: 'CABLE', row: 0, col: 2 },
+        6: { clue: 'Did a sommelier\'s duty', answer: 'VON', row: 3, col: 4 },
+        7: { clue: 'Darts or trivia', answer: 'KITTEN', row: 4, col: 0 },
+        8: { clue: 'Outrage', answer: 'EATERY', row: 5, col: 0 },
+        9: { clue: 'Maria ___ Trapp in "The Sound of Music"', answer: 'SHADY', row: 6, col: 0 },
+        10: { clue: 'She\'s purrty darn cute!', answer: 'POURED', row: 1, col: 1 },
+        12: { clue: 'Dining destination', answer: 'BARGAME', row: 2, col: 0 },
+        13: { clue: 'Like a good picnic spot or a bad business deal', answer: 'IRE', row: 3, col: 0 },
+    },
+    down: {
+        1: { clue: 'Civil rights leader ___ Scott King', answer: 'CORETTA', row: 0, col: 2 },
+        2: { clue: 'Third-quarter month: Abbr.', answer: 'BRAVERY', row: 0, col: 4 },
+        3: { clue: 'Heroic attribute', answer: 'LEMONY', row: 0, col: 5 },
+        4: { clue: 'Like some citrus-imbued water', answer: 'EDEN', row: 0, col: 6 },
+        5: { clue: 'Garden in Bosch\'s "The Garden of Earthly Delights"', answer: 'PARIAH', row: 1, col: 1 },
+        6: { clue: 'Persona non grata', answer: 'BIKES', row: 2, col: 0 },
+        7: { clue: 'Two-wheelers', answer: 'TED', row: 4, col: 3 },
+        11: { clue: 'One of two "excellent" adventurers of film', answer: 'AUG', row: 0, col: 3 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5];
 
 export const getRandomCrosswordData9 = (index: number) => {
