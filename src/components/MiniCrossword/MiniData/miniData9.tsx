@@ -106,6 +106,23 @@ export const data6 = {
     },
 } as const;
 
+export const data7 = {
+    across: {
+        1: { clue: 'Chopped down', answer: 'AXED', row: 0, col: 1 },
+        5: { clue: '___SmithKline, pharma giant shortened to GSK in 2022', answer: 'GLAXO', row: 1, col: 0 },
+        6: { clue: 'Luxury car line owned by Toyota', answer: 'LEXUS', row: 2, col: 0 },
+        7: { clue: 'Banish from a country', answer: 'EXILE', row: 3, col: 0 },
+        8: { clue: 'N.L. division for the Phillies and Mets', answer: 'EAST', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Amazon "assistant" you might ask for help to solve a puzzle', answer: 'ALEXA', row: 0, col: 1 },
+        2: { clue: 'Horizontal graph line', answer: 'XAXIS', row: 0, col: 2 },
+        3: { clue: 'Be of good cheer', answer: 'EXULT', row: 0, col: 3 },
+        4: { clue: 'Amount of medicine to take ', answer: 'DOSE', row: 0, col: 4 },
+        5: { clue: 'Extreme delight', answer: 'GLEE', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6];
 
 export const getRandomCrosswordData9 = (index: number) => {
