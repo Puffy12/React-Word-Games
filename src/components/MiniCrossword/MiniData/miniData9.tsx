@@ -157,6 +157,23 @@ export const data9 = {
     },
 } as const;
 
+export const data10 = {
+    across: {
+        1: { clue: 'One of 1,077 in the first single-volume edition of "The Lord of the Rings"', answer: 'PAGE', row: 0, col: 1 },
+        5: { clue: 'Clickable symbol', answer: 'ICON', row: 1, col: 1 },
+        6: { clue: 'With 3-Down, slangy aspirations for a group of friends', answer: 'SQUAD', row: 2, col: 0 },
+        7: { clue: 'Throws hard', answer: 'HURLS', row: 3, col: 0 },
+        8: { clue: 'Voting counterparts of nays', answer: 'YEAS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Arouse, as interest', answer: 'PIQUE', row: 0, col: 1 },
+        2: { clue: 'Maker of car models like the MDX and TLX', answer: 'ACURA', row: 0, col: 2 },
+        3: { clue: 'See 6-Across', answer: 'GOALS', row: 0, col: 3 },
+        4: { clue: '"All\'s well that ___ well"', answer: 'ENDS', row: 0, col: 4 },
+        6: { clue: 'Like a kindergartner on the first day of school, maybe', answer: 'SHY', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9];
 
 export const getRandomCrosswordData9 = (index: number) => {
