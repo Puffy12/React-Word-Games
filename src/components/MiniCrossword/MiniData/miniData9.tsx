@@ -174,6 +174,22 @@ export const data10 = {
     },
 } as const;
 
+export const data11 = {
+    across: {
+        1: { clue: 'What a vacuum cleaner sucks up', answer: 'DIRT', row: 0, col: 0 },
+        5: { clue: '"Clam up" or "chicken out"', answer: 'IDIOM', row: 1, col: 0 },
+        7: { clue: 'Rigatoni, radiatori or rotelle', answer: 'PASTA', row: 2, col: 0 },
+        8: { clue: 'Trim wool from', answer: 'SHEAR', row: 3, col: 0 },
+        9: { clue: '"If I had ___ known!"', answer: 'ONLY', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Quick jumps in the pool', answer: 'DIPS', row: 0, col: 0 },
+        2: { clue: 'State where much of the Snake River flows', answer: 'IDAHO', row: 0, col: 1 },
+        3: { clue: 'Up and out of bed', answer: 'RISEN', row: 0, col: 2 },
+        4: { clue: 'Number at the bottom of a receipt', answer: 'TOTAL', row: 0, col: 3 },
+        6: { clue: 'American Impressionist painter Cassatt', answer: 'MARY', row: 1, col: 4 },
+    },
+} as const;
 
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10];
 
