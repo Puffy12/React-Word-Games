@@ -191,6 +191,28 @@ export const data11 = {
     },
 } as const;
 
+export const data12 = {
+    across: {
+        1: { clue: 'Nurses, as a drink', answer: 'SIPS', row: 0, col: 3 },
+        5: { clue: 'Extremely, in California slang', answer: 'POLLEN', row: 2, col: 1 },
+        6: { clue: 'Seasonal reason for sneezin\'', answer: 'GOLFBAG', row: 3, col: 0 },
+        7: { clue: 'Course load?', answer: 'ALLIES', row: 4, col: 0 },
+        8: { clue: 'Treaty co-signers', answer: 'SKEET', row: 5, col: 0 },
+        9: { clue: 'Olympic shooting sport with clay targets', answer: 'PARS', row: 6, col: 0 },
+        10: { clue: 'Scores of 3, 4 and 5, typically', answer: 'HELLA', row: 1, col: 2 },
+
+    },
+    down: {
+        1: { clue: 'Many pics taken on Snapchat', answer: 'SELFIES', row: 0, col: 3 },
+        2: { clue: '"Ooookay … sure you did …"', answer: 'ILLBET', row: 0, col: 4 },
+        3: { clue: '"Guilty" and "not guilty"', answer: 'PLEAS', row: 0, col: 5 },
+        4: { clue: 'Rocked out at karaoke night', answer: 'SANG', row: 0, col: 6 },
+        5: { clue: 'Give a yell', answer: 'HOLLER', row: 1, col: 2 },
+        6: { clue: 'Music played at a German beer garden ', answer: 'POLKA', row: 2, col: 1 },
+        7: { clue: 'Sound in the audience during a horror film, maybe', answer: 'GASP', row: 3, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11];
 
 export const getRandomCrosswordData9 = (index: number) => {
