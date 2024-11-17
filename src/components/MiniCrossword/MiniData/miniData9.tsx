@@ -213,6 +213,23 @@ export const data12 = {
     },
 } as const;
 
+export const data13 = {
+    across: {
+        1: { clue: 'Someone for whom a velvet rope may be lifted, in brief', answer: 'VIP', row: 0, col: 2 },
+        4: { clue: 'Workplace with pickaxes', answer: 'MINE', row: 1, col: 1 },
+        5: { clue: 'Puff piece?', answer: 'CIGAR', row: 2, col: 0 },
+        6: { clue: 'Lose a staring contest', answer: 'BLINK', row: 3, col: 0 },
+        7: { clue: 'Parts of Crocs that say "crocs" on them', answer: 'SOLES', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Candlelight ceremony', answer: 'VIGIL', row: 0, col: 2 },
+        2: { clue: 'Totally harebrained', answer: 'INANE', row: 0, col: 3 },
+        3: { clue: 'Company car and a free gym membership, for example', answer: 'PERKS', row: 0, col: 4 },
+        4: { clue: 'Venus de ___ (sculpture)', answer: 'MILO', row: 1, col: 1 },
+        5: { clue: '"60 Minutes" network', answer: 'CBS', row: 2, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
 export const getRandomCrosswordData9 = (index: number) => {
