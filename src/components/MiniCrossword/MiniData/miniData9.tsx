@@ -230,6 +230,23 @@ export const data13 = {
     },
 } as const;
 
+export const data14 = {
+    across: {
+        1: { clue: '___ Martin, frequent collaborator with 1-Down', answer: 'STEVE', row: 0, col: 0 },
+        6: { clue: 'Parts of irrigation systems', answer: 'HOSES', row: 1, col: 0 },
+        7: { clue: 'Beginning', answer: 'ONSET', row: 2, col: 0 },
+        8: { clue: 'Backup camera\'s place on a car', answer: 'REAR', row: 3, col: 0 },
+        9: { clue: 'Make an attempt', answer: 'TRY', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Martin ___, frequent collaborator with 1-Across', answer: 'SHORT', row: 0, col: 0 },
+        2: { clue: 'Stuff in a printer cartridge', answer: 'TONER', row: 0, col: 1 },
+        3: { clue: 'Common kind of test for a literature class', answer: 'ESSAY', row: 0, col: 2 },
+        4: { clue: 'Make a sudden turn', answer: 'VEER', row: 0, col: 3 },
+        5: { clue: 'Jokey suffix with best', answer: 'EST', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13];
 
 export const getRandomCrosswordData9 = (index: number) => {
