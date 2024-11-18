@@ -24,7 +24,7 @@ const crosswordDataArrays = [
 ];
 
 export const handleMiniDataFetch = (index: number) => {
-    const todaysIndex = 12;
+    const todaysIndex = 13;
      //Changes based on the current days Mini Crossword
     if(index === 0){
         const data = getCrosswordDataByIndex9(todaysIndex);
