@@ -247,6 +247,23 @@ export const data14 = {
     },
 } as const;
 
+export const data15 = {
+    across: {
+        1: { clue: '___ Pilkey, children\'s author who created Captain Underpants and Dog Man', answer: 'DAV', row: 0, col: 1 },
+        4: { clue: 'Person who prefers to keep to themselves', answer: 'LONER', row: 1, col: 0 },
+        6: { clue: 'Boiling with rage', answer: 'ANGRY', row: 2, col: 0 },
+        7: { clue: 'Protrude, like a bodybuilder\'s muscles', answer: 'BULGE', row: 3, col: 0 },
+        8: { clue: 'Casual top', answer: 'TEE', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: '___ holes (treats that are actually balls, not "holes")', answer: 'DONUT', row: 0, col: 1 },
+        2: { clue: 'Geometry class measurement', answer: 'ANGLE', row: 0, col: 2 },
+        3: { clue: 'On the ___ of tears', answer: 'VERGE', row: 0, col: 3 },
+        4: { clue: 'Lecture\'s counterpart, in college science courses', answer: 'LAB', row: 1, col: 0 },
+        5: { clue: 'Bread that might be marbled', answer: 'RYE', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14];
 
 export const getRandomCrosswordData9 = (index: number) => {
