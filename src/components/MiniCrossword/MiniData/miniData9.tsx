@@ -264,6 +264,23 @@ export const data15 = {
     },
 } as const;
 
+export const data16 = {
+    across: {
+        1: { clue: 'With 8-Across, knock-knock joke response before the punchline "Don\'t cry!"', answer: 'BOO', row: 0, col: 2 },
+        4: { clue: 'Group of musical notes', answer: 'CHORD', row: 1, col: 0 },
+        6: { clue: 'Washing machine cycle before "spin"', answer: 'RINSE', row: 2, col: 0 },
+        7: { clue: 'Popular frozen waffles', answer: 'EGGOS', row: 3, col: 0 },
+        8: { clue: 'See 1-Across', answer: 'WHO', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Open-bottomed hand drum', answer: 'BONGO', row: 0, col: 2 },
+        2: { clue: 'Words of approximation', answer: 'ORSO', row: 0, col: 3 },
+        3: { clue: 'Poems written in tribute', answer: 'ODES', row: 0, col: 4 },
+        4: { clue: 'Specification for T-shirt necklines or socks', answer: 'CREW', row: 1, col: 0 },
+        5: { clue: 'Stoned', answer: 'HIGH', row: 1, col: 1 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15];
 
 export const getRandomCrosswordData9 = (index: number) => {
