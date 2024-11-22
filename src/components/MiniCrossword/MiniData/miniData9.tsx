@@ -298,6 +298,23 @@ export const data17 = {
     },
 } as const;
 
+export const data18 = {
+    across: {
+        1: { clue: 'Icelandic singer with 16 Grammy nominations', answer: 'BJORK', row: 0, col: 0 },
+        6: { clue: 'Batman\'s sidekick', answer: 'ROBIN', row: 1, col: 0 },
+        7: { clue: 'African mammal with striped legs', answer: 'OKAPI', row: 2, col: 0 },
+        8: { clue: 'Awkward response to hear when you introduce yourself to someone', answer: 'WEMET', row: 3, col: 0 },
+        9: { clue: 'Competed in a 5K', answer: 'RAN', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Body part that can be furrowed', answer: 'BROW', row: 0, col: 0 },
+        2: { clue: 'Batman\'s archnemesis', answer: 'JOKER', row: 0, col: 1 },
+        3: { clue: 'President who used Keegan-Michael Key as his "anger translator" at the White House Correspondents\' Dinner', answer: 'OBAMA', row: 0, col: 2 },
+        4: { clue: 'Turn red, as a chili pepper', answer: 'RIPEN', row: 0, col: 3 },
+        5: { clue: 'Make a scarf', answer: 'KNIT', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17];
 
 export const getRandomCrosswordData9 = (index: number) => {
