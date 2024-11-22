@@ -281,6 +281,23 @@ export const data16 = {
     },
 } as const;
 
+export const data17 = {
+    across: {
+        1: { clue: 'Man of few words?', answer: 'MIME', row: 0, col: 0 },
+        5: { clue: 'Absolutely love', answer: 'ADORE', row: 1, col: 0 },
+        7: { clue: 'Bit of headwear with gems on it', answer: 'TIARA', row: 2, col: 0 },
+        8: { clue: 'Your ___ (words when addressing a judge)', answer: 'HONOR', row: 3, col: 0 },
+        9: { clue: 'Roof goop', answer: 'TAR', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Class in which you\'ll encounter a lot of problems', answer: 'MATH', row: 0, col: 0 },
+        2: { clue: '"American ___" (Green Day\'s 2004 "punk rock opera")', answer: 'IDIOT', row: 0, col: 1 },
+        3: { clue: 'Disney heroine with an upcoming November sequel', answer: 'MOANA', row: 0, col: 2 },
+        4: { clue: 'An editor might catch one', answer: 'ERROR', row: 0, col: 3 },
+        6: { clue: 'Cochlea\'s place', answer: 'EAR', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16];
 
 export const getRandomCrosswordData9 = (index: number) => {
