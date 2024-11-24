@@ -1,3 +1,4 @@
+
 export const data = {
     across: {
         1: { clue: 'With 5-Down, rhyming Japanese philosophy of finding beauty in imperfection', answer: 'WABI', row: 0, col: 1 },
