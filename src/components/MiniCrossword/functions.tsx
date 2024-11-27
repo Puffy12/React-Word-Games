@@ -10,8 +10,6 @@ import { getCrosswordDataByIndex9 } from './MiniData/miniData9';
 import { getCrosswordDataByIndex10 } from './MiniData/miniData10';
 
 
-
-
 const crosswordDataArrays = [
     getCrosswordDataByIndex,
     getCrosswordDataByIndex2,
