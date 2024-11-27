@@ -16,6 +16,23 @@ export const data = {
     },
 } as const;
 
+export const data2 = {
+    across: {
+        1: { clue: '"This is only a ___"', answer: 'TEST', row: 0, col: 1 },
+        5: { clue: 'Drink that might be hard to sip through a straw', answer: 'SHAKE', row: 1, col: 0 },
+        6: { clue: '"Vital" body part', answer: 'ORGAN', row: 2, col: 0 },
+        7: { clue: 'Nick with two Best Actor nominations', answer: 'NOLTE', row: 3, col: 0 },
+        8: { clue: 'Thoughtful, as a gesture', answer: 'SWEET', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Kind of blanket or pillow', answer: 'THROW', row: 0, col: 1 },
+        2: { clue: 'Excellent golf score', answer: 'EAGLE', row: 0, col: 2 },
+        3: { clue: 'Footwear with wheels or a blade', answer: 'SKATE', row: 0, col: 3 },
+        4: { clue: 'Palindromic principle', answer: 'TENET', row: 0, col: 4 },
+        5: { clue: 'Hermes and Hercules, to Zeus', answer: 'SONS', row: 1, col: 0 },
+    },
+} as const;
+
 const crosswordDataArray = [data];
 
 export const getRandomCrosswordData10 = (index: number) => {
