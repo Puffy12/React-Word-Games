@@ -33,6 +33,23 @@ export const data2 = {
     },
 } as const;
 
+export const data3 = {
+    across: {
+        1: { clue: '___, ___, goose!', answer: 'DUCK', row: 0, col: 0 },
+        5: { clue: 'Big pileup during vacation, perhaps', answer: 'EMAIL', row: 1, col: 0 },
+        7: { clue: 'The "cord" cut by a cord cutter', answer: 'CABLE', row: 2, col: 0 },
+        8: { clue: 'Kind of acid in proteins', answer: 'AMINO', row: 3, col: 0 },
+        9: { clue: 'Pair for a snorkeler', answer: 'FINS', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'After-dinner coffee order', answer: 'DECAF', row: 0, col: 0 },
+        2: { clue: 'Taste first indentified by Japanese chemist Kikunae Ikeda in 1908', answer: 'UMAMI', row: 0, col: 1 },
+        3: { clue: 'Rustic home', answer: 'CABIN', row: 0, col: 2 },
+        4: { clue: 'Ovens in a pottery studio', answer: 'KILNS', row: 0, col: 3 },
+        6: { clue: 'Sign associated with loyalty and confidence', answer: 'LEO', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2];
 
 export const getRandomCrosswordData10 = (index: number) => {
