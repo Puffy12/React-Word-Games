@@ -36,7 +36,7 @@ export const data2 = {
 export const data3 = {
     across: {
         1: { clue: '___, ___, goose!', answer: 'DUCK', row: 0, col: 0 },
-        5: { clue: 'Big pileup during vacation, perhaps', answer: 'EMAIL', row: 1, col: 0 },
+        5: { clue: 'Big pileup during vacation, perhaps', answer: 'DUCK', row: 0, col: 0 },
         7: { clue: 'The "cord" cut by a cord cutter', answer: 'CABLE', row: 2, col: 0 },
         8: { clue: 'Kind of acid in proteins', answer: 'AMINO', row: 3, col: 0 },
         9: { clue: 'Pair for a snorkeler', answer: 'FINS', row: 4, col: 0 },
@@ -49,6 +49,7 @@ export const data3 = {
         6: { clue: 'Sign associated with loyalty and confidence', answer: 'LEO', row: 1, col: 4 },
     },
 } as const;
+
 
 const crosswordDataArray = [data, data2, data3];
 
