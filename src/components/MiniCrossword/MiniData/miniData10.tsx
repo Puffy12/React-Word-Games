@@ -67,6 +67,23 @@ export const data4 = {
     },
 } as const;
 
+export const data5 = {
+    across: {
+        1: { clue: 'Folder for unwanted files', answer: 'TRASH', row: 0, col: 0 },
+        6: { clue: 'Map app suggestion', answer: 'ROUTE', row: 1, col: 0 },
+        7: { clue: 'Country whose flag depicts a blue dharmachakra ("wheel of dharma")', answer: 'INDIA', row: 2, col: 0 },
+        8: { clue: 'Colorful coat material?', answer: 'PAINT', row: 3, col: 0 },
+        9: { clue: 'Eggy holiday drink', answer: 'NOG', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Stumble', answer: 'TRIP', row: 0, col: 0 },
+        2: { clue: '"Brooklyn" star Saoirse', answer: 'RONAN', row: 0, col: 1 },
+        3: { clue: 'The "A" of A/V', answer: 'AUDIO', row: 0, col: 2 },
+        4: { clue: '"Float like a butterfly, ___ like a bee"', answer: 'STING', row: 0, col: 3 },
+        5: { clue: 'Spiciness', answer: 'HEAT', row: 0, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData10 = (index: number) => {
