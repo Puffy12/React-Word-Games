@@ -67,6 +67,23 @@ export const data4 = {
     },
 } as const;
 
+export const data5 = {
+    across: {
+        1: { clue: 'Physicians\' degrees', answer: 'MDS', row: 0, col: 1 },
+        4: { clue: 'Good name for a theology professor', answer: 'FAITH', row: 1, col: 0 },
+        6: { clue: 'Space-related prefix', answer: 'ASTRO', row: 2, col: 0 },
+        7: { clue: 'Still in bed', answer: 'NOTUP', row: 3, col: 0 },
+        8: { clue: 'Garden figurine in a pointy hat', answer: 'GNOME', row: 4, col: 0 },
+    },
+    down: {
+        1: { clue: 'Worker with bricks and mortar', answer: 'MASON', row: 0, col: 1 },
+        2: { clue: '"Me, too!"', answer: 'DITTO', row: 0, col: 2 },
+        3: { clue: 'Play, as a mandolin', answer: 'STRUM', row: 0, col: 3 },
+        4: { clue: 'One of two in a king cobra\'s mouth', answer: 'FANG', row: 1, col: 0 },
+        5: { clue: 'Good name for an optimist', answer: 'HOPE', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4];
 
 export const getRandomCrosswordData10 = (index: number) => {
