@@ -84,6 +84,23 @@ export const data5 = {
     },
 } as const;
 
+export const data6 = {
+    across: {
+        1: { clue: 'Target of the Clean Air Act', answer: 'SMOG', row: 0, col: 0 },
+        5: { clue: 'It beats 6-Down, but not scissors', answer: 'PAPER', row: 1, col: 0 },
+        7: { clue: '___ acids', answer: 'AMINO', row: 2, col: 0 },
+        8: { clue: 'Over-the-top excited', answer: 'MANIC', row: 3, col: 0 },
+        9: { clue: 'Try to find', answer: 'SEEK', row: 4, col: 1 },
+    },
+    down: {
+        1: { clue: 'Messages that might be automatically deleted after 30 days', answer: 'SPAM', row: 0, col: 0 },
+        2: { clue: 'Some parents, to their little ones', answer: 'MAMA', row: 0, col: 1 },
+        3: { clue: 'Conjecture out loud', answer: 'OPINE', row: 0, col: 2 },
+        4: { clue: '"Your wish is my command" speaker', answer: 'GENIE', row: 0, col: 3 },
+        6: { clue: 'It beats scissors, but not 5-Across', answer: 'ROCK', row: 1, col: 4 },
+    },
+} as const;
+
 const crosswordDataArray = [data, data2, data3, data4, data5];
 
 export const getRandomCrosswordData10 = (index: number) => {
