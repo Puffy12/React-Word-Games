@@ -9,9 +9,9 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function about() {
 
-  const service_id = "service_04wp4zc"; //SERVICE_ID
-  const template_id = "template_d042nic"; //TEMPLATE_ID
-  const user_id = "9C0L-gHDybtgOIhxU" //USER_ID
+  const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const user_id = import.meta.env.VITE_EMAILJS_USER_ID;
   const form = useRef<HTMLFormElement>(null);
 
 
