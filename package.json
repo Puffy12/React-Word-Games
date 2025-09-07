@@ -21,7 +21,6 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@jaredreisinger/react-crossword": "^5.2.0",
     "@preact/signals-react": "^2.0.1",
-    "dotenv": "^16.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
@@ -30,7 +29,6 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "^5.0.5",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
