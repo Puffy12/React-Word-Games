@@ -9,12 +9,10 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function about() {
 
-  const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const user_id = import.meta.env.VITE_EMAILJS_USER_ID;
+  const service_id = "service_04wp4zc";
+  const template_id = "template_d042nic";
+  const user_id = "gHDybtgOIhxU";
   const form = useRef<HTMLFormElement>(null);
-
-
 
   function scrollToElement(elementId: string) {
     const element = document.getElementById(elementId);
